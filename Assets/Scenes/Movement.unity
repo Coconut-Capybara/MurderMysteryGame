@@ -242,6 +242,7 @@ GameObject:
   - component: {fileID: 91024057}
   - component: {fileID: 91024056}
   - component: {fileID: 91024055}
+  - component: {fileID: 91024059}
   m_Layer: 0
   m_Name: MovePointsTest
   m_TagString: Untagged
@@ -343,6 +344,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 41.522, z: 0}
+--- !u!114 &91024059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91024054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8bcaa911c0fd91499111844dde1cce8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MovableObject
+  leftSpline: {fileID: 286263830}
+  rightSpline: {fileID: 0}
+  locationIndexGlobal: 0
 --- !u!1 &156750919
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,6 +497,7 @@ GameObject:
   - component: {fileID: 188514208}
   - component: {fileID: 188514207}
   - component: {fileID: 188514206}
+  - component: {fileID: 188514210}
   m_Layer: 0
   m_Name: MovePointsTest (1)
   m_TagString: Untagged
@@ -582,6 +599,147 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -49.981, z: 0}
+--- !u!114 &188514210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188514205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8bcaa911c0fd91499111844dde1cce8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MovableObject
+  leftSpline: {fileID: 1656832447}
+  rightSpline: {fileID: 0}
+  locationIndexGlobal: 0
+--- !u!1 &286263828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 286263831}
+  - component: {fileID: 286263830}
+  - component: {fileID: 286263829}
+  m_Layer: 0
+  m_Name: nextSplineTest (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &286263829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286263828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5342500578afb24a9b83d6343d32a0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineSplineSmoother
+  AutoSmooth: 1
+--- !u!114 &286263830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286263828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Splines::UnityEngine.Splines.SplineContainer
+  m_Spline:
+    m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Splines:
+  - m_EditModeType: 1
+    m_Knots:
+    - Position:
+        x: 23.61
+        y: 0
+        z: -28.009998
+      TangentIn:
+        x: 0
+        y: 0
+        z: 0
+      TangentOut:
+        x: 0
+        y: 0
+        z: 0
+      Rotation:
+        value:
+          x: 0
+          y: 0
+          z: 0
+          w: 1
+    - Position:
+        x: 0.72000027
+        y: 0
+        z: -28.240002
+      TangentIn:
+        x: 0
+        y: 0
+        z: 0
+      TangentOut:
+        x: 0
+        y: 0
+        z: 0
+      Rotation:
+        value:
+          x: 0
+          y: 0
+          z: 0
+          w: 1
+    m_MetaData:
+    - Mode: 4
+      Tension: 0.5
+    - Mode: 4
+      Tension: 0.5
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Knots:
+    m_KnotsLink: []
+--- !u!4 &286263831
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286263828}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.7, y: 0, z: 9.05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &655753344
 GameObject:
   m_ObjectHideFlags: 0
@@ -1074,6 +1232,9 @@ MonoBehaviour:
     Spline: {fileID: 1656832447}
     Position: 0
     Units: 0
+  movableObject: {fileID: 91024059}
+  gameObjects: []
+  localLocationIndex: 0
   nextSpline: {fileID: 0}
 --- !u!1 &1379083727
 GameObject:
@@ -1152,6 +1313,7 @@ GameObject:
   - component: {fileID: 1406139578}
   - component: {fileID: 1406139577}
   - component: {fileID: 1406139576}
+  - component: {fileID: 1406139580}
   m_Layer: 0
   m_Name: MovePointsTest (2)
   m_TagString: Untagged
@@ -1253,6 +1415,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -142.62, z: 0}
+--- !u!114 &1406139580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406139575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8bcaa911c0fd91499111844dde1cce8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MovableObject
+  leftSpline: {fileID: 0}
+  rightSpline: {fileID: 0}
+  locationIndexGlobal: 0
 --- !u!1 &1656832446
 GameObject:
   m_ObjectHideFlags: 0
@@ -1391,6 +1568,7 @@ GameObject:
   - component: {fileID: 1920576771}
   - component: {fileID: 1920576770}
   - component: {fileID: 1920576769}
+  - component: {fileID: 1920576773}
   m_Layer: 0
   m_Name: MovePointsTest (3)
   m_TagString: Untagged
@@ -1492,6 +1670,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 142.19, z: 0}
+--- !u!114 &1920576773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920576768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8bcaa911c0fd91499111844dde1cce8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MovableObject
+  leftSpline: {fileID: 0}
+  rightSpline: {fileID: 0}
+  locationIndexGlobal: 0
 --- !u!1 &1962204899
 GameObject:
   m_ObjectHideFlags: 0
@@ -1535,6 +1728,7 @@ SceneRoots:
   - {fileID: 1920576772}
   - {fileID: 1656832449}
   - {fileID: 156750922}
+  - {fileID: 286263831}
   - {fileID: 1379083729}
   - {fileID: 943587999}
   - {fileID: 1962204900}
