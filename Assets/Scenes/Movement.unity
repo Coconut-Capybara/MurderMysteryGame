@@ -145,7 +145,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 290816536}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.09406172, y: 0.3568858, z: -0.03614665, w: 0.92869717}
+  m_LocalRotation: {x: 0.096624136, y: 0.3975367, z: -0.042140618, w: 0.9115111}
   m_LocalPosition: {x: -0.13000011, y: 0.67499995, z: -0.049999997}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
@@ -335,7 +335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87ca49e7f91d9114ab82ebf3b8b18e28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
-  cineCam: {fileID: 0}
+  cineCam: {fileID: 712579608}
 --- !u!1 &560858201
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,7 +362,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 560858201}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.02395573, y: 0.95092225, z: -0.076202236, w: 0.29894185}
+  m_LocalRotation: {x: 0.021144103, y: 0.95508146, z: -0.0703398, w: 0.28709698}
   m_LocalPosition: {x: 0.42, y: 0.39, z: 0.19}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
@@ -552,7 +552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87ca49e7f91d9114ab82ebf3b8b18e28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
-  cineCam: {fileID: 0}
+  cineCam: {fileID: 290816539}
 --- !u!1 &712579605
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,7 +579,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 712579605}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.02868601, y: 0.90737396, z: -0.06277803, w: -0.41461855}
+  m_LocalRotation: {x: -0.025666691, y: 0.92129314, z: -0.061727516, w: -0.3830796}
   m_LocalPosition: {x: -0.091, y: 0.436, z: -0.117}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
@@ -623,7 +623,7 @@ MonoBehaviour:
     LookAtTarget: {fileID: 0}
     CustomLookAtTarget: 0
   Lens:
-    FieldOfView: 60.000004
+    FieldOfView: 85
     OrthographicSize: 5
     NearClipPlane: 0.3
     FarClipPlane: 1000
@@ -905,7 +905,7 @@ Transform:
   m_GameObject: {fileID: 1033653639}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.71866, y: 0.5, z: 12.03579}
+  m_LocalPosition: {x: -5.23, y: 0.5, z: 10.51}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1038,7 +1038,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87ca49e7f91d9114ab82ebf3b8b18e28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
-  cineCam: {fileID: 0}
+  cineCam: {fileID: 1457550546}
 --- !u!1 &1457550543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1065,7 +1065,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1457550543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0729014, y: -0.44899672, z: 0.03678658, w: 0.8897944}
+  m_LocalRotation: {x: 0.0767702, y: -0.47100425, z: 0.04119201, w: 0.8778181}
   m_LocalPosition: {x: 0.112, y: 0.643, z: -0.029}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
@@ -1100,7 +1100,7 @@ MonoBehaviour:
   Priority:
     Enabled: 0
     m_Value: 0
-  OutputChannel: 0
+  OutputChannel: 1
   StandbyUpdate: 2
   m_StreamingVersion: 20241001
   m_LegacyPriority: 0
@@ -1190,7 +1190,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 60.000004
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -1216,8 +1216,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1606256551}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.09406172, y: 0.3568858, z: -0.03614665, w: 0.92869717}
-  m_LocalPosition: {x: -16.68, y: 3.85, z: -0.12}
+  m_LocalRotation: {x: 0.0767702, y: -0.47100425, z: 0.04119201, w: 0.8778181}
+  m_LocalPosition: {x: 10.304, y: 3.786, z: 0.20199999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1447,7 +1447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87ca49e7f91d9114ab82ebf3b8b18e28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
-  cineCam: {fileID: 0}
+  cineCam: {fileID: 560858204}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
