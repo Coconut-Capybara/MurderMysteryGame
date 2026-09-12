@@ -1,19 +1,26 @@
-using System.Collections;
+/*****************************************************************************
+// Script Name : AddToInventory
+// Author : Gabriel Andrews
+// Additional Author(s) :
+// Creation Date:9/7/26
+// Last Modified Date: 9/12/26
+//
+// Summary : Handles adding items to the players inventory
+*****************************************************************************/
+
 using UnityEngine;
-using UnityEngine.UI;
 
 public class AddToInventory : MonoBehaviour
 {
     [SerializeField] private Vector2 currentIconPos;
     [SerializeField] private Vector2 iconPivot;
-    public float iconMoveSpeed;
     /// <summary>
     /// Puts item in inventory
     /// </summary>
     public void AddItem(GameObject item)
     {
-        item.GetComponent<GrabbableObject>().iconPos = currentIconPos;
-        StartCoroutine(item.GetComponent<GrabbableObject>().MoveIcon());
+        item.GetComponent<GrabbableObject>().SetIconPos(currentIconPos);
+        item.GetComponent<GrabbableObject>().MoveIcon();
         currentIconPos += iconPivot;  
     }
 }
