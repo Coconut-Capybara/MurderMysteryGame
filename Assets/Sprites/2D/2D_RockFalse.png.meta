@@ -101,11 +101,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 111
-        y: 15
+        y: 71
         width: 64
         height: 37
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -122,12 +122,12 @@ TextureImporter:
       name: 2D_RockFalse_1
       rect:
         serializedVersion: 2
-        x: 181
-        y: 15
+        x: 184
+        y: 71
         width: 64
         height: 37
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -144,12 +144,12 @@ TextureImporter:
       name: 2D_RockFalse_2
       rect:
         serializedVersion: 2
-        x: 249
-        y: 12
+        x: 256
+        y: 68
         width: 63
         height: 36
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -158,6 +158,72 @@ TextureImporter:
       bones: []
       spriteID: 5e61b4830ee84cd41967cd1bd59e5057
       internalID: -2127731599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D_RockFalse_3
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 13
+        width: 68
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8511772075d698249817b9db5a263cc5
+      internalID: -1322642489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D_RockFalse_4
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 13
+        width: 68
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d23bf7ae3afb83d4485b0954fbb34dbe
+      internalID: 1864126737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D_RockFalse_5
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 10
+        width: 67
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 796dfdfce8c988f47ab08f316dd5dc7d
+      internalID: 503531864
       vertices: []
       indices: 
       edges: []
@@ -176,11 +242,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":400.0,"y":300.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":1,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       2D_RockFalse_0: 969851866
       2D_RockFalse_1: -316340405
       2D_RockFalse_2: -2127731599
+      2D_RockFalse_3: -1322642489
+      2D_RockFalse_4: 1864126737
+      2D_RockFalse_5: 503531864
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

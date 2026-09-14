@@ -20,7 +20,8 @@ public class PlayerInteract : MonoBehaviour
         None,
         OverObject,
         InInventory,
-        HoldingItem
+        HoldingItem,
+        OverDoor
     }
     public CursorState cursorState;
     void Start()
@@ -48,7 +49,12 @@ public class PlayerInteract : MonoBehaviour
             {
                 cursorState = CursorState.None;
                 GameObject.FindFirstObjectByType<ItemInspections>().HideItemDescPanel();
-            }     
+            }
+            if(hit.collider.gameObject.GetComponent<DoorScript>() != null && cursorState is not (CursorState.InInventory
+                 or CursorState.HoldingItem))
+            {
+                cursorState = CursorState.OverDoor;
+            }
         }
         else if(cursorState is not (CursorState.InInventory or CursorState.HoldingItem)) 
         {
@@ -69,6 +75,23 @@ public class PlayerInteract : MonoBehaviour
         if(interact.WasReleasedThisFrame() && cursorState == CursorState.HoldingItem)
         {
             ItemUsageCheck();        
+        }
+        if(interact.WasPressedThisFrame() && cursorState == CursorState.OverDoor)
+        {
+            DoorCheck();
+        }
+    }
+    private void DoorCheck()
+    {
+        Vector3 cursorPos = Mouse.current.position.ReadValue();
+        Ray ray = playerCam.ScreenPointToRay(cursorPos);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit))
+        {
+            if(hit.collider.GetComponent<DoorScript>() != null)
+            {
+                hit.collider.GetComponent<DoorScript>().DoorLogic();
+            }
         }
     }
     private void ItemUsageCheck()

@@ -100,7 +100,7 @@ TextureImporter:
       name: 2D_RustyScrewdriver_0
       rect:
         serializedVersion: 2
-        x: 188
+        x: 134
         y: 11
         width: 39
         height: 86
@@ -112,8 +112,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65d7a7f3d6309bf41900c1590e3831e9
+      spriteID: 6c277f0918a747749a38a189b4f73448
       internalID: 149369902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D_RustyScrewdriver_1
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 9
+        width: 43
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5661d27c386b0f44db2c45a4dd3dae05
+      internalID: 437659398
       vertices: []
       indices: 
       edges: []
@@ -137,6 +159,7 @@ TextureImporter:
         value: '{"sliceOnImport":true,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":400.0,"y":300.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":1,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       2D_RustyScrewdriver_0: 149369902
+      2D_RustyScrewdriver_1: 437659398
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
