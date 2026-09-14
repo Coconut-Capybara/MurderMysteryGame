@@ -1,20 +1,29 @@
+/*****************************************************************************
+// Script Name : InventoryItemScript
+// Author : Gabriel Andrews
+// Additional Author(s) :
+// Creation Date:9/7/26
+// Last Modified Date: 9/12/26
+//
+// Summary : Allows the player to interact with the items in their inventory
+*****************************************************************************/
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 public class InventoryItemScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    public bool grabbed;
+    [SerializeField] private int itemId;
+    private bool grabbed;
     private PlayerInteract player;
-    public Vector2 orgin;
-    public bool isValid;
+    private Vector2 orgin;
+    private bool isValid;
     void IPointerEnterHandler.OnPointerEnter(PointerEventData eventData)
     {
         if (isValid && player.cursorState != PlayerInteract.CursorState.HoldingItem)
         {
-            print("Grabbed");
             player.cursorState = PlayerInteract.CursorState.InInventory;
-            player.currentItem = this.gameObject;
+            player.SetCurrentItem(this.gameObject); 
         }
     }
 
@@ -23,7 +32,7 @@ public class InventoryItemScript : MonoBehaviour, IPointerEnterHandler, IPointer
         if(isValid && player.cursorState != PlayerInteract.CursorState.HoldingItem)
         {
             player.cursorState = PlayerInteract.CursorState.None;
-            player.currentItem = null;
+            player.SetCurrentItem(null);
         }      
     }
     void Start()
@@ -42,5 +51,21 @@ public class InventoryItemScript : MonoBehaviour, IPointerEnterHandler, IPointer
             Vector2 mousePosition = Mouse.current.position.ReadValue();
             GetComponent<RectTransform>().position = mousePosition;
         }
+    }
+    public int GetItemId()
+    {
+        return itemId;
+    }
+    public void SetIsGrabbed()
+    {
+        grabbed = true; 
+    }
+    public void SetOrgin(Vector2 input)
+    {
+        orgin = input;      
+    }
+    public void SetValid()
+    {
+        isValid = true; 
     }
 }
