@@ -9,7 +9,7 @@
 *****************************************************************************/
 using UnityEngine;
 
-public class DoorScript : MonoBehaviour
+public class DoorScript : ItemNeeded
 {
     [SerializeField] private bool isLocked;
 
@@ -35,5 +35,13 @@ public class DoorScript : MonoBehaviour
     public bool GetLockState()
     {
         return isLocked;       
+    }
+    public override void ItemUsage(GameObject currentItem)
+    {
+        if(GetItemNeeded().GetComponent<InventoryItemScript>().GetItemId() ==
+            currentItem.GetComponent<InventoryItemScript>().GetItemId())
+        {
+            SetLockState();     
+        }
     }
 }
