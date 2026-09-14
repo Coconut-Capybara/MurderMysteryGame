@@ -34,4 +34,8 @@ public class ItemNeeded : MonoBehaviour
             }
         }
     }
+    public GameObject GetItemNeeded()
+    {
+        return itemNeeded[0];       
+    }
 }

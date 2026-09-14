@@ -7,7 +7,9 @@
 //
 // Summary : Allows player tor read the description of certain items (early)
 *****************************************************************************/
+using System.Collections;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -15,6 +17,7 @@ public class ItemInspections : MonoBehaviour
 {
     [SerializeField] private GameObject itemDescPanel;
     [SerializeField] private TMP_Text itemDesc;
+    [SerializeField] private float textSpeed;
     private PlayerInteract player;
     private InputAction inspect;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -23,6 +26,9 @@ public class ItemInspections : MonoBehaviour
         player = GameObject.FindFirstObjectByType<PlayerInteract>();
         inspect = InputSystem.actions.FindAction("Inspect");
     }
+    /// <summary>
+    /// Shows Item Description
+    /// </summary>
     private void Inspect()
     {
         Vector3 cursorPos = Mouse.current.position.ReadValue();
@@ -36,12 +42,22 @@ public class ItemInspections : MonoBehaviour
     private void ShowItemDescPanel(GameObject item)
     {
         itemDescPanel.SetActive(true);
-        itemDesc.text = item.GetComponent<GrabbableObject>().GetDescription();
+        StartCoroutine(ShowText(item.GetComponent<GrabbableObject>().GetDescription()));
     }
     public void HideItemDescPanel()
     {
         itemDescPanel.SetActive(false);
         itemDesc.text = " ";
+    }
+    private IEnumerator ShowText(string text)
+    {
+        int i = 0;
+        while (i < text.Length)
+        {
+            itemDesc.text += text[i];
+            i++;
+            yield return new WaitForSeconds(textSpeed);
+        }     
     }
     // Update is called once per frame
     void Update()
