@@ -12,6 +12,10 @@ using UnityEngine;
 public class ItemNeeded : MonoBehaviour
 {
     [SerializeField] private GameObject[] itemNeeded;
+    /// <summary>
+    /// Base function for item interaction
+    /// </summary>
+    /// <param name="currentItem"></param>
     public virtual void ItemUsage(GameObject currentItem)
     {
         for(int i = 0; i < itemNeeded.Length; i++)
@@ -19,7 +23,6 @@ public class ItemNeeded : MonoBehaviour
             if(itemNeeded[i].GetComponent<InventoryItemScript>().GetItemId() ==
                 currentItem.GetComponent<InventoryItemScript>().GetItemId())
             {
-                //testing
                 if(itemNeeded[i].GetComponent<InventoryItemScript>().GetItemId() == 1)
                 {
                     print("Thing 1");
