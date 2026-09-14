@@ -39,21 +39,24 @@ public class PlayerInteract : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
         {
-            if (hit.collider.gameObject.GetComponent<GrabbableObject>() != null && cursorState is not (CursorState.InInventory
+            if (hit.collider.GetComponent<GrabbableObject>() != null && cursorState is not (CursorState.InInventory
                  or CursorState.HoldingItem))
             {
                 cursorState = CursorState.OverObject;
             }
-            else if (hit.collider.gameObject.GetComponent<GrabbableObject>() == null && cursorState is not (CursorState.InInventory
+            else if (hit.collider.GetComponent<GrabbableObject>() == null && cursorState is not (CursorState.InInventory
                  or CursorState.HoldingItem))
             {
                 cursorState = CursorState.None;
                 GameObject.FindFirstObjectByType<ItemInspections>().HideItemDescPanel();
             }
-            if(hit.collider.gameObject.GetComponent<DoorScript>() != null && cursorState is not (CursorState.InInventory
+            if(hit.collider.GetComponent<DoorScript>() != null && cursorState is not (CursorState.InInventory
                  or CursorState.HoldingItem))
             {
-                cursorState = CursorState.OverDoor;
+                if (!hit.collider.GetComponent<DoorScript>().GetLockState())
+                {
+                    cursorState = CursorState.OverDoor;
+                }
             }
         }
         else if(cursorState is not (CursorState.InInventory or CursorState.HoldingItem)) 
