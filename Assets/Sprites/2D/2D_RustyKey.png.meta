@@ -100,12 +100,12 @@ TextureImporter:
       name: 2D_RustyKey_0
       rect:
         serializedVersion: 2
-        x: 180
+        x: 111
         y: 11
         width: 54
-        height: 85
+        height: 73
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -114,6 +114,28 @@ TextureImporter:
       bones: []
       spriteID: 283b139a755a14c4a8fc12e06e53a311
       internalID: -1414339743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D_RustyKey_1
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 9
+        width: 58
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e0cb0e96f575574fafb7dfcd74ada24
+      internalID: -577633046
       vertices: []
       indices: 
       edges: []
@@ -137,6 +159,7 @@ TextureImporter:
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":400.0,"y":300.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":1,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       2D_RustyKey_0: -1414339743
+      2D_RustyKey_1: -577633046
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
