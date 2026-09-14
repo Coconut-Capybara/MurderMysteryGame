@@ -100,7 +100,7 @@ TextureImporter:
       name: 2D_SideDoor_0
       rect:
         serializedVersion: 2
-        x: 187
+        x: 64
         y: 158
         width: 226
         height: 331
@@ -114,6 +114,28 @@ TextureImporter:
       bones: []
       spriteID: a0fbf81c33e34de40940638f8a16aecc
       internalID: 1762484257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D_SideDoor_1
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 155
+        width: 234
+        height: 338
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a0a5329674377c479930cd3ce5e2253
+      internalID: 643532932
       vertices: []
       indices: 
       edges: []
@@ -132,9 +154,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":100.0,"y":100.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       2D_SideDoor_0: 1762484257
+      2D_SideDoor_1: 643532932
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
