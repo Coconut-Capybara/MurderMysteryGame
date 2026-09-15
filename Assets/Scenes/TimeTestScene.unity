@@ -228,7 +228,7 @@ MonoBehaviour:
   timeLeft: 1250
   hoursLeft: 0
   minutesLeft: 0
-  timeTestAway: 100
+  timeTestAway: 160
 --- !u!114 &1028069289
 MonoBehaviour:
   m_ObjectHideFlags: 0
