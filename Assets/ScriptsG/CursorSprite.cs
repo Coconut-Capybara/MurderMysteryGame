@@ -16,6 +16,7 @@ public class CursorSprite : MonoBehaviour
     [SerializeField] private Texture2D overObjectSprite;
     [SerializeField] private Texture2D holdingObjectSprite;
     [SerializeField] private Texture2D overDoorSprite;
+    [SerializeField] private Texture2D inspectionSprite;
     private PlayerInteract player;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

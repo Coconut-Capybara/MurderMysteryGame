@@ -3,7 +3,7 @@
 // Author : Gabriel Andrews
 // Additional Author(s) :
 // Creation Date:9/7/26
-// Last Modified Date: 9/12/26
+// Last Modified Date: 9/15/26
 //
 // Summary : Handles all player input, and changes the cursor state
 *****************************************************************************/
@@ -21,7 +21,7 @@ public class PlayerInteract : MonoBehaviour
         OverObject,
         InInventory,
         HoldingItem,
-        OverDoor
+        OverDoor,
     }
     public CursorState cursorState;
     void Start()
@@ -44,19 +44,14 @@ public class PlayerInteract : MonoBehaviour
             {
                 cursorState = CursorState.OverObject;
             }
-            else if (hit.collider.GetComponent<GrabbableObject>() == null && cursorState is not (CursorState.InInventory
+            else if(hit.collider.GetComponent<DoorScript>() != null && cursorState is not (CursorState.InInventory
                  or CursorState.HoldingItem))
+            {
+               cursorState = CursorState.OverDoor;                
+            }
+            else if (cursorState is not (CursorState.InInventory or CursorState.HoldingItem))
             {
                 cursorState = CursorState.None;
-                GameObject.FindFirstObjectByType<ItemInspections>().HideItemDescPanel();
-            }
-            if(hit.collider.GetComponent<DoorScript>() != null && cursorState is not (CursorState.InInventory
-                 or CursorState.HoldingItem))
-            {
-                if (!hit.collider.GetComponent<DoorScript>().GetLockState())
-                {
-                    cursorState = CursorState.OverDoor;
-                }
             }
         }
         else if(cursorState is not (CursorState.InInventory or CursorState.HoldingItem)) 
