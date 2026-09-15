@@ -542,7 +542,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &377171864
 Transform:
   m_ObjectHideFlags: 0
@@ -1452,7 +1452,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1221878014
 Transform:
   m_ObjectHideFlags: 0
@@ -1803,7 +1803,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1783921939
 Transform:
   m_ObjectHideFlags: 0
@@ -2059,7 +2059,7 @@ Transform:
   m_GameObject: {fileID: 1840529608}
   serializedVersion: 2
   m_LocalRotation: {x: -0.016311718, y: 0, z: 0, w: 0.99986696}
-  m_LocalPosition: {x: -4.825821, y: 99.2383, z: 89.221115}
+  m_LocalPosition: {x: -13.585819, y: 12.858294, z: 93.88112}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2110,7 +2110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovementController
   currentCam: {fileID: 0}
-  firstCam: {fileID: 0}
+  firstCam: {fileID: 1190174442}
   camBrain: {fileID: 1840529612}
   mainCam: {fileID: 1840529610}
   allCams:
@@ -2180,7 +2180,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1862210748
 Transform:
   m_ObjectHideFlags: 0
