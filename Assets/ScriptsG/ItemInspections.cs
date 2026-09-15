@@ -36,13 +36,16 @@ public class ItemInspections : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
         {
-           ShowItemDescPanel(hit.collider.gameObject);
+            if(hit.collider.GetComponent<Descriptions>() != null)
+            {
+                ShowItemDescPanel(hit.collider.gameObject);
+            }
         }
     }
     private void ShowItemDescPanel(GameObject item)
     {
         itemDescPanel.SetActive(true);
-        StartCoroutine(ShowText(item.GetComponent<GrabbableObject>().GetDescription()));
+        StartCoroutine(ShowText(item.GetComponent<Descriptions>().GetDescription()));
     }
     public void HideItemDescPanel()
     {
@@ -62,7 +65,7 @@ public class ItemInspections : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (inspect.WasPressedThisFrame() && player.cursorState == PlayerInteract.CursorState.OverObject)
+        if (inspect.WasPressedThisFrame())
         {
             Inspect();      
         }

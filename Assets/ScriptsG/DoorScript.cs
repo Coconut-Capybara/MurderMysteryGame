@@ -26,6 +26,7 @@ public class DoorScript : ItemNeeded
     }
     public void EnterDoor()
     {
+        //camera movement here
         print("You enter the door");
     }
     public void SetLockState()
