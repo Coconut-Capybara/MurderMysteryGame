@@ -41,6 +41,11 @@ public class TimeController : MonoBehaviour
         TimeAway(tempTime);
         timePanel.SetActive(false);
     }
+
+    public void NoButton()
+    {
+        timePanel.gameObject.SetActive(false);
+    }
     public void TimeAway(int time)
     {
         timeLeft = timeLeft - time;
