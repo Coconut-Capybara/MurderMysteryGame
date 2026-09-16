@@ -13,7 +13,6 @@ public class GrabbableObject : MonoBehaviour
 {
     [SerializeField] private GameObject itemIconGO;
     [SerializeField] private GameObject canvas;
-    [SerializeField] private string description;
     private Vector2 iconPos;
     /// <summary>
     /// handles inventory logic
@@ -33,10 +32,6 @@ public class GrabbableObject : MonoBehaviour
         itemIcon.GetComponent<InventoryItemScript>().SetOrgin(iconPos);
         itemIcon.transform.SetParent(canvas.transform, false);
         itemIcon.GetComponent<InventoryItemScript>().SetValid();
-    }
-    public string GetDescription()
-    {
-        return description;     
     }
     public void SetIconPos(Vector2 input)
     {

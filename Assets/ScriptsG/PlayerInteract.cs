@@ -35,7 +35,7 @@ public class PlayerInteract : MonoBehaviour
     void Update()
     {
         Vector3 cursorPos = Mouse.current.position.ReadValue();
-        Ray ray = playerCam.ScreenPointToRay(cursorPos);
+        Ray ray = Camera.main.ScreenPointToRay(cursorPos);
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
         {

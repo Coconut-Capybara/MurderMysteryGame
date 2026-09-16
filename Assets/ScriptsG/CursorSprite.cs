@@ -30,7 +30,7 @@ public class CursorSprite : MonoBehaviour
         switch(player.cursorState)
         {
             case PlayerInteract.CursorState.None:
-                Cursor.SetCursor(baseCursorSprite, Vector2.zero, CursorMode.Auto); break;
+                Cursor.SetCursor(baseCursorSprite, new Vector2(18.2f,0), CursorMode.Auto); break;
             case PlayerInteract.CursorState.InInventory:
                 Cursor.SetCursor(inventorySprite, Vector2.zero, CursorMode.Auto); break;
             case PlayerInteract.CursorState.HoldingItem:
