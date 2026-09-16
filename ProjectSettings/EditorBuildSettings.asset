@@ -5,12 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/Movement.unity
-    guid: fb51c3e0ed405a34e9c41f8f08117dd3
+    path: Assets/Scenes/AlleyAttraction.unity
+    guid: dedc37877be090447b38d1a6c48bd080
+  - enabled: 1
+    path: Assets/Scenes/ItemTesting.unity
+    guid: fce2a3ec801b3874594b02b0b8a2c3ba
+  - enabled: 1
+    path: Assets/Scenes/UseItemTimeScene.unity
+    guid: 9d56a41f6b1e3754bb1bccbe381bc7be
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
