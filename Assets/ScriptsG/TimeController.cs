@@ -19,6 +19,9 @@ public class TimeController : MonoBehaviour
 
     private int tempTime;
 
+    [Header("Object Properties Script")]
+    [SerializeField] private ObjectProperties objectProperties;
+
     [Header("Test Variables")]
     public int timeTestAway;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
