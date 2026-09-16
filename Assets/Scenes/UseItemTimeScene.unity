@@ -1408,6 +1408,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
   itemNeeded:
   - {fileID: 1532536772341162781, guid: 9cd51f594790e1e45bb2d8356962d439, type: 3}
+  timeController: {fileID: 597986678}
   timeUsedTesting: 100
 --- !u!65 &1507432953
 BoxCollider:
