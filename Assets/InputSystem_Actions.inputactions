@@ -32,6 +32,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Quit",
+                    "type": "Button",
+                    "id": "3cf39733-eaad-46d9-8438-421c3142542c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -59,8 +68,8 @@
                 },
                 {
                     "name": "",
-                    "id": "0ceb6918-d31f-4772-9a87-44f3940eeb9e",
-                    "path": "",
+                    "id": "530e9861-9bb6-4bb5-bc11-f0e7f5481cb1",
+                    "path": "<Keyboard>/l",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -70,12 +79,12 @@
                 },
                 {
                     "name": "",
-                    "id": "530e9861-9bb6-4bb5-bc11-f0e7f5481cb1",
-                    "path": "<Keyboard>/l",
+                    "id": "87265b41-02c5-4aaa-b588-b71ac209bb8b",
+                    "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "NextScene",
+                    "action": "Quit",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

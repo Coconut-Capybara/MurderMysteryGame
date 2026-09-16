@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AlleyAttraction.unity
     guid: dedc37877be090447b38d1a6c48bd080
+  - enabled: 1
+    path: Assets/Scenes/AlleyAttractionDupe.unity
+    guid: f1ff90f16e84a9746bf261f23ac03fe5
   - enabled: 1
     path: Assets/Scenes/ItemTesting.unity
     guid: fce2a3ec801b3874594b02b0b8a2c3ba

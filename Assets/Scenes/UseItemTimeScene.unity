@@ -857,7 +857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneSwitchDebug
   sceneIndex: 0
-  anotherScene: AlleyAttraction
+  anotherScene: AlleyAttractionDupe
 --- !u!1 &605831600
 GameObject:
   m_ObjectHideFlags: 0
@@ -1829,7 +1829,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GrabbableObject
   itemIconGO: {fileID: 1532536772341162781, guid: 9cd51f594790e1e45bb2d8356962d439, type: 3}
   canvas: {fileID: 605831600}
-  description: 
 --- !u!23 &2141165480
 MeshRenderer:
   m_ObjectHideFlags: 0
