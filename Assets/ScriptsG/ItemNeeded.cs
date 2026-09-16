@@ -12,6 +12,9 @@ using UnityEngine;
 public class ItemNeeded : MonoBehaviour
 {
     [SerializeField] private GameObject[] itemNeeded;
+    [SerializeField] private TimeController timeController;
+
+    public int timeUsedTesting;
     /// <summary>
     /// Base function for item interaction
     /// </summary>
@@ -26,6 +29,7 @@ public class ItemNeeded : MonoBehaviour
                 if(itemNeeded[i].GetComponent<InventoryItemScript>().GetItemId() == 1)
                 {
                     print("Thing 1");
+                    timeController.PassTimePanel(timeUsedTesting);
                 }
                 else if(itemNeeded[i].GetComponent<InventoryItemScript>().GetItemId() == 2)
                 {

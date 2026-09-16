@@ -827,6 +827,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DoorScript
   itemNeeded:
   - {fileID: 1532536772341162781, guid: 9cd51f594790e1e45bb2d8356962d439, type: 3}
+  timeUsedTesting: 0
   isLocked: 1
 --- !u!114 &927131618
 MonoBehaviour:
@@ -1386,6 +1387,7 @@ MonoBehaviour:
   itemNeeded:
   - {fileID: 1532536772341162781, guid: 9cd51f594790e1e45bb2d8356962d439, type: 3}
   - {fileID: 3043295151955953431, guid: a6560a3dd593f354cb0a185825901fcf, type: 3}
+  timeUsedTesting: 0
 --- !u!1 &2114058229
 GameObject:
   m_ObjectHideFlags: 0
@@ -1398,6 +1400,7 @@ GameObject:
   - component: {fileID: 2114058231}
   - component: {fileID: 2114058230}
   - component: {fileID: 2114058233}
+  - component: {fileID: 2114058234}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1523,6 +1526,20 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &2114058234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114058229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08ccf83410e17184e8c7e1899d3e6d94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneSwitchDebug
+  sceneIndex: 0
+  anotherScene: UseItemTimeScene
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

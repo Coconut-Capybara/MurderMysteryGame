@@ -8,4 +8,8 @@ public class Descriptions : MonoBehaviour
     {
         return description;     
     }
+    public void SetDescription(string _description)
+    {
+        description = _description;     
+    }
 }

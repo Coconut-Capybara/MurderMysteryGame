@@ -20,11 +20,13 @@ public class ItemInspections : MonoBehaviour
     [SerializeField] private float textSpeed;
     private PlayerInteract player;
     private InputAction inspect;
+    private bool descLocked;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         player = GameObject.FindFirstObjectByType<PlayerInteract>();
         inspect = InputSystem.actions.FindAction("Inspect");
+        descLocked = false;
     }
     /// <summary>
     /// Shows Item Description
@@ -44,11 +46,16 @@ public class ItemInspections : MonoBehaviour
     }
     private void ShowItemDescPanel(GameObject item)
     {
-        itemDescPanel.SetActive(true);
-        StartCoroutine(ShowText(item.GetComponent<Descriptions>().GetDescription()));
+        if (!descLocked)
+        {
+            itemDescPanel.SetActive(true);
+            StartCoroutine(ShowText(item.GetComponent<Descriptions>().GetDescription()));
+            descLocked = true;
+        }
     }
     public void HideItemDescPanel()
     {
+        descLocked = false; 
         itemDescPanel.SetActive(false);
         itemDesc.text = " ";
     }
