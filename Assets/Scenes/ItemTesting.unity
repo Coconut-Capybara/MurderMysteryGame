@@ -827,7 +827,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DoorScript
   itemNeeded:
   - {fileID: 1532536772341162781, guid: 9cd51f594790e1e45bb2d8356962d439, type: 3}
-  timeController: {fileID: 0}
   timeUsedTesting: 0
   isLocked: 1
 --- !u!114 &927131618
@@ -1388,7 +1387,6 @@ MonoBehaviour:
   itemNeeded:
   - {fileID: 1532536772341162781, guid: 9cd51f594790e1e45bb2d8356962d439, type: 3}
   - {fileID: 3043295151955953431, guid: a6560a3dd593f354cb0a185825901fcf, type: 3}
-  timeController: {fileID: 0}
   timeUsedTesting: 0
 --- !u!1 &2114058229
 GameObject:

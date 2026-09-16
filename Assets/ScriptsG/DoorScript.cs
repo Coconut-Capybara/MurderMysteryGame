@@ -7,6 +7,7 @@
 //
 // Summary : Will handle player movement through doors
 *****************************************************************************/
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DoorScript : ItemNeeded
@@ -42,7 +43,8 @@ public class DoorScript : ItemNeeded
         if(GetItemNeeded().GetComponent<InventoryItemScript>().GetItemId() ==
             currentItem.GetComponent<InventoryItemScript>().GetItemId())
         {
-            SetLockState();     
+            SetLockState();
+            GetComponent<Descriptions>().SetDescription("Unlocked");
         }
     }
 }
