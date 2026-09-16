@@ -36,12 +36,10 @@ public class SpriteInterchange : MonoBehaviour
         Vector3 cursorPos = Mouse.current.position.ReadValue();
         Ray ray = playerCam.ScreenPointToRay(cursorPos);
         RaycastHit hit;
-        if (Physics.Raycast(ray, out hit))
+        if (Physics.Raycast(ray, out hit) && hit.collider.gameObject.GetComponent<SpriteInterchange>() != null)
         {
-            if (hit.collider.gameObject.GetComponent<SpriteInterchange>() != null)
-            {
-                spriteRenderer.sprite = hoverSprite;
-            }
+            spriteRenderer.sprite = hoverSprite;
+
         }
         else
         {
