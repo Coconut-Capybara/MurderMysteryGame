@@ -39,19 +39,28 @@ public class PlayerInteract : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
         {
-            if (hit.collider.GetComponent<GrabbableObject>() != null && cursorState is not (CursorState.InInventory
-                 or CursorState.HoldingItem))
+            if(hit.collider.GetComponent<ObjectProperties>() != null)
             {
-                cursorState = CursorState.OverObject;
+                if (hit.collider.GetComponent<ObjectProperties>().isGrabbable ||
+                    hit.collider.GetComponent<ObjectProperties>().isInteractable || 
+                    hit.collider.GetComponent<ObjectProperties>().canUseOn)
+                {
+                    if(cursorState is not (CursorState.InInventory or CursorState.HoldingItem))
+                    {
+                        cursorState = CursorState.OverObject;
+                    }                    
+                }
+                else if (hit.collider.GetComponent<DoorScript>() != null && cursorState is not (CursorState.InInventory
+                     or CursorState.HoldingItem))
+                {
+                    cursorState = CursorState.OverDoor;
+                }
             }
-            else if(hit.collider.GetComponent<DoorScript>() != null && cursorState is not (CursorState.InInventory
-                 or CursorState.HoldingItem))
-            {
-               cursorState = CursorState.OverDoor;                
-            }
-            else if (cursorState is not (CursorState.InInventory or CursorState.HoldingItem))
+            else if (hit.collider.GetComponent<ObjectProperties>() == null && cursorState is not (CursorState.InInventory
+                     or CursorState.HoldingItem))
             {
                 cursorState = CursorState.None;
+                GameObject.FindFirstObjectByType<ItemInspections>().HideItemDescPanel();
             }
         }
         else if(cursorState is not (CursorState.InInventory or CursorState.HoldingItem)) 
@@ -72,7 +81,10 @@ public class PlayerInteract : MonoBehaviour
         }
         if(interact.WasReleasedThisFrame() && cursorState == CursorState.HoldingItem)
         {
-            ItemUsageCheck();        
+            ItemUsageCheck();
+            currentItem.GetComponent<InventoryItemScript>().ReturnToPos();
+            currentItem = null;
+            cursorState = CursorState.None;
         }
         if(interact.WasPressedThisFrame() && cursorState == CursorState.OverDoor)
         {
@@ -100,21 +112,33 @@ public class PlayerInteract : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
         {
-            if (hit.collider.GetComponent<ItemNeeded>() != null)
-            {                
+            if (hit.collider.GetComponent<ObjectProperties>() != null &&
+                hit.collider.GetComponent<ItemNeeded>() != null)
+            {
                 hit.collider.GetComponent<ItemNeeded>().ItemUsage(currentItem);
             }
-        }          
-        currentItem.GetComponent<InventoryItemScript>().ReturnToPos();
-        currentItem = null;
-        cursorState = CursorState.None;        
+        }                  
     }
     /// <summary>
     /// Puts objects in inventory if able 
     /// </summary>
     private void Interact(GameObject item)
-    {
-        item.GetComponent<GrabbableObject>().Collected();
+    {        
+        Vector3 cursorPos = Mouse.current.position.ReadValue();
+        Ray ray = playerCam.ScreenPointToRay(cursorPos);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit))
+        {
+            if (hit.collider.GetComponent<ObjectProperties>().isGrabbable)
+            {
+                item.GetComponent<GrabbableObject>().Collected();
+            }
+            else if (hit.collider.GetComponent<GivePlayerItem>() != null && 
+                hit.collider.GetComponent<ObjectProperties>().isInteractable)
+            {
+                hit.collider.GetComponent<GivePlayerItem>().GiveItem(); 
+            }
+        }
     }
     public GameObject GetCurrentItem()
     {
