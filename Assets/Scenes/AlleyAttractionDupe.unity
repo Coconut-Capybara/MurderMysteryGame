@@ -326,7 +326,7 @@ Transform:
   m_GameObject: {fileID: 78197584}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.45858, y: 12.2121, z: -56.395462}
+  m_LocalPosition: {x: 20.9, y: 12.2121, z: -56.395462}
   m_LocalScale: {x: 0.1099, y: 24.20784, z: 109.9923}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1102,10 +1102,10 @@ RectTransform:
   m_Father: {fileID: 19888180}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 248.73108, y: -167}
-  m_SizeDelta: {x: -497.4622, y: -463.1718}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 302.5378, y: 136.82819}
+  m_Pivot: {x: 0, y: 0}
 --- !u!114 &365873641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1459,8 +1459,8 @@ GameObject:
   m_Component:
   - component: {fileID: 573199876}
   - component: {fileID: 573199875}
-  - component: {fileID: 573199877}
   - component: {fileID: 573199879}
+  - component: {fileID: 573199877}
   - component: {fileID: 573199878}
   m_Layer: 0
   m_Name: 2D_SideDoor_0
@@ -1555,7 +1555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorScript
   itemNeeded:
-  - {fileID: 1532536772341162781, guid: 9cd51f594790e1e45bb2d8356962d439, type: 3}
+  - {fileID: 3043295151955953431, guid: f5ed07d89a75df543b4a350083606087, type: 3}
   timeController: {fileID: 0}
   timeUsedTesting: 0
   isLocked: 1
@@ -1589,10 +1589,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 573199874}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46eb9a67da169e9439643899e8a08cde, type: 3}
+  m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Descriptions
-  description: Locked
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
+  thisObject: {fileID: 0}
+  isInteractable: 1
+  isGrabbable: 0
+  canUseOn: 1
+  consumable: 0
+  timeUsage: 0
+  itemDesc: "This door\u2019s just locked. Is there a key around?"
+  itemSprite: {fileID: 0}
+  highlightSprite: {fileID: 0}
+  altSprite1: {fileID: 0}
+  altSprite2: {fileID: 0}
 --- !u!1 &590653825
 GameObject:
   m_ObjectHideFlags: 0
@@ -1698,7 +1708,7 @@ Transform:
   m_GameObject: {fileID: 590653825}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -23.307621, y: 12.4228, z: -1.9}
+  m_LocalPosition: {x: -23.307621, y: 12.4228, z: -1.65}
   m_LocalScale: {x: 89.110825, y: 24.432209, z: 0.1533}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1977,7 +1987,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemInspections
   itemDescPanel: {fileID: 365873639}
   itemDesc: {fileID: 1328426982}
-  textSpeed: 0.1
+  textSpeed: 0.05
 --- !u!114 &736103772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1992,6 +2002,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InventoryHandler
   currentIconPos: {x: -355, y: 260}
   iconPivot: {x: 100, y: 0}
+  canvas: {fileID: 705574794}
 --- !u!114 &736103773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2031,6 +2042,9 @@ GameObject:
   m_Component:
   - component: {fileID: 847087798}
   - component: {fileID: 847087797}
+  - component: {fileID: 847087801}
+  - component: {fileID: 847087800}
+  - component: {fileID: 847087799}
   m_Layer: 0
   m_Name: 2D_DumpsterInspect
   m_TagString: Untagged
@@ -2104,13 +2118,72 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 847087796}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.1, y: 100.8, z: 129}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.7123904, y: 93.548996, z: 83.63598}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1355869306}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &847087799
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847087796}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6, y: 6, z: 0.2}
+  m_Center: {x: -0.000000059604645, y: 0.0000009536743, z: 0}
+--- !u!114 &847087800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847087796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
+  thisObject: {fileID: 0}
+  isInteractable: 1
+  isGrabbable: 0
+  canUseOn: 0
+  consumable: 0
+  timeUsage: 0
+  itemDesc: "I\u2019d rather not, but I could probably find something useful in here.
+    It\u2019ll take me a bit though. "
+  itemSprite: {fileID: 0}
+  highlightSprite: {fileID: 0}
+  altSprite1: {fileID: 0}
+  altSprite2: {fileID: 0}
+--- !u!114 &847087801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847087796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed66a4f38f9459540800e857332e7b03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GivePlayerItem
+  itemPrefab: {fileID: 3043295151955953431, guid: af4429b390e0f4242889d5d6c2ad0a3f, type: 3}
+  amount: 1
 --- !u!1 &889919598
 GameObject:
   m_ObjectHideFlags: 0
@@ -2823,7 +2896,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.1602, y: -2.1113}
+  m_AnchoredPosition: {x: -1.160202, y: -2.1113}
   m_SizeDelta: {x: 292.8463, y: 118.6458}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1355869305
@@ -2859,6 +2932,7 @@ Transform:
   - {fileID: 573199876}
   - {fileID: 1909787307}
   - {fileID: 2114967979}
+  - {fileID: 847087798}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1361007708
@@ -3596,6 +3670,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1909787307}
   - component: {fileID: 1909787308}
+  - component: {fileID: 1909787310}
+  - component: {fileID: 1909787309}
   m_Layer: 0
   m_Name: Env_FrontDoor_0
   m_TagString: Untagged
@@ -3612,7 +3688,7 @@ Transform:
   m_GameObject: {fileID: 1909787306}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 45.412388, y: 1.99899, z: -4.96402}
+  m_LocalPosition: {x: 45.41, y: 1.99899, z: -4.96402}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3676,6 +3752,50 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1909787309
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909787306}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.39, y: 3.51, z: 0}
+  m_Center: {x: -0.45, y: 0, z: 0.10000013}
+--- !u!114 &1909787310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909787306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
+  thisObject: {fileID: 0}
+  isInteractable: 1
+  isGrabbable: 0
+  canUseOn: 0
+  consumable: 0
+  timeUsage: 0
+  itemDesc: "The door won\u2019t budge. Gotta find another way in."
+  itemSprite: {fileID: 0}
+  highlightSprite: {fileID: 0}
+  altSprite1: {fileID: 0}
+  altSprite2: {fileID: 0}
 --- !u!1 &1947579611
 GameObject:
   m_ObjectHideFlags: 0
@@ -3757,9 +3877,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2114967979}
   - component: {fileID: 2114967980}
-  - component: {fileID: 2114967982}
+  - component: {fileID: 2114967985}
   - component: {fileID: 2114967983}
-  - component: {fileID: 2114967981}
+  - component: {fileID: 2114967984}
+  - component: {fileID: 2114967982}
   m_Layer: 0
   m_Name: Env_Rock1_0
   m_TagString: Untagged
@@ -3840,19 +3961,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2114967981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2114967978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46eb9a67da169e9439643899e8a08cde, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Descriptions
-  description: Rock
 --- !u!65 &2114967982
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3872,8 +3980,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.63, y: 0.36, z: 0.2}
-  m_Center: {x: 0, y: 0.000000044703484, z: 0}
+  m_Size: {x: 0.92, y: 0.56, z: 0.2}
+  m_Center: {x: 0, y: 0.035659492, z: 0}
 --- !u!114 &2114967983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3883,11 +3991,50 @@ MonoBehaviour:
   m_GameObject: {fileID: 2114967978}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df91cc0dff4a6c5468d3578751823b28, type: 3}
+  m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GrabbableObject
-  itemIconGO: {fileID: 1532536772341162781, guid: 9cd51f594790e1e45bb2d8356962d439, type: 3}
-  canvas: {fileID: 705574794}
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
+  thisObject: {fileID: 0}
+  isInteractable: 0
+  isGrabbable: 0
+  canUseOn: 1
+  consumable: 0
+  timeUsage: 0
+  itemDesc: "This rock\u2019s plastic. And there\u2019s a key stuck to the underside!"
+  itemSprite: {fileID: 0}
+  highlightSprite: {fileID: 0}
+  altSprite1: {fileID: 0}
+  altSprite2: {fileID: 0}
+--- !u!114 &2114967984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114967978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4de2556f0ac375f458db4116ca48b604, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockScript
+  itemNeeded:
+  - {fileID: 3043295151955953431, guid: af4429b390e0f4242889d5d6c2ad0a3f, type: 3}
+  timeController: {fileID: 0}
+  timeUsedTesting: 0
+--- !u!114 &2114967985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114967978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed66a4f38f9459540800e857332e7b03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GivePlayerItem
+  itemPrefab: {fileID: 3043295151955953431, guid: f5ed07d89a75df543b4a350083606087, type: 3}
+  amount: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3898,7 +4045,6 @@ SceneRoots:
   - {fileID: 1743239819}
   - {fileID: 1355869306}
   - {fileID: 1810938915}
-  - {fileID: 847087798}
   - {fileID: 341931052}
   - {fileID: 705574798}
   - {fileID: 19888180}

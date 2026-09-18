@@ -9,7 +9,6 @@
 *****************************************************************************/
 using System.Collections;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -18,13 +17,12 @@ public class ItemInspections : MonoBehaviour
     [SerializeField] private GameObject itemDescPanel;
     [SerializeField] private TMP_Text itemDesc;
     [SerializeField] private float textSpeed;
-    private PlayerInteract player;
     private InputAction inspect;
     private bool descLocked;
+    private Coroutine itemDescCO;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        player = GameObject.FindFirstObjectByType<PlayerInteract>();
         inspect = InputSystem.actions.FindAction("Inspect");
         descLocked = false;
     }
@@ -38,7 +36,7 @@ public class ItemInspections : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
         {
-            if(hit.collider.GetComponent<Descriptions>() != null)
+            if(hit.collider.GetComponent<ObjectProperties>() != null)
             {
                 ShowItemDescPanel(hit.collider.gameObject);
             }
@@ -49,7 +47,7 @@ public class ItemInspections : MonoBehaviour
         if (!descLocked)
         {
             itemDescPanel.SetActive(true);
-            StartCoroutine(ShowText(item.GetComponent<Descriptions>().GetDescription()));
+            itemDescCO = StartCoroutine(ShowText(item.GetComponent<ObjectProperties>().itemDesc));
             descLocked = true;
         }
     }
@@ -57,6 +55,10 @@ public class ItemInspections : MonoBehaviour
     {
         descLocked = false; 
         itemDescPanel.SetActive(false);
+        if(itemDescCO != null)
+        {
+            StopCoroutine(itemDescCO);
+        }          
         itemDesc.text = " ";
     }
     private IEnumerator ShowText(string text)
