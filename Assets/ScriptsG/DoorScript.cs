@@ -44,7 +44,7 @@ public class DoorScript : ItemNeeded
             currentItem.GetComponent<InventoryItemScript>().GetItemId())
         {
             SetLockState();
-            GetComponent<Descriptions>().SetDescription("Unlocked");
+            GetComponent<ObjectProperties>().itemDesc = "Unlocked";
         }
     }
 }
