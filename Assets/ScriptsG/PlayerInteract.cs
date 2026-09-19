@@ -79,6 +79,10 @@ public class PlayerInteract : MonoBehaviour
         if (interact.WasPressedThisFrame() && cursorState == CursorState.OverObject)
         {
             Interact(hit.collider.gameObject);
+            if (hit.collider.gameObject.GetComponent<TextPrompts>())
+            {
+                hit.collider.gameObject.GetComponent<TextPrompts>().ShowPrompt();
+            }
         }
         if(interact.WasPressedThisFrame()&& cursorState == CursorState.InInventory)
         {
@@ -91,6 +95,10 @@ public class PlayerInteract : MonoBehaviour
             currentItem.GetComponent<InventoryItemScript>().ReturnToPos();
             currentItem = null;
             cursorState = CursorState.None;
+            if (hit.collider.gameObject.GetComponent<TextPrompts>())
+            {
+                hit.collider.gameObject.GetComponent<TextPrompts>().ShowPrompt();
+            }
         }
         if(interact.WasPressedThisFrame() && cursorState == CursorState.OverDoor)
         {
@@ -114,7 +122,6 @@ public class PlayerInteract : MonoBehaviour
     {
         if(_hoverItem.GetComponent<ObjectProperties>() != null)
         {
-
             if (_hoverItem.GetComponent<ObjectProperties>().canUseOn)
             {
                 hoverItem = _hoverItem;
@@ -127,7 +134,6 @@ public class PlayerInteract : MonoBehaviour
                     if (hoverItem.GetComponent<ObjectProperties>().timeUsage > 0)
                         
                     {
-                        
                         //take time
                         TimeCheck();
                     }
@@ -152,8 +158,7 @@ public class PlayerInteract : MonoBehaviour
         {
             if(item.GetComponent<ObjectProperties>().timeUsage > 0)
             {
-               //take time
-                
+               //take time               
                 TimeCheck();
             }
             
