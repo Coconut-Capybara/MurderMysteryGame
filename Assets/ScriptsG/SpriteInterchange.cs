@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class SpriteInterchange : MonoBehaviour
 {
     [Header("Object Properties Script")]
-    [SerializeField] private ObjectProperties objectProperties;
+    //[SerializeField] private ObjectProperties objectProperties;
 
     [SerializeField] private GameObject thisObject;
 
@@ -33,8 +33,8 @@ public class SpriteInterchange : MonoBehaviour
     void Start()
     {
         player = GameObject.FindFirstObjectByType<PlayerInteract>();
-        originalSprite = objectProperties.itemSprite;
-        hoverSprite = objectProperties.highlightSprite;
+        //originalSprite = objectProperties.itemSprite;
+        //hoverSprite = objectProperties.highlightSprite;
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
@@ -53,12 +53,15 @@ public class SpriteInterchange : MonoBehaviour
             altSprite1 = lastObjectProperties.altSprite1;
             altSprite2 = lastObjectProperties.altSprite2;
             lastSpriteRenderer = lastObject.GetComponent<SpriteRenderer>();
-            hoverSprite = hit.collider.gameObject.GetComponent<ObjectProperties>().highlightSprite;
-            spriteRenderer.sprite = hoverSprite;
+            lastSpriteRenderer.sprite = lastHoverSprite;
+        }
+        else if(lastObject != null)
+        {
+            lastSpriteRenderer.sprite = lastOGSprite;
+            lastObject = null;
         }
         else
         {
-            spriteRenderer.sprite = originalSprite;
         }
     }
 }
