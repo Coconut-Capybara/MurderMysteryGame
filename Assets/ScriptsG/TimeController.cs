@@ -16,6 +16,10 @@ public class TimeController : MonoBehaviour
     [SerializeField] private TMP_Text timeAwayText;
     [SerializeField] private UnityEngine.UI.Button yesButton;
     [SerializeField] private UnityEngine.UI.Button noButton;
+    [SerializeField] private GameObject timerPanel;
+    [SerializeField] private TMP_Text timerText;
+
+    public bool timeUsePanel;
 
     private int tempTime;
 
@@ -28,11 +32,15 @@ public class TimeController : MonoBehaviour
     void Start()
     {
         //TimeAway(timeTestAway);
+        timeUsePanel = false;
         timePanel.SetActive(false);
+        TimeFormat();
+        timerText.text = hoursLeft.ToString() + ":" + minutesLeft.ToString() + " left";
     }
 
     public void PassTimePanel(int timeUse)
     {
+        timeUsePanel = true;
         timePanel.gameObject.SetActive(true);
         timeAwayText.text = ("time taken away is: " + timeUse + " minutes" + "\n"  + "You will have " + 
             ((timeLeft-timeUse) / 60) + " hours and " + ((timeLeft-timeUse) % 60) + " minutes left.");
@@ -42,11 +50,13 @@ public class TimeController : MonoBehaviour
     public void YesButton()
     {
         TimeAway(tempTime);
+        timeUsePanel = false;
         timePanel.SetActive(false);
     }
 
     public void NoButton()
     {
+        timeUsePanel = false;
         timePanel.gameObject.SetActive(false);
     }
     public void TimeAway(int time)
@@ -60,6 +70,7 @@ public class TimeController : MonoBehaviour
     {
         hoursLeft = timeLeft / 60;
         minutesLeft = timeLeft % 60;
+        timerText.text = hoursLeft.ToString() + ":" + minutesLeft.ToString() + " left";
         TimeOutCheck();
     }
 
@@ -74,6 +85,13 @@ public class TimeController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (timeUsePanel)
+        {
+            timerPanel.SetActive(false);
+        }
+        else
+        {
+            timerPanel.SetActive(true);
+        }
     }
 }
