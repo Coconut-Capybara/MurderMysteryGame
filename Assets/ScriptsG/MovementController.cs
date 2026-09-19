@@ -66,7 +66,7 @@ public class MovementController : MonoBehaviour
                 }
                 else
                 {
-                    print("Not a valid Move Point");
+                    //print("Not a valid Move Point");
                 }
             }
         }
