@@ -23,6 +23,8 @@ public class SpriteInterchange : MonoBehaviour
 
     [Header("Last Object Touched Data")]
     public GameObject lastObject;
+    public ObjectProperties lastObjectProperties;
+    public SpriteRenderer lastSpriteRenderer;
     public Sprite lastOGSprite;
     public Sprite lastHoverSprite;
     public Sprite lastSpriteAlt1;
@@ -44,7 +46,13 @@ public class SpriteInterchange : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit) && hit.collider.gameObject.GetComponent<SpriteInterchange>() != null)
         {
-            spriteRenderer = hit.collider.gameObject.GetComponent<SpriteRenderer>();
+            lastObject = hit.collider.gameObject;
+            lastObjectProperties = lastObject.GetComponent<ObjectProperties>();
+            lastOGSprite = lastObjectProperties.itemSprite;
+            lastHoverSprite = lastObjectProperties.highlightSprite;
+            altSprite1 = lastObjectProperties.altSprite1;
+            altSprite2 = lastObjectProperties.altSprite2;
+            lastSpriteRenderer = lastObject.GetComponent<SpriteRenderer>();
             hoverSprite = hit.collider.gameObject.GetComponent<ObjectProperties>().highlightSprite;
             spriteRenderer.sprite = hoverSprite;
         }
