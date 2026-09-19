@@ -66,6 +66,7 @@ public class InventoryItemScript : MonoBehaviour, IPointerEnterHandler, IPointer
     }
     public void SetValid()
     {
-        isValid = true; 
+        isValid = true;
+        gameObject.tag = "InInventory";
     }
 }

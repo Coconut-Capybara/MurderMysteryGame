@@ -38,6 +38,15 @@ public class ItemNeeded : MonoBehaviour
             }
         }
     }
+    public void Consume(GameObject currentItem)
+    {
+        if(currentItem.GetComponent<ObjectProperties>() != null &&
+            currentItem.GetComponent<ObjectProperties>().consumable)
+        {           
+            currentItem.SetActive(false);
+            GameObject.FindAnyObjectByType<AddToInventory>().ShiftLeft();
+        }
+    }
     public GameObject GetItemNeeded()
     {
         return itemNeeded[0];       
