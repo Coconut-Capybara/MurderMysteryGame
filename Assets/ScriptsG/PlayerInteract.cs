@@ -202,6 +202,7 @@ public class PlayerInteract : MonoBehaviour
     }
     public void TimeConfirm()
     {
+        timeController.timeUsePanel = false;
         timeController.TimeAway(hoverItem.GetComponent<ObjectProperties>().timeUsage);
         timeController.timePanel.SetActive(false);
         hoverItem.GetComponent<ObjectProperties>().timeUsage = 0;
