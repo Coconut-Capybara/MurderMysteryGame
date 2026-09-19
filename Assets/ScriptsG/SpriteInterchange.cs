@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class SpriteInterchange : MonoBehaviour
 {
     [Header("Object Properties Script")]
-    [SerializeField] private ObjectProperties objectProperties;
+    //[SerializeField] private ObjectProperties objectProperties;
 
     [SerializeField] private GameObject thisObject;
 
@@ -20,14 +20,22 @@ public class SpriteInterchange : MonoBehaviour
     public Sprite hoverSprite;
     public Sprite altSprite1;
     public Sprite altSprite2;
+
+    [Header("Last Object Touched Data")]
+    public GameObject lastObject;
+    public ObjectProperties lastObjectProperties;
+    public SpriteRenderer lastSpriteRenderer;
+    public Sprite lastOGSprite;
+    public Sprite lastHoverSprite;
+    public Sprite lastSpriteAlt1;
+    public Sprite lastSpriteAlt2;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         player = GameObject.FindFirstObjectByType<PlayerInteract>();
-        originalSprite = objectProperties.itemSprite;
-        hoverSprite = objectProperties.highlightSprite;
-        spriteRenderer = thisObject.GetComponent<SpriteRenderer>();
-        spriteRenderer.sprite = originalSprite;
+        //originalSprite = objectProperties.itemSprite;
+        //hoverSprite = objectProperties.highlightSprite;
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -38,12 +46,22 @@ public class SpriteInterchange : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit) && hit.collider.gameObject.GetComponent<SpriteInterchange>() != null)
         {
-            spriteRenderer.sprite = hoverSprite;
-
+            lastObject = hit.collider.gameObject;
+            lastObjectProperties = lastObject.GetComponent<ObjectProperties>();
+            lastOGSprite = lastObjectProperties.itemSprite;
+            lastHoverSprite = lastObjectProperties.highlightSprite;
+            altSprite1 = lastObjectProperties.altSprite1;
+            altSprite2 = lastObjectProperties.altSprite2;
+            lastSpriteRenderer = lastObject.GetComponent<SpriteRenderer>();
+            lastSpriteRenderer.sprite = lastHoverSprite;
+        }
+        else if(lastObject != null)
+        {
+            lastSpriteRenderer.sprite = lastOGSprite;
+            lastObject = null;
         }
         else
         {
-            spriteRenderer.sprite = originalSprite;   
         }
     }
 }

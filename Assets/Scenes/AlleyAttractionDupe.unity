@@ -1595,6 +1595,7 @@ GameObject:
   - component: {fileID: 573199879}
   - component: {fileID: 573199877}
   - component: {fileID: 573199878}
+  - component: {fileID: 573199880}
   m_Layer: 0
   m_Name: 2D_SideDoor_0
   m_TagString: Untagged
@@ -1725,17 +1726,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
-  thisObject: {fileID: 0}
+  thisObject: {fileID: 573199874}
   isInteractable: 1
   isGrabbable: 0
   canUseOn: 1
   consumable: 0
   timeUsage: 0
   itemDesc: "This door\u2019s just locked. Is there a key around?"
-  itemSprite: {fileID: 0}
-  highlightSprite: {fileID: 0}
+  itemSprite: {fileID: 1762484257, guid: e6ab65e6b6f7c1844950f6638a41bb4a, type: 3}
+  highlightSprite: {fileID: 643532932, guid: e6ab65e6b6f7c1844950f6638a41bb4a, type: 3}
+  altSprite1: {fileID: 643532932, guid: e6ab65e6b6f7c1844950f6638a41bb4a, type: 3}
+  altSprite2: {fileID: 643532932, guid: e6ab65e6b6f7c1844950f6638a41bb4a, type: 3}
+--- !u!114 &573199880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573199874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
+  objectProperties: {fileID: 573199879}
+  thisObject: {fileID: 573199874}
+  playerCam: {fileID: 1840529610}
+  originalSprite: {fileID: 0}
+  hoverSprite: {fileID: 0}
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
+  lastObject: {fileID: 0}
+  lastObjectProperties: {fileID: 0}
+  lastSpriteRenderer: {fileID: 0}
+  lastOGSprite: {fileID: 0}
+  lastHoverSprite: {fileID: 0}
+  lastSpriteAlt1: {fileID: 0}
+  lastSpriteAlt2: {fileID: 0}
 --- !u!1 &590653825
 GameObject:
   m_ObjectHideFlags: 0
@@ -4772,6 +4799,7 @@ GameObject:
   - component: {fileID: 2114967983}
   - component: {fileID: 2114967984}
   - component: {fileID: 2114967982}
+  - component: {fileID: 2114967987}
   m_Layer: 0
   m_Name: Env_Rock1_0
   m_TagString: Untagged
@@ -4885,17 +4913,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
-  thisObject: {fileID: 0}
+  thisObject: {fileID: 2114967978}
   isInteractable: 1
   isGrabbable: 0
   canUseOn: 1
   consumable: 0
   timeUsage: 5
   itemDesc: "This rock\u2019s plastic. And there\u2019s a key stuck to the underside!"
-  itemSprite: {fileID: 0}
-  highlightSprite: {fileID: 0}
-  altSprite1: {fileID: 0}
-  altSprite2: {fileID: 0}
+  itemSprite: {fileID: -2127731599, guid: 19cc7e1e32c10374da702bc983848460, type: 3}
+  highlightSprite: {fileID: 503531864, guid: 19cc7e1e32c10374da702bc983848460, type: 3}
+  altSprite1: {fileID: 503531864, guid: 19cc7e1e32c10374da702bc983848460, type: 3}
+  altSprite2: {fileID: 503531864, guid: 19cc7e1e32c10374da702bc983848460, type: 3}
 --- !u!114 &2114967984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4913,6 +4941,7 @@ MonoBehaviour:
   timeController: {fileID: 0}
   timeUsedTesting: 0
   key: {fileID: 3043295151955953431, guid: f5ed07d89a75df543b4a350083606087, type: 3}
+  timeLocked: 0
 --- !u!114 &2114967986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4925,6 +4954,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1ebc0e2d1f767f4690da2c04134ef46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoItemInteractions
+--- !u!114 &2114967987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114967978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
+  objectProperties: {fileID: 2114967983}
+  thisObject: {fileID: 2114967978}
+  playerCam: {fileID: 1840529610}
+  originalSprite: {fileID: 0}
+  hoverSprite: {fileID: 0}
+  altSprite1: {fileID: 0}
+  altSprite2: {fileID: 0}
+  lastObject: {fileID: 0}
+  lastObjectProperties: {fileID: 0}
+  lastSpriteRenderer: {fileID: 0}
+  lastOGSprite: {fileID: 0}
+  lastHoverSprite: {fileID: 0}
+  lastSpriteAlt1: {fileID: 0}
+  lastSpriteAlt2: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
