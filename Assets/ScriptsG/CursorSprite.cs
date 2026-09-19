@@ -17,6 +17,7 @@ public class CursorSprite : MonoBehaviour
     [SerializeField] private Texture2D holdingObjectSprite;
     [SerializeField] private Texture2D overDoorSprite;
     [SerializeField] private Texture2D inspectionSprite;
+    [SerializeField] private Vector2 pivot;
     private PlayerInteract player;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -30,13 +31,13 @@ public class CursorSprite : MonoBehaviour
         switch(player.cursorState)
         {
             case PlayerInteract.CursorState.None:
-                Cursor.SetCursor(baseCursorSprite, new Vector2(18.2f,0), CursorMode.Auto); break;
+                Cursor.SetCursor(baseCursorSprite,new Vector2(18.2f,0), CursorMode.Auto); break;
             case PlayerInteract.CursorState.InInventory:
-                Cursor.SetCursor(inventorySprite, Vector2.zero, CursorMode.Auto); break;
+                Cursor.SetCursor(inventorySprite, new Vector2(24, 6), CursorMode.Auto); break;
             case PlayerInteract.CursorState.HoldingItem:
-                Cursor.SetCursor(holdingObjectSprite, Vector2.zero, CursorMode.Auto); break;
+                Cursor.SetCursor(holdingObjectSprite, new Vector2(24, 6), CursorMode.Auto); break;
             case PlayerInteract.CursorState.OverObject:
-                Cursor.SetCursor(overObjectSprite, Vector2.zero, CursorMode.Auto); break;
+                Cursor.SetCursor(overObjectSprite, new Vector2 (23,11), CursorMode.Auto); break;
             case PlayerInteract.CursorState.OverDoor:
                 Cursor.SetCursor(overDoorSprite, Vector2.zero, CursorMode.Auto); break;
             default:

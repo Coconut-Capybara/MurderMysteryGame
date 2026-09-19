@@ -38,11 +38,12 @@ public class TimeController : MonoBehaviour
         timerText.text = hoursLeft.ToString() + ":" + minutesLeft.ToString() + " left";
     }
 
-    public void PassTimePanel(int timeUse)
+    public void PassTimePanel(int timeUse, GameObject item)
     {
         timeUsePanel = true;
         timePanel.gameObject.SetActive(true);
-        timeAwayText.text = ("time taken away is: " + timeUse + " minutes" + "\n"  + "You will have " + 
+        timeAwayText.text = (item.GetComponent<ObjectProperties>().timeText + 
+            "\ntime taken away is: " + timeUse + " minutes" + "\n"  + "You will have " + 
             ((timeLeft-timeUse) / 60) + " hours and " + ((timeLeft-timeUse) % 60) + " minutes left.");
         tempTime = timeUse;
     }
@@ -58,6 +59,7 @@ public class TimeController : MonoBehaviour
     {
         timeUsePanel = false;
         timePanel.gameObject.SetActive(false);
+        GameObject.FindFirstObjectByType<PlayerInteract>().inPrompt = false;    
     }
     public void TimeAway(int time)
     {

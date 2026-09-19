@@ -18,7 +18,7 @@ public class DoorScript : ItemNeeded
     {
         if (isLocked)
         {
-            print("Door locked get key");
+            GameObject.FindFirstObjectByType<TextPrompts>().ShowPrompt("Door is locked, find key");
         }
         else
         {
@@ -44,7 +44,7 @@ public class DoorScript : ItemNeeded
             currentItem.GetComponent<InventoryItemScript>().GetItemId())
         {
             SetLockState();
-            GetComponent<ObjectProperties>().itemDesc = "Unlocked";
+            GetComponent<ObjectProperties>().itemDesc = "Unlocked door";
             Consume(currentItem);       
         }
     }

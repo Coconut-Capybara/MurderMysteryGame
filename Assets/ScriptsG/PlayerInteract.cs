@@ -19,6 +19,7 @@ public class PlayerInteract : MonoBehaviour
     private bool itemUseLock;
     private GameObject lockedItem;
     private TimeController timeController;
+    public bool inPrompt;
     public enum CursorState
     {
         None,
@@ -40,69 +41,66 @@ public class PlayerInteract : MonoBehaviour
     /// </summary>
     void Update()
     {
-        Vector3 cursorPos = Mouse.current.position.ReadValue();
-        Ray ray = Camera.main.ScreenPointToRay(cursorPos);
-        RaycastHit hit;
-        if (Physics.Raycast(ray, out hit))
+        if (!inPrompt)
         {
-            if(hit.collider.GetComponent<ObjectProperties>() != null)
+            Vector3 cursorPos = Mouse.current.position.ReadValue();
+            Ray ray = Camera.main.ScreenPointToRay(cursorPos);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit))
             {
-                if (hit.collider.GetComponent<ObjectProperties>().isGrabbable ||
-                    hit.collider.GetComponent<ObjectProperties>().isInteractable || 
-                    hit.collider.GetComponent<ObjectProperties>().canUseOn)
+                if (hit.collider.GetComponent<ObjectProperties>() != null)
                 {
-                    if(cursorState is not (CursorState.InInventory or CursorState.HoldingItem))
+                    if (hit.collider.GetComponent<ObjectProperties>().isGrabbable ||
+                        hit.collider.GetComponent<ObjectProperties>().isInteractable ||
+                        hit.collider.GetComponent<ObjectProperties>().canUseOn)
                     {
-                        cursorState = CursorState.OverObject;
-                    }                    
+                        if (cursorState is not (CursorState.InInventory or CursorState.HoldingItem)
+                            && hit.collider.GetComponent<DoorScript>() == null)
+                        {
+                            cursorState = CursorState.OverObject;
+                        }
+                    }
+                     if (hit.collider.GetComponent<DoorScript>() != null && cursorState is not (CursorState.InInventory
+                         or CursorState.HoldingItem))
+                    {
+                        cursorState = CursorState.OverDoor;
+                    }
                 }
-                else if (hit.collider.GetComponent<DoorScript>() != null && cursorState is not (CursorState.InInventory
-                     or CursorState.HoldingItem))
+                else if (hit.collider.GetComponent<ObjectProperties>() == null && cursorState is not (CursorState.InInventory
+                         or CursorState.HoldingItem))
                 {
-                    cursorState = CursorState.OverDoor;
+                    cursorState = CursorState.None;
+                    GameObject.FindFirstObjectByType<ItemInspections>().HideItemDescPanel();
                 }
             }
-            else if (hit.collider.GetComponent<ObjectProperties>() == null && cursorState is not (CursorState.InInventory
-                     or CursorState.HoldingItem))
+            else if (cursorState is not (CursorState.InInventory or CursorState.HoldingItem))
             {
                 cursorState = CursorState.None;
                 GameObject.FindFirstObjectByType<ItemInspections>().HideItemDescPanel();
             }
-        }
-        else if(cursorState is not (CursorState.InInventory or CursorState.HoldingItem)) 
-        {
-            cursorState = CursorState.None;
-            GameObject.FindFirstObjectByType<ItemInspections>().HideItemDescPanel();
-        }
 
 
-        if (interact.WasPressedThisFrame() && cursorState == CursorState.OverObject)
-        {
-            Interact(hit.collider.gameObject);
-            if (hit.collider.gameObject.GetComponent<TextPrompts>())
+            if (interact.WasPressedThisFrame() && cursorState == CursorState.OverObject)
             {
-                hit.collider.gameObject.GetComponent<TextPrompts>().ShowPrompt();
+                Interact(hit.collider.gameObject);
+                
             }
-        }
-        if(interact.WasPressedThisFrame()&& cursorState == CursorState.InInventory)
-        {
-            currentItem.GetComponent<InventoryItemScript>().SetIsGrabbed();
-            cursorState = CursorState.HoldingItem;
-        }
-        if(interact.WasReleasedThisFrame() && cursorState == CursorState.HoldingItem)
-        {
-            ItemUsageCheck(hit.collider.gameObject,currentItem);
-            currentItem.GetComponent<InventoryItemScript>().ReturnToPos();
-            currentItem = null;
-            cursorState = CursorState.None;
-            if (hit.collider.gameObject.GetComponent<TextPrompts>())
+            if (interact.WasPressedThisFrame() && cursorState == CursorState.InInventory)
             {
-                hit.collider.gameObject.GetComponent<TextPrompts>().ShowPrompt();
+                currentItem.GetComponent<InventoryItemScript>().SetIsGrabbed();
+                cursorState = CursorState.HoldingItem;
             }
-        }
-        if(interact.WasPressedThisFrame() && cursorState == CursorState.OverDoor)
-        {
-            DoorCheck();
+            if (interact.WasReleasedThisFrame() && cursorState == CursorState.HoldingItem)
+            {
+                ItemUsageCheck(hit.collider.gameObject, currentItem);
+                currentItem.GetComponent<InventoryItemScript>().ReturnToPos();
+                currentItem = null;
+                cursorState = CursorState.None;
+            }
+            if (interact.WasPressedThisFrame() && cursorState == CursorState.OverDoor)
+            {
+                DoorCheck();
+            }
         }
     }
     private void DoorCheck()
@@ -131,8 +129,7 @@ public class PlayerInteract : MonoBehaviour
                     == hoverItem.GetComponent<ItemNeeded>().GetItemNeeded().GetComponent<InventoryItemScript>().GetItemId())
                 {
                     itemUseLock = true;
-                    if (hoverItem.GetComponent<ObjectProperties>().timeUsage > 0)
-                        
+                    if (hoverItem.GetComponent<ObjectProperties>().timeUsage > 0)                        
                     {
                         //take time
                         TimeCheck();
@@ -142,10 +139,16 @@ public class PlayerInteract : MonoBehaviour
                     {
                         //perform
                         hoverItem.GetComponent<ItemNeeded>().ItemUsage(_currentItem);
+                        if (_hoverItem.GetComponent<ObjectProperties>().givesPrompt)
+                        {
+                            GetComponent<TextPrompts>().ShowPrompt(_hoverItem.GetComponent<ObjectProperties>()
+                                .prompt);
+                        }
                     }
                 }
             }
         }
+        
     }
     /// <summary>
     /// Puts objects in inventory if able 
@@ -166,31 +169,33 @@ public class PlayerInteract : MonoBehaviour
             {
                //give item
                 item.GetComponent<GrabbableObject>().Collected();
+                if (item.GetComponent<ObjectProperties>().givesPrompt)
+                {
+                    GetComponent<TextPrompts>().ShowPrompt(item.GetComponent<ObjectProperties>()
+                        .prompt);
+                }
             }
         }
         //interactable
         else if (item.GetComponent<ObjectProperties>().isInteractable)
         {
-            if(item.GetComponent<ObjectProperties>().timeUsage > 0
-                && hoverItem.GetComponent<RockScript>() == null)//temp remove later
+            if(item.GetComponent<ObjectProperties>().timeUsage > 0 && !hoverItem.GetComponent<ObjectProperties>().timeLock)
             {
                 //take time
                 TimeCheck();    
             }
-            //temp remove later
-            else if (hoverItem.GetComponent<RockScript>() != null)
-            {
-                if (!hoverItem.GetComponent<RockScript>().timeLocked)
-                {
-                    TimeCheck();
-                }
-            }
             else
             {
                 //perform
-                item.GetComponent<NoItemInteractions>().NoItemFunciton();   
+                item.GetComponent<NoItemInteractions>().NoItemFunciton();
+                if (item.GetComponent<ObjectProperties>().givesPrompt)
+                {
+                    GetComponent<TextPrompts>().ShowPrompt(item.GetComponent<ObjectProperties>()
+                        .prompt);
+                }
             }
-        }            
+        }
+        
     }
     public GameObject GetCurrentItem()
     {
@@ -203,28 +208,35 @@ public class PlayerInteract : MonoBehaviour
     private void TimeCheck()
     {
         //turns on panel
-        timeController.PassTimePanel(hoverItem.GetComponent<ObjectProperties>().timeUsage);
+        timeController.PassTimePanel(hoverItem.GetComponent<ObjectProperties>().timeUsage,hoverItem);
+        cursorState = CursorState.None;
+        inPrompt = true;
     }
     public void TimeConfirm()
     {
+        inPrompt = false;   
         timeController.timeUsePanel = false;
         timeController.TimeAway(hoverItem.GetComponent<ObjectProperties>().timeUsage);
         timeController.timePanel.SetActive(false);
         hoverItem.GetComponent<ObjectProperties>().timeUsage = 0;
+        if (hoverItem.GetComponent<RockScript>() != null)
+        {
+            hoverItem.GetComponent<RockScript>().timeLocked = true;
+        }
         if (itemUseLock)
         {
             ItemUsageCheck(hoverItem, lockedItem);
         }
         else
         {
-            Interact(hoverItem);
-            //temp remove later
-            if (hoverItem.GetComponent<RockScript>()  != null)
-            {
-                hoverItem.GetComponent<RockScript>().timeLocked = true;
-                hoverItem.GetComponent<ObjectProperties>().timeUsage += 5;
-            }
+            hoverItem.GetComponent<ObjectProperties>().timeLock = true;
+            Interact(hoverItem);            
         }
+    }
+
+    public void HidePrompt()
+    {
+       GameObject.FindFirstObjectByType<TextPrompts>().HidePrompt();
     }
 
 }

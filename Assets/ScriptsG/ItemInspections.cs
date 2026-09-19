@@ -74,7 +74,7 @@ public class ItemInspections : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (inspect.WasPressedThisFrame())
+        if (inspect.WasPressedThisFrame() && !GameObject.FindFirstObjectByType<PlayerInteract>().inPrompt)
         {
             Inspect();      
         }
