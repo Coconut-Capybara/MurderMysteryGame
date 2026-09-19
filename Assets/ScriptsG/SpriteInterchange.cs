@@ -41,27 +41,30 @@ public class SpriteInterchange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 cursorPos = Mouse.current.position.ReadValue();
-        Ray ray = playerCam.ScreenPointToRay(cursorPos);
-        RaycastHit hit;
-        if (Physics.Raycast(ray, out hit) && hit.collider.gameObject.GetComponent<SpriteInterchange>() != null)
+        if (!player.inPrompt)
         {
-            lastObject = hit.collider.gameObject;
-            lastObjectProperties = lastObject.GetComponent<ObjectProperties>();
-            lastOGSprite = lastObjectProperties.itemSprite;
-            lastHoverSprite = lastObjectProperties.highlightSprite;
-            altSprite1 = lastObjectProperties.altSprite1;
-            altSprite2 = lastObjectProperties.altSprite2;
-            lastSpriteRenderer = lastObject.GetComponent<SpriteRenderer>();
-            lastSpriteRenderer.sprite = lastHoverSprite;
-        }
-        else if(lastObject != null)
-        {
-            lastSpriteRenderer.sprite = lastOGSprite;
-            lastObject = null;
-        }
-        else
-        {
+            Vector3 cursorPos = Mouse.current.position.ReadValue();
+            Ray ray = playerCam.ScreenPointToRay(cursorPos);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit) && hit.collider.gameObject.GetComponent<SpriteInterchange>() != null)
+            {
+                lastObject = hit.collider.gameObject;
+                lastObjectProperties = lastObject.GetComponent<ObjectProperties>();
+                lastOGSprite = lastObjectProperties.itemSprite;
+                lastHoverSprite = lastObjectProperties.highlightSprite;
+                altSprite1 = lastObjectProperties.altSprite1;
+                altSprite2 = lastObjectProperties.altSprite2;
+                lastSpriteRenderer = lastObject.GetComponent<SpriteRenderer>();
+                lastSpriteRenderer.sprite = lastHoverSprite;
+            }
+            else if (lastObject != null)
+            {
+                lastSpriteRenderer.sprite = lastOGSprite;
+                lastObject = null;
+            }
+            else
+            {
+            }
         }
     }
 }

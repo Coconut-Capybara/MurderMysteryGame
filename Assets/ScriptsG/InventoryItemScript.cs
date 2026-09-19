@@ -20,7 +20,7 @@ public class InventoryItemScript : MonoBehaviour, IPointerEnterHandler, IPointer
     private bool isValid;
     void IPointerEnterHandler.OnPointerEnter(PointerEventData eventData)
     {
-        if (isValid && player.cursorState != PlayerInteract.CursorState.HoldingItem)
+        if (isValid && player.cursorState != PlayerInteract.CursorState.HoldingItem && !player.inPrompt)
         {
             player.cursorState = PlayerInteract.CursorState.InInventory;
             player.SetCurrentItem(this.gameObject); 
@@ -29,7 +29,7 @@ public class InventoryItemScript : MonoBehaviour, IPointerEnterHandler, IPointer
 
     void IPointerExitHandler.OnPointerExit(PointerEventData eventData)
     {
-        if(isValid && player.cursorState != PlayerInteract.CursorState.HoldingItem)
+        if(isValid && player.cursorState != PlayerInteract.CursorState.HoldingItem && !player.inPrompt)
         {
             player.cursorState = PlayerInteract.CursorState.None;
             player.SetCurrentItem(null);
@@ -46,7 +46,7 @@ public class InventoryItemScript : MonoBehaviour, IPointerEnterHandler, IPointer
     }
     void Update()
     {
-        if (grabbed)
+        if (grabbed && !player.inPrompt)
         {
             Vector2 mousePosition = Mouse.current.position.ReadValue();
             GetComponent<RectTransform>().position = mousePosition;
