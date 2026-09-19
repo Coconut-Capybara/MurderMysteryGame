@@ -1,10 +1,16 @@
 using UnityEngine;
 
-public class GivePlayerItem : MonoBehaviour
+public class GivePlayerItem : NoItemInteractions
 {
     [SerializeField] private GameObject itemPrefab;
     [SerializeField] private int amount;
-    public void GiveItem()
+
+
+    public override void NoItemFunciton()
+    {
+        GiveItem(itemPrefab);
+    }
+    public void GiveItem(GameObject item)
     {
         if(amount > 0)
         {

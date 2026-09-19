@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8115310762932168416}
   - component: {fileID: 1662121843347185288}
   - component: {fileID: 1564318246534261144}
+  - component: {fileID: -3443945242576975341}
   - component: {fileID: 2810383107063591677}
   m_Layer: 5
   m_Name: Screwdriver
@@ -76,6 +77,29 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &-3443945242576975341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3043295151955953431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
+  thisObject: {fileID: 0}
+  isInteractable: 0
+  isGrabbable: 0
+  canUseOn: 0
+  consumable: 1
+  timeUsage: 0
+  itemDesc: 
+  itemSprite: {fileID: 0}
+  highlightSprite: {fileID: 0}
+  altSprite1: {fileID: 0}
+  altSprite2: {fileID: 0}
 --- !u!114 &2810383107063591677
 MonoBehaviour:
   m_ObjectHideFlags: 0

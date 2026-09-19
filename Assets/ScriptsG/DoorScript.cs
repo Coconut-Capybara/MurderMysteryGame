@@ -45,6 +45,7 @@ public class DoorScript : ItemNeeded
         {
             SetLockState();
             GetComponent<ObjectProperties>().itemDesc = "Unlocked";
+            Consume(currentItem);       
         }
     }
 }

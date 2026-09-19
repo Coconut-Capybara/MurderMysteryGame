@@ -14,7 +14,11 @@ public class PlayerInteract : MonoBehaviour
 {
     [SerializeField] private Camera playerCam;
     InputAction interact;
-    private GameObject currentItem;
+    [SerializeField] private GameObject currentItem;
+    [SerializeField] private GameObject hoverItem;
+    private bool itemUseLock;
+    private GameObject lockedItem;
+    private TimeController timeController;
     public enum CursorState
     {
         None,
@@ -26,7 +30,9 @@ public class PlayerInteract : MonoBehaviour
     public CursorState cursorState;
     void Start()
     {
+        timeController = GameObject.FindFirstObjectByType<TimeController>();    
         interact = InputSystem.actions.FindAction("Interact");
+        itemUseLock = false;
     }
 
     /// <summary>
@@ -81,7 +87,7 @@ public class PlayerInteract : MonoBehaviour
         }
         if(interact.WasReleasedThisFrame() && cursorState == CursorState.HoldingItem)
         {
-            ItemUsageCheck();
+            ItemUsageCheck(hit.collider.gameObject,currentItem);
             currentItem.GetComponent<InventoryItemScript>().ReturnToPos();
             currentItem = null;
             cursorState = CursorState.None;
@@ -104,41 +110,82 @@ public class PlayerInteract : MonoBehaviour
             }
         }
     }
-    private void ItemUsageCheck()
+    private void ItemUsageCheck(GameObject _hoverItem, GameObject _currentItem)
     {
-        
-        Vector3 cursorPos = Mouse.current.position.ReadValue();
-        Ray ray = playerCam.ScreenPointToRay(cursorPos);
-        RaycastHit hit;
-        if (Physics.Raycast(ray, out hit))
+        if(_hoverItem.GetComponent<ObjectProperties>() != null)
         {
-            if (hit.collider.GetComponent<ObjectProperties>() != null &&
-                hit.collider.GetComponent<ItemNeeded>() != null)
+
+            if (_hoverItem.GetComponent<ObjectProperties>().canUseOn)
             {
-                hit.collider.GetComponent<ItemNeeded>().ItemUsage(currentItem);
+                hoverItem = _hoverItem;
+                lockedItem = _currentItem;
+                //matched
+                if (_currentItem.GetComponent<InventoryItemScript>().GetItemId()
+                    == hoverItem.GetComponent<ItemNeeded>().GetItemNeeded().GetComponent<InventoryItemScript>().GetItemId())
+                {
+                    itemUseLock = true;
+                    if (hoverItem.GetComponent<ObjectProperties>().timeUsage > 0)
+                        
+                    {
+                        
+                        //take time
+                        TimeCheck();
+                    }
+                    
+                    else
+                    {
+                        //perform
+                        hoverItem.GetComponent<ItemNeeded>().ItemUsage(_currentItem);
+                    }
+                }
             }
-        }                  
+        }
     }
     /// <summary>
     /// Puts objects in inventory if able 
     /// </summary>
     private void Interact(GameObject item)
-    {        
-        Vector3 cursorPos = Mouse.current.position.ReadValue();
-        Ray ray = playerCam.ScreenPointToRay(cursorPos);
-        RaycastHit hit;
-        if (Physics.Raycast(ray, out hit))
+    {
+        hoverItem = item;
+        //grabbable
+        if (item.GetComponent<ObjectProperties>().isGrabbable)
         {
-            if (hit.collider.GetComponent<ObjectProperties>().isGrabbable)
+            if(item.GetComponent<ObjectProperties>().timeUsage > 0)
             {
+               //take time
+                
+                TimeCheck();
+            }
+            
+            else
+            {
+               //give item
                 item.GetComponent<GrabbableObject>().Collected();
             }
-            else if (hit.collider.GetComponent<GivePlayerItem>() != null && 
-                hit.collider.GetComponent<ObjectProperties>().isInteractable)
-            {
-                hit.collider.GetComponent<GivePlayerItem>().GiveItem(); 
-            }
         }
+        //interactable
+        else if (item.GetComponent<ObjectProperties>().isInteractable)
+        {
+            if(item.GetComponent<ObjectProperties>().timeUsage > 0
+                && hoverItem.GetComponent<RockScript>() == null)//temp remove later
+            {
+                //take time
+                TimeCheck();    
+            }
+            //temp remove later
+            else if (hoverItem.GetComponent<RockScript>() != null)
+            {
+                if (!hoverItem.GetComponent<RockScript>().timeLocked)
+                {
+                    TimeCheck();
+                }
+            }
+            else
+            {
+                //perform
+                item.GetComponent<NoItemInteractions>().NoItemFunciton();   
+            }
+        }            
     }
     public GameObject GetCurrentItem()
     {
@@ -148,4 +195,30 @@ public class PlayerInteract : MonoBehaviour
     {
         currentItem = item; 
     }
+    private void TimeCheck()
+    {
+        //turns on panel
+        timeController.PassTimePanel(hoverItem.GetComponent<ObjectProperties>().timeUsage);
+    }
+    public void TimeConfirm()
+    {
+        timeController.TimeAway(hoverItem.GetComponent<ObjectProperties>().timeUsage);
+        timeController.timePanel.SetActive(false);
+        hoverItem.GetComponent<ObjectProperties>().timeUsage = 0;
+        if (itemUseLock)
+        {
+            ItemUsageCheck(hoverItem, lockedItem);
+        }
+        else
+        {
+            Interact(hoverItem);
+            //temp remove later
+            if (hoverItem.GetComponent<RockScript>()  != null)
+            {
+                hoverItem.GetComponent<RockScript>().timeLocked = true;
+                hoverItem.GetComponent<ObjectProperties>().timeUsage += 5;
+            }
+        }
+    }
+
 }

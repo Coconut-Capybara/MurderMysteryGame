@@ -34,4 +34,14 @@ public class AddToInventory : MonoBehaviour
         itemIcon.GetComponent<InventoryItemScript>().SetValid();
         currentIconPos += iconPivot;
     }
+    public void ShiftLeft()
+    {
+        currentIconPos -= iconPivot;
+        GameObject[] inventory = GameObject.FindGameObjectsWithTag("InInventory");
+        foreach(GameObject item in inventory)
+        {
+            item.GetComponent<RectTransform>().anchoredPosition = (currentIconPos - iconPivot);
+            item.GetComponent<InventoryItemScript>().SetOrgin(currentIconPos - iconPivot);   
+        }
+    }
 }

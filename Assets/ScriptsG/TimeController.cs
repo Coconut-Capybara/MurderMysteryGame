@@ -12,7 +12,7 @@ public class TimeController : MonoBehaviour
     [SerializeField] private int minutesLeft;
 
     [Header("Time UI Elements")]
-    [SerializeField] private GameObject timePanel;
+    public GameObject timePanel;
     [SerializeField] private TMP_Text timeAwayText;
     [SerializeField] private UnityEngine.UI.Button yesButton;
     [SerializeField] private UnityEngine.UI.Button noButton;
