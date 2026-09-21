@@ -3,7 +3,7 @@
 // Author : Gabriel Andrews
 // Additional Author(s) :
 // Creation Date:9/12/26
-// Last Modified Date: 9/12/26
+// Last Modified Date: 9/19/26
 //
 // Summary : Will handle player movement through doors
 *****************************************************************************/
@@ -16,6 +16,9 @@ public class DoorScript : ItemNeeded
 
     [SerializeField] private VertSliceEndScreen vertSliceEndScreen;
     private GameObject vertSlicePanel;
+    /// <summary>
+    /// Checks whether the door is locked, enters if so
+    /// </summary>
     public void DoorLogic()
     {
         if (isLocked)
@@ -27,6 +30,9 @@ public class DoorScript : ItemNeeded
             EnterDoor();    
         }
     }
+    /// <summary>
+    /// Moves camera to new position through door
+    /// </summary>
     public void EnterDoor()
     {
         //camera movement here
@@ -43,6 +49,10 @@ public class DoorScript : ItemNeeded
     {
         return isLocked;       
     }
+    /// <summary>
+    /// checks if player is holding the correct key, unlocks door if so 
+    /// </summary>
+    /// <param name="currentItem"></param>
     public override void ItemUsage(GameObject currentItem)
     {
         if(GetItemNeeded().GetComponent<InventoryItemScript>().GetItemId() ==

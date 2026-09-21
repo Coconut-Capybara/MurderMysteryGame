@@ -18,6 +18,10 @@ public class InventoryItemScript : MonoBehaviour, IPointerEnterHandler, IPointer
     private PlayerInteract player;
     private Vector2 orgin;
     private bool isValid;
+    /// <summary>
+    /// Checks if cursor is over inventory object
+    /// </summary>
+    /// <param name="eventData"></param>
     void IPointerEnterHandler.OnPointerEnter(PointerEventData eventData)
     {
         if (isValid && player.cursorState != PlayerInteract.CursorState.HoldingItem && !player.inPrompt)
@@ -26,7 +30,10 @@ public class InventoryItemScript : MonoBehaviour, IPointerEnterHandler, IPointer
             player.SetCurrentItem(this.gameObject); 
         }
     }
-
+    /// <summary>
+    /// Checks for when cursor is leaves inventory object
+    /// </summary>
+    /// <param name="eventData"></param>
     void IPointerExitHandler.OnPointerExit(PointerEventData eventData)
     {
         if(isValid && player.cursorState != PlayerInteract.CursorState.HoldingItem && !player.inPrompt)
@@ -39,11 +46,17 @@ public class InventoryItemScript : MonoBehaviour, IPointerEnterHandler, IPointer
     {
         player = GameObject.FindFirstObjectByType<PlayerInteract>();            
     }
+    /// <summary>
+    /// Returns inventory object back to inventory position
+    /// </summary>
     public void ReturnToPos()
     {
         grabbed = false; 
         GetComponent<RectTransform>().anchoredPosition = orgin;
     }
+    /// <summary>
+    /// Sets item position to mouse cursor to grab
+    /// </summary>
     void Update()
     {
         if (grabbed && !player.inPrompt)

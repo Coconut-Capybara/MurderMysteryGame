@@ -3,7 +3,7 @@
 // Author : Gabriel Andrews
 // Additional Author(s) :
 // Creation Date:9/7/26
-// Last Modified Date: 9/12/26
+// Last Modified Date: 9/19/26
 //
 // Summary : Handles adding items to the players inventory
 *****************************************************************************/
@@ -24,7 +24,10 @@ public class AddToInventory : MonoBehaviour
         item.GetComponent<GrabbableObject>().MoveIcon();
         currentIconPos += iconPivot;  
     }
-
+    /// <summary>
+    /// Instntiates inventory item, and adds it
+    /// </summary>
+    /// <param name="item"></param>
     public void AddNonWorldItem(GameObject item)
     {
         item.GetComponent<RectTransform>().anchoredPosition = currentIconPos;
@@ -34,6 +37,10 @@ public class AddToInventory : MonoBehaviour
         itemIcon.GetComponent<InventoryItemScript>().SetValid();
         currentIconPos += iconPivot;
     }
+    /// <summary>
+    /// Shifts the inventory items 1 slot left after
+    /// a consumable is used
+    /// </summary>
     public void ShiftLeft()
     {
         currentIconPos -= iconPivot;
