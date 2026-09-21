@@ -3,7 +3,7 @@
 // Author : Gabriel Andrews
 // Additional Author(s) :
 // Creation Date:9/7/26
-// Last Modified Date: 9/15/26
+// Last Modified Date: 9/19/26
 //
 // Summary : Handles all player input, and changes the cursor state
 *****************************************************************************/
@@ -20,6 +20,9 @@ public class PlayerInteract : MonoBehaviour
     private GameObject lockedItem;
     private TimeController timeController;
     public bool inPrompt;
+    /// <summary>
+    /// The current state of the players cursor
+    /// </summary>
     public enum CursorState
     {
         None,
@@ -103,6 +106,9 @@ public class PlayerInteract : MonoBehaviour
             }
         }
     }
+    /// <summary>
+    /// Checks if the player clicked a door
+    /// </summary>
     private void DoorCheck()
     {
         Vector3 cursorPos = Mouse.current.position.ReadValue();
@@ -116,6 +122,11 @@ public class PlayerInteract : MonoBehaviour
             }
         }
     }
+    /// <summary>
+    /// checks if the player used an item on another item
+    /// </summary>
+    /// <param name="_hoverItem"></param>
+    /// <param name="_currentItem"></param>
     private void ItemUsageCheck(GameObject _hoverItem, GameObject _currentItem)
     {
         if(_hoverItem.GetComponent<ObjectProperties>() != null)
@@ -124,20 +135,17 @@ public class PlayerInteract : MonoBehaviour
             {
                 hoverItem = _hoverItem;
                 lockedItem = _currentItem;
-                //matched
                 if (_currentItem.GetComponent<InventoryItemScript>().GetItemId()
                     == hoverItem.GetComponent<ItemNeeded>().GetItemNeeded().GetComponent<InventoryItemScript>().GetItemId())
                 {
                     itemUseLock = true;
                     if (hoverItem.GetComponent<ObjectProperties>().timeUsage > 0)                        
                     {
-                        //take time
                         TimeCheck();
                     }
                     
                     else
                     {
-                        //perform
                         hoverItem.GetComponent<ItemNeeded>().ItemUsage(_currentItem);
                         if (_hoverItem.GetComponent<ObjectProperties>().givesPrompt)
                         {
@@ -151,23 +159,20 @@ public class PlayerInteract : MonoBehaviour
         
     }
     /// <summary>
-    /// Puts objects in inventory if able 
+    /// Performs objects interaction, when interacted with
     /// </summary>
     private void Interact(GameObject item)
     {
         hoverItem = item;
-        //grabbable
         if (item.GetComponent<ObjectProperties>().isGrabbable)
         {
             if(item.GetComponent<ObjectProperties>().timeUsage > 0)
-            {
-               //take time               
+            {            
                 TimeCheck();
             }
             
             else
             {
-               //give item
                 item.GetComponent<GrabbableObject>().Collected();
                 if (item.GetComponent<ObjectProperties>().givesPrompt)
                 {
@@ -176,17 +181,14 @@ public class PlayerInteract : MonoBehaviour
                 }
             }
         }
-        //interactable
         else if (item.GetComponent<ObjectProperties>().isInteractable)
         {
             if(item.GetComponent<ObjectProperties>().timeUsage > 0 && !hoverItem.GetComponent<ObjectProperties>().timeLock)
             {
-                //take time
                 TimeCheck();    
             }
             else
             {
-                //perform
                 item.GetComponent<NoItemInteractions>().NoItemFunciton();
                 if (item.GetComponent<ObjectProperties>().givesPrompt)
                 {
@@ -205,13 +207,18 @@ public class PlayerInteract : MonoBehaviour
     {
         currentItem = item; 
     }
+    /// <summary>
+    /// Turns on time panel
+    /// </summary>
     private void TimeCheck()
     {
-        //turns on panel
         timeController.PassTimePanel(hoverItem.GetComponent<ObjectProperties>().timeUsage,hoverItem);
         cursorState = CursorState.None;
         inPrompt = true;
     }
+    /// <summary>
+    /// Confirms the player wants to pass time
+    /// </summary>
     public void TimeConfirm()
     {
         inPrompt = false;   
