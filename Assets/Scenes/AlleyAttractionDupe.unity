@@ -391,7 +391,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1704,7 +1704,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &439106177
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1712,17 +1712,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 439106176}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.8, y: 1.8, z: 1.8}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1420164430}
-  m_Father: {fileID: 1401430773}
+  m_Father: {fileID: 1026389778}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.0040283203, y: 0.0015869141}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &439106178
@@ -2332,7 +2332,6 @@ MonoBehaviour:
   itemNeeded:
   - {fileID: 3043295151955953431, guid: f5ed07d89a75df543b4a350083606087, type: 3}
   timeController: {fileID: 0}
-  timeUsedTesting: 0
   isLocked: 1
   vertSliceEndScreen: {fileID: 0}
 --- !u!65 &573199878
@@ -2945,7 +2944,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextPrompts
   promptPanel: {fileID: 1401430772}
+  continueButton: {fileID: 439106176}
   promptText: {fileID: 97235014}
+  textSpeed: 0.05
 --- !u!1 &737877281
 GameObject:
   m_ObjectHideFlags: 0
@@ -3472,7 +3473,7 @@ MonoBehaviour:
   timeUsage: 15
   itemDesc: "I\u2019d rather not, but I could probably find something useful in here.
     It\u2019ll take me a bit though. "
-  prompt: you dug through the trash, and found a screw driver
+  prompt: you dig through the trash, and find a screw driver
   timeText: You are about to dig through the trash
   itemSprite: {fileID: -124036167, guid: c35e5cb75758a73449c6d7a38d729d5e, type: 3}
   highlightSprite: {fileID: -2124162544, guid: c35e5cb75758a73449c6d7a38d729d5e, type: 3}
@@ -4077,6 +4078,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1401430773}
+  - {fileID: 439106177}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -5419,7 +5421,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 97235013}
-  - {fileID: 439106177}
   m_Father: {fileID: 1026389778}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -7189,7 +7190,6 @@ MonoBehaviour:
   itemNeeded:
   - {fileID: 3043295151955953431, guid: af4429b390e0f4242889d5d6c2ad0a3f, type: 3}
   timeController: {fileID: 0}
-  timeUsedTesting: 0
   key: {fileID: 3043295151955953431, guid: f5ed07d89a75df543b4a350083606087, type: 3}
   timeLocked: 0
 --- !u!114 &2114967986
