@@ -42,6 +42,10 @@ public class ItemInspections : MonoBehaviour
             }
         }
     }
+    /// <summary>
+    /// shows description panel, starts text coroutine
+    /// </summary>
+    /// <param name="item"></param>
     private void ShowItemDescPanel(GameObject item)
     {
         if (!descLocked)
@@ -51,6 +55,9 @@ public class ItemInspections : MonoBehaviour
             descLocked = true;
         }
     }
+    /// <summary>
+    /// hides description panel
+    /// </summary>
     public void HideItemDescPanel()
     {
         descLocked = false; 
@@ -61,6 +68,11 @@ public class ItemInspections : MonoBehaviour
         }          
         itemDesc.text = " ";
     }
+    /// <summary>
+    /// Displys text, character by character
+    /// </summary>
+    /// <param name="text"></param>
+    /// <returns></returns>
     private IEnumerator ShowText(string text)
     {
         int i = 0;
