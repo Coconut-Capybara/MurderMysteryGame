@@ -14,6 +14,8 @@ public class DoorScript : ItemNeeded
 {
     [SerializeField] private bool isLocked;
 
+    [SerializeField] private VertSliceEndScreen vertSliceEndScreen;
+    private GameObject vertSlicePanel;
     public void DoorLogic()
     {
         if (isLocked)
@@ -28,6 +30,9 @@ public class DoorScript : ItemNeeded
     public void EnterDoor()
     {
         //camera movement here
+        vertSliceEndScreen = FindAnyObjectByType<VertSliceEndScreen>();
+        vertSlicePanel = vertSliceEndScreen.vertSlicePanel;
+        vertSlicePanel.SetActive(true);
         print("You enter the door");
     }
     public void SetLockState()
