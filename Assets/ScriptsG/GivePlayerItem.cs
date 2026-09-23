@@ -25,6 +25,10 @@ public class GivePlayerItem : NoItemInteractions
         {
             fuckassRock.GetComponent<ObjectProperties>().timeLock = false;
         }
+        if(gameObject.name == "2D_DumpsterInspect")
+        {
+            GetComponent<ObjectProperties>().prompt = "I don't think theres anything left in here";
+        }
     }
     public void GiveItem(GameObject item)
     {
