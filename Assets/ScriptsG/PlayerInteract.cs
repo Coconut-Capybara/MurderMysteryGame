@@ -189,13 +189,13 @@ public class PlayerInteract : MonoBehaviour
                 TimeCheck();    
             }
             else
-            {
-                item.GetComponent<NoItemInteractions>().NoItemFunciton();
+            {                
                 if (item.GetComponent<ObjectProperties>().givesPrompt)
                 {
                     GetComponent<TextPrompts>().ShowPrompt(item.GetComponent<ObjectProperties>()
                         .prompt);
                 }
+                item.GetComponent<NoItemInteractions>().NoItemFunciton();
             }
         }
         
