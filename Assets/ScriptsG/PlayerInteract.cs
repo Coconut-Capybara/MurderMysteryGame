@@ -229,10 +229,7 @@ public class PlayerInteract : MonoBehaviour
         timeController.TimeAway(hoverItem.GetComponent<ObjectProperties>().timeUsage);
         timeController.timePanel.SetActive(false);
         hoverItem.GetComponent<ObjectProperties>().timeUsage = 0;
-        if (hoverItem.GetComponent<RockScript>() != null)
-        {
-            //hoverItem.GetComponent<RockScript>().timeLocked = true;
-        }
+    
         if (itemUseLock)
         {
             ItemUsageCheck(hoverItem, lockedItem);
@@ -240,7 +237,11 @@ public class PlayerInteract : MonoBehaviour
         else
         {
             hoverItem.GetComponent<ObjectProperties>().timeLock = true;
-            Interact(hoverItem);            
+            Interact(hoverItem);
+            if (hoverItem.GetComponent<RockScript>() != null)
+            {
+                hoverItem.GetComponent<ObjectProperties>().givesPrompt = false;
+            }
         }
     }
 
