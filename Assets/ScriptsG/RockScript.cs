@@ -25,7 +25,7 @@ public class RockScript : ItemNeeded
             this.gameObject.GetComponent<ObjectProperties>().timeUsage = 5;
             GetComponent<ObjectProperties>().givesPrompt = true;
             GetComponent<ObjectProperties>().prompt = "You use the screwdriver to break the key " +
-                "off the rock.";
+                "off the rock. You got the employee key, but the screwdriver broke.";
             GameObject.FindFirstObjectByType<AddToInventory>().AddNonWorldItem(key);
             Consume(currentItem);
             gameObject.SetActive(false);                          
