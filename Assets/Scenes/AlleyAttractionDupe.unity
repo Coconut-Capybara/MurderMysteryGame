@@ -2487,7 +2487,7 @@ MonoBehaviour:
   timeLock: 0
   timeUsage: 0
   itemDesc: "This door\u2019s just locked. Is there a key around?"
-  prompt: You unlock the door. (Click door to enter)
+  prompt: You unlock the door.              (Click door to enter)
   timeText: 
   itemSprite: {fileID: 1762484257, guid: e6ab65e6b6f7c1844950f6638a41bb4a, type: 3}
   highlightSprite: {fileID: 643532932, guid: e6ab65e6b6f7c1844950f6638a41bb4a, type: 3}
@@ -3580,8 +3580,8 @@ MonoBehaviour:
   timeUsage: 15
   itemDesc: "I\u2019d rather not, but I could probably find something useful in here.
     It\u2019ll take me a bit though. "
-  prompt: You dig through the trash, and find a screw driver! (Click and drag this
-    item to use)
+  prompt: You dig through the trash, and find a screwdriver!               (Click
+    and drag items to use them)
   timeText: You are about to dig through the trash.
   itemSprite: {fileID: -124036167, guid: c35e5cb75758a73449c6d7a38d729d5e, type: 3}
   highlightSprite: {fileID: -2124162544, guid: c35e5cb75758a73449c6d7a38d729d5e, type: 3}
@@ -5344,7 +5344,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Item Desc Here
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7502,7 +7502,8 @@ MonoBehaviour:
   givesPrompt: 1
   timeLock: 0
   timeUsage: 5
-  itemDesc: "This rock\u2019s plastic. And there\u2019s a key stuck to the underside!"
+  itemDesc: "This rock\u2019s plastic. Looking closer, there\u2019s a key stuck to
+    the underside!"
   prompt: You fail to remove the key. Maybe you can find something to pry it off?
   timeText: 'There is a key attached to the rock, will you try to take it off? '
   itemSprite: {fileID: -2127731599, guid: 19cc7e1e32c10374da702bc983848460, type: 3}
