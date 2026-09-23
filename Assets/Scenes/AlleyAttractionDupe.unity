@@ -821,7 +821,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -217.77, y: -134.45}
+  m_AnchoredPosition: {x: -217.77, y: -140.1}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &293138789
@@ -2376,7 +2376,7 @@ MonoBehaviour:
   timeLock: 0
   timeUsage: 0
   itemDesc: "This door\u2019s just locked. Is there a key around?"
-  prompt: You unlock the door
+  prompt: You unlock the door. (Click door to enter)
   timeText: 
   itemSprite: {fileID: 1762484257, guid: e6ab65e6b6f7c1844950f6638a41bb4a, type: 3}
   highlightSprite: {fileID: 643532932, guid: e6ab65e6b6f7c1844950f6638a41bb4a, type: 3}
@@ -2879,7 +2879,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemInspections
   itemDescPanel: {fileID: 365873639}
   itemDesc: {fileID: 1328426982}
-  textSpeed: 0.05
+  textSpeed: 0.03
 --- !u!114 &736103772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2942,7 +2942,7 @@ MonoBehaviour:
   promptPanel: {fileID: 1401430772}
   continueButton: {fileID: 439106176}
   promptText: {fileID: 97235014}
-  textSpeed: 0.05
+  textSpeed: 0.02
 --- !u!1 &737877281
 GameObject:
   m_ObjectHideFlags: 0
@@ -3469,8 +3469,9 @@ MonoBehaviour:
   timeUsage: 15
   itemDesc: "I\u2019d rather not, but I could probably find something useful in here.
     It\u2019ll take me a bit though. "
-  prompt: you dig through the trash, and find a screw driver
-  timeText: You are about to dig through the trash
+  prompt: You dig through the trash, and find a screw driver! (Click and drag this
+    item to use)
+  timeText: You are about to dig through the trash.
   itemSprite: {fileID: -124036167, guid: c35e5cb75758a73449c6d7a38d729d5e, type: 3}
   highlightSprite: {fileID: -2124162544, guid: c35e5cb75758a73449c6d7a38d729d5e, type: 3}
   altSprite1: {fileID: -2124162544, guid: c35e5cb75758a73449c6d7a38d729d5e, type: 3}
@@ -3874,7 +3875,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 36.14, y: 32.6}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1009313991
 CanvasRenderer:
@@ -4213,7 +4214,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   timeUsage: 0
-  itemDesc: 
+  itemDesc: A big dumpster. I should probably take a closer look.
   prompt: 
   timeText: 
   itemSprite: {fileID: 193620687, guid: 6152c6f07ea3ba54f886da12cb15abca, type: 3}
@@ -4252,8 +4253,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3.53, y: 3, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.5300002, y: 2.7700949, z: 0.2}
+  m_Center: {x: -0, y: 0.11495416, z: 0}
 --- !u!1 &1188074855
 GameObject:
   m_ObjectHideFlags: 0
@@ -7166,7 +7167,7 @@ MonoBehaviour:
   timeLock: 0
   timeUsage: 5
   itemDesc: "This rock\u2019s plastic. And there\u2019s a key stuck to the underside!"
-  prompt: You fail to remove the key
+  prompt: You fail to remove the key. Maybe you can find something to pry it off?
   timeText: 'There is a key attatched to the rock, will you try to take it off? '
   itemSprite: {fileID: -2127731599, guid: 19cc7e1e32c10374da702bc983848460, type: 3}
   highlightSprite: {fileID: 503531864, guid: 19cc7e1e32c10374da702bc983848460, type: 3}

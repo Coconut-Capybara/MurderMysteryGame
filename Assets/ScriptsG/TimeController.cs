@@ -65,7 +65,7 @@ public class TimeController : MonoBehaviour
         timeUsePanel = true;
         timePanel.gameObject.SetActive(true);
         timeAwayText.text = (item.GetComponent<ObjectProperties>().timeText + 
-            "\ntime taken away is: " + timeUse + " minutes" + "\n"  + "You will have " + 
+            "\nTime taken away is: " + timeUse + " minutes" + "\n"  + "You will have " + 
             ((timeLeft-timeUse) / 60) + " hours and " + ((timeLeft-timeUse) % 60) + " minutes left.");
         tempTime = timeUse;
     }

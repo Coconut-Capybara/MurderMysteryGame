@@ -23,8 +23,8 @@ public class RockScript : ItemNeeded
             == GetItemNeeded().GetComponent<InventoryItemScript>().GetItemId())
         {
             GetComponent<ObjectProperties>().givesPrompt = true;
-            GetComponent<ObjectProperties>().prompt = "You use the screwdriver to break the key" +
-                " off the rock";
+            GetComponent<ObjectProperties>().prompt = "You use the screwdriver to break the key " +
+                "off the rock.";
             GameObject.FindFirstObjectByType<AddToInventory>().AddNonWorldItem(key);
             Consume(currentItem);
             gameObject.SetActive(false);                          
