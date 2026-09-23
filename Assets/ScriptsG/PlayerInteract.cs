@@ -7,6 +7,7 @@
 //
 // Summary : Handles all player input, and changes the cursor state
 *****************************************************************************/
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -212,6 +213,8 @@ public class PlayerInteract : MonoBehaviour
     /// </summary>
     private void TimeCheck()
     {
+        GameObject fuckassRock = FindAnyObjectByType<RockScript>().gameObject;
+        fuckassRock.GetComponent<ObjectProperties>().timeUsage = 5;
         timeController.PassTimePanel(hoverItem.GetComponent<ObjectProperties>().timeUsage,hoverItem);
         cursorState = CursorState.None;
         inPrompt = true;
@@ -228,7 +231,7 @@ public class PlayerInteract : MonoBehaviour
         hoverItem.GetComponent<ObjectProperties>().timeUsage = 0;
         if (hoverItem.GetComponent<RockScript>() != null)
         {
-            hoverItem.GetComponent<RockScript>().timeLocked = true;
+            //hoverItem.GetComponent<RockScript>().timeLocked = true;
         }
         if (itemUseLock)
         {
