@@ -2396,10 +2396,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
   thisObject: {fileID: 573199874}
   playerCam: {fileID: 1840529610}
-  originalSprite: {fileID: 0}
-  hoverSprite: {fileID: 0}
-  altSprite1: {fileID: 0}
-  altSprite2: {fileID: 0}
   lastObject: {fileID: 0}
   lastObjectProperties: {fileID: 0}
   lastSpriteRenderer: {fileID: 0}
@@ -3494,6 +3490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GivePlayerItem
   itemPrefab: {fileID: 3043295151955953431, guid: af4429b390e0f4242889d5d6c2ad0a3f, type: 3}
   amount: 1
+  fuckassRock: {fileID: 2114967978}
 --- !u!114 &847087802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3508,10 +3505,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
   thisObject: {fileID: 847087796}
   playerCam: {fileID: 1840529610}
-  originalSprite: {fileID: -124036167, guid: c35e5cb75758a73449c6d7a38d729d5e, type: 3}
-  hoverSprite: {fileID: -2124162544, guid: c35e5cb75758a73449c6d7a38d729d5e, type: 3}
-  altSprite1: {fileID: -2124162544, guid: c35e5cb75758a73449c6d7a38d729d5e, type: 3}
-  altSprite2: {fileID: -2124162544, guid: c35e5cb75758a73449c6d7a38d729d5e, type: 3}
   lastObject: {fileID: 0}
   lastObjectProperties: {fileID: 0}
   lastSpriteRenderer: {fileID: 0}
@@ -4195,10 +4188,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
   thisObject: {fileID: 1085014732}
   playerCam: {fileID: 1840529610}
-  originalSprite: {fileID: 0}
-  hoverSprite: {fileID: 0}
-  altSprite1: {fileID: 0}
-  altSprite2: {fileID: 0}
   lastObject: {fileID: 0}
   lastObjectProperties: {fileID: 0}
   lastSpriteRenderer: {fileID: 0}
@@ -5646,7 +5635,6 @@ MonoBehaviour:
   timerText: {fileID: 1191993614}
   timeUsePanel: 0
   objectProperties: {fileID: 0}
-  timeTestAway: 0
 --- !u!114 &1569590913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6219,6 +6207,7 @@ GameObject:
   - component: {fileID: 1840529613}
   - component: {fileID: 1840529612}
   - component: {fileID: 1840529615}
+  - component: {fileID: 1840529616}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6293,8 +6282,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1840529608}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 58.402252, y: 11.539778, z: 34.52331}
+  m_LocalRotation: {x: 0.030692242, y: 0, z: 0, w: 0.9995289}
+  m_LocalPosition: {x: -13.745823, y: 13.138293, z: 93.88112}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6411,6 +6400,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VertSliceEndScreen
   vertSlicePanel: {fileID: 2096974595}
+--- !u!114 &1840529616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840529608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20aabccd81c253b4fbe03ee813a6da3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
 --- !u!1 &1862210747
 GameObject:
   m_ObjectHideFlags: 0
@@ -6724,10 +6725,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
   thisObject: {fileID: 1909787306}
   playerCam: {fileID: 1840529610}
-  originalSprite: {fileID: 0}
-  hoverSprite: {fileID: 0}
-  altSprite1: {fileID: 0}
-  altSprite2: {fileID: 0}
   lastObject: {fileID: 0}
   lastObjectProperties: {fileID: 0}
   lastSpriteRenderer: {fileID: 0}
@@ -7219,10 +7216,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
   thisObject: {fileID: 2114967978}
   playerCam: {fileID: 1840529610}
-  originalSprite: {fileID: 0}
-  hoverSprite: {fileID: 0}
-  altSprite1: {fileID: 0}
-  altSprite2: {fileID: 0}
   lastObject: {fileID: 0}
   lastObjectProperties: {fileID: 0}
   lastSpriteRenderer: {fileID: 0}

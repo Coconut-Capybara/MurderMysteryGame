@@ -22,6 +22,7 @@ public class RockScript : ItemNeeded
         if(currentItem.GetComponent<InventoryItemScript>().GetItemId()
             == GetItemNeeded().GetComponent<InventoryItemScript>().GetItemId())
         {
+            this.gameObject.GetComponent<ObjectProperties>().timeUsage = 5;
             GetComponent<ObjectProperties>().givesPrompt = true;
             GetComponent<ObjectProperties>().prompt = "You use the screwdriver to break the key " +
                 "off the rock.";

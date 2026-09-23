@@ -23,7 +23,7 @@ public class DoorScript : ItemNeeded
     {
         if (isLocked)
         {
-            GameObject.FindFirstObjectByType<TextPrompts>().ShowPrompt("Door is locked, find key");
+            //GameObject.FindFirstObjectByType<TextPrompts>().ShowPrompt("Door is locked, find key");
         }
         else
         {

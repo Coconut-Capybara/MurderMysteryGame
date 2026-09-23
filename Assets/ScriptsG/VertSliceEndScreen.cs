@@ -1,29 +1,30 @@
+/*****************************************************************************
+// Script Name : VertSliceEndScreen
+// Author : Bryson Welch
+// Additional Author(s) :
+// Creation Date: 9/21/26
+// Last Modified Date: 9/21/26
+//
+// Summary : Deals with the Vertical Slice End Screen
+*****************************************************************************/
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class VertSliceEndScreen : MonoBehaviour
 {
-
     public GameObject vertSlicePanel;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
+    /// <summary>
+    /// Quits the game
+    /// </summary>
     public void QuitGame()
     {
         Application.Quit();
     }
-
+    /// <summary>
+    /// Sends you to main menu which resets all puzzle progress
+    /// </summary>
     public void ResetGame()
     {
         SceneManager.LoadScene("TempMainMenu");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

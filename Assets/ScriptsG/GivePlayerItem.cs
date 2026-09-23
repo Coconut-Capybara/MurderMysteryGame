@@ -13,6 +13,7 @@ public class GivePlayerItem : NoItemInteractions
 {
     [SerializeField] private GameObject itemPrefab;
     [SerializeField] private int amount;
+    [SerializeField] private GameObject fuckassRock;
 
     /// <summary>
     /// Function for objects meant to be interacted with, with no item
@@ -20,6 +21,10 @@ public class GivePlayerItem : NoItemInteractions
     public override void NoItemFunciton()
     {
         GiveItem(itemPrefab);
+        if(itemPrefab.gameObject.name == "Screwdriver")
+        {
+            fuckassRock.GetComponent<ObjectProperties>().timeLock = false;
+        }
     }
     public void GiveItem(GameObject item)
     {

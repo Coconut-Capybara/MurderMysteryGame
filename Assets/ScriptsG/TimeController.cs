@@ -1,3 +1,12 @@
+/*****************************************************************************
+// Script Name : TimeController
+// Author : Bryson Welch
+// Additional Author(s) : Gabriel Andrews
+// Creation Date: 9/6/26
+// Last Modified Date: 9/18/26
+//
+// Summary : Acts as the middle man that adjusts existing time, adjusts its format, and puts it in in the UI
+*****************************************************************************/
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,27 +16,35 @@ using static UnityEngine.Rendering.DebugUI;
 public class TimeController : MonoBehaviour
 {
     [Header("Time Variables")]
+    [Tooltip("The time remaining")]
     [SerializeField] private int timeLeft;
+    [Tooltip("The amount of hours left. Do not manually adjust.")]
     [SerializeField] private int hoursLeft;
+    [Tooltip("The amount of leftover minutes after hoursLeft has been calculated. Do not manually adjust this")]
     [SerializeField] private int minutesLeft;
 
     [Header("Time UI Elements")]
+    [Tooltip("The UI Panel that holds the Time Passing Check stuff")]
     public GameObject timePanel;
+    [Tooltip("The text that shares the info of what is happening, the time performing the action will take, and how much time will remain.")]
     [SerializeField] private TMP_Text timeAwayText;
+    [Tooltip("The Confirm Button when performing a time-consuming action")]
     [SerializeField] private UnityEngine.UI.Button yesButton;
+    [Tooltip("The Cancel Button when performing a time-consuming action")]
     [SerializeField] private UnityEngine.UI.Button noButton;
-    [SerializeField] private GameObject timerPanel;
-    [SerializeField] private TMP_Text timerText;
 
+    [Tooltip("The UI Panel for the persistent timer in the top right corner")]
+    [SerializeField] private GameObject timerPanel;
+    [Tooltip("The text that holds the persistent time left info in the top right corner")]
+    [SerializeField] private TMP_Text timerText;
+    [Tooltip("Whether the timePanel game object is active or not")]
     public bool timeUsePanel;
 
     private int tempTime;
 
     [Header("Object Properties Script")]
+    [Tooltip("The objectProperties script of the object currently being interacted with. Do not manually Assign.")]
     [SerializeField] private ObjectProperties objectProperties;
-
-    [Header("Test Variables")]
-    public int timeTestAway;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -37,7 +54,12 @@ public class TimeController : MonoBehaviour
         TimeFormat();
         timerText.text = hoursLeft.ToString() + ":" + minutesLeft.ToString() + " left";
     }
-
+    /// <summary>
+    /// Opens the timePanel and adjusts the text to the corresponding item use description, the time to be taken away, 
+    /// and the time remaining after use
+    /// </summary>
+    /// <param name="timeUse"></param>
+    /// <param name="item"></param>
     public void PassTimePanel(int timeUse, GameObject item)
     {
         timeUsePanel = true;
