@@ -31,10 +31,6 @@ public class TextPrompts : MonoBehaviour
         {
             promptTextCO = StartCoroutine(ShowText(_prompt));
         }
-        if(GameObject.FindAnyObjectByType<RockScript>()  != null)
-        {
-            GameObject.FindAnyObjectByType<RockScript>().gameObject.GetComponent<ObjectProperties>().givesPrompt = false;
-        }
     }
     private IEnumerator ShowText(string _prompt)
     {
