@@ -80,7 +80,7 @@ public class PlayerInteract : MonoBehaviour
             else if (cursorState is not (CursorState.InInventory or CursorState.HoldingItem))
             {
                 cursorState = CursorState.None;
-                GameObject.FindFirstObjectByType<ItemInspections>().HideItemDescPanel();
+                //GameObject.FindFirstObjectByType<ItemInspections>().HideItemDescPanel();
             }
 
 
