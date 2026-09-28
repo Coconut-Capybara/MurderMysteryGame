@@ -12,6 +12,7 @@ using UnityEngine;
 public class RockScript : ItemNeeded
 {
     [SerializeField] private GameObject key;
+    [SerializeField] private ObjectProperties objectProperties;
     public bool timeLocked;
     /// <summary>
     /// breaks the rock when the player used the screwdriver on it 
@@ -26,9 +27,10 @@ public class RockScript : ItemNeeded
             GetComponent<ObjectProperties>().givesPrompt = true;
             GetComponent<ObjectProperties>().prompt = "You use the screwdriver to break the key " +
                 "off the rock. You got the employee key, but the screwdriver broke.";
+            objectProperties.usesAltSprites = true;
             GameObject.FindFirstObjectByType<AddToInventory>().AddNonWorldItem(key);
             Consume(currentItem);
-            gameObject.SetActive(false);                          
+                                      
         }
     }
 }

@@ -71,11 +71,27 @@ public class SpriteInterchange : MonoBehaviour
                 altSprite1 = lastObjectProperties.altSprite1;
                 altSprite2 = lastObjectProperties.altSprite2;
                 lastSpriteRenderer = lastObject.GetComponent<SpriteRenderer>();
-                lastSpriteRenderer.sprite = lastHoverSprite;
+                if (lastObjectProperties.usesAltSprites)
+                {
+                    lastSpriteRenderer.sprite = altSprite2;
+                }
+                else
+                {
+                    lastSpriteRenderer.sprite = lastHoverSprite;
+                }
+
             }
             else if (lastObject != null)
             {
-                lastSpriteRenderer.sprite = lastOGSprite;
+                if (lastObjectProperties.usesAltSprites)
+                {
+                    lastSpriteRenderer.sprite = altSprite1;
+                }
+                else
+                {
+                    lastSpriteRenderer.sprite = lastOGSprite;
+                }
+
                 lastObject = null;
             }
             else
