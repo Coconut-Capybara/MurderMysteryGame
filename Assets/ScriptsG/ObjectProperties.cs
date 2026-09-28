@@ -17,5 +17,6 @@ public class ObjectProperties : MonoBehaviour
     public Sprite highlightSprite;
     public Sprite altSprite1;
     public Sprite altSprite2;
+    public bool usesAltSprites;
 
 }
