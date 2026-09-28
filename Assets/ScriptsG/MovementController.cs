@@ -1,7 +1,9 @@
 using NUnit.Framework;
+using System.Collections;
 using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class MovementController : MonoBehaviour
 {
@@ -15,12 +17,18 @@ public class MovementController : MonoBehaviour
     [SerializeField] private CinemachineCamera[] allCams;
 
     private MovePointData movePointData;
+
+    [SerializeField] private GameObject blackScreen;
+    [SerializeField] private float fadeSpeed;
+    [SerializeField] private float fadePivot;
+
+    private bool locked;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         ClearCams();
         currentCam = firstCam;
-        SetCamera();
+        //SetCamera();
         interact = InputSystem.actions.FindAction("Interact");
     }
 
@@ -38,11 +46,35 @@ public class MovementController : MonoBehaviour
         {
             if (allCams[i] == currentCam)
             {
-                allCams[i].enabled = true;
+                if (!locked)
+                {
+                    StartCoroutine(FadeInOut(i));
+                }
             }
         }
     }
-
+    private IEnumerator FadeInOut(int i)
+    {
+        locked = true;
+        float fadeValue = 0;
+        Color screenColor;
+        while(fadeValue <= 1)
+        {
+            fadeValue += fadePivot;
+            screenColor = new Color(0, 0, 0, fadeValue);
+            blackScreen.GetComponent<Image>().color = screenColor;      
+            yield return new WaitForSeconds(fadeSpeed);
+        }
+        allCams[i].enabled = true;
+        while (fadeValue >= 0)
+        {
+            fadeValue -= fadePivot;
+            screenColor = new Color(0, 0, 0, fadeValue);
+            blackScreen.GetComponent<Image>().color = screenColor;
+            yield return new WaitForSeconds(fadeSpeed);
+        }
+        locked = false;
+    }
     private void GetCamera(GameObject camSpot)
     {
         movePointData = camSpot.gameObject.GetComponent<MovePointData>();
