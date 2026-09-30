@@ -17,20 +17,24 @@ public class ItemInspections : MonoBehaviour
     [SerializeField] private GameObject itemDescPanel;
     [SerializeField] private TMP_Text itemDesc;
     [SerializeField] private float textSpeed;
-    private InputAction inspect;
+    [SerializeField] private float delay;
     private bool descLocked;
+    [SerializeField] private bool inDelay;
     private Coroutine itemDescCO;
+    private Coroutine inspectCO;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        inspect = InputSystem.actions.FindAction("Inspect");
         descLocked = false;
+        inDelay = false;    
     }
     /// <summary>
     /// Shows Item Description
     /// </summary>
-    private void Inspect()
+    private IEnumerator Inspect()
     {
+        inDelay = true;
+        yield return new WaitForSeconds(delay);     
         Vector3 cursorPos = Mouse.current.position.ReadValue();
         Ray ray = Camera.main.ScreenPointToRay(cursorPos);
         RaycastHit hit;
@@ -60,13 +64,18 @@ public class ItemInspections : MonoBehaviour
     /// </summary>
     public void HideItemDescPanel()
     {
-        descLocked = false; 
+        descLocked = false;
+        inDelay = false;
         itemDescPanel.SetActive(false);
         if(itemDescCO != null)
         {
             StopCoroutine(itemDescCO);
-        }          
-        itemDesc.text = " ";
+        }
+        if (inspectCO != null)
+        {
+            StopCoroutine(inspectCO);
+        }
+        itemDesc.text = " ";   
     }
     /// <summary>
     /// Displys text, character by character
@@ -86,9 +95,20 @@ public class ItemInspections : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (inspect.WasPressedThisFrame() && !GameObject.FindFirstObjectByType<PlayerInteract>().inPrompt)
+        Vector3 cursorPos = Mouse.current.position.ReadValue();
+        Ray ray = Camera.main.ScreenPointToRay(cursorPos);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit))
         {
-            Inspect();      
+            if (hit.collider.gameObject.GetComponent<ObjectProperties>() != null
+                && hit.collider.gameObject.GetComponent<ObjectProperties>().itemDesc != " ")
+            {
+                if (!GameObject.FindFirstObjectByType<PlayerInteract>().inPrompt && !inDelay)
+                {
+                    inspectCO = StartCoroutine(Inspect());
+                }
+            }
         }
+        
     }
 }

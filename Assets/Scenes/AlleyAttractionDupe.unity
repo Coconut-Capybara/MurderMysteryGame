@@ -3203,6 +3203,8 @@ MonoBehaviour:
   itemDescPanel: {fileID: 365873639}
   itemDesc: {fileID: 1328426982}
   textSpeed: 0.03
+  delay: 0.5
+  inDelay: 0
 --- !u!114 &736103772
 MonoBehaviour:
   m_ObjectHideFlags: 0
