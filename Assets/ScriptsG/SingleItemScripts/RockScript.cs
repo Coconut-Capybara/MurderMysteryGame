@@ -3,7 +3,7 @@
 // Author : Gabriel Andrews
 // Additional Author(s) :
 // Creation Date:9/19/26
-// Last Modified Date: 9/19/26
+// Last Modified Date: 9/30/26
 //
 // Summary : Stupid rock functionality
 *****************************************************************************/
@@ -29,6 +29,8 @@ public class RockScript : ItemNeeded
             GetComponent<ObjectProperties>().prompt = "You use the screwdriver to break the key " +
                 "off the rock. You got the employee key, but the screwdriver broke.";
             objectProperties.usesAltSprites = true;
+            objectProperties.isInteractable = false;
+            objectProperties.itemDesc = "Nothing else on the rock as far as I can tell.";
             GameObject.FindFirstObjectByType<AddToInventory>().AddNonWorldItem(key);
             Consume(currentItem);
                                       
