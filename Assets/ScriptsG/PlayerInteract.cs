@@ -215,6 +215,7 @@ public class PlayerInteract : MonoBehaviour
     {
         GameObject fuckassRock = FindAnyObjectByType<RockScript>().gameObject;
         fuckassRock.GetComponent<ObjectProperties>().timeUsage = 5;
+        GameObject.FindFirstObjectByType<ItemInspections>().HideItemDescPanel();
         timeController.PassTimePanel(hoverItem.GetComponent<ObjectProperties>().timeUsage,hoverItem);
         cursorState = CursorState.None;
         inPrompt = true;
