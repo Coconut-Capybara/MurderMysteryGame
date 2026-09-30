@@ -3,7 +3,7 @@
 // Author : Gabriel Andrews
 // Additional Author(s) :
 // Creation Date:9/7/26
-// Last Modified Date: 9/19/26
+// Last Modified Date: 9/30/26
 //
 // Summary : Handles all player input, and changes the cursor state
 *****************************************************************************/
@@ -83,7 +83,6 @@ public class PlayerInteract : MonoBehaviour
                 GameObject.FindFirstObjectByType<ItemInspections>().HideItemDescPanel();
             }
 
-
             if (interact.WasPressedThisFrame() && cursorState == CursorState.OverObject)
             {
                 Interact(hit.collider.gameObject);
@@ -101,7 +100,8 @@ public class PlayerInteract : MonoBehaviour
                 currentItem = null;
                 cursorState = CursorState.None;
             }
-            if (interact.WasPressedThisFrame() && cursorState == CursorState.OverDoor)
+            if (interact.WasPressedThisFrame() && cursorState == CursorState.OverDoor &&
+                hit.collider.gameObject != null)
             {
                 DoorCheck();
             }
@@ -130,6 +130,7 @@ public class PlayerInteract : MonoBehaviour
     /// <param name="_currentItem"></param>
     private void ItemUsageCheck(GameObject _hoverItem, GameObject _currentItem)
     {
+        print("ItemUsageCheck Called");
         if(_hoverItem.GetComponent<ObjectProperties>() != null)
         {
             if (_hoverItem.GetComponent<ObjectProperties>().canUseOn)
