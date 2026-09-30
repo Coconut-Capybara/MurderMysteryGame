@@ -4794,6 +4794,7 @@ MonoBehaviour:
   key: {fileID: 3043295151955953431, guid: f5ed07d89a75df543b4a350083606087, type: 3}
   objectProperties: {fileID: 1151989503}
   timeLocked: 0
+  itemUseTime: 5
 --- !u!114 &1151989503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4813,7 +4814,7 @@ MonoBehaviour:
   consumable: 0
   givesPrompt: 1
   timeLock: 0
-  timeUsage: 5
+  timeUsage: 1
   itemDesc: "This rock\u2019s plastic. Looking closer, there\u2019s a key stuck to
     the underside!"
   prompt: You fail to remove the key. Maybe you can find something to pry it off?
@@ -7156,8 +7157,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1840529608}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 58.402252, y: 11.539778, z: 34.52331}
+  m_LocalRotation: {x: 0.1299602, y: -0.6919326, z: 0.1287569, w: 0.69839907}
+  m_LocalPosition: {x: 49.35, y: 4.05, z: -26.939999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8074,6 +8075,7 @@ MonoBehaviour:
   key: {fileID: 3043295151955953431, guid: f5ed07d89a75df543b4a350083606087, type: 3}
   objectProperties: {fileID: 0}
   timeLocked: 0
+  itemUseTime: 0
 --- !u!114 &2114967986
 MonoBehaviour:
   m_ObjectHideFlags: 0

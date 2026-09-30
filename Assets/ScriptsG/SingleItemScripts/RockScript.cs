@@ -14,6 +14,7 @@ public class RockScript : ItemNeeded
     [SerializeField] private GameObject key;
     [SerializeField] private ObjectProperties objectProperties;
     public bool timeLocked;
+    [SerializeField] int itemUseTime;
     /// <summary>
     /// breaks the rock when the player used the screwdriver on it 
     /// </summary>
@@ -23,7 +24,7 @@ public class RockScript : ItemNeeded
         if(currentItem.GetComponent<InventoryItemScript>().GetItemId()
             == GetItemNeeded().GetComponent<InventoryItemScript>().GetItemId())
         {
-            this.gameObject.GetComponent<ObjectProperties>().timeUsage = 5;
+            this.gameObject.GetComponent<ObjectProperties>().timeUsage = itemUseTime;
             GetComponent<ObjectProperties>().givesPrompt = true;
             GetComponent<ObjectProperties>().prompt = "You use the screwdriver to break the key " +
                 "off the rock. You got the employee key, but the screwdriver broke.";
