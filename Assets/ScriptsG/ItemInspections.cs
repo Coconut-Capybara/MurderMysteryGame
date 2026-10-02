@@ -103,7 +103,8 @@ public class ItemInspections : MonoBehaviour
             if (hit.collider.gameObject.GetComponent<ObjectProperties>() != null
                 && hit.collider.gameObject.GetComponent<ObjectProperties>().itemDesc != " ")
             {
-                if (!GameObject.FindFirstObjectByType<PlayerInteract>().inPrompt && !inDelay)
+                if (!GameObject.FindFirstObjectByType<PlayerInteract>().inPrompt &&
+                    GameObject.FindFirstObjectByType<PlayerInteract>().inGame && !inDelay)
                 {
                     inspectCO = StartCoroutine(Inspect());
                 }

@@ -9,6 +9,7 @@ public class ObjectProperties : MonoBehaviour
     public bool consumable;
     public bool givesPrompt;
     public bool timeLock;
+    public bool isHardEvidence;
     public int timeUsage;
     public string itemDesc;
     public string prompt;

@@ -21,6 +21,7 @@ public class PlayerInteract : MonoBehaviour
     private GameObject lockedItem;
     private TimeController timeController;
     public bool inPrompt;
+    public bool inGame;
     /// <summary>
     /// The current state of the players cursor
     /// </summary>
@@ -45,7 +46,7 @@ public class PlayerInteract : MonoBehaviour
     /// </summary>
     void Update()
     {
-        if (!inPrompt)
+        if (!inPrompt && inGame)
         {
             Vector3 cursorPos = Mouse.current.position.ReadValue();
             Ray ray = Camera.main.ScreenPointToRay(cursorPos);
@@ -64,7 +65,7 @@ public class PlayerInteract : MonoBehaviour
                             cursorState = CursorState.OverObject;
                         }
                     }
-                     if (hit.collider.GetComponent<DoorScript>() != null && cursorState is not (CursorState.InInventory
+                    if (hit.collider.GetComponent<DoorScript>() != null && cursorState is not (CursorState.InInventory
                          or CursorState.HoldingItem))
                     {
                         cursorState = CursorState.OverDoor;
@@ -166,7 +167,12 @@ public class PlayerInteract : MonoBehaviour
     private void Interact(GameObject item)
     {
         hoverItem = item;
-        if (item.GetComponent<ObjectProperties>().isGrabbable)
+        if (item.GetComponent<ObjectProperties>().isHardEvidence)
+        {
+            GameObject.FindFirstObjectByType<EndGameHandler>().CollectHardEvidence(); 
+            item.SetActive(false);      
+        }
+        else if (item.GetComponent<ObjectProperties>().isGrabbable)
         {
             if(item.GetComponent<ObjectProperties>().timeUsage > 0)
             {            
