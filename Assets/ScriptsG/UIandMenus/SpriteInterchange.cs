@@ -57,7 +57,7 @@ public class SpriteInterchange : MonoBehaviour
     /// </summary>
     void Update()
     {
-        if (!player.inPrompt)
+        if (!player.inPrompt && player.inGame)
         {
             Vector3 cursorPos = Mouse.current.position.ReadValue();
             Ray ray = playerCam.ScreenPointToRay(cursorPos);

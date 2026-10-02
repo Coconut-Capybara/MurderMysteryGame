@@ -84,7 +84,7 @@ public class MovementController : MonoBehaviour
     private void InteractRay()
     {
         if (interact.WasPressedThisFrame() && !GameObject.FindFirstObjectByType<PlayerInteract>().
-            inPrompt)
+            inPrompt && GameObject.FindFirstObjectByType<PlayerInteract>().inGame)
         {
             Vector3 cursorPos = Mouse.current.position.ReadValue();
             Ray ray = mainCam.ScreenPointToRay(cursorPos);
