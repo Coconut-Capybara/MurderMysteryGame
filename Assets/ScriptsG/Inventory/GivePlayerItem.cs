@@ -11,7 +11,7 @@ using UnityEngine;
 
 public class GivePlayerItem : NoItemInteractions
 {
-    [SerializeField] private GameObject itemPrefab;
+    [SerializeField] private GameObject[] itemPrefabs;
     [SerializeField] private int amount;
     [SerializeField] private GameObject fuckassRock;
 
@@ -20,21 +20,29 @@ public class GivePlayerItem : NoItemInteractions
     /// </summary>
     public override void NoItemFunciton()
     {
-        GiveItem(itemPrefab);
-        if(itemPrefab.gameObject.name == "Screwdriver")
+        for (int i = 0; i < itemPrefabs.Length; i++)
         {
-            fuckassRock.GetComponent<ObjectProperties>().timeLock = false;
+            GiveItem(itemPrefabs[i]);
+            if (itemPrefabs[i].gameObject.name == "Screwdriver")
+            {
+                fuckassRock.GetComponent<ObjectProperties>().timeLock = false;
+            }
+            if(gameObject.name == "2D_DumpsterInspect")
+            {
+                GetComponent<ObjectProperties>().prompt = "I don't think theres anything left in here";
+            }
         }
-        if(gameObject.name == "2D_DumpsterInspect")
-        {
-            GetComponent<ObjectProperties>().prompt = "I don't think theres anything left in here";
-        }
+
     }
     public void GiveItem(GameObject item)
     {
         if(amount > 0)
         {
-            GameObject.FindFirstObjectByType<AddToInventory>().AddNonWorldItem(itemPrefab);
+            for(int i = 0; i < itemPrefabs.Length; i++)
+            {
+                GameObject.FindFirstObjectByType<AddToInventory>().AddNonWorldItem(itemPrefabs[i]);
+            }
+
             amount--;
         }
     }
