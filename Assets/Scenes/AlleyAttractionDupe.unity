@@ -4703,7 +4703,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed66a4f38f9459540800e857332e7b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GivePlayerItem
-  itemPrefab: {fileID: 3043295151955953431, guid: af4429b390e0f4242889d5d6c2ad0a3f, type: 3}
+  itemPrefabs:
+  - {fileID: 3043295151955953431, guid: af4429b390e0f4242889d5d6c2ad0a3f, type: 3}
   amount: 1
   fuckassRock: {fileID: 2114967978}
 --- !u!114 &847087802
