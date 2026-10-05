@@ -101,7 +101,7 @@ public class ItemInspections : MonoBehaviour
         if (Physics.Raycast(ray, out hit))
         {
             if (hit.collider.gameObject.GetComponent<ObjectProperties>() != null
-                && hit.collider.gameObject.GetComponent<ObjectProperties>().itemDesc != " ")
+                && hit.collider.gameObject.GetComponent<ObjectProperties>().itemDesc != "")
             {
                 if (!GameObject.FindFirstObjectByType<PlayerInteract>().inPrompt &&
                     GameObject.FindFirstObjectByType<PlayerInteract>().inGame && !inDelay)
