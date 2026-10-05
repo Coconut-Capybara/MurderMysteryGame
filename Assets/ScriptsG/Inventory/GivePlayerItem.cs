@@ -1,9 +1,9 @@
 /*****************************************************************************
 // Script Name : GivePlayerItem
 // Author : Gabriel Andrews
-// Additional Author(s) :
-// Creation Date:9/19/26
-// Last Modified Date: 9/19/26
+// Additional Author(s) : Bryson Welch
+// Creation Date: 9/19/26
+// Last Modified Date: 10/5/26
 //
 // Summary : Creates item, and puts it in players inventory
 *****************************************************************************/
@@ -13,7 +13,7 @@ public class GivePlayerItem : NoItemInteractions
 {
     [SerializeField] private GameObject[] itemPrefabs;
     [SerializeField] private int amount;
-    [SerializeField] private GameObject fuckassRock;
+    [SerializeField] private GameObject outsideRock;
 
     /// <summary>
     /// Function for objects meant to be interacted with, with no item
@@ -25,7 +25,7 @@ public class GivePlayerItem : NoItemInteractions
             GiveItem(itemPrefabs[i]);
             if (itemPrefabs[i].gameObject.name == "Screwdriver")
             {
-                fuckassRock.GetComponent<ObjectProperties>().timeLock = false;
+                outsideRock.GetComponent<ObjectProperties>().timeLock = false;
             }
             if(gameObject.name == "2D_DumpsterInspect")
             {

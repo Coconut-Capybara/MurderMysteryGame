@@ -18,6 +18,9 @@ public class DarkAreaScript : MonoBehaviour
         hasFlashlight = false;
     }
 
+    /// <summary>
+    /// Checks if the player has a flashlight
+    /// </summary>
     public void FlashlightCheck()
     {
         if (hasFlashlight)
