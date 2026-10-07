@@ -11,7 +11,9 @@ using UnityEngine;
 
 public class ItemNeeded : MonoBehaviour
 {
+    [Tooltip("The list of items that will work when used on this object")]
     [SerializeField] private GameObject[] itemNeeded;
+    [Tooltip("The Script TimeController. Should only be one in the scene")]
     [SerializeField] private TimeController timeController;
     /// <summary>
     /// Base function for item interaction
