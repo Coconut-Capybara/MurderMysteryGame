@@ -13,14 +13,20 @@ using UnityEngine.InputSystem;
 
 public class PlayerInteract : MonoBehaviour
 {
+    [Tooltip("The Main Camera in the scene")]
     [SerializeField] private Camera playerCam;
     InputAction interact;
+    [Tooltip("The item being currently held by the player. DO NOT MANUALLY ASSIGN")]
     [SerializeField] private GameObject currentItem;
+    [Tooltip("The object that the player cursor is currently over")]
     [SerializeField] private GameObject hoverItem;
     private bool itemUseLock;
     private GameObject lockedItem;
     private TimeController timeController;
+    [Tooltip("Whether the player is currently in a prompt state. DO NOT MANUALLY ASSIGN")]
     public bool inPrompt;
+    [Tooltip("Whether the player is not in a prompt. Make sure this is true before pressing play. " +
+        "DO NOT CHANGE IN GAME")]
     public bool inGame;
     /// <summary>
     /// The current state of the players cursor
