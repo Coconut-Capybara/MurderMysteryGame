@@ -14,11 +14,17 @@ using UnityEngine.InputSystem;
 
 public class ItemInspections : MonoBehaviour
 {
+    [Tooltip("The panel where the item Description will be on.")]
     [SerializeField] private GameObject itemDescPanel;
+    [Tooltip("The item Description's text box")]
     [SerializeField] private TMP_Text itemDesc;
+    [Tooltip("The time in seconds between each character appeared")]
     [SerializeField] private float textSpeed;
+    [Tooltip("The delay between hovering over an item, and the item description beginning to appear")]
     [SerializeField] private float delay;
     private bool descLocked;
+    [Tooltip("Whether the script is wating to write the next character of the item description string. " +
+        "DO NOT MANUALLY ADJUST")]
     [SerializeField] private bool inDelay;
     private Coroutine itemDescCO;
     private Coroutine inspectCO;

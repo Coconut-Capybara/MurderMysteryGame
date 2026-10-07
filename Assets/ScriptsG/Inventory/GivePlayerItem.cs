@@ -11,8 +11,11 @@ using UnityEngine;
 
 public class GivePlayerItem : NoItemInteractions
 {
+    [Tooltip("The items to be given to the player when interacted with")]
     [SerializeField] private GameObject[] itemPrefabs;
+    [Tooltip("The amount of times items can be given can be done for this object")]
     [SerializeField] private int amount;
+    [Tooltip("Reference to the rock to fix an edge case bug")]
     [SerializeField] private GameObject outsideRock;
 
     /// <summary>
