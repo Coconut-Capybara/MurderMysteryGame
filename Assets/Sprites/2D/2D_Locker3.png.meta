@@ -100,7 +100,7 @@ TextureImporter:
       name: 2D_Locker3_0
       rect:
         serializedVersion: 2
-        x: 45
+        x: 16
         y: 11
         width: 120
         height: 277
@@ -122,7 +122,7 @@ TextureImporter:
       name: 2D_Locker3_1
       rect:
         serializedVersion: 2
-        x: 235
+        x: 206
         y: 9
         width: 124
         height: 281
@@ -136,6 +136,28 @@ TextureImporter:
       bones: []
       spriteID: ac5c955db2d898a46b7b59d789fba386
       internalID: -132606945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D_Locker3_2
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 4
+        width: 163
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c9e678f0572024a9c55948d8b8194d
+      internalID: 1178685855
       vertices: []
       indices: 
       edges: []
@@ -154,10 +176,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":1.0},"gridSpriteSize":{"x":200.0,"y":300.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":600.0,"y":520.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       2D_Locker3_0: 2058338222
       2D_Locker3_1: -132606945
+      2D_Locker3_2: 1178685855
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
