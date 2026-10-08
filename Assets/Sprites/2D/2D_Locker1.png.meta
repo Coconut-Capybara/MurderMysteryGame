@@ -100,7 +100,7 @@ TextureImporter:
       name: 2D_Locker1_0
       rect:
         serializedVersion: 2
-        x: 45
+        x: 16
         y: 11
         width: 120
         height: 277
@@ -122,7 +122,7 @@ TextureImporter:
       name: 2D_Locker1_1
       rect:
         serializedVersion: 2
-        x: 235
+        x: 206
         y: 9
         width: 124
         height: 281
@@ -136,6 +136,50 @@ TextureImporter:
       bones: []
       spriteID: 2c25884da37c0f541ad98326a47be34a
       internalID: -1006257401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D_Locker1_2
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 4
+        width: 163
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74cb823de8187fa468b096f54128c75c
+      internalID: 903590207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D_Locker1_3
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 4
+        width: 163
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd4107bdd7f07d4a8ca6ff1088771a1
+      internalID: -767220886
       vertices: []
       indices: 
       edges: []
@@ -154,10 +198,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":1.0},"gridSpriteSize":{"x":200.0,"y":300.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":600.0,"y":520.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       2D_Locker1_0: 812125516
       2D_Locker1_1: -1006257401
+      2D_Locker1_2: 903590207
+      2D_Locker1_3: -767220886
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

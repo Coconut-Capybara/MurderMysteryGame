@@ -1,12 +1,12 @@
 fileFormatVersion: 2
-guid: 86ed18f9fcb81b24b951162528dedc2c
+guid: a631f12ded3863e47a5efcb2f907ba8b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,8 +37,8 @@ TextureImporter:
     filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 1
-    wrapV: 1
+    wrapU: 0
+    wrapV: 0
     wrapW: 0
   nPOTScale: 0
   lightmap: 0
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 2D_SafeBreak_0
+      name: 2D_Cash_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 181
-        width: 101
-        height: 110
+        x: 23
+        y: 172
+        width: 57
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,20 +112,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 604b5eb0a47a6614ba0d2d701a415093
-      internalID: 1614871090
+      spriteID: 0cbc4d300752f7d45a0ff14f914f7b77
+      internalID: 1295457480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2D_SafeBreak_1
+      name: 2D_Cash_1
       rect:
         serializedVersion: 2
-        x: 116
-        y: 179
-        width: 105
-        height: 114
+        x: 102
+        y: 170
+        width: 61
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd4039fd572138843a8d6daba44c9cf3
-      internalID: 947192633
+      spriteID: e231e3f7eb424a94a9db1668551649ec
+      internalID: -400862593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2D_SafeBreak_2
+      name: 2D_Cash_2
       rect:
         serializedVersion: 2
-        x: 230
-        y: 181
-        width: 101
-        height: 110
+        x: 12
+        y: 90
+        width: 64
+        height: 57
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d92534729b0f854bb029e495f1b4fdb
-      internalID: -1860378254
+      spriteID: 4fc5f0e1fcf68eb4bbffbf8408ceab7c
+      internalID: -1978343932
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2D_SafeBreak_3
+      name: 2D_Cash_3
       rect:
         serializedVersion: 2
-        x: 7
-        y: 61
-        width: 101
-        height: 110
+        x: 91
+        y: 88
+        width: 68
+        height: 61
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eab2eb8bc6ae4ed4fb783c42b2e91721
-      internalID: -108069694
+      spriteID: 08ee49fe2fcc76e40a1d1c5b7a4820b2
+      internalID: -1512389179
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2D_SafeBreak_4
+      name: 2D_Cash_4
       rect:
         serializedVersion: 2
-        x: 111
-        y: 58
-        width: 115
-        height: 116
+        x: 24
+        y: 19
+        width: 48
+        height: 53
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af58793b09f587447bd83a87b7f5dbaa
-      internalID: -58800814
+      spriteID: 1153e30af5d62be49a2c21d8f9f8b191
+      internalID: 2113774344
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2D_SafeBreak_5
+      name: 2D_Cash_5
       rect:
         serializedVersion: 2
-        x: 229
-        y: 56
-        width: 119
-        height: 120
+        x: 103
+        y: 17
+        width: 52
+        height: 57
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,8 +222,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70aa5e6bf674ce04a998fe49c0000e56
-      internalID: -357668438
+      spriteID: b9782653b0a82624fb531eb7cd7fbbaf
+      internalID: -2023833373
       vertices: []
       indices: 
       edges: []
@@ -232,7 +232,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 66260455f982a554d9233215639b49d6
+    spriteID: 235fc26751b2b9543a6c8d289d45e428
     internalID: 0
     vertices: []
     indices: 
@@ -242,14 +242,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":600.0,"y":520.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":2.0},"gridSpriteSize":{"x":600.0,"y":520.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      2D_SafeBreak_0: 1614871090
-      2D_SafeBreak_1: 947192633
-      2D_SafeBreak_2: -1860378254
-      2D_SafeBreak_3: -108069694
-      2D_SafeBreak_4: -58800814
-      2D_SafeBreak_5: -357668438
+      2D_Cash_0: 1295457480
+      2D_Cash_1: -400862593
+      2D_Cash_2: -1978343932
+      2D_Cash_3: -1512389179
+      2D_Cash_4: 2113774344
+      2D_Cash_5: -2023833373
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
