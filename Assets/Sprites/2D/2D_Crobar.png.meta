@@ -1,12 +1,12 @@
 fileFormatVersion: 2
-guid: 86ed18f9fcb81b24b951162528dedc2c
+guid: 81e272dfa9da72f44abbe54b3d9b8753
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,8 +37,8 @@ TextureImporter:
     filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 1
-    wrapV: 1
+    wrapU: 0
+    wrapV: 0
     wrapW: 0
   nPOTScale: 0
   lightmap: 0
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 2D_SafeBreak_0
+      name: 2D_Crobar_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 181
-        width: 101
-        height: 110
+        x: 20
+        y: 156
+        width: 51
+        height: 74
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,20 +112,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 604b5eb0a47a6614ba0d2d701a415093
-      internalID: 1614871090
+      spriteID: ee929a0aab86e1f4a8f539d8396e2923
+      internalID: 1641619501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2D_SafeBreak_1
+      name: 2D_Crobar_1
       rect:
         serializedVersion: 2
-        x: 116
-        y: 179
-        width: 105
-        height: 114
+        x: 125
+        y: 154
+        width: 55
+        height: 78
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd4039fd572138843a8d6daba44c9cf3
-      internalID: 947192633
+      spriteID: d0b98fcd979b6af418525c6a5fc7b6d0
+      internalID: -1965538520
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2D_SafeBreak_2
+      name: 2D_Crobar_2
       rect:
         serializedVersion: 2
-        x: 230
-        y: 181
-        width: 101
-        height: 110
+        x: 15
+        y: 46
+        width: 88
+        height: 69
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d92534729b0f854bb029e495f1b4fdb
-      internalID: -1860378254
+      spriteID: 74e091f2f785cec4f914608f10189dcb
+      internalID: -990722930
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2D_SafeBreak_3
+      name: 2D_Crobar_3
       rect:
         serializedVersion: 2
-        x: 7
-        y: 61
-        width: 101
-        height: 110
+        x: 120
+        y: 44
+        width: 92
+        height: 73
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,52 +178,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eab2eb8bc6ae4ed4fb783c42b2e91721
-      internalID: -108069694
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 2D_SafeBreak_4
-      rect:
-        serializedVersion: 2
-        x: 111
-        y: 58
-        width: 115
-        height: 116
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af58793b09f587447bd83a87b7f5dbaa
-      internalID: -58800814
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 2D_SafeBreak_5
-      rect:
-        serializedVersion: 2
-        x: 229
-        y: 56
-        width: 119
-        height: 120
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70aa5e6bf674ce04a998fe49c0000e56
-      internalID: -357668438
+      spriteID: 84b082f3d367a7a44b484afd0fbaf3a4
+      internalID: 747922705
       vertices: []
       indices: 
       edges: []
@@ -232,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 66260455f982a554d9233215639b49d6
+    spriteID: 7f3ddcdba2c058b49abc3ddc68e1e9bd
     internalID: 0
     vertices: []
     indices: 
@@ -242,14 +198,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":600.0,"y":520.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":2.0},"gridSpriteSize":{"x":600.0,"y":520.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      2D_SafeBreak_0: 1614871090
-      2D_SafeBreak_1: 947192633
-      2D_SafeBreak_2: -1860378254
-      2D_SafeBreak_3: -108069694
-      2D_SafeBreak_4: -58800814
-      2D_SafeBreak_5: -357668438
+      2D_Crobar_0: 1641619501
+      2D_Crobar_1: -1965538520
+      2D_Crobar_2: -990722930
+      2D_Crobar_3: 747922705
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
