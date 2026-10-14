@@ -745,7 +745,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 131407420}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87ca49e7f91d9114ab82ebf3b8b18e28, type: 3}
   m_Name: 
@@ -768,7 +768,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -779,7 +779,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 131407420}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1446,7 +1446,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 308568473}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87ca49e7f91d9114ab82ebf3b8b18e28, type: 3}
   m_Name: 
@@ -1469,7 +1469,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -1965,7 +1965,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -2032,7 +2032,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 377171863}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87ca49e7f91d9114ab82ebf3b8b18e28, type: 3}
   m_Name: 
@@ -2094,9 +2094,9 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 1
   timeUsage: 0
-  itemDesc: 
   prompt: 
   timeText: 
+  itemDesc: 
   itemSprite: {fileID: 0}
   highlightSprite: {fileID: 0}
   altSprite1: {fileID: 0}
@@ -2303,9 +2303,9 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 0
-  itemDesc: "The door won\u2019t budge. Gotta find another way in."
   prompt: 
   timeText: 
+  itemDesc: "The door won\u2019t budge. Gotta find another way in."
   itemSprite: {fileID: -1731815651, guid: f237e1be581d33c4abc87206450bcf10, type: 3}
   highlightSprite: {fileID: 1196141505, guid: f237e1be581d33c4abc87206450bcf10, type: 3}
   altSprite1: {fileID: 1196141505, guid: f237e1be581d33c4abc87206450bcf10, type: 3}
@@ -2937,6 +2937,10 @@ GameObject:
   m_Component:
   - component: {fileID: 534380597}
   - component: {fileID: 534380598}
+  - component: {fileID: 534380602}
+  - component: {fileID: 534380601}
+  - component: {fileID: 534380600}
+  - component: {fileID: 534380599}
   m_Layer: 0
   m_Name: Buttons_Travel_0
   m_TagString: Untagged
@@ -3017,6 +3021,90 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &534380599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534380596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
+  thisObject: {fileID: 534380596}
+  playerCam: {fileID: 1840529610}
+  lastObject: {fileID: 0}
+  lastObjectProperties: {fileID: 0}
+  lastSpriteRenderer: {fileID: 0}
+  lastOGSprite: {fileID: 0}
+  lastHoverSprite: {fileID: 0}
+  lastSpriteAlt1: {fileID: 0}
+  lastSpriteAlt2: {fileID: 0}
+--- !u!114 &534380600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534380596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
+  thisObject: {fileID: 534380596}
+  isInteractable: 0
+  isGrabbable: 0
+  canUseOn: 0
+  consumable: 0
+  givesPrompt: 0
+  timeLock: 0
+  isHardEvidence: 0
+  timeUsage: 0
+  prompt: 
+  timeText: 
+  itemDesc: 
+  itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
+  highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
+  altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
+  altSprite2: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
+  usesAltSprites: 0
+--- !u!65 &534380601
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534380596}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.08, y: 0.69000006, z: 0.20000002}
+  m_Center: {x: -0.0000019073486, y: 0, z: 0.0000038146973}
+--- !u!114 &534380602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534380596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ca49e7f91d9114ab82ebf3b8b18e28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MovePointData
+  cineCam: {fileID: 356191669}
 --- !u!1 &573199874
 GameObject:
   m_ObjectHideFlags: 0
@@ -3170,9 +3258,9 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 0
-  itemDesc: "This door\u2019s just locked. Is there a key around?"
   prompt: You unlock the door.              (Click door to enter)
   timeText: 
+  itemDesc: "This door\u2019s just locked. Is there a key around?"
   itemSprite: {fileID: 1762484257, guid: e6ab65e6b6f7c1844950f6638a41bb4a, type: 3}
   highlightSprite: {fileID: 643532932, guid: e6ab65e6b6f7c1844950f6638a41bb4a, type: 3}
   altSprite1: {fileID: 643532932, guid: e6ab65e6b6f7c1844950f6638a41bb4a, type: 3}
@@ -3704,6 +3792,11 @@ GameObject:
   m_Component:
   - component: {fileID: 680327419}
   - component: {fileID: 680327420}
+  - component: {fileID: 680327422}
+  - component: {fileID: 680327421}
+  - component: {fileID: 680327423}
+  - component: {fileID: 680327425}
+  - component: {fileID: 680327424}
   m_Layer: 0
   m_Name: Buttons_Travel_0
   m_TagString: Untagged
@@ -3719,12 +3812,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 680327418}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0.7071068, z: -0, w: 0}
-  m_LocalPosition: {x: -0.07608762, y: 0, z: 0}
-  m_LocalScale: {x: 0.8800958, y: 1.1793476, z: 2.1699994}
+  m_LocalRotation: {x: 0.61573803, y: 0.61573803, z: 0.34765884, w: 0.34765884}
+  m_LocalPosition: {x: -4.9723167, y: -1.9161997, z: 0.3001213}
+  m_LocalScale: {x: 3.67, y: 2.17, z: 2.17}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1361007709}
+  m_Father: {fileID: 1987710925}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
 --- !u!212 &680327420
 SpriteRenderer:
@@ -3784,6 +3877,112 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!64 &680327421
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680327418}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &680327422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680327418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ca49e7f91d9114ab82ebf3b8b18e28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MovePointData
+  cineCam: {fileID: 445133784}
+--- !u!65 &680327423
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680327418}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.98, y: 0.68999994, z: 0.19999999}
+  m_Center: {x: 0, y: 0, z: -0.0000009536743}
+--- !u!114 &680327424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680327418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
+  thisObject: {fileID: 680327418}
+  playerCam: {fileID: 1840529610}
+  lastObject: {fileID: 0}
+  lastObjectProperties: {fileID: 0}
+  lastSpriteRenderer: {fileID: 0}
+  lastOGSprite: {fileID: 0}
+  lastHoverSprite: {fileID: 0}
+  lastSpriteAlt1: {fileID: 0}
+  lastSpriteAlt2: {fileID: 0}
+--- !u!114 &680327425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680327418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
+  thisObject: {fileID: 680327418}
+  isInteractable: 0
+  isGrabbable: 0
+  canUseOn: 0
+  consumable: 0
+  givesPrompt: 0
+  timeLock: 0
+  isHardEvidence: 0
+  timeUsage: 0
+  prompt: 
+  timeText: 
+  itemDesc: 
+  itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
+  highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
+  altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
+  altSprite2: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
+  usesAltSprites: 0
 --- !u!1001 &689404779
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4242,6 +4441,10 @@ GameObject:
   m_Component:
   - component: {fileID: 780127513}
   - component: {fileID: 780127514}
+  - component: {fileID: 780127518}
+  - component: {fileID: 780127517}
+  - component: {fileID: 780127516}
+  - component: {fileID: 780127515}
   m_Layer: 0
   m_Name: Buttons_Travel_0
   m_TagString: Untagged
@@ -4322,6 +4525,90 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &780127515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780127512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
+  thisObject: {fileID: 780127512}
+  playerCam: {fileID: 1840529610}
+  lastObject: {fileID: 0}
+  lastObjectProperties: {fileID: 0}
+  lastSpriteRenderer: {fileID: 0}
+  lastOGSprite: {fileID: 0}
+  lastHoverSprite: {fileID: 0}
+  lastSpriteAlt1: {fileID: 0}
+  lastSpriteAlt2: {fileID: 0}
+--- !u!114 &780127516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780127512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
+  thisObject: {fileID: 780127512}
+  isInteractable: 0
+  isGrabbable: 0
+  canUseOn: 0
+  consumable: 0
+  givesPrompt: 0
+  timeLock: 0
+  isHardEvidence: 0
+  timeUsage: 0
+  prompt: 
+  timeText: 
+  itemDesc: 
+  itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
+  highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
+  altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
+  altSprite2: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
+  usesAltSprites: 0
+--- !u!65 &780127517
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780127512}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.9800004, y: 0.69000006, z: 0.20000008}
+  m_Center: {x: -0.0000009536743, y: 0, z: -0.00000071525574}
+--- !u!114 &780127518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780127512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ca49e7f91d9114ab82ebf3b8b18e28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MovePointData
+  cineCam: {fileID: 356191669}
 --- !u!1 &810495975
 GameObject:
   m_ObjectHideFlags: 0
@@ -4465,6 +4752,10 @@ GameObject:
   m_Component:
   - component: {fileID: 835550214}
   - component: {fileID: 835550213}
+  - component: {fileID: 835550218}
+  - component: {fileID: 835550217}
+  - component: {fileID: 835550216}
+  - component: {fileID: 835550215}
   m_Layer: 0
   m_Name: Buttons_Travel_0
   m_TagString: Untagged
@@ -4545,6 +4836,90 @@ Transform:
   m_Children: []
   m_Father: {fileID: 308568474}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!114 &835550215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835550212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
+  thisObject: {fileID: 835550212}
+  playerCam: {fileID: 1840529610}
+  lastObject: {fileID: 0}
+  lastObjectProperties: {fileID: 0}
+  lastSpriteRenderer: {fileID: 0}
+  lastOGSprite: {fileID: 0}
+  lastHoverSprite: {fileID: 0}
+  lastSpriteAlt1: {fileID: 0}
+  lastSpriteAlt2: {fileID: 0}
+--- !u!114 &835550216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835550212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
+  thisObject: {fileID: 835550212}
+  isInteractable: 0
+  isGrabbable: 0
+  canUseOn: 0
+  consumable: 0
+  givesPrompt: 0
+  timeLock: 0
+  isHardEvidence: 0
+  timeUsage: 0
+  prompt: 
+  timeText: 
+  itemDesc: 
+  itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
+  highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
+  altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
+  altSprite2: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
+  usesAltSprites: 0
+--- !u!65 &835550217
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835550212}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.9800006, y: 0.69000036, z: 0.20000012}
+  m_Center: {x: -0.00000047683716, y: -0.00000333786, z: 0.0000038146973}
+--- !u!114 &835550218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835550212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ca49e7f91d9114ab82ebf3b8b18e28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MovePointData
+  cineCam: {fileID: 445133784}
 --- !u!1 &847087796
 GameObject:
   m_ObjectHideFlags: 0
@@ -4681,11 +5056,11 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 15
-  itemDesc: "I\u2019d rather not, but I could probably find something useful in here.
-    It\u2019ll take me a bit though. "
   prompt: You dig through the trash, and find a screwdriver!               (Click
     and drag items to use them)
   timeText: You are about to dig through the trash.
+  itemDesc: "I\u2019d rather not, but I could probably find something useful in here.
+    It\u2019ll take me a bit though. "
   itemSprite: {fileID: -124036167, guid: c35e5cb75758a73449c6d7a38d729d5e, type: 3}
   highlightSprite: {fileID: -2124162544, guid: c35e5cb75758a73449c6d7a38d729d5e, type: 3}
   altSprite1: {fileID: -2124162544, guid: c35e5cb75758a73449c6d7a38d729d5e, type: 3}
@@ -4706,7 +5081,7 @@ MonoBehaviour:
   itemPrefabs:
   - {fileID: 3043295151955953431, guid: af4429b390e0f4242889d5d6c2ad0a3f, type: 3}
   amount: 1
-  fuckassRock: {fileID: 2114967978}
+  outsideRock: {fileID: 0}
 --- !u!114 &847087802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4993,7 +5368,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 889919598}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87ca49e7f91d9114ab82ebf3b8b18e28, type: 3}
   m_Name: 
@@ -5016,7 +5391,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -5387,6 +5762,10 @@ GameObject:
   m_Component:
   - component: {fileID: 970832812}
   - component: {fileID: 970832811}
+  - component: {fileID: 970832816}
+  - component: {fileID: 970832815}
+  - component: {fileID: 970832814}
+  - component: {fileID: 970832813}
   m_Layer: 0
   m_Name: Buttons_Travel_0
   m_TagString: Untagged
@@ -5467,6 +5846,90 @@ Transform:
   m_Children: []
   m_Father: {fileID: 131407425}
   m_LocalEulerAnglesHint: {x: 204.98, y: 0, z: 0}
+--- !u!114 &970832813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970832810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
+  thisObject: {fileID: 970832810}
+  playerCam: {fileID: 1840529610}
+  lastObject: {fileID: 0}
+  lastObjectProperties: {fileID: 0}
+  lastSpriteRenderer: {fileID: 0}
+  lastOGSprite: {fileID: 0}
+  lastHoverSprite: {fileID: 0}
+  lastSpriteAlt1: {fileID: 0}
+  lastSpriteAlt2: {fileID: 0}
+--- !u!114 &970832814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970832810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
+  thisObject: {fileID: 970832810}
+  isInteractable: 0
+  isGrabbable: 0
+  canUseOn: 0
+  consumable: 0
+  givesPrompt: 0
+  timeLock: 0
+  isHardEvidence: 0
+  timeUsage: 0
+  prompt: 
+  timeText: 
+  itemDesc: 
+  itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
+  highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
+  altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
+  altSprite2: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
+  usesAltSprites: 0
+--- !u!65 &970832815
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970832810}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.12, y: 0.78, z: 0.07}
+  m_Center: {x: -0.00000047683716, y: 0, z: -0.0000019073486}
+--- !u!114 &970832816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970832810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ca49e7f91d9114ab82ebf3b8b18e28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MovePointData
+  cineCam: {fileID: 719092054}
 --- !u!1 &993699310
 GameObject:
   m_ObjectHideFlags: 0
@@ -5499,6 +5962,7 @@ Transform:
   - {fileID: 590653829}
   - {fileID: 464877250}
   - {fileID: 1695688827}
+  - {fileID: 1222169606}
   - {fileID: 955366476}
   - {fileID: 78197588}
   - {fileID: 1244832959}
@@ -5956,9 +6420,9 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 0
-  itemDesc: A big dumpster. I should probably take a closer look.
   prompt: 
   timeText: 
+  itemDesc: A big dumpster. I should probably take a closer look.
   itemSprite: {fileID: 193620687, guid: 6152c6f07ea3ba54f886da12cb15abca, type: 3}
   highlightSprite: {fileID: 461018611, guid: 6152c6f07ea3ba54f886da12cb15abca, type: 3}
   altSprite1: {fileID: 461018611, guid: 6152c6f07ea3ba54f886da12cb15abca, type: 3}
@@ -6152,10 +6616,10 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 1
-  itemDesc: "This rock\u2019s plastic. Looking closer, there\u2019s a key stuck to
-    the underside!"
   prompt: You fail to remove the key. Maybe you can find something to pry it off?
   timeText: 'There is a key attached to the rock, will you try to take it off? '
+  itemDesc: "This rock\u2019s plastic. Looking closer, there\u2019s a key stuck to
+    the underside!"
   itemSprite: {fileID: -316340405, guid: 19cc7e1e32c10374da702bc983848460, type: 3}
   highlightSprite: {fileID: 1864126737, guid: 19cc7e1e32c10374da702bc983848460, type: 3}
   altSprite1: {fileID: 969851866, guid: 19cc7e1e32c10374da702bc983848460, type: 3}
@@ -6771,9 +7235,9 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 0
-  itemDesc: "This door\u2019s just locked. Is there a key around?"
   prompt: You unlock the door.              (Click door to enter)
   timeText: 
+  itemDesc: "This door\u2019s just locked. Is there a key around?"
   itemSprite: {fileID: 1762484257, guid: e6ab65e6b6f7c1844950f6638a41bb4a, type: 3}
   highlightSprite: {fileID: 643532932, guid: e6ab65e6b6f7c1844950f6638a41bb4a, type: 3}
   altSprite1: {fileID: 643532932, guid: e6ab65e6b6f7c1844950f6638a41bb4a, type: 3}
@@ -6948,7 +7412,7 @@ CapsuleCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5000001
   m_Height: 2
@@ -6961,12 +7425,123 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1221878013}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87ca49e7f91d9114ab82ebf3b8b18e28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 356191669}
+--- !u!1 &1222169605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1222169606}
+  - component: {fileID: 1222169609}
+  - component: {fileID: 1222169608}
+  - component: {fileID: 1222169607}
+  m_Layer: 0
+  m_Name: Cube (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1222169606
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222169605}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -16.5259, y: 83.648, z: 70.93}
+  m_LocalScale: {x: 12.136934, y: 10.056248, z: 0.1533}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 993699311}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1222169607
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222169605}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1222169608
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222169605}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1222169609
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222169605}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1244832955
 GameObject:
   m_ObjectHideFlags: 0
@@ -7088,6 +7663,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1258940344}
   - component: {fileID: 1258940343}
+  - component: {fileID: 1258940346}
+  - component: {fileID: 1258940345}
+  - component: {fileID: 1258940348}
+  - component: {fileID: 1258940347}
   m_Layer: 0
   m_Name: Buttons_Travel_0
   m_TagString: Untagged
@@ -7168,6 +7747,90 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1783921939}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1258940345
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258940342}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.98, y: 0.68999994, z: 0.2}
+  m_Center: {x: 0.0000009536743, y: 0, z: 0.00000047683716}
+--- !u!114 &1258940346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258940342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ca49e7f91d9114ab82ebf3b8b18e28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MovePointData
+  cineCam: {fileID: 1190174442}
+--- !u!114 &1258940347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258940342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
+  thisObject: {fileID: 1258940342}
+  playerCam: {fileID: 1840529610}
+  lastObject: {fileID: 0}
+  lastObjectProperties: {fileID: 0}
+  lastSpriteRenderer: {fileID: 0}
+  lastOGSprite: {fileID: 0}
+  lastHoverSprite: {fileID: 0}
+  lastSpriteAlt1: {fileID: 0}
+  lastSpriteAlt2: {fileID: 0}
+--- !u!114 &1258940348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258940342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
+  thisObject: {fileID: 1258940342}
+  isInteractable: 0
+  isGrabbable: 0
+  canUseOn: 0
+  consumable: 0
+  givesPrompt: 0
+  timeLock: 0
+  isHardEvidence: 0
+  timeUsage: 0
+  prompt: 
+  timeText: 
+  itemDesc: 
+  itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
+  highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
+  altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
+  altSprite2: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
+  usesAltSprites: 0
 --- !u!1 &1280597431
 GameObject:
   m_ObjectHideFlags: 0
@@ -7493,9 +8156,9 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 1
   timeUsage: 0
-  itemDesc: 
   prompt: 
   timeText: 
+  itemDesc: 
   itemSprite: {fileID: 0}
   highlightSprite: {fileID: 0}
   altSprite1: {fileID: 0}
@@ -7636,7 +8299,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1361007709
 Transform:
   m_ObjectHideFlags: 0
@@ -7649,8 +8312,7 @@ Transform:
   m_LocalPosition: {x: -4.9, y: -1.9162, z: 0.42}
   m_LocalScale: {x: 1.84, y: 4.17, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 680327419}
+  m_Children: []
   m_Father: {fileID: 1987710925}
   m_LocalEulerAnglesHint: {x: 0, y: 301.1, z: 0}
 --- !u!64 &1361007710
@@ -8003,9 +8665,9 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 0
-  itemDesc: 
   prompt: 
   timeText: 
+  itemDesc: 
   itemSprite: {fileID: 0}
   highlightSprite: {fileID: 0}
   altSprite1: {fileID: 0}
@@ -8377,9 +9039,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 149eb1a834ad593439be20ea2b690ccd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EndGameHandler
-  totalHardEvidence: 0
-  endGamePanel: {fileID: 1059870015}
-  endText: {fileID: 69983582}
 --- !u!1 &1606907910
 GameObject:
   m_ObjectHideFlags: 0
@@ -8436,9 +9095,9 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 1
   timeUsage: 0
-  itemDesc: 
   prompt: 
   timeText: 
+  itemDesc: 
   itemSprite: {fileID: 0}
   highlightSprite: {fileID: 0}
   altSprite1: {fileID: 0}
@@ -8815,6 +9474,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1722093315}
   - component: {fileID: 1722093314}
+  - component: {fileID: 1722093319}
+  - component: {fileID: 1722093318}
+  - component: {fileID: 1722093317}
+  - component: {fileID: 1722093316}
   m_Layer: 0
   m_Name: Buttons_Travel_0
   m_TagString: Untagged
@@ -8895,6 +9558,90 @@ Transform:
   m_Children: []
   m_Father: {fileID: 377171864}
   m_LocalEulerAnglesHint: {x: -44.11, y: 0, z: 180}
+--- !u!114 &1722093316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722093313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
+  thisObject: {fileID: 1722093313}
+  playerCam: {fileID: 1840529610}
+  lastObject: {fileID: 0}
+  lastObjectProperties: {fileID: 0}
+  lastSpriteRenderer: {fileID: 0}
+  lastOGSprite: {fileID: 0}
+  lastHoverSprite: {fileID: 0}
+  lastSpriteAlt1: {fileID: 0}
+  lastSpriteAlt2: {fileID: 0}
+--- !u!114 &1722093317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722093313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
+  thisObject: {fileID: 1722093313}
+  isInteractable: 0
+  isGrabbable: 0
+  canUseOn: 0
+  consumable: 0
+  givesPrompt: 0
+  timeLock: 0
+  isHardEvidence: 0
+  timeUsage: 0
+  prompt: 
+  timeText: 
+  itemDesc: 
+  itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
+  highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
+  altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
+  altSprite2: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
+  usesAltSprites: 0
+--- !u!65 &1722093318
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722093313}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.32, y: 0.78, z: 0.20000027}
+  m_Center: {x: 0.0000104904175, y: -0.0000038146973, z: 0}
+--- !u!114 &1722093319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722093313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ca49e7f91d9114ab82ebf3b8b18e28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MovePointData
+  cineCam: {fileID: 719092054}
 --- !u!1001 &1743239819
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9168,7 +9915,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1783921938}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87ca49e7f91d9114ab82ebf3b8b18e28, type: 3}
   m_Name: 
@@ -9191,7 +9938,7 @@ CapsuleCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Height: 1.9731964
@@ -9253,9 +10000,9 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 1
   timeUsage: 0
-  itemDesc: 
   prompt: 
   timeText: 
+  itemDesc: 
   itemSprite: {fileID: 0}
   highlightSprite: {fileID: 0}
   altSprite1: {fileID: 0}
@@ -9900,9 +10647,9 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 0
-  itemDesc: "The door won\u2019t budge. Gotta find another way in."
   prompt: 
   timeText: 
+  itemDesc: "The door won\u2019t budge. Gotta find another way in."
   itemSprite: {fileID: -1731815651, guid: f237e1be581d33c4abc87206450bcf10, type: 3}
   highlightSprite: {fileID: 1196141505, guid: f237e1be581d33c4abc87206450bcf10, type: 3}
   altSprite1: {fileID: 1196141505, guid: f237e1be581d33c4abc87206450bcf10, type: 3}
@@ -10151,6 +10898,7 @@ Transform:
   m_Children:
   - {fileID: 1783921939}
   - {fileID: 1361007709}
+  - {fileID: 680327419}
   - {fileID: 1862210748}
   - {fileID: 377171864}
   - {fileID: 1221878014}
@@ -10378,10 +11126,10 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 5
-  itemDesc: "This rock\u2019s plastic. Looking closer, there\u2019s a key stuck to
-    the underside!"
   prompt: You fail to remove the key. Maybe you can find something to pry it off?
   timeText: 'There is a key attached to the rock, will you try to take it off? '
+  itemDesc: "This rock\u2019s plastic. Looking closer, there\u2019s a key stuck to
+    the underside!"
   itemSprite: {fileID: -2127731599, guid: 19cc7e1e32c10374da702bc983848460, type: 3}
   highlightSprite: {fileID: 503531864, guid: 19cc7e1e32c10374da702bc983848460, type: 3}
   altSprite1: {fileID: 503531864, guid: 19cc7e1e32c10374da702bc983848460, type: 3}
