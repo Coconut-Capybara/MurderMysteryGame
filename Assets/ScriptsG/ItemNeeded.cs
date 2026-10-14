@@ -15,6 +15,16 @@ public class ItemNeeded : MonoBehaviour
     [SerializeField] private GameObject[] itemNeeded;
     [Tooltip("The Script TimeController. Should only be one in the scene")]
     [SerializeField] private TimeController timeController;
+
+    [Tooltip("Gives player an item")]
+    [SerializeField] private bool giveItem;
+
+    [Tooltip("Item given to player")]
+    [SerializeField] private GameObject ItemGiven;
+
+    [Tooltip("Disables the object the item is being used on")]
+    [SerializeField] private bool disableObject;
+
     /// <summary>
     /// Base function for item interaction
     /// </summary>
@@ -23,18 +33,26 @@ public class ItemNeeded : MonoBehaviour
     {
         for(int i = 0; i < itemNeeded.Length; i++)
         {
-            if(itemNeeded[i].GetComponent<InventoryItemScript>().GetItemId() ==
-                currentItem.GetComponent<InventoryItemScript>().GetItemId())
+            if(currentItem.GetComponent<InventoryItemScript>().GetItemId() ==
+                itemNeeded[i].GetComponent<InventoryItemScript>().GetItemId())
             {
-                if(itemNeeded[i].GetComponent<InventoryItemScript>().GetItemId() == 1)
-                {
-                    print("Thing 1");
-                }
-                else if(itemNeeded[i].GetComponent<InventoryItemScript>().GetItemId() == 2)
-                {
-                    print("Thing 2");
-                }
+                ItemUseFunctionality(currentItem);
             }
+        }
+    }
+    private void ItemUseFunctionality(GameObject currentItem)
+    {
+        if(giveItem)
+        {
+            GameObject.FindFirstObjectByType<AddToInventory>().AddNonWorldItem(currentItem);
+        }
+        if (currentItem.GetComponent<ObjectProperties>().consumable)
+        {
+            Consume(currentItem);
+        }
+        if (disableObject)
+        {
+            gameObject.SetActive(false);        
         }
     }
     /// <summary>

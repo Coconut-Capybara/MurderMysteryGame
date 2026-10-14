@@ -12,7 +12,7 @@ using UnityEngine.SceneManagement;
 
 public class VertSliceEndScreen : MonoBehaviour
 {
-    public GameObject vertSlicePanel;
+    [SerializeField] private GameObject vertSlicePanel;
     /// <summary>
     /// Quits the game
     /// </summary>
@@ -26,5 +26,9 @@ public class VertSliceEndScreen : MonoBehaviour
     public void ResetGame()
     {
         SceneManager.LoadScene("TempMainMenu");
+    }
+    public GameObject GetVerticalSlicePanel()
+    {
+        return vertSlicePanel;  
     }
 }

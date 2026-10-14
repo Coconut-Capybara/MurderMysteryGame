@@ -1,3 +1,12 @@
+/*****************************************************************************
+// Script Name : TaxidermyPuzzle
+// Author : Gabriel Andrews
+// Additional Author(s) :
+// Creation Date:10/05/26
+// Last Modified Date: 10/14/26
+//
+// Summary : Handles the logic of the taxidermy puzzle
+*****************************************************************************/
 using UnityEngine;
 
 public class TaxidermyPuzzle : NoItemInteractions
@@ -7,9 +16,9 @@ public class TaxidermyPuzzle : NoItemInteractions
     [SerializeField] private int[] headOrder;
     [SerializeField] private int[] orderNeeded;
     [SerializeField] private GameObject[] heads;
-    public Vector3 headPos;
+    [SerializeField] private Vector3 headPos;
     private Vector3 headPosOrgin;
-    public int headCount;
+    private int headCount;
 
     private void Start()
     {
@@ -21,6 +30,9 @@ public class TaxidermyPuzzle : NoItemInteractions
         headCount++;
         headPos.x += pivot;       
     }
+    /// <summary>
+    /// Resets the puzzle
+    /// </summary>
     public void ResetPuzzle()
     {
         headCount = 0;
@@ -31,14 +43,17 @@ public class TaxidermyPuzzle : NoItemInteractions
         }
         for(int i = 0; i < heads.Length; i++)
         {
-            heads[i].transform.position = heads[i].GetComponent<TaxidermyHeadScript>().orgin;
-            heads[i].GetComponent<TaxidermyHeadScript>().locked = false;
+            heads[i].transform.position = heads[i].GetComponent<TaxidermyHeadScript>().GetOrgin();
+            heads[i].GetComponent<TaxidermyHeadScript>().SetLockState(false);   
         }
     }
     public override void NoItemFunciton()
     {
         PuzzleConfirmation();
     }
+    /// <summary>
+    /// Checks if the puzzle is correct, takes time regardless
+    /// </summary>
     public void PuzzleConfirmation()
     {
         if (PuzzleCheck())
@@ -50,7 +65,11 @@ public class TaxidermyPuzzle : NoItemInteractions
             print("No");
         }
         GameObject.FindAnyObjectByType<TimeController>().TimeAway(timeAway);
-    }   
+    }  
+    /// <summary>
+    /// returns true if the player has the right order, else returns false
+    /// </summary>
+    /// <returns></returns>
     private bool PuzzleCheck()
     {
         bool valid = true;
@@ -62,6 +81,14 @@ public class TaxidermyPuzzle : NoItemInteractions
             }
         }
         return valid;
+    }
+    public Vector3 GetHeadPosition()
+    {
+        return headPos; 
+    }
+    public int GetHeadCount()
+    {
+        return headCount;       
     }
 }
 

@@ -25,7 +25,7 @@ public class TimeController : MonoBehaviour
 
     [Header("Time UI Elements")]
     [Tooltip("The UI Panel that holds the Time Passing Check stuff")]
-    public GameObject timePanel;
+    [SerializeField] private GameObject timePanel;
     [Tooltip("The text that shares the info of what is happening, the time performing the action will take, and how much time will remain.")]
     [SerializeField] private TMP_Text timeAwayText;
     [Tooltip("The Confirm Button when performing a time-consuming action")]
@@ -38,7 +38,7 @@ public class TimeController : MonoBehaviour
     [Tooltip("The text that holds the persistent time left info in the top right corner")]
     [SerializeField] private TMP_Text timerText;
     [Tooltip("Whether the timePanel game object is active or not")]
-    public bool timeUsePanel;
+    [SerializeField] private bool timeUsePanel;
 
     private int tempTime;
 
@@ -81,7 +81,7 @@ public class TimeController : MonoBehaviour
     {
         timeUsePanel = false;
         timePanel.gameObject.SetActive(false);
-        GameObject.FindFirstObjectByType<PlayerInteract>().inPrompt = false;    
+        GameObject.FindFirstObjectByType<PlayerInteract>().SetInPrompt(false);    
     }
     public void TimeAway(int time)
     {
@@ -105,7 +105,14 @@ public class TimeController : MonoBehaviour
             print("game is over.");
         }
     }
-
+    public void SetTimeUsePanel(bool panel)
+    {
+        timeUsePanel = panel;
+    }
+    public GameObject GetTimePanel()
+    {
+        return timePanel;       
+    }
     // Update is called once per frame
     void Update()
     {

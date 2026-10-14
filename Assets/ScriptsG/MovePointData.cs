@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class MovePointData : MonoBehaviour
 {
-    [SerializeField] public CinemachineCamera cineCam;
+    [SerializeField] private CinemachineCamera cineCam;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -14,5 +14,9 @@ public class MovePointData : MonoBehaviour
     void Update()
     {
         
+    }
+    public CinemachineCamera GetCamera()
+    {
+        return cineCam; 
     }
 }

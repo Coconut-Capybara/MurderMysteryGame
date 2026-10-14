@@ -1,4 +1,12 @@
-using Unity.VisualScripting;
+/*****************************************************************************
+// Script Name : PickUpBook
+// Author : Gabriel Andrews
+// Additional Author(s) :
+// Creation Date:10/07/26
+// Last Modified Date: 10/14/26
+//
+// Summary : Allows the player to pick up books in the bookshelf puzzle
+*****************************************************************************/
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,13 +17,17 @@ public class PickUpBook : MonoBehaviour
     [SerializeField] private GameObject puzzlePanel;
     [SerializeField] private int timeAway;
     InputAction grab;
-    public GameObject currentBook;
-    public bool locked;
+    private GameObject currentBook;
+    private bool locked;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         grab = InputSystem.actions.FindAction("Interact");  
     }
+    /// <summary>
+    /// Checks if the player has the books in the correct order, 
+    /// takes time regardless
+    /// </summary>
     public void Confirm()
     {
         GameObject.FindAnyObjectByType<TimeController>().TimeAway(timeAway);
@@ -28,6 +40,10 @@ public class PickUpBook : MonoBehaviour
             print("No");
         }
     }
+    /// <summary>
+    /// Returns true if the book order is correct, else returns false
+    /// </summary>
+    /// <returns></returns>
     private bool OrderValid()
     {
         bool valid = true;
@@ -40,6 +56,11 @@ public class PickUpBook : MonoBehaviour
         }
         return valid;
     }
+    /// <summary>
+    /// Swaps two books position in the array
+    /// </summary>
+    /// <param name="book1"></param>
+    /// <param name="book2"></param>
     public void SwapBookOrder(int book1,int book2)
     {
         GameObject temp = currentBookOrder[book1];
@@ -47,10 +68,10 @@ public class PickUpBook : MonoBehaviour
         currentBookOrder[book1] = currentBookOrder[book2];  
         currentBookOrder[book2] = temp;
 
-        int tempVal = currentBookOrder[book1].GetComponent<BookScript>().value;
-        currentBookOrder[book1].GetComponent<BookScript>().value = currentBookOrder[book2]
-            .GetComponent<BookScript>().value;
-        currentBookOrder[book2].GetComponent<BookScript>().value = tempVal;
+        int tempVal = currentBookOrder[book1].GetComponent<BookScript>().GetValue();
+        currentBookOrder[book1].GetComponent<BookScript>().SetValue(currentBookOrder[book2]
+            .GetComponent<BookScript>().GetValue());
+        currentBookOrder[book2].GetComponent<BookScript>().SetValue(tempVal);       
     }
     // Update is called once per frame
     void Update()
@@ -59,7 +80,7 @@ public class PickUpBook : MonoBehaviour
         {
             if(currentBook != null && !locked)
             {
-                currentBook.GetComponent<BookScript>().grabbed = true;
+                currentBook.GetComponent<BookScript>().SetGrabbed(true);
                 locked = true;
             }
         }
@@ -68,10 +89,22 @@ public class PickUpBook : MonoBehaviour
             if(currentBook != null)
             {
                 locked = false;
-                currentBook.GetComponent<BookScript>().grabbed = false;
+                currentBook.GetComponent<BookScript>().SetGrabbed(false);
                 currentBook.GetComponent<BookScript>().ReturnToPos();
                 currentBook = null;
             }
         }
+    }
+    public GameObject GetCurrentBook()
+    {
+        return currentBook;
+    }
+    public void SetCurrentBook(GameObject _currentBook)
+    {
+        currentBook = _currentBook; 
+    }
+    public bool GetLockState()
+    {
+        return locked;          
     }
 }

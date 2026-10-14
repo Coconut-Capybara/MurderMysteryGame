@@ -1,6 +1,15 @@
+/*****************************************************************************
+// Script Name : SafeOpenScript
+// Author : Gabriel Andrews
+// Additional Author(s) :
+// Creation Date:9/26/26
+// Last Modified Date: 10/14/26
+//
+// Summary : Handles the safe code
+*****************************************************************************/
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+
 
 public class SafeOpenScript : MonoBehaviour
 {
@@ -12,6 +21,10 @@ public class SafeOpenScript : MonoBehaviour
     {
         userCode = new int[safeNumbers.Length];    
     }
+    /// <summary>
+    /// Updates the current safe code
+    /// </summary>
+    /// <param name="buttonKey"></param>
     public void UpdateButton(int buttonKey)
     {
         if(buttonKey < 0)
@@ -35,6 +48,9 @@ public class SafeOpenScript : MonoBehaviour
             currentNum++;
         }
     }
+    /// <summary>
+    /// Checks if the player has the correct code
+    /// </summary>
     public void ValidateCode()
     {
         if (CodeValid())
@@ -46,6 +62,10 @@ public class SafeOpenScript : MonoBehaviour
             print("Wrong");
         }
     }
+    /// <summary>
+    /// Returns true if player has the correct code, else returns false
+    /// </summary>
+    /// <returns></returns>
     private bool CodeValid()
     {
         bool valid = true; 
@@ -58,6 +78,9 @@ public class SafeOpenScript : MonoBehaviour
         }
         return valid;       
     }
+    /// <summary>
+    /// Resets the current code the player inputs
+    /// </summary>
     private void ResetCode()
     {
         foreach (GameObject g in safeNumbers)
