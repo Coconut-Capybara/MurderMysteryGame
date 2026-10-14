@@ -25,9 +25,9 @@ public class TextPrompts : MonoBehaviour
     public void ShowPrompt(string _prompt)
     {
        promptPanel.SetActive(true); 
-       GameObject.FindFirstObjectByType<PlayerInteract>().inPrompt = true;
+       GameObject.FindFirstObjectByType<PlayerInteract>().SetInPrompt(true);
        GameObject.FindFirstObjectByType<PlayerInteract>().cursorState = PlayerInteract.CursorState.None;
-        if (GameObject.FindFirstObjectByType<PlayerInteract>().inPrompt)
+        if (GameObject.FindFirstObjectByType<PlayerInteract>().GetInPrompt())
         {
             promptTextCO = StartCoroutine(ShowText(_prompt));
         }
@@ -51,7 +51,7 @@ public class TextPrompts : MonoBehaviour
         {
             StopCoroutine(promptTextCO);        
         }
-        GameObject.FindFirstObjectByType<PlayerInteract>().inPrompt = false;
+        GameObject.FindFirstObjectByType<PlayerInteract>().SetInPrompt(false);  
         promptText.text = " ";
     }
 }

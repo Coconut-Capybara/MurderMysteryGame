@@ -28,7 +28,7 @@ public class GivePlayerItem : NoItemInteractions
             GiveItem(itemPrefabs[i]);
             if (itemPrefabs[i].gameObject.name == "Screwdriver")
             {
-                outsideRock.GetComponent<ObjectProperties>().timeLock = false;
+                //outsideRock.GetComponent<ObjectProperties>().timeLock = false;
             }
             if(gameObject.name == "2D_DumpsterInspect")
             {

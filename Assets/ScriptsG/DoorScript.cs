@@ -37,7 +37,7 @@ public class DoorScript : ItemNeeded
     {
         //camera movement here
         vertSliceEndScreen = FindAnyObjectByType<VertSliceEndScreen>();
-        vertSlicePanel = vertSliceEndScreen.vertSlicePanel;
+        vertSlicePanel = vertSliceEndScreen.GetVerticalSlicePanel();
         vertSlicePanel.SetActive(true);
         print("You enter the door");
     }

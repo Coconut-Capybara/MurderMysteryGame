@@ -11,7 +11,10 @@ inventory
 using UnityEngine;
 public class GrabbableObject : MonoBehaviour
 {
+    [Tooltip("The in game object that will give the player this item")]
     [SerializeField] private GameObject itemIconGO;
+
+    [Tooltip("Inventory Canvas")]
     [SerializeField] private GameObject canvas;
     private Vector2 iconPos;
     /// <summary>
