@@ -1124,7 +1124,7 @@ MonoBehaviour:
   isInteractable: 0
   isGrabbable: 0
   canUseOn: 1
-  consumable: 0
+  consumable: 1
   givesPrompt: 1
   timeLock: 0
   isHardEvidence: 0
@@ -1194,6 +1194,9 @@ MonoBehaviour:
   itemNeeded:
   - {fileID: 3043295151955953431, guid: f5ed07d89a75df543b4a350083606087, type: 3}
   timeController: {fileID: 1840529617}
+  giveItem: 0
+  ItemGiven: {fileID: 0}
+  disableObject: 0
 --- !u!114 &573199881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1201,13 +1204,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 573199874}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b9fe14316dbbd874aaf87f3d7b0365db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorScript
   itemNeeded: []
   timeController: {fileID: 0}
+  giveItem: 0
+  ItemGiven: {fileID: 0}
+  disableObject: 0
   isLocked: 0
   vertSliceEndScreen: {fileID: 0}
 --- !u!1 &624003606
@@ -1334,9 +1340,11 @@ MonoBehaviour:
   itemNeeded:
   - {fileID: 3043295151955953431, guid: af4429b390e0f4242889d5d6c2ad0a3f, type: 3}
   timeController: {fileID: 1840529617}
+  giveItem: 0
+  ItemGiven: {fileID: 0}
+  disableObject: 0
   key: {fileID: 3043295151955953431, guid: f5ed07d89a75df543b4a350083606087, type: 3}
   objectProperties: {fileID: 725437204}
-  timeLocked: 0
   itemUseTime: 5
 --- !u!4 &725437203
 Transform:
@@ -4064,8 +4072,6 @@ MonoBehaviour:
   playerCam: {fileID: 1840529610}
   currentItem: {fileID: 0}
   hoverItem: {fileID: 0}
-  inPrompt: 0
-  inGame: 1
   cursorState: 0
 --- !u!114 &1840529619
 MonoBehaviour:
@@ -4679,7 +4685,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114967978}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e1ebc0e2d1f767f4690da2c04134ef46, type: 3}
   m_Name: 
