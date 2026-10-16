@@ -1025,7 +1025,7 @@ MonoBehaviour:
   highlightSprite: {fileID: 947192633, guid: 86ed18f9fcb81b24b951162528dedc2c, type: 3}
   altSprite1: {fileID: -58800814, guid: 86ed18f9fcb81b24b951162528dedc2c, type: 3}
   altSprite2: {fileID: -357668438, guid: 86ed18f9fcb81b24b951162528dedc2c, type: 3}
-  usesAltSprites: 1
+  usesAltSprites: 0
 --- !u!65 &414760051
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1524,7 +1524,7 @@ MonoBehaviour:
   highlightSprite: {fileID: -1006257401, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
   altSprite1: {fileID: 903590207, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
   altSprite2: {fileID: -767220886, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
-  usesAltSprites: 1
+  usesAltSprites: 0
 --- !u!65 &588025376
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1799,7 +1799,7 @@ MonoBehaviour:
   highlightSprite: {fileID: -1634964913, guid: 58cebbb44e74bbf4d93384f7c627b05c, type: 3}
   altSprite1: {fileID: -642730735, guid: 229cbebc584372b47b4fe2d34bb51bcb, type: 3}
   altSprite2: {fileID: 1012826350, guid: 229cbebc584372b47b4fe2d34bb51bcb, type: 3}
-  usesAltSprites: 1
+  usesAltSprites: 0
 --- !u!65 &614065049
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3686,7 +3686,7 @@ MonoBehaviour:
   highlightSprite: {fileID: -132606945, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
   altSprite1: {fileID: 1178685855, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
   altSprite2: {fileID: 1178685855, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
-  usesAltSprites: 1
+  usesAltSprites: 0
 --- !u!65 &1066289618
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4011,7 +4011,7 @@ MonoBehaviour:
   highlightSprite: {fileID: 480881303, guid: 0b6ea9ab209f02344987d0f1a9188b54, type: 3}
   altSprite1: {fileID: 1865439687, guid: 0b6ea9ab209f02344987d0f1a9188b54, type: 3}
   altSprite2: {fileID: 1865439687, guid: 0b6ea9ab209f02344987d0f1a9188b54, type: 3}
-  usesAltSprites: 1
+  usesAltSprites: 0
 --- !u!65 &1168672711
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4842,7 +4842,7 @@ MonoBehaviour:
   highlightSprite: {fileID: -1767711905, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
   altSprite1: {fileID: 1876734663, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
   altSprite2: {fileID: -672972822, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
-  usesAltSprites: 1
+  usesAltSprites: 0
 --- !u!65 &1442068115
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5373,6 +5373,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
   itemNeeded: []
   timeController: {fileID: 0}
+  giveItem: 0
+  ItemGiven: {fileID: 0}
+  disableObject: 0
 --- !u!1 &1572282139
 GameObject:
   m_ObjectHideFlags: 0
@@ -5765,8 +5768,6 @@ MonoBehaviour:
   playerCam: {fileID: 1840529610}
   currentItem: {fileID: 0}
   hoverItem: {fileID: 0}
-  inPrompt: 0
-  inGame: 1
   cursorState: 0
 --- !u!114 &1840529616
 MonoBehaviour:
@@ -7112,7 +7113,7 @@ MonoBehaviour:
   highlightSprite: {fileID: -39248358, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
   altSprite1: {fileID: -858309015, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
   altSprite2: {fileID: -858309015, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
-  usesAltSprites: 1
+  usesAltSprites: 0
 --- !u!65 &2141000529
 BoxCollider:
   m_ObjectHideFlags: 0
