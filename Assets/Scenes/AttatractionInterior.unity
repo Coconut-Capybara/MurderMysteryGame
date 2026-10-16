@@ -1025,7 +1025,7 @@ MonoBehaviour:
   highlightSprite: {fileID: 947192633, guid: 86ed18f9fcb81b24b951162528dedc2c, type: 3}
   altSprite1: {fileID: -58800814, guid: 86ed18f9fcb81b24b951162528dedc2c, type: 3}
   altSprite2: {fileID: -357668438, guid: 86ed18f9fcb81b24b951162528dedc2c, type: 3}
-  usesAltSprites: 1
+  usesAltSprites: 0
 --- !u!65 &414760051
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1799,7 +1799,7 @@ MonoBehaviour:
   highlightSprite: {fileID: -1634964913, guid: 58cebbb44e74bbf4d93384f7c627b05c, type: 3}
   altSprite1: {fileID: -642730735, guid: 229cbebc584372b47b4fe2d34bb51bcb, type: 3}
   altSprite2: {fileID: 1012826350, guid: 229cbebc584372b47b4fe2d34bb51bcb, type: 3}
-  usesAltSprites: 1
+  usesAltSprites: 0
 --- !u!65 &614065049
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4842,7 +4842,7 @@ MonoBehaviour:
   highlightSprite: {fileID: -1767711905, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
   altSprite1: {fileID: 1876734663, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
   altSprite2: {fileID: -672972822, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
-  usesAltSprites: 1
+  usesAltSprites: 0
 --- !u!65 &1442068115
 BoxCollider:
   m_ObjectHideFlags: 0
