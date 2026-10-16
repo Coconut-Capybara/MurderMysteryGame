@@ -24,10 +24,10 @@ public class PlayerInteract : MonoBehaviour
     private GameObject lockedItem;
     private TimeController timeController;
     [Tooltip("Whether the player is currently in a prompt state. DO NOT MANUALLY ASSIGN")]
-    public bool inPrompt;
+    private bool inPrompt;
     [Tooltip("Whether the player is not in a prompt. Make sure this is true before pressing play. " +
         "DO NOT CHANGE IN GAME")]
-    public bool inGame;
+    private bool inGame;
     /// <summary>
     /// The current state of the players cursor
     /// </summary>
@@ -45,6 +45,8 @@ public class PlayerInteract : MonoBehaviour
         timeController = GameObject.FindFirstObjectByType<TimeController>();    
         interact = InputSystem.actions.FindAction("Interact");
         itemUseLock = false;
+        inGame = true;
+        inPrompt = false;       
     }
 
     /// <summary>
@@ -239,9 +241,9 @@ public class PlayerInteract : MonoBehaviour
     public void TimeConfirm()
     {
         inPrompt = false;   
-        timeController.timeUsePanel = false;
+        timeController.SetTimeUsePanel(false); 
         timeController.TimeAway(hoverItem.GetComponent<ObjectProperties>().timeUsage);
-        timeController.timePanel.SetActive(false);
+        timeController.GetTimePanel().SetActive(false);
         hoverItem.GetComponent<ObjectProperties>().timeUsage = 0;
     
         if (itemUseLock)
@@ -263,5 +265,20 @@ public class PlayerInteract : MonoBehaviour
     {
        GameObject.FindFirstObjectByType<TextPrompts>().HidePrompt();
     }
-
+    public void SetInGame(bool _inGame)
+    {
+        inGame = _inGame;   
+    }
+    public bool GetInGame()
+    {
+        return inGame;
+    }
+    public void SetInPrompt(bool _inPrompt)
+    {
+        inPrompt = _inPrompt;
+    }
+    public bool GetInPrompt()
+    {
+        return inPrompt;    
+    }
 }

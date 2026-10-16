@@ -31,19 +31,19 @@ public class SpriteInterchange : MonoBehaviour
 
     [Header("Last Object Touched Data")]
     [Tooltip("DONT TOUCH PRETTY PLEASE :)")]
-    public GameObject lastObject;
+    [SerializeField] private GameObject lastObject;
     [Tooltip("DONT TOUCH PRETTY PLEASE :)")]
-    public ObjectProperties lastObjectProperties;
+    [SerializeField] private ObjectProperties lastObjectProperties;
     [Tooltip("DONT TOUCH PRETTY PLEASE :)")]
-    public SpriteRenderer lastSpriteRenderer;
+    [SerializeField] private SpriteRenderer lastSpriteRenderer;
     [Tooltip("DONT TOUCH PRETTY PLEASE :)")]
-    public Sprite lastOGSprite;
+    [SerializeField] private Sprite lastOGSprite;
     [Tooltip("DONT TOUCH PRETTY PLEASE :)")]
-    public Sprite lastHoverSprite;
+    [SerializeField] private Sprite lastHoverSprite;
     [Tooltip("DONT TOUCH PRETTY PLEASE :)")]
-    public Sprite lastSpriteAlt1;
+    [SerializeField] private Sprite lastSpriteAlt1;
     [Tooltip("DONT TOUCH PRETTY PLEASE :)")]
-    public Sprite lastSpriteAlt2;
+    [SerializeField] private Sprite lastSpriteAlt2;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -57,7 +57,7 @@ public class SpriteInterchange : MonoBehaviour
     /// </summary>
     void Update()
     {
-        if (!player.inPrompt && player.inGame)
+        if (!player.GetInPrompt() && player.GetInGame())
         {
             Vector3 cursorPos = Mouse.current.position.ReadValue();
             Ray ray = playerCam.ScreenPointToRay(cursorPos);

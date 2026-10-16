@@ -108,7 +108,7 @@ public class MovementController : MonoBehaviour
     private void GetCamera(GameObject camSpot)
     {
         movePointData = camSpot.gameObject.GetComponent<MovePointData>();
-        currentCam = movePointData.cineCam;
+        currentCam = movePointData.GetCamera();
     }
 
     /// <summary>
@@ -116,8 +116,8 @@ public class MovementController : MonoBehaviour
     /// </summary>
     private void InteractRay()
     {
-        if (interact.WasPressedThisFrame() && !GameObject.FindFirstObjectByType<PlayerInteract>().
-            inPrompt && GameObject.FindFirstObjectByType<PlayerInteract>().inGame)
+        if (interact.WasPressedThisFrame() && !GameObject.FindFirstObjectByType<PlayerInteract>().GetInPrompt()
+            && GameObject.FindFirstObjectByType<PlayerInteract>().GetInGame())
         {
             Vector3 cursorPos = Mouse.current.position.ReadValue();
             Ray ray = mainCam.ScreenPointToRay(cursorPos);

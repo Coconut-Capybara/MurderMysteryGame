@@ -12,8 +12,13 @@ using UnityEngine;
 
 public class AddToInventory : MonoBehaviour
 {
+    [Tooltip("The inventory items current position in the inventory")]
     [SerializeField] private Vector2 currentIconPos;
+
+    [Tooltip("The amount of space in between each item in the inventory")]
     [SerializeField] private Vector2 iconPivot;
+
+    [Tooltip("The inventory canvas")]
     [SerializeField] private GameObject canvas;
     /// <summary>
     /// Puts item in inventory

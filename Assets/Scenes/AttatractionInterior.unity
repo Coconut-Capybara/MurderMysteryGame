@@ -988,8 +988,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 0}
-  playerCam: {fileID: 0}
+  thisObject: {fileID: 414760046}
+  playerCam: {fileID: 1840529610}
   lastObject: {fileID: 0}
   lastObjectProperties: {fileID: 0}
   lastSpriteRenderer: {fileID: 0}
@@ -1009,8 +1009,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
-  thisObject: {fileID: 0}
-  isInteractable: 0
+  thisObject: {fileID: 414760046}
+  isInteractable: 1
   isGrabbable: 0
   canUseOn: 0
   consumable: 0
@@ -1021,11 +1021,11 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: 
-  itemSprite: {fileID: 0}
-  highlightSprite: {fileID: 0}
-  altSprite1: {fileID: 0}
-  altSprite2: {fileID: 0}
-  usesAltSprites: 0
+  itemSprite: {fileID: 1614871090, guid: 86ed18f9fcb81b24b951162528dedc2c, type: 3}
+  highlightSprite: {fileID: 947192633, guid: 86ed18f9fcb81b24b951162528dedc2c, type: 3}
+  altSprite1: {fileID: -58800814, guid: 86ed18f9fcb81b24b951162528dedc2c, type: 3}
+  altSprite2: {fileID: -357668438, guid: 86ed18f9fcb81b24b951162528dedc2c, type: 3}
+  usesAltSprites: 1
 --- !u!65 &414760051
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1410,13 +1410,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 588025371}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16.66635, y: -5.90854, z: -8.70326}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -16.66635, y: -5.90854, z: -8.58}
   m_LocalScale: {x: 3.7, y: 4.5, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1412046521}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!212 &588025373
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1487,8 +1487,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 0}
-  playerCam: {fileID: 0}
+  thisObject: {fileID: 588025371}
+  playerCam: {fileID: 1840529610}
   lastObject: {fileID: 0}
   lastObjectProperties: {fileID: 0}
   lastSpriteRenderer: {fileID: 0}
@@ -1508,8 +1508,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
-  thisObject: {fileID: 0}
-  isInteractable: 0
+  thisObject: {fileID: 588025371}
+  isInteractable: 1
   isGrabbable: 0
   canUseOn: 0
   consumable: 0
@@ -1520,11 +1520,11 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: 
-  itemSprite: {fileID: 0}
-  highlightSprite: {fileID: 0}
-  altSprite1: {fileID: 0}
-  altSprite2: {fileID: 0}
-  usesAltSprites: 0
+  itemSprite: {fileID: 812125516, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
+  highlightSprite: {fileID: -1006257401, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
+  altSprite1: {fileID: 903590207, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
+  altSprite2: {fileID: -767220886, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
+  usesAltSprites: 1
 --- !u!65 &588025376
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1762,8 +1762,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 0}
-  playerCam: {fileID: 0}
+  thisObject: {fileID: 614065045}
+  playerCam: {fileID: 1840529610}
   lastObject: {fileID: 0}
   lastObjectProperties: {fileID: 0}
   lastSpriteRenderer: {fileID: 0}
@@ -1783,8 +1783,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
-  thisObject: {fileID: 0}
-  isInteractable: 0
+  thisObject: {fileID: 614065045}
+  isInteractable: 1
   isGrabbable: 0
   canUseOn: 0
   consumable: 0
@@ -1795,11 +1795,11 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: 
-  itemSprite: {fileID: 0}
-  highlightSprite: {fileID: 0}
-  altSprite1: {fileID: 0}
-  altSprite2: {fileID: 0}
-  usesAltSprites: 0
+  itemSprite: {fileID: 2068948189, guid: 58cebbb44e74bbf4d93384f7c627b05c, type: 3}
+  highlightSprite: {fileID: -1634964913, guid: 58cebbb44e74bbf4d93384f7c627b05c, type: 3}
+  altSprite1: {fileID: -642730735, guid: 229cbebc584372b47b4fe2d34bb51bcb, type: 3}
+  altSprite2: {fileID: 1012826350, guid: 229cbebc584372b47b4fe2d34bb51bcb, type: 3}
+  usesAltSprites: 1
 --- !u!65 &614065049
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3572,13 +3572,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066289613}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -7.656351, y: -5.90854, z: -8.70326}
   m_LocalScale: {x: 3.7, y: 4.5, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1412046521}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!212 &1066289615
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3649,8 +3649,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 0}
-  playerCam: {fileID: 0}
+  thisObject: {fileID: 1066289613}
+  playerCam: {fileID: 1840529610}
   lastObject: {fileID: 0}
   lastObjectProperties: {fileID: 0}
   lastSpriteRenderer: {fileID: 0}
@@ -3670,8 +3670,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
-  thisObject: {fileID: 0}
-  isInteractable: 0
+  thisObject: {fileID: 1066289613}
+  isInteractable: 1
   isGrabbable: 0
   canUseOn: 0
   consumable: 0
@@ -3682,11 +3682,11 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: 
-  itemSprite: {fileID: 0}
-  highlightSprite: {fileID: 0}
-  altSprite1: {fileID: 0}
-  altSprite2: {fileID: 0}
-  usesAltSprites: 0
+  itemSprite: {fileID: 2058338222, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
+  highlightSprite: {fileID: -132606945, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
+  altSprite1: {fileID: 1178685855, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
+  altSprite2: {fileID: 1178685855, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
+  usesAltSprites: 1
 --- !u!65 &1066289618
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3897,13 +3897,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1168672706}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -3.1763506, y: -5.90854, z: -8.70326}
   m_LocalScale: {x: 3.7, y: 4.5, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1412046521}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!212 &1168672708
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3974,8 +3974,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 0}
-  playerCam: {fileID: 0}
+  thisObject: {fileID: 1168672706}
+  playerCam: {fileID: 1840529610}
   lastObject: {fileID: 0}
   lastObjectProperties: {fileID: 0}
   lastSpriteRenderer: {fileID: 0}
@@ -3995,8 +3995,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
-  thisObject: {fileID: 0}
-  isInteractable: 0
+  thisObject: {fileID: 1168672706}
+  isInteractable: 1
   isGrabbable: 0
   canUseOn: 0
   consumable: 0
@@ -4007,11 +4007,11 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: 
-  itemSprite: {fileID: 0}
-  highlightSprite: {fileID: 0}
-  altSprite1: {fileID: 0}
-  altSprite2: {fileID: 0}
-  usesAltSprites: 0
+  itemSprite: {fileID: -320910802, guid: 0b6ea9ab209f02344987d0f1a9188b54, type: 3}
+  highlightSprite: {fileID: 480881303, guid: 0b6ea9ab209f02344987d0f1a9188b54, type: 3}
+  altSprite1: {fileID: 1865439687, guid: 0b6ea9ab209f02344987d0f1a9188b54, type: 3}
+  altSprite2: {fileID: 1865439687, guid: 0b6ea9ab209f02344987d0f1a9188b54, type: 3}
+  usesAltSprites: 1
 --- !u!65 &1168672711
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4450,7 +4450,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1412046521}
   m_Layer: 0
-  m_Name: Set Peices Breakroom
+  m_Name: BreakroomSet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4805,8 +4805,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 0}
-  playerCam: {fileID: 0}
+  thisObject: {fileID: 1442068112}
+  playerCam: {fileID: 1840529610}
   lastObject: {fileID: 0}
   lastObjectProperties: {fileID: 0}
   lastSpriteRenderer: {fileID: 0}
@@ -4826,8 +4826,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
-  thisObject: {fileID: 0}
-  isInteractable: 0
+  thisObject: {fileID: 1442068112}
+  isInteractable: 1
   isGrabbable: 0
   canUseOn: 0
   consumable: 0
@@ -4838,11 +4838,11 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: 
-  itemSprite: {fileID: 0}
-  highlightSprite: {fileID: 0}
-  altSprite1: {fileID: 0}
-  altSprite2: {fileID: 0}
-  usesAltSprites: 0
+  itemSprite: {fileID: -898135415, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
+  highlightSprite: {fileID: -1767711905, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
+  altSprite1: {fileID: 1876734663, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
+  altSprite2: {fileID: -672972822, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
+  usesAltSprites: 1
 --- !u!65 &1442068115
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4930,13 +4930,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1442068112}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.40119934, y: 4.45135, z: -8.691139}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: -0.40119934, y: 4.88, z: -8.691139}
   m_LocalScale: {x: 4.011964, y: 4.011964, z: 4.011964}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1249145198}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
 --- !u!1 &1471487549
 GameObject:
   m_ObjectHideFlags: 0
@@ -6998,13 +6998,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2141000524}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -12.156351, y: -5.88854, z: -8.70326}
   m_LocalScale: {x: 3.7, y: 4.5, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1412046521}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!212 &2141000526
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7075,8 +7075,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 0}
-  playerCam: {fileID: 0}
+  thisObject: {fileID: 2141000524}
+  playerCam: {fileID: 1840529610}
   lastObject: {fileID: 0}
   lastObjectProperties: {fileID: 0}
   lastSpriteRenderer: {fileID: 0}
@@ -7096,8 +7096,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
-  thisObject: {fileID: 0}
-  isInteractable: 0
+  thisObject: {fileID: 2141000524}
+  isInteractable: 1
   isGrabbable: 0
   canUseOn: 0
   consumable: 0
@@ -7108,11 +7108,11 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: 
-  itemSprite: {fileID: 0}
-  highlightSprite: {fileID: 0}
-  altSprite1: {fileID: 0}
-  altSprite2: {fileID: 0}
-  usesAltSprites: 0
+  itemSprite: {fileID: 137076939, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
+  highlightSprite: {fileID: -39248358, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
+  altSprite1: {fileID: -858309015, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
+  altSprite2: {fileID: -858309015, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
+  usesAltSprites: 1
 --- !u!65 &2141000529
 BoxCollider:
   m_ObjectHideFlags: 0

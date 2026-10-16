@@ -692,7 +692,6 @@ MonoBehaviour:
   puzzle: {fileID: 2028557267}
   orgin: {x: 0, y: -1.92, z: -3.200001}
   value: 2
-  locked: 0
 --- !u!114 &306048394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -714,9 +713,9 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 0
-  itemDesc: 
   prompt: 
   timeText: 
+  itemDesc: 
   itemSprite: {fileID: 0}
   highlightSprite: {fileID: 0}
   altSprite1: {fileID: 0}
@@ -1079,9 +1078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BookScript
   value: 4
-  grabbed: 0
   curPos: {x: 214.1321, y: -136.2675}
-  targetBook: {fileID: 0}
 --- !u!61 &476262900
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1419,7 +1416,6 @@ MonoBehaviour:
   puzzle: {fileID: 2028557267}
   orgin: {x: 2.389999, y: -1.92, z: -3.200001}
   value: 3
-  locked: 0
 --- !u!114 &523636693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1441,9 +1437,9 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 0
-  itemDesc: 
   prompt: 
   timeText: 
+  itemDesc: 
   itemSprite: {fileID: 0}
   highlightSprite: {fileID: 0}
   altSprite1: {fileID: 0}
@@ -1537,9 +1533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BookScript
   value: 3
-  grabbed: 0
   curPos: {x: 86.42723, y: -136.2675}
-  targetBook: {fileID: 0}
 --- !u!61 &563226593
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2375,8 +2369,6 @@ MonoBehaviour:
   - {fileID: 2147266525}
   puzzlePanel: {fileID: 209235502}
   timeAway: 5
-  currentBook: {fileID: 0}
-  locked: 0
 --- !u!1 &1000824685
 GameObject:
   m_ObjectHideFlags: 0
@@ -3824,9 +3816,9 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 0
-  itemDesc: 
   prompt: 
   timeText: 
+  itemDesc: 
   itemSprite: {fileID: 0}
   highlightSprite: {fileID: 0}
   altSprite1: {fileID: 0}
@@ -4473,7 +4465,6 @@ MonoBehaviour:
   puzzle: {fileID: 2028557267}
   orgin: {x: -2.5, y: -2.2, z: -2.860001}
   value: 1
-  locked: 0
 --- !u!114 &1737266158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4495,9 +4486,9 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 0
-  itemDesc: 
   prompt: 
   timeText: 
+  itemDesc: 
   itemSprite: {fileID: 0}
   highlightSprite: {fileID: 0}
   altSprite1: {fileID: 0}
@@ -4727,9 +4718,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BookScript
   value: 1
-  grabbed: 0
   curPos: {x: -166.8321, y: -136.2675}
-  targetBook: {fileID: 0}
 --- !u!61 &1767016531
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5028,9 +5017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BookScript
   value: 0
-  grabbed: 0
   curPos: {x: -289, y: -136.2675}
-  targetBook: {fileID: 0}
 --- !u!61 &1815818439
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5501,7 +5488,6 @@ MonoBehaviour:
   - {fileID: 306048388}
   - {fileID: 523636687}
   headPos: {x: -4.3, y: 1.2, z: 0.08}
-  headCount: 0
 --- !u!114 &2028557268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5523,9 +5509,9 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 0
-  itemDesc: 
   prompt: 
   timeText: 
+  itemDesc: 
   itemSprite: {fileID: 0}
   highlightSprite: {fileID: 0}
   altSprite1: {fileID: 0}
@@ -5891,9 +5877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BookScript
   value: 2
-  grabbed: 0
   curPos: {x: -34.21605, y: -136.2675}
-  targetBook: {fileID: 0}
 --- !u!61 &2147266530
 BoxCollider2D:
   m_ObjectHideFlags: 0

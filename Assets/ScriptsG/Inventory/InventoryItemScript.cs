@@ -13,6 +13,7 @@ using UnityEngine.InputSystem;
 
 public class InventoryItemScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
+    [Tooltip("The individual item ID for inventory items. There shouldnt be duplicate IDs")]
     [SerializeField] private int itemId;
     private bool grabbed;
     private PlayerInteract player;
@@ -24,7 +25,7 @@ public class InventoryItemScript : MonoBehaviour, IPointerEnterHandler, IPointer
     /// <param name="eventData"></param>
     void IPointerEnterHandler.OnPointerEnter(PointerEventData eventData)
     {
-        if (isValid && player.cursorState != PlayerInteract.CursorState.HoldingItem && !player.inPrompt)
+        if (isValid && player.cursorState != PlayerInteract.CursorState.HoldingItem && !player.GetInPrompt())
         {
             player.cursorState = PlayerInteract.CursorState.InInventory;
             player.SetCurrentItem(this.gameObject); 
@@ -36,7 +37,7 @@ public class InventoryItemScript : MonoBehaviour, IPointerEnterHandler, IPointer
     /// <param name="eventData"></param>
     void IPointerExitHandler.OnPointerExit(PointerEventData eventData)
     {
-        if(isValid && player.cursorState != PlayerInteract.CursorState.HoldingItem && !player.inPrompt)
+        if(isValid && player.cursorState != PlayerInteract.CursorState.HoldingItem && !player.GetInPrompt())
         {
             player.cursorState = PlayerInteract.CursorState.None;
             player.SetCurrentItem(null);
@@ -59,7 +60,7 @@ public class InventoryItemScript : MonoBehaviour, IPointerEnterHandler, IPointer
     /// </summary>
     void Update()
     {
-        if (grabbed && !player.inPrompt)
+        if (grabbed && !player.GetInPrompt())
         {
             Vector2 mousePosition = Mouse.current.position.ReadValue();
             GetComponent<RectTransform>().position = mousePosition;
