@@ -15,7 +15,7 @@ public class PickUpBook : MonoBehaviour
     [SerializeField] private GameObject[] currentBookOrder;
     [SerializeField] private GameObject[] bookOrderNeeded;
     [SerializeField] private GameObject puzzlePanel;
-    [SerializeField] private int timeAway;
+    [SerializeField] private GameObject bookShelf;
     InputAction grab;
     private GameObject currentBook;
     private bool locked;
@@ -30,16 +30,18 @@ public class PickUpBook : MonoBehaviour
     /// </summary>
     public void Confirm()
     {
-        GameObject.FindAnyObjectByType<TimeController>().TimeAway(timeAway);
         if (OrderValid())
         {
             print("Yes");
         }
         else
         {
-            print("No");
+            bookShelf.GetComponent<ObjectProperties>().timeUsage = 10;
+            bookShelf.GetComponent<ObjectProperties>().timeLock = false;
         }
+        GameObject.FindFirstObjectByType<StartBookPuzzle>().ClosePuzzle();      
     }
+    
     /// <summary>
     /// Returns true if the book order is correct, else returns false
     /// </summary>
