@@ -1146,8 +1146,8 @@ MonoBehaviour:
   itemDesc: A crowbar! this will be useful.
   itemSprite: {fileID: 1641619501, guid: 81e272dfa9da72f44abbe54b3d9b8753, type: 3}
   highlightSprite: {fileID: -1965538520, guid: 81e272dfa9da72f44abbe54b3d9b8753, type: 3}
-  altSprite1: {fileID: 0}
-  altSprite2: {fileID: 0}
+  altSprite1: {fileID: -990722930, guid: 81e272dfa9da72f44abbe54b3d9b8753, type: 3}
+  altSprite2: {fileID: 747922705, guid: 81e272dfa9da72f44abbe54b3d9b8753, type: 3}
   usesAltSprites: 0
 --- !u!65 &374976759
 BoxCollider:
