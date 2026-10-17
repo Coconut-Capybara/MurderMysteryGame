@@ -18,8 +18,8 @@ public class BookScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
    [SerializeField] private Vector2 curPos;
     private bool grabbed;
     private PlayerInteract player;
-    private PickUpBook pickUp;   
-    private GameObject targetBook;
+    private PickUpBook pickUp;
+    [SerializeField] private GameObject targetBook;
     private bool overBook;
 
     void IPointerEnterHandler.OnPointerEnter(PointerEventData eventData)
