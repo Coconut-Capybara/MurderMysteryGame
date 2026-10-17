@@ -554,7 +554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
   thisObject: {fileID: 165199590}
-  playerCam: {fileID: 0}
+  playerCam: {fileID: 1840529610}
   lastObject: {fileID: 0}
   lastObjectProperties: {fileID: 0}
   lastSpriteRenderer: {fileID: 0}
@@ -2080,7 +2080,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
   thisObject: {fileID: 609073073}
-  playerCam: {fileID: 0}
+  playerCam: {fileID: 1840529610}
   lastObject: {fileID: 0}
   lastObjectProperties: {fileID: 0}
   lastSpriteRenderer: {fileID: 0}
@@ -2496,7 +2496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
   thisObject: {fileID: 663837937}
-  playerCam: {fileID: 0}
+  playerCam: {fileID: 1840529610}
   lastObject: {fileID: 0}
   lastObjectProperties: {fileID: 0}
   lastSpriteRenderer: {fileID: 0}
@@ -3242,7 +3242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
   thisObject: {fileID: 782630926}
-  playerCam: {fileID: 0}
+  playerCam: {fileID: 1840529610}
   lastObject: {fileID: 0}
   lastObjectProperties: {fileID: 0}
   lastSpriteRenderer: {fileID: 0}
@@ -5747,7 +5747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
   thisObject: {fileID: 1415876729}
-  playerCam: {fileID: 0}
+  playerCam: {fileID: 1840529610}
   lastObject: {fileID: 0}
   lastObjectProperties: {fileID: 0}
   lastSpriteRenderer: {fileID: 0}
@@ -9089,7 +9089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
   thisObject: {fileID: 2058075641}
-  playerCam: {fileID: 0}
+  playerCam: {fileID: 1840529610}
   lastObject: {fileID: 0}
   lastObjectProperties: {fileID: 0}
   lastSpriteRenderer: {fileID: 0}
