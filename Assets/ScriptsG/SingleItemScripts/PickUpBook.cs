@@ -18,6 +18,7 @@ public class PickUpBook : MonoBehaviour
     [SerializeField] private GameObject puzzlePanel;
     [SerializeField] private GameObject bookShelf;
     [SerializeField] private GameObject flashlight;
+    [SerializeField] private GameObject tempbook;
     InputAction grab;
     private GameObject currentBook;
     private GameObject[] initialBookOrder;
@@ -41,7 +42,8 @@ public class PickUpBook : MonoBehaviour
         if (OrderValid())
         {
             GameObject.FindFirstObjectByType<AddToInventory>().AddNonWorldItem(flashlight);
-            GameObject.FindFirstObjectByType<StartBookPuzzle>().LockPuzzle();        }
+            GameObject.FindFirstObjectByType<StartBookPuzzle>().LockPuzzle();        
+        }
         else
         {
             bookShelf.GetComponent<ObjectProperties>().timeUsage = 10;
