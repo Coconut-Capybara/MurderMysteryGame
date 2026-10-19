@@ -12,7 +12,7 @@ using UnityEngine;
 public class ItemNeeded : MonoBehaviour
 {
     [Tooltip("The list of items that will work when used on this object")]
-    [SerializeField] private GameObject[] itemNeeded;
+    public GameObject[] itemNeeded;
     [Tooltip("The Script TimeController. Should only be one in the scene")]
     [SerializeField] private TimeController timeController;
 
@@ -24,6 +24,10 @@ public class ItemNeeded : MonoBehaviour
 
     [Tooltip("Disables the object the item is being used on")]
     [SerializeField] private bool disableObject;
+
+    [SerializeField] private bool changeSprite;
+
+    [SerializeField] private Sprite incomingSprite;
 
     /// <summary>
     /// Base function for item interaction
@@ -40,11 +44,15 @@ public class ItemNeeded : MonoBehaviour
             }
         }
     }
-    private void ItemUseFunctionality(GameObject currentItem)
+    public void ItemUseFunctionality(GameObject currentItem)
     {
         if(giveItem)
         {
             GameObject.FindFirstObjectByType<AddToInventory>().AddNonWorldItem(currentItem);
+        }
+        if (changeSprite)
+        {
+            GetComponent<SpriteRenderer>().sprite = incomingSprite;
         }
         if (currentItem.GetComponent<ObjectProperties>().consumable)
         {
@@ -54,6 +62,7 @@ public class ItemNeeded : MonoBehaviour
         {
             gameObject.SetActive(false);        
         }
+   
     }
     /// <summary>
     /// Deactivates objects marked "consumable" after they're used
@@ -66,6 +75,7 @@ public class ItemNeeded : MonoBehaviour
         {           
             currentItem.SetActive(false);
             GameObject.FindAnyObjectByType<AddToInventory>().ShiftLeft();
+            GameObject.FindFirstObjectByType<PlayerInteract>().UnlockItemUse(); 
         }
     }
     public GameObject GetItemNeeded()

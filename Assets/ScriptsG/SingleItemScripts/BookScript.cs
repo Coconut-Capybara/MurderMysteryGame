@@ -17,10 +17,11 @@ public class BookScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
    [SerializeField] private int value;
    [SerializeField] private Vector2 curPos;
     private bool grabbed;
-    private PlayerInteract player;
     private PickUpBook pickUp;
     [SerializeField] private GameObject targetBook;
     private bool overBook;
+    private Vector2 orgin;
+    private int initialVal;
 
     void IPointerEnterHandler.OnPointerEnter(PointerEventData eventData)
     {
@@ -40,9 +41,10 @@ public class BookScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
-    {
-        player = GameObject.FindFirstObjectByType<PlayerInteract>();  
+    { 
         pickUp = GameObject.FindFirstObjectByType<PickUpBook>();
+        orgin = curPos;
+        initialVal = value; 
     }
 
     // Update is called once per frame
@@ -96,7 +98,10 @@ public class BookScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
             overBook = false;   
         }
     }
-
+    public void ResetValue()
+    {
+        value = initialVal;
+    }
     public int GetValue()
     {
         return value;   
@@ -108,5 +113,13 @@ public class BookScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     public void SetGrabbed(bool _grabbed)
     {
         grabbed = _grabbed;     
+    }
+    public Vector2 GetOrgin()
+    {
+        return orgin;
+    }
+    public void SetCurPos(Vector2 _cur)
+    {
+        curPos = _cur;      
     }
 }
