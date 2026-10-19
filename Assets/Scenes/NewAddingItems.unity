@@ -1084,7 +1084,7 @@ Transform:
   m_GameObject: {fileID: 374976754}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.93635, y: 3.8814592, z: -8.61326}
+  m_LocalPosition: {x: -15.2, y: 3.61, z: -6.01}
   m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -4273,6 +4273,7 @@ GameObject:
   - component: {fileID: 1066289618}
   - component: {fileID: 1066289617}
   - component: {fileID: 1066289616}
+  - component: {fileID: 1066289619}
   m_Layer: 0
   m_Name: 2D_Locker3_0
   m_TagString: Untagged
@@ -4397,7 +4398,7 @@ MonoBehaviour:
   timeUsage: 0
   prompt: 
   timeText: 
-  itemDesc: 
+  itemDesc: This locker's locked. what could they be hiding?
   itemSprite: {fileID: 2058338222, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
   highlightSprite: {fileID: -132606945, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
   altSprite1: {fileID: 1178685855, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
@@ -4424,6 +4425,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.2000002, y: 2.7700002, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0.0000019073486}
+--- !u!114 &1066289619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066289613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bea36a716ec23e45bb774fc59a9f2b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
+  itemNeeded:
+  - {fileID: 8200676748390764321, guid: 3af3dce20f2135e47a2d5a284275d89b, type: 3}
+  timeController: {fileID: 0}
+  giveItem: 0
+  ItemGiven: {fileID: 0}
+  disableObject: 0
 --- !u!1001 &1119686651
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7878,7 +7897,7 @@ MonoBehaviour:
   itemDescPanel: {fileID: 1287520037}
   itemDesc: {fileID: 1463723174}
   textSpeed: 0.05
-  delay: 0.75
+  delay: 0.5
   inDelay: 0
 --- !u!114 &1840529617
 MonoBehaviour:
