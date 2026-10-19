@@ -6213,6 +6213,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StartBookPuzzle
   bookPuzzlePanel: {fileID: 1799841184}
+  bookPuzzleLocked: 0
+  books: {fileID: 0}
 --- !u!1 &1459386343
 GameObject:
   m_ObjectHideFlags: 0
@@ -7173,6 +7175,8 @@ MonoBehaviour:
   giveItem: 0
   ItemGiven: {fileID: 0}
   disableObject: 0
+  changeSprite: 0
+  incomingSprite: {fileID: 0}
 --- !u!1 &1572282139
 GameObject:
   m_ObjectHideFlags: 0
@@ -7665,6 +7669,8 @@ MonoBehaviour:
   giveItem: 0
   ItemGiven: {fileID: 0}
   disableObject: 0
+  changeSprite: 0
+  incomingSprite: {fileID: 0}
   key: {fileID: 0}
   objectProperties: {fileID: 0}
   itemUseTime: 0
@@ -8092,6 +8098,7 @@ MonoBehaviour:
   - {fileID: 1340623924}
   puzzlePanel: {fileID: 1799841184}
   bookShelf: {fileID: 1442068112}
+  flashlight: {fileID: 0}
 --- !u!1 &1845829424
 GameObject:
   m_ObjectHideFlags: 0
