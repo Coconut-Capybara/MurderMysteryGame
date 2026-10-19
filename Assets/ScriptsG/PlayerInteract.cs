@@ -281,4 +281,8 @@ public class PlayerInteract : MonoBehaviour
     {
         return inPrompt;    
     }
+    public void UnlockItemUse()
+    {
+        itemUseLock = false;    
+    }
 }
