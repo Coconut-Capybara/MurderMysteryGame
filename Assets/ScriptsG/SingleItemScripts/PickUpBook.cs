@@ -7,6 +7,7 @@
 //
 // Summary : Allows the player to pick up books in the bookshelf puzzle
 *****************************************************************************/
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -16,13 +17,20 @@ public class PickUpBook : MonoBehaviour
     [SerializeField] private GameObject[] bookOrderNeeded;
     [SerializeField] private GameObject puzzlePanel;
     [SerializeField] private GameObject bookShelf;
+    [SerializeField] private GameObject flashlight;
     InputAction grab;
     private GameObject currentBook;
+    private GameObject[] initialBookOrder;
     private bool locked;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        grab = InputSystem.actions.FindAction("Interact");  
+        grab = InputSystem.actions.FindAction("Interact");
+        initialBookOrder = new GameObject[currentBookOrder.Length];
+        for(int i = 0; i < initialBookOrder.Length; i++)
+        {
+            initialBookOrder[i] = currentBookOrder[i];
+        }
     }
     /// <summary>
     /// Checks if the player has the books in the correct order, 
@@ -32,16 +40,32 @@ public class PickUpBook : MonoBehaviour
     {
         if (OrderValid())
         {
-            print("Yes");
-        }
+            GameObject.FindFirstObjectByType<AddToInventory>().AddNonWorldItem(flashlight);
+            GameObject.FindFirstObjectByType<StartBookPuzzle>().LockPuzzle();        }
         else
         {
             bookShelf.GetComponent<ObjectProperties>().timeUsage = 10;
             bookShelf.GetComponent<ObjectProperties>().timeLock = false;
         }
-        GameObject.FindFirstObjectByType<StartBookPuzzle>().ClosePuzzle();      
+        GameObject.FindFirstObjectByType<StartBookPuzzle>().ClosePuzzle();
+        ResetPuzzle();  
     }
-    
+    private void ResetPuzzle()
+    {
+        
+        for(int i = 0; i < currentBookOrder.Length; i++)
+        {
+            currentBookOrder[i].GetComponent<RectTransform>().anchoredPosition =
+            currentBookOrder[i].GetComponent<BookScript>().GetOrgin();
+            currentBookOrder[i].GetComponent<BookScript>().
+            SetCurPos(currentBookOrder[i].GetComponent<BookScript>().GetOrgin());           
+            currentBookOrder[i].GetComponent<BookScript>().ResetValue();        
+        }
+        for (int i = 0; i < initialBookOrder.Length; i++)
+        {
+            currentBookOrder[i] = initialBookOrder[i];
+        }
+    }
     /// <summary>
     /// Returns true if the book order is correct, else returns false
     /// </summary>

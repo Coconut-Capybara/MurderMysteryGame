@@ -54,9 +54,10 @@ public class ItemInspections : MonoBehaviour
     }
     /// <summary>
     /// shows description panel, starts text coroutine
+    /// Can be used for player dialouge 
     /// </summary>
     /// <param name="item"></param>
-    private void ShowItemDescPanel(GameObject item)
+    public void ShowItemDescPanel(GameObject item)
     {
         if (!descLocked)
         {
