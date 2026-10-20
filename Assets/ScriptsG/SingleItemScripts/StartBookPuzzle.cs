@@ -9,6 +9,7 @@ public class StartBookPuzzle : NoItemInteractions
     {
         if (!bookPuzzleLocked)
         {
+            GameObject.FindFirstObjectByType<FollowPlayerCursor>().ResetCube();
             GameObject.FindFirstObjectByType<PlayerInteract>().SetInPrompt(true);
             books.SetActive(false); 
             bookPuzzlePanel.SetActive(true);

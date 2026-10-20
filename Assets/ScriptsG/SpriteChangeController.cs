@@ -17,21 +17,19 @@ public class SpriteChangeController : MonoBehaviour
             {
                 if (other.gameObject.GetComponent<ObjectProperties>().usesAltSprites)
                 {
-                    print("highlight2");
                     other.GetComponent<SpriteRenderer>().sprite = other.GetComponent<ObjectProperties>().altSprite2;
                 }
             }
             if (other.gameObject.GetComponent<ObjectProperties>().highlightSprite != null &&
                 !other.gameObject.GetComponent<ObjectProperties>().usesAltSprites)
             {
-                print("highlight");
                 other.GetComponent<SpriteRenderer>().sprite = other.GetComponent<ObjectProperties>().highlightSprite;
             }
         }        
     }
     private void OnTriggerExit(Collider other)
     {
-        if (!player.GetInPrompt() && player.GetInGame() && other.gameObject.GetComponent<ObjectProperties>() != null)
+        if (other.gameObject.GetComponent<ObjectProperties>() != null)
         {
             if (other.gameObject.GetComponent<ObjectProperties>().usesAltSprites)
             {

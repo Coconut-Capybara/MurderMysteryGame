@@ -25,6 +25,7 @@ public class TextPrompts : MonoBehaviour
     public void ShowPrompt(string _prompt)
     {
        promptPanel.SetActive(true); 
+       GameObject.FindFirstObjectByType<FollowPlayerCursor>().ResetCube(); 
        GameObject.FindFirstObjectByType<PlayerInteract>().SetInPrompt(true);
        GameObject.FindFirstObjectByType<PlayerInteract>().cursorState = PlayerInteract.CursorState.None;
         if (GameObject.FindFirstObjectByType<PlayerInteract>().GetInPrompt())
