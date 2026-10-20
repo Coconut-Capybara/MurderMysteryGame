@@ -511,15 +511,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 165199590}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &165199593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1666,15 +1657,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 414760046}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &414760050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2021,15 +2003,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 482700238}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &482700241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2282,15 +2255,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 546262008}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &546262012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2829,15 +2793,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 588025371}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &588025375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2935,15 +2890,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 609073073}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &609073076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3099,15 +3045,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 614065045}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &614065048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3379,15 +3316,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 663837937}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &663837941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4084,15 +4012,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 782630926}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &782630929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5645,15 +5564,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 1066289613}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &1066289617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6337,15 +6247,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 1168672706}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &1168672710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7676,7 +7577,6 @@ MonoBehaviour:
   ItemGiven: {fileID: 0}
   disableObject: 0
   changeSprite: 0
-  incomingSprite: {fileID: 0}
   book1: {fileID: 575957000}
   book2: {fileID: 1110248185}
   bookShelf: {fileID: 1380806732}
@@ -8057,15 +7957,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 1415876729}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &1415876732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9057,15 +8948,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 1572137153}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &1572137156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9186,7 +9068,6 @@ MonoBehaviour:
   ItemGiven: {fileID: 0}
   disableObject: 0
   changeSprite: 0
-  incomingSprite: {fileID: 0}
 --- !u!1 &1572282139
 GameObject:
   m_ObjectHideFlags: 0
@@ -9680,7 +9561,6 @@ MonoBehaviour:
   ItemGiven: {fileID: 0}
   disableObject: 0
   changeSprite: 0
-  incomingSprite: {fileID: 0}
   key: {fileID: 0}
   objectProperties: {fileID: 0}
   itemUseTime: 0
@@ -9920,15 +9800,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 1776860374}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &1776860377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10062,6 +9933,171 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1782129619
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1782129623}
+  - component: {fileID: 1782129622}
+  - component: {fileID: 1782129621}
+  - component: {fileID: 1782129620}
+  - component: {fileID: 1782129624}
+  - component: {fileID: 1782129625}
+  - component: {fileID: 1782129626}
+  m_Layer: 2
+  m_Name: InteractCube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1782129620
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782129619}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1782129621
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782129619}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1782129622
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782129619}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1782129623
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782129619}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -16.408016, y: 11.036383, z: 47.817696}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1782129624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782129619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ae99c3131316934f976764d7746dd2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FollowPlayerCursor
+--- !u!114 &1782129625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782129619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff698b8ed34dca142b3993fa15dfa161, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteChangeController
+--- !u!54 &1782129626
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782129619}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
 --- !u!1 &1800183103
 GameObject:
   m_ObjectHideFlags: 0
@@ -11298,15 +11334,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 2010964758}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &2010964760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11656,15 +11683,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 2058075641}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &2058075644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11951,15 +11969,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 2080588325}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!65 &2080588329
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12575,15 +12584,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 2141000524}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &2141000528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12900,3 +12900,4 @@ SceneRoots:
   - {fileID: 274528725}
   - {fileID: 2068931429}
   - {fileID: 1438318811}
+  - {fileID: 1782129623}

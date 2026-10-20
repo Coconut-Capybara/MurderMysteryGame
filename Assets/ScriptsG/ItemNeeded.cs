@@ -27,8 +27,6 @@ public class ItemNeeded : MonoBehaviour
 
     [SerializeField] private bool changeSprite;
 
-    [SerializeField] private Sprite incomingSprite;
-
     /// <summary>
     /// Base function for item interaction
     /// </summary>
@@ -52,7 +50,7 @@ public class ItemNeeded : MonoBehaviour
         }
         if (changeSprite)
         {
-            GetComponent<SpriteRenderer>().sprite = incomingSprite;
+            GetComponent<ObjectProperties>().usesAltSprites = true; 
         }
         if (currentItem.GetComponent<ObjectProperties>().consumable)
         {
