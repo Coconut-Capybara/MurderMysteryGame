@@ -6468,8 +6468,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1110843975}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 52.6, y: 44.1, z: -45.3}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: 50, y: 44.1, z: -45.299995}
   m_LocalScale: {x: 4.011964, y: 4.011964, z: 4.011964}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8140,6 +8140,63 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1001 &1364579056
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 80794043b9044644096d9b3e83ad6f84, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 45.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 80794043b9044644096d9b3e83ad6f84, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 38.78
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 80794043b9044644096d9b3e83ad6f84, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -71.84
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 80794043b9044644096d9b3e83ad6f84, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 80794043b9044644096d9b3e83ad6f84, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 80794043b9044644096d9b3e83ad6f84, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 80794043b9044644096d9b3e83ad6f84, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 80794043b9044644096d9b3e83ad6f84, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 80794043b9044644096d9b3e83ad6f84, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 80794043b9044644096d9b3e83ad6f84, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 80794043b9044644096d9b3e83ad6f84, type: 3}
+      propertyPath: m_Name
+      value: Haunted_Interrior_Cropped
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 80794043b9044644096d9b3e83ad6f84, type: 3}
 --- !u!1 &1373661089
 GameObject:
   m_ObjectHideFlags: 0
@@ -10441,6 +10498,7 @@ MonoBehaviour:
   puzzlePanel: {fileID: 693135590}
   bookShelf: {fileID: 1110843975}
   flashlight: {fileID: 3043295151955953431, guid: 316c17a57a312ce4fbde9bd1d827ba4a, type: 3}
+  tempbook: {fileID: 3043295151955953431, guid: 3711bde2fcb956246b8ca3398a236c0b, type: 3}
 --- !u!114 &1840529618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10468,9 +10526,9 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6bab34f351d3f3541845d8bdfb6f5ede, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AddToInventory
-  currentIconPos: {x: 0, y: 0}
-  iconPivot: {x: 0, y: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::InventoryHandler
+  currentIconPos: {x: -355, y: 260}
+  iconPivot: {x: 100, y: 0}
   canvas: {fileID: 1025981871}
 --- !u!1 &1852947665
 GameObject:
@@ -12066,3 +12124,4 @@ SceneRoots:
   - {fileID: 547446793}
   - {fileID: 394282546}
   - {fileID: 747530815}
+  - {fileID: 1364579056}
