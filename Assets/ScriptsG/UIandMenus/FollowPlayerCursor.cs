@@ -9,7 +9,8 @@ public class FollowPlayerCursor : MonoBehaviour
         Vector3 cursorPos = Mouse.current.position.ReadValue();
         Ray ray = Camera.main.ScreenPointToRay(cursorPos);
         RaycastHit hit;
-        if(Physics.Raycast(ray, out hit))
+        if(Physics.Raycast(ray, out hit) && !GameObject.FindFirstObjectByType<PlayerInteract>()
+            .GetInPrompt())
         {
             transform.position = hit.collider.transform.position;            
         }
@@ -17,5 +18,9 @@ public class FollowPlayerCursor : MonoBehaviour
         {
             transform.position = Vector3.zero;  
         }
+    }
+    public void ResetCube()
+    {
+        transform.position = Vector3.zero;
     }
 }
