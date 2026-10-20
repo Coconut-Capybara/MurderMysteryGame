@@ -35,7 +35,8 @@ public class SpriteChangeController : MonoBehaviour
             {
                 other.GetComponent<SpriteRenderer>().sprite = other.GetComponent<ObjectProperties>().altSprite1;
             }
-            if (other.gameObject.GetComponent<ObjectProperties>().highlightSprite != null)
+            if (other.gameObject.GetComponent<ObjectProperties>().highlightSprite != null
+                && !other.gameObject.GetComponent<ObjectProperties>().usesAltSprites)
             {
                 other.GetComponent<SpriteRenderer>().sprite = other.GetComponent<ObjectProperties>().itemSprite;
             }
