@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8200676748390764321
+--- !u!1 &3043295151955953431
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,52 +8,81 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2637049320370232478}
-  - component: {fileID: 2292333484840837108}
-  - component: {fileID: 6890962615188980795}
-  - component: {fileID: 689225051704435761}
-  - component: {fileID: 4195545733503958589}
+  - component: {fileID: 8115310762932168416}
+  - component: {fileID: 1662121843347185288}
+  - component: {fileID: -4369297554870559238}
+  - component: {fileID: 1564318246534261144}
+  - component: {fileID: 2810383107063591677}
   m_Layer: 5
-  m_Name: MoneyStackItem
+  m_Name: ID3Tongs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &2637049320370232478
+--- !u!224 &8115310762932168416
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8200676748390764321}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_GameObject: {fileID: 3043295151955953431}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -91.59628, y: 54.369843}
+  m_AnchoredPosition: {x: 8.289917, y: -58.320007}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &2292333484840837108
+--- !u!222 &1662121843347185288
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8200676748390764321}
+  m_GameObject: {fileID: 3043295151955953431}
   m_CullTransparentMesh: 1
---- !u!114 &6890962615188980795
+--- !u!114 &-4369297554870559238
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8200676748390764321}
+  m_GameObject: {fileID: 3043295151955953431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
+  thisObject: {fileID: 0}
+  isInteractable: 0
+  isGrabbable: 0
+  canUseOn: 0
+  consumable: 1
+  givesPrompt: 0
+  timeLock: 0
+  isHardEvidence: 0
+  timeUsage: 0
+  prompt: 
+  timeText: 
+  itemDesc: 
+  itemSprite: {fileID: 0}
+  highlightSprite: {fileID: 0}
+  altSprite1: {fileID: 0}
+  altSprite2: {fileID: 0}
+  usesAltSprites: 0
+--- !u!114 &1564318246534261144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3043295151955953431}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -67,7 +96,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1978343932, guid: a631f12ded3863e47a5efcb2f907ba8b, type: 3}
+  m_Sprite: {fileID: -1508906487, guid: 876d39aa744209e42be265dbd568256a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -77,45 +106,16 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &689225051704435761
+--- !u!114 &2810383107063591677
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8200676748390764321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
-  thisObject: {fileID: 8200676748390764321}
-  isInteractable: 0
-  isGrabbable: 0
-  canUseOn: 0
-  consumable: 1
-  givesPrompt: 0
-  timeLock: 0
-  isHardEvidence: 0
-  timeUsage: 0
-  prompt: 
-  timeText: 
-  itemDesc: 
-  itemSprite: {fileID: -1978343932, guid: a631f12ded3863e47a5efcb2f907ba8b, type: 3}
-  highlightSprite: {fileID: -1512389179, guid: a631f12ded3863e47a5efcb2f907ba8b, type: 3}
-  altSprite1: {fileID: 0}
-  altSprite2: {fileID: 0}
-  usesAltSprites: 0
---- !u!114 &4195545733503958589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8200676748390764321}
+  m_GameObject: {fileID: 3043295151955953431}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 722608a1b991aa5408221a30c8890785, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InventoryItemScript
-  itemId: 4
+  itemId: 3

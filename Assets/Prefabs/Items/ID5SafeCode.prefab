@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 689225051704435761}
   - component: {fileID: 4195545733503958589}
   m_Layer: 5
-  m_Name: SafeCodeItem
+  m_Name: ID5SafeCode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
