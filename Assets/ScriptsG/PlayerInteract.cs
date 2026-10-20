@@ -233,6 +233,7 @@ public class PlayerInteract : MonoBehaviour
         GameObject.FindFirstObjectByType<ItemInspections>().HideItemDescPanel();
         timeController.PassTimePanel(hoverItem.GetComponent<ObjectProperties>().timeUsage,hoverItem);
         cursorState = CursorState.None;
+        GameObject.FindFirstObjectByType<FollowPlayerCursor>().ResetCube();
         inPrompt = true;
     }
     /// <summary>
