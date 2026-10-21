@@ -46,7 +46,7 @@ public class ItemNeeded : MonoBehaviour
     {
         if(giveItem)
         {
-            GameObject.FindFirstObjectByType<AddToInventory>().AddNonWorldItem(currentItem);
+            GameObject.FindFirstObjectByType<AddToInventory>().AddNonWorldItem(ItemGiven);
         }
         if (changeSprite)
         {
