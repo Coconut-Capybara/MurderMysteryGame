@@ -1420,7 +1420,6 @@ GameObject:
   - component: {fileID: 414760048}
   - component: {fileID: 414760051}
   - component: {fileID: 414760050}
-  - component: {fileID: 414760049}
   - component: {fileID: 414760052}
   - component: {fileID: 414760053}
   m_Layer: 0
@@ -1503,18 +1502,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &414760049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 414760046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
 --- !u!114 &414760050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2583,6 +2570,8 @@ GameObject:
   - component: {fileID: 614065050}
   - component: {fileID: 614065049}
   - component: {fileID: 614065048}
+  - component: {fileID: 614065051}
+  - component: {fileID: 614065052}
   m_Layer: 0
   m_Name: 2D_VendingEye_0
   m_TagString: Untagged
@@ -2620,14 +2609,15 @@ MonoBehaviour:
   thisObject: {fileID: 614065045}
   isInteractable: 1
   isGrabbable: 0
-  canUseOn: 0
+  canUseOn: 1
   consumable: 0
   givesPrompt: 1
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
-  prompt: 
-  timeText: 
+  timeUsage: 5
+  prompt: You spent some money to get a glass eye and some candy out of the vending
+    machine.
+  timeText: Spend money to get items from vending machine?
   itemDesc: 
   itemSprite: {fileID: 2068948189, guid: 58cebbb44e74bbf4d93384f7c627b05c, type: 3}
   highlightSprite: {fileID: -1634964913, guid: 58cebbb44e74bbf4d93384f7c627b05c, type: 3}
@@ -2713,6 +2703,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &614065051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614065045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bea36a716ec23e45bb774fc59a9f2b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
+  itemNeeded:
+  - {fileID: 8200676748390764321, guid: bbdc60c485c1d98449a530215913c151, type: 3}
+  timeController: {fileID: 1393377044}
+  giveItem: 1
+  ItemGiven: {fileID: 3043295151955953431, guid: bb8df09d4ffd92849a0ddf1cb9001fae, type: 3}
+  disableObject: 0
+  changeSprite: 0
+--- !u!114 &614065052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614065045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed66a4f38f9459540800e857332e7b03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GivePlayerItem
+  itemPrefabs:
+  - {fileID: 3043295151955953431, guid: bb8df09d4ffd92849a0ddf1cb9001fae, type: 3}
+  - {fileID: 3043295151955953431, guid: f16e4ddc93267654cbc4ed06ae04f872, type: 3}
+  amount: 1
+  outsideRock: {fileID: 0}
 --- !u!1001 &621083717
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5609,7 +5635,7 @@ Transform:
   m_GameObject: {fileID: 1211043775}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 2.55, y: 1.59, z: -6.03}
+  m_LocalPosition: {x: 2.55, y: 1.95, z: -6.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -7867,6 +7893,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI_Canvases
       objectReference: {fileID: 0}
+    - target: {fileID: 3823732255628172789, guid: c2b33f5a1b8becd41a608a05ec1c04ba, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1840529621}
+    - target: {fileID: 3823732255628172789, guid: c2b33f5a1b8becd41a608a05ec1c04ba, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HidePrompt
+      objectReference: {fileID: 0}
     - target: {fileID: 5803621733929869477, guid: c2b33f5a1b8becd41a608a05ec1c04ba, type: 3}
       propertyPath: m_LocalPosition.x
       value: -25.98332
@@ -8440,7 +8474,7 @@ Transform:
   m_GameObject: {fileID: 1772042750}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 2.55, y: 7.75, z: -6.03}
+  m_LocalPosition: {x: 2.55, y: 8.11, z: -6.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
