@@ -7,6 +7,7 @@
 //
 // Summary : Put this on objects intended to have inventory items used on
 *****************************************************************************/
+using System.Collections;
 using UnityEngine;
 
 public class ItemNeeded : MonoBehaviour
@@ -20,7 +21,7 @@ public class ItemNeeded : MonoBehaviour
     [SerializeField] private bool giveItem;
 
     [Tooltip("Item given to player")]
-    [SerializeField] private GameObject ItemGiven;
+    [SerializeField] private GameObject[] itemGiven;
 
     [Tooltip("Disables the object the item is being used on")]
     [SerializeField] private bool disableObject;
@@ -33,9 +34,9 @@ public class ItemNeeded : MonoBehaviour
     /// <param name="currentItem"></param>
     public virtual void ItemUsage(GameObject currentItem)
     {
-        for(int i = 0; i < itemNeeded.Length; i++)
+        for (int i = 0; i < itemNeeded.Length; i++)
         {
-            if(currentItem.GetComponent<InventoryItemScript>().GetItemId() ==
+            if (currentItem.GetComponent<InventoryItemScript>().GetItemId() ==
                 itemNeeded[i].GetComponent<InventoryItemScript>().GetItemId())
             {
                 ItemUseFunctionality(currentItem);
@@ -44,23 +45,33 @@ public class ItemNeeded : MonoBehaviour
     }
     public void ItemUseFunctionality(GameObject currentItem)
     {
-        if(giveItem)
-        {
-            GameObject.FindFirstObjectByType<AddToInventory>().AddNonWorldItem(ItemGiven);
-        }
-        if (changeSprite)
-        {
-            GetComponent<ObjectProperties>().usesAltSprites = true; 
-        }
         if (currentItem.GetComponent<ObjectProperties>().consumable)
         {
             Consume(currentItem);
         }
+        if (giveItem)
+        {
+            StartCoroutine(BufferAdd());
+        }
+        if (changeSprite)
+        {
+            GetComponent<ObjectProperties>().usesAltSprites = true;
+        }
         if (disableObject)
         {
-            gameObject.SetActive(false);        
+            gameObject.SetActive(false);
         }
-   
+
+    }
+    IEnumerator BufferAdd()
+    {
+        yield return new WaitForSeconds(0.1f);
+        for (int i = 0; i < itemGiven.Length; i++)
+        {
+            GameObject.FindFirstObjectByType<AddToInventory>().AddNonWorldItem(itemGiven[i]);
+            yield return new WaitForSeconds(0.1f);
+        }
+
     }
     /// <summary>
     /// Deactivates objects marked "consumable" after they're used
@@ -68,16 +79,16 @@ public class ItemNeeded : MonoBehaviour
     /// <param name="currentItem"></param>
     public void Consume(GameObject currentItem)
     {
-        if(currentItem.GetComponent<ObjectProperties>() != null &&
+        if (currentItem.GetComponent<ObjectProperties>() != null &&
             currentItem.GetComponent<ObjectProperties>().consumable)
-        {           
+        {
             currentItem.SetActive(false);
             GameObject.FindAnyObjectByType<AddToInventory>().ShiftLeft();
-            GameObject.FindFirstObjectByType<PlayerInteract>().UnlockItemUse(); 
+            GameObject.FindFirstObjectByType<PlayerInteract>().UnlockItemUse();
         }
     }
     public GameObject GetItemNeeded()
     {
-        return itemNeeded[0];       
+        return itemNeeded[0];
     }
 }
