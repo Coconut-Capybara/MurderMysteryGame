@@ -20,7 +20,7 @@ public class ItemNeeded : MonoBehaviour
     [SerializeField] private bool giveItem;
 
     [Tooltip("Item given to player")]
-    [SerializeField] private GameObject ItemGiven;
+    [SerializeField] private GameObject[] itemGiven;
 
     [Tooltip("Disables the object the item is being used on")]
     [SerializeField] private bool disableObject;
@@ -46,7 +46,10 @@ public class ItemNeeded : MonoBehaviour
     {
         if(giveItem)
         {
-            GameObject.FindFirstObjectByType<AddToInventory>().AddNonWorldItem(ItemGiven);
+            for(int i = 0; i < itemGiven.Length;i++)
+            {
+                GameObject.FindFirstObjectByType<AddToInventory>().AddNonWorldItem(itemGiven[i]);
+            }
         }
         if (changeSprite)
         {
