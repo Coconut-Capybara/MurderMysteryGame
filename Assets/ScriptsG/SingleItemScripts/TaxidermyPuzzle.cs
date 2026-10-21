@@ -12,23 +12,33 @@ using UnityEngine;
 public class TaxidermyPuzzle : NoItemInteractions
 {
     [SerializeField] private float pivot;
-    [SerializeField] private int timeAway;
+    [SerializeField] private float pivotY;
     [SerializeField] private int[] headOrder;
     [SerializeField] private int[] orderNeeded;
     [SerializeField] private GameObject[] heads;
     [SerializeField] private Vector3 headPos;
+    [SerializeField] private GameObject confirmButton, resetButton,backArrow;
     private Vector3 headPosOrgin;
     private int headCount;
+    private bool puzzleActive;
 
     private void Start()
     {
-        headPosOrgin = headPos;
+        
     }
     public void UpdateValues(int headValue)
     {
         headOrder[headCount] = headValue;
         headCount++;
-        headPos.x += pivot;       
+        headPos.x += pivot;
+        if (headCount == 1)
+        {
+            headPos.y = pivotY;
+        }
+        else
+        {
+            headPos.y = 47;
+        }
     }
     /// <summary>
     /// Resets the puzzle
@@ -56,15 +66,33 @@ public class TaxidermyPuzzle : NoItemInteractions
     /// </summary>
     public void PuzzleConfirmation()
     {
-        if (PuzzleCheck())
+        bool valid = true;
+        for(int i = 0;i < heads.Length;i++)
         {
-            print("yes");
+            if(headOrder[i] == 0)
+            {
+              valid = false;
+                GameObject.FindFirstObjectByType<TextPrompts>().ShowPrompt("Place all the heads first");
+                ResetPuzzle();
+                break;
+            }
         }
-        else
+        if(valid)
         {
-            print("No");
+            if (PuzzleCheck())
+            {
+                GameObject.FindFirstObjectByType<TextPrompts>().ShowPrompt("You move the heads around, " +
+                    "and get a key from the wolf head");
+                //Give player key
+                UpdateHeads();
+            }
+            else
+            {
+                GameObject.FindFirstObjectByType<TextPrompts>().ShowPrompt("You move the heads around, and nothing happens");
+            }
+            GameObject.FindFirstObjectByType<UpdateLoungeHeads>().UpdateHeads(headOrder);
+            EndPuzzle();
         }
-        GameObject.FindAnyObjectByType<TimeController>().TimeAway(timeAway);
     }  
     /// <summary>
     /// returns true if the player has the right order, else returns false
@@ -74,13 +102,42 @@ public class TaxidermyPuzzle : NoItemInteractions
     {
         bool valid = true;
         for (int i = 0; i < orderNeeded.Length; i++)
-        {
+        {            
             if (orderNeeded[i] != headOrder[i])
             {
                 valid = false;
-            }
+            }            
         }
         return valid;
+    }
+    public void UpdateHeads()
+    {
+        for (int i = 0; i < heads.Length; i++)
+        {
+            heads[i].GetComponent<ObjectProperties>().timeUsage = 0;
+        }
+    }
+    public void StartPuzzle()
+    {
+        headPosOrgin = headPos;
+        ResetPuzzle();
+        puzzleActive = true;
+        UpdateHeads();
+        confirmButton.SetActive(true);
+        resetButton.SetActive(true);   
+        backArrow.SetActive(false);
+    }
+    private void EndPuzzle()
+    {
+        confirmButton.SetActive(false);
+        resetButton.SetActive(false);
+        backArrow.SetActive(true);
+        puzzleActive = false;
+        for (int i = 0; i < heads.Length; i++)
+        {
+            heads[i].GetComponent<ObjectProperties>().timeUsage = 30;
+        }
+        headPos.x = 57;
     }
     public Vector3 GetHeadPosition()
     {
@@ -89,6 +146,14 @@ public class TaxidermyPuzzle : NoItemInteractions
     public int GetHeadCount()
     {
         return headCount;       
+    }
+    public bool GetPuzzleActive()
+    {
+        return puzzleActive;
+    }
+    public void SetPuzzleActive(bool active)
+    {
+        puzzleActive = active;  
     }
 }
 

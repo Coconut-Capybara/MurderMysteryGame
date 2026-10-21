@@ -20,11 +20,18 @@ public class TaxidermyHeadScript : NoItemInteractions
     /// </summary>
     public override void NoItemFunciton()
     {
-        if(puzzle.GetHeadCount() < 3 && !locked)
+        if (puzzle.GetPuzzleActive())
         {
-            transform.position = puzzle.GetHeadPosition();
-            puzzle.UpdateValues(value);  
-            locked = true;
+            if (puzzle.GetHeadCount() < 3 && !locked)
+            {
+                transform.position = puzzle.GetHeadPosition();
+                puzzle.UpdateValues(value);
+                locked = true;
+            }
+        }
+        else
+        {
+            puzzle.StartPuzzle();   
         }
     }
     public Vector3 GetOrgin()

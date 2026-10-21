@@ -2590,8 +2590,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 482700238}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 67.6903, y: 42.8587, z: -60.3238}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 67.7488, y: 43.20135, z: -59.80114}
   m_LocalScale: {x: 4.56005, y: 4.56005, z: 4.56005}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2627,9 +2627,9 @@ MonoBehaviour:
   canUseOn: 0
   consumable: 0
   givesPrompt: 0
-  timeLock: 1
+  timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 30
   prompt: 
   timeText: Do you want to swap the heads around? This will take 30 minutes.
   itemDesc: 
@@ -2729,8 +2729,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19c2dda286af72a47b81404c09d384e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TaxidermyHeadScript
-  puzzle: {fileID: 0}
-  orgin: {x: 0, y: 0, z: 0}
+  puzzle: {fileID: 1140097034}
+  orgin: {x: 46, y: 42.5, z: -81}
   value: 2
 --- !u!1 &502741877
 GameObject:
@@ -2838,7 +2838,7 @@ Transform:
   m_GameObject: {fileID: 546262008}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 77.6069, y: 51.2331, z: -59.8927}
+  m_LocalPosition: {x: 77.7488, y: 51.20135, z: -59.80114}
   m_LocalScale: {x: 4.56005, y: 4.56005, z: 4.56005}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2895,9 +2895,9 @@ MonoBehaviour:
   canUseOn: 0
   consumable: 0
   givesPrompt: 0
-  timeLock: 1
+  timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 30
   prompt: 
   timeText: Do you want to swap the heads around? This will take 30 minutes.
   itemDesc: 
@@ -2976,8 +2976,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19c2dda286af72a47b81404c09d384e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TaxidermyHeadScript
-  puzzle: {fileID: 0}
-  orgin: {x: 0, y: 0, z: 0}
+  puzzle: {fileID: 1140097034}
+  orgin: {x: 40, y: 42.5, z: -81}
   value: 3
 --- !u!1 &551081763
 GameObject:
@@ -5359,13 +5359,14 @@ GameObject:
   - component: {fileID: 921283211}
   - component: {fileID: 921283213}
   - component: {fileID: 921283212}
+  - component: {fileID: 921283214}
   m_Layer: 0
-  m_Name: Square (1)
+  m_Name: Reset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &921283210
 Transform:
   m_ObjectHideFlags: 0
@@ -5375,7 +5376,7 @@ Transform:
   m_GameObject: {fileID: 921283209}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 63.340004, y: 45.89, z: -62.111137}
+  m_LocalPosition: {x: 61.9, y: 45.89, z: -62.111137}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -5472,6 +5473,35 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.5, y: 0.5, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &921283214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921283209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
+  thisObject: {fileID: 0}
+  isInteractable: 1
+  isGrabbable: 0
+  canUseOn: 0
+  consumable: 0
+  givesPrompt: 0
+  timeLock: 0
+  isHardEvidence: 0
+  timeUsage: 0
+  prompt: 
+  timeText: 
+  itemDesc: Reset
+  itemSprite: {fileID: 0}
+  highlightSprite: {fileID: 0}
+  altSprite1: {fileID: 0}
+  altSprite2: {fileID: 0}
+  usesAltSprites: 0
 --- !u!1 &922923885
 GameObject:
   m_ObjectHideFlags: 0
@@ -6900,13 +6930,14 @@ GameObject:
   - component: {fileID: 1140097033}
   - component: {fileID: 1140097035}
   - component: {fileID: 1140097034}
+  - component: {fileID: 1140097036}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Confirm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1140097032
 Transform:
   m_ObjectHideFlags: 0
@@ -6916,7 +6947,7 @@ Transform:
   m_GameObject: {fileID: 1140097031}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 63.34, y: 52.30135, z: -62.111137}
+  m_LocalPosition: {x: 61.9, y: 47.87, z: -62.111137}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -6992,15 +7023,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f814db1b81e517b41bf0797efffe8049, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TaxidermyPuzzle
-  pivot: 0
-  timeAway: 0
+  pivot: -10
+  pivotY: 55
   headOrder: 000000000000000000000000
   orderNeeded: 030000000100000002000000
   heads:
   - {fileID: 2080588325}
   - {fileID: 482700238}
   - {fileID: 546262008}
-  headPos: {x: 0, y: 0, z: 0}
+  headPos: {x: 57, y: 47, z: -87}
+  confirmButton: {fileID: 1140097031}
+  resetButton: {fileID: 921283209}
+  backArrow: {fileID: 1800410209}
 --- !u!65 &1140097035
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7022,6 +7056,35 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.5, y: 0.5, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1140097036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140097031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
+  thisObject: {fileID: 0}
+  isInteractable: 1
+  isGrabbable: 0
+  canUseOn: 0
+  consumable: 0
+  givesPrompt: 0
+  timeLock: 0
+  isHardEvidence: 0
+  timeUsage: 0
+  prompt: 
+  timeText: 
+  itemDesc: Confirm
+  itemSprite: {fileID: 0}
+  highlightSprite: {fileID: 0}
+  altSprite1: {fileID: 0}
+  altSprite2: {fileID: 0}
+  usesAltSprites: 0
 --- !u!1 &1150126808
 GameObject:
   m_ObjectHideFlags: 0
@@ -11073,6 +11136,132 @@ Transform:
   - {fileID: 1415876730}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1800410209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1800410210}
+  - component: {fileID: 1800410213}
+  - component: {fileID: 1800410212}
+  - component: {fileID: 1800410211}
+  m_Layer: 0
+  m_Name: BackArrow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1800410210
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800410209}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 91.03, y: 52.11, z: -62.111137}
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 2144236300}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!114 &1800410211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800410209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ca49e7f91d9114ab82ebf3b8b18e28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MovePointData
+  cineCam: {fileID: 943296482}
+--- !u!65 &1800410212
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800410209}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5, y: 0.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!212 &1800410213
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800410209}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1802138749
 GameObject:
   m_ObjectHideFlags: 0
@@ -13035,8 +13224,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2080588325}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 87.341, y: 42.9582, z: -59.4947}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 87.7488, y: 43.20135, z: -59.80114}
   m_LocalScale: {x: 4.560049, y: 4.56005, z: 4.560049}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13060,9 +13249,9 @@ MonoBehaviour:
   canUseOn: 0
   consumable: 0
   givesPrompt: 0
-  timeLock: 1
+  timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 30
   prompt: 
   timeText: Do you want to swap the heads around? This will take 30 minutes.
   itemDesc: 
@@ -13174,8 +13363,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19c2dda286af72a47b81404c09d384e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TaxidermyHeadScript
-  puzzle: {fileID: 0}
-  orgin: {x: 0, y: 0, z: 0}
+  puzzle: {fileID: 1140097034}
+  orgin: {x: 52, y: 42.5, z: -81}
   value: 1
 --- !u!1001 &2089031275
 PrefabInstance:
@@ -13772,6 +13961,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2144236300}
+  - component: {fileID: 2144236301}
   m_Layer: 0
   m_Name: TaxidermyClose
   m_TagString: Untagged
@@ -13793,16 +13983,39 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2080588326}
-  - {fileID: 482700239}
   - {fileID: 546262009}
+  - {fileID: 482700239}
   - {fileID: 368876348}
   - {fileID: 1307227042}
   - {fileID: 915022149}
   - {fileID: 9259694}
   - {fileID: 1140097032}
   - {fileID: 921283210}
+  - {fileID: 1800410210}
   m_Father: {fileID: 1249145198}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2144236301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144236299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97e40543fdf47034e92f828c48a1f6b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UpdateLoungeHeads
+  loungeHeads:
+  - {fileID: 1897026776}
+  - {fileID: 405405111}
+  - {fileID: 4600488}
+  wolf: {fileID: -453902948, guid: 913db77244f8f2f4d9b94251572ca65e, type: 3}
+  deer: {fileID: -914139331, guid: deda486c42380924a8c580a993f18a77, type: 3}
+  boar: {fileID: 1185396618, guid: 7ff058e716abaea47bd9f0b0eafc9a47, type: 3}
+  wolfH: {fileID: -179293386, guid: 913db77244f8f2f4d9b94251572ca65e, type: 3}
+  deerH: {fileID: -42327806, guid: deda486c42380924a8c580a993f18a77, type: 3}
+  boarH: {fileID: -2076579371, guid: 7ff058e716abaea47bd9f0b0eafc9a47, type: 3}
 --- !u!4 &543450652502204281
 Transform:
   m_ObjectHideFlags: 0
