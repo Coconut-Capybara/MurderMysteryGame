@@ -38,9 +38,10 @@ public class AddToInventory : MonoBehaviour
         item.GetComponent<RectTransform>().anchoredPosition = currentIconPos;
         GameObject itemIcon = Instantiate(item, currentIconPos, Quaternion.identity);
         itemIcon.GetComponent<InventoryItemScript>().SetOrgin(currentIconPos);
+        currentIconPos += iconPivot;
         itemIcon.transform.SetParent(canvas.transform, false);
         itemIcon.GetComponent<InventoryItemScript>().SetValid();
-        currentIconPos += iconPivot;
+        
     }
     /// <summary>
     /// Shifts the inventory items 1 slot left after
