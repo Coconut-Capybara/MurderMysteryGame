@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 689225051704435761}
   - component: {fileID: 4195545733503958589}
   m_Layer: 5
-  m_Name: MoneyStackItem
+  m_Name: ID4MoneyStack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36,7 +36,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -91.59628, y: 54.369843}
+  m_AnchoredPosition: {x: -355, y: 260}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2292333484840837108

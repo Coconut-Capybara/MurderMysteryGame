@@ -400,15 +400,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 126840784}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &126840787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -660,15 +651,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 165199590}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &165199593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1472,6 +1454,39 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 716b8dd2ec8062f4397da77ffbc8fc78, type: 3}
+--- !u!1 &320479590
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 320479591}
+  m_Layer: 0
+  m_Name: Items
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &320479591
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320479590}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1863402685}
+  - {fileID: 1913357772}
+  m_Father: {fileID: 1022070596}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &379059786
 GameObject:
   m_ObjectHideFlags: 0
@@ -1847,15 +1862,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 414760046}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &414760050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2276,15 +2282,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 496384222}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &496384224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2482,10 +2479,9 @@ MonoBehaviour:
   itemNeeded: []
   timeController: {fileID: 0}
   giveItem: 0
-  ItemGiven: {fileID: 0}
+  itemGiven: []
   disableObject: 0
   changeSprite: 0
-  incomingSprite: {fileID: 0}
   key: {fileID: 0}
   objectProperties: {fileID: 0}
   itemUseTime: 0
@@ -2736,15 +2732,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 588025371}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &588025375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2842,15 +2829,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 609073073}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &609073076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3137,15 +3115,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 614065045}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &614065048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3415,15 +3384,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 663837937}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &663837941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3992,15 +3952,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 737408823}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!65 &737408826
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4328,15 +4279,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 782630926}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &782630929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5643,6 +5585,7 @@ Transform:
   - {fileID: 663837938}
   - {fileID: 2058075642}
   - {fileID: 609073074}
+  - {fileID: 320479591}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1025981871
@@ -6018,15 +5961,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 1066289613}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &1066289617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6615,10 +6549,9 @@ MonoBehaviour:
   - {fileID: 3043295151955953431, guid: 3711bde2fcb956246b8ca3398a236c0b, type: 3}
   timeController: {fileID: 547446789}
   giveItem: 0
-  ItemGiven: {fileID: 0}
+  itemGiven: []
   disableObject: 0
   changeSprite: 0
-  incomingSprite: {fileID: 0}
   book1: {fileID: 1323473565}
   book2: {fileID: 1090068726}
   bookShelf: {fileID: 1110843975}
@@ -6978,15 +6911,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 1168672706}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &1168672710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8618,15 +8542,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 1415876729}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &1415876732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8896,15 +8811,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 1442068112}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &1442068114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9716,15 +9622,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 1572137153}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &1572137156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9842,10 +9739,9 @@ MonoBehaviour:
   itemNeeded: []
   timeController: {fileID: 0}
   giveItem: 0
-  ItemGiven: {fileID: 0}
+  itemGiven: []
   disableObject: 0
   changeSprite: 0
-  incomingSprite: {fileID: 0}
 --- !u!1 &1572282139
 GameObject:
   m_ObjectHideFlags: 0
@@ -10739,6 +10635,176 @@ MonoBehaviour:
       BarrelClipping: 0.25
       Anamorphism: 0
   BlendHint: 0
+--- !u!1 &1863402684
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1863402685}
+  - component: {fileID: 1863402690}
+  - component: {fileID: 1863402689}
+  - component: {fileID: 1863402688}
+  - component: {fileID: 1863402687}
+  - component: {fileID: 1863402686}
+  m_Layer: 0
+  m_Name: 2D_BookItem_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1863402685
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863402684}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.7827574, z: -0, w: 0.62232697}
+  m_LocalPosition: {x: -7.51, y: 5.7, z: -4.28}
+  m_LocalScale: {x: 0.67865, y: 0.67865, z: 0.67865}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 320479591}
+  m_LocalEulerAnglesHint: {x: 0, y: -103.027, z: 0}
+--- !u!114 &1863402686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863402684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df91cc0dff4a6c5468d3578751823b28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableObject
+  itemIconGO: {fileID: 3043295151955953431, guid: 3711bde2fcb956246b8ca3398a236c0b, type: 3}
+  canvas: {fileID: 0}
+--- !u!114 &1863402687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863402684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
+--- !u!114 &1863402688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863402684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
+  thisObject: {fileID: 0}
+  isInteractable: 1
+  isGrabbable: 1
+  canUseOn: 0
+  consumable: 0
+  givesPrompt: 0
+  timeLock: 0
+  isHardEvidence: 0
+  timeUsage: 0
+  prompt: 
+  timeText: 
+  itemDesc: A lone book
+  itemSprite: {fileID: -2019829017, guid: d047df0d1a11e6a44b61ef92a8e9deb9, type: 3}
+  highlightSprite: {fileID: -1965538520, guid: 81e272dfa9da72f44abbe54b3d9b8753, type: 3}
+  altSprite1: {fileID: -2019829017, guid: d047df0d1a11e6a44b61ef92a8e9deb9, type: 3}
+  altSprite2: {fileID: -2019829017, guid: d047df0d1a11e6a44b61ef92a8e9deb9, type: 3}
+  usesAltSprites: 0
+--- !u!65 &1863402689
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863402684}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.94844, y: 3.386918, z: 0.19999999}
+  m_Center: {x: -0.011400678, y: 0.02769585, z: 0.0000005379058}
+--- !u!212 &1863402690
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863402684}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -2019829017, guid: d047df0d1a11e6a44b61ef92a8e9deb9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.51, y: 0.74}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1888472726
 GameObject:
   m_ObjectHideFlags: 0
@@ -10866,6 +10932,176 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 694337305}
+--- !u!1 &1913357771
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1913357772}
+  - component: {fileID: 1913357777}
+  - component: {fileID: 1913357776}
+  - component: {fileID: 1913357775}
+  - component: {fileID: 1913357774}
+  - component: {fileID: 1913357773}
+  m_Layer: 0
+  m_Name: 2D_BookItem_0 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1913357772
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913357771}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.9827908, z: -0, w: 0.18472207}
+  m_LocalPosition: {x: -9.4135, y: 9.28, z: -26.045}
+  m_LocalScale: {x: 5.95, y: 5.95, z: 5.95}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 320479591}
+  m_LocalEulerAnglesHint: {x: 0, y: -158.71, z: 0}
+--- !u!114 &1913357773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913357771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df91cc0dff4a6c5468d3578751823b28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableObject
+  itemIconGO: {fileID: 3043295151955953431, guid: c143d2a1da15d3b40a1c61620e3ea471, type: 3}
+  canvas: {fileID: 0}
+--- !u!114 &1913357774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913357771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
+--- !u!114 &1913357775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913357771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
+  thisObject: {fileID: 0}
+  isInteractable: 1
+  isGrabbable: 1
+  canUseOn: 0
+  consumable: 0
+  givesPrompt: 0
+  timeLock: 0
+  isHardEvidence: 0
+  timeUsage: 0
+  prompt: 
+  timeText: 
+  itemDesc: A pair of tongs
+  itemSprite: {fileID: -1292928020, guid: bf862f39441f9804daeaba78d53d7ec7, type: 3}
+  highlightSprite: {fileID: -867584579, guid: bf862f39441f9804daeaba78d53d7ec7, type: 3}
+  altSprite1: {fileID: 21300000, guid: 532f92e2fcf8197419d1ec93b122b872, type: 3}
+  altSprite2: {fileID: 21300000, guid: 532f92e2fcf8197419d1ec93b122b872, type: 3}
+  usesAltSprites: 0
+--- !u!65 &1913357776
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913357771}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0467452, y: 0.41010624, z: 0.19999999}
+  m_Center: {x: -0.02834817, y: 0.006943711, z: -0.000000921456}
+--- !u!212 &1913357777
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913357771}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -1292928020, guid: bf862f39441f9804daeaba78d53d7ec7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.04, y: 3.08}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1916497726
 GameObject:
   m_ObjectHideFlags: 0
@@ -11289,15 +11525,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 2010964758}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &2010964760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11525,15 +11752,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 2058075641}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &2058075644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12045,15 +12263,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
-  thisObject: {fileID: 2141000524}
-  playerCam: {fileID: 1840529610}
-  lastObject: {fileID: 0}
-  lastObjectProperties: {fileID: 0}
-  lastSpriteRenderer: {fileID: 0}
-  lastOGSprite: {fileID: 0}
-  lastHoverSprite: {fileID: 0}
-  lastSpriteAlt1: {fileID: 0}
-  lastSpriteAlt2: {fileID: 0}
 --- !u!114 &2141000528
 MonoBehaviour:
   m_ObjectHideFlags: 0
