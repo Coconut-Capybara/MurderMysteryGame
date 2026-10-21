@@ -1568,7 +1568,7 @@ MonoBehaviour:
   - {fileID: 8200676748390764321, guid: 4b02c1484783bb649bec4775177ac440, type: 3}
   timeController: {fileID: 1393377044}
   giveItem: 1
-  ItemGiven: {fileID: 8200676748390764321, guid: bbdc60c485c1d98449a530215913c151, type: 3}
+  itemGiven: []
   disableObject: 0
   changeSprite: 1
 --- !u!114 &414760053
@@ -2718,7 +2718,9 @@ MonoBehaviour:
   - {fileID: 8200676748390764321, guid: bbdc60c485c1d98449a530215913c151, type: 3}
   timeController: {fileID: 1393377044}
   giveItem: 1
-  ItemGiven: {fileID: 3043295151955953431, guid: bb8df09d4ffd92849a0ddf1cb9001fae, type: 3}
+  itemGiven:
+  - {fileID: 3043295151955953431, guid: f16e4ddc93267654cbc4ed06ae04f872, type: 3}
+  - {fileID: 3043295151955953431, guid: bb8df09d4ffd92849a0ddf1cb9001fae, type: 3}
   disableObject: 0
   changeSprite: 0
 --- !u!1001 &621083717
@@ -4986,7 +4988,7 @@ MonoBehaviour:
   - {fileID: 8200676748390764321, guid: 3af3dce20f2135e47a2d5a284275d89b, type: 3}
   timeController: {fileID: 0}
   giveItem: 0
-  ItemGiven: {fileID: 0}
+  itemGiven: []
   disableObject: 0
   changeSprite: 1
 --- !u!1001 &1119686651
@@ -6457,7 +6459,7 @@ MonoBehaviour:
   - {fileID: 0}
   timeController: {fileID: 0}
   giveItem: 0
-  ItemGiven: {fileID: 0}
+  itemGiven: []
   disableObject: 0
   changeSprite: 1
 --- !u!1 &1420381176
@@ -7607,7 +7609,7 @@ MonoBehaviour:
   itemNeeded: []
   timeController: {fileID: 0}
   giveItem: 0
-  ItemGiven: {fileID: 0}
+  itemGiven: []
   disableObject: 0
   changeSprite: 0
 --- !u!1 &1572282139
@@ -8221,7 +8223,7 @@ MonoBehaviour:
   itemNeeded: []
   timeController: {fileID: 0}
   giveItem: 0
-  ItemGiven: {fileID: 0}
+  itemGiven: []
   disableObject: 0
   changeSprite: 0
   key: {fileID: 0}
