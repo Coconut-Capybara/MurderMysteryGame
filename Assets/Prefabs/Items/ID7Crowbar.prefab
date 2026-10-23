@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
-  thisObject: {fileID: 8200676748390764321}
+  thisObject: {fileID: 0}
   isInteractable: 0
   isGrabbable: 0
   canUseOn: 0
@@ -101,8 +101,8 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: 
-  itemSprite: {fileID: -990722930, guid: 81e272dfa9da72f44abbe54b3d9b8753, type: 3}
-  highlightSprite: {fileID: 747922705, guid: 81e272dfa9da72f44abbe54b3d9b8753, type: 3}
+  itemSprite: {fileID: 0}
+  highlightSprite: {fileID: 0}
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
