@@ -2645,11 +2645,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
   itemNeeded:
   - {fileID: 8200676748390764321, guid: bbdc60c485c1d98449a530215913c151, type: 3}
-  timeController: {fileID: 0}
+  timeController: {fileID: 1840529622}
   giveItem: 1
   itemGiven:
-  - {fileID: 3043295151955953431, guid: f16e4ddc93267654cbc4ed06ae04f872, type: 3}
   - {fileID: 3043295151955953431, guid: bb8df09d4ffd92849a0ddf1cb9001fae, type: 3}
+  - {fileID: 3043295151955953431, guid: f16e4ddc93267654cbc4ed06ae04f872, type: 3}
   disableObject: 0
   changeSprite: 0
 --- !u!114 &407114894
@@ -5326,7 +5326,6 @@ GameObject:
   - component: {fileID: 848412376}
   - component: {fileID: 848412375}
   - component: {fileID: 848412374}
-  - component: {fileID: 848412373}
   m_Layer: 0
   m_Name: 2D_SafeBreak_0
   m_TagString: Untagged
@@ -5349,22 +5348,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 122908480}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &848412373
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 848412371}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed66a4f38f9459540800e857332e7b03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GivePlayerItem
-  itemPrefabs:
-  - {fileID: 8200676748390764321, guid: bbdc60c485c1d98449a530215913c151, type: 3}
-  amount: 1
-  outsideRock: {fileID: 0}
 --- !u!114 &848412374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5379,9 +5362,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
   itemNeeded:
   - {fileID: 8200676748390764321, guid: 4b02c1484783bb649bec4775177ac440, type: 3}
-  timeController: {fileID: 0}
+  timeController: {fileID: 1840529622}
   giveItem: 1
-  itemGiven: []
+  itemGiven:
+  - {fileID: 8200676748390764321, guid: bbdc60c485c1d98449a530215913c151, type: 3}
   disableObject: 0
   changeSprite: 1
 --- !u!114 &848412375
@@ -5399,7 +5383,7 @@ MonoBehaviour:
   thisObject: {fileID: 848412371}
   isInteractable: 1
   isGrabbable: 0
-  canUseOn: 0
+  canUseOn: 1
   consumable: 0
   givesPrompt: 0
   timeLock: 0
@@ -10430,11 +10414,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1752389595}
   m_CullTransparentMesh: 1
---- !u!1 &1762344365 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3403368983408795546, guid: c2b33f5a1b8becd41a608a05ec1c04ba, type: 3}
-  m_PrefabInstance: {fileID: 1948059739}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1776860374
 GameObject:
   m_ObjectHideFlags: 0
@@ -11206,7 +11185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InventoryHandler
   currentIconPos: {x: -350, y: 250}
   iconPivot: {x: 100, y: 0}
-  canvas: {fileID: 1762344365}
+  canvas: {fileID: 2114649893}
 --- !u!114 &1840529620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11253,7 +11232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c23c7fd1e70357f44aef62d73b1af5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimeController
-  timeLeft: 0
+  timeLeft: 100
   hoursLeft: 0
   minutesLeft: 0
   timePanel: {fileID: 1948059745}
@@ -12192,9 +12171,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 96314020775127640, guid: c2b33f5a1b8becd41a608a05ec1c04ba, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 709219434223380473, guid: c2b33f5a1b8becd41a608a05ec1c04ba, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3403368983408795546, guid: c2b33f5a1b8becd41a608a05ec1c04ba, type: 3}
       propertyPath: m_Name
       value: UI_Canvases
+      objectReference: {fileID: 0}
+    - target: {fileID: 3823732255628172789, guid: c2b33f5a1b8becd41a608a05ec1c04ba, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1840529618}
+    - target: {fileID: 3823732255628172789, guid: c2b33f5a1b8becd41a608a05ec1c04ba, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HidePrompt
       objectReference: {fileID: 0}
     - target: {fileID: 5803621733929869477, guid: c2b33f5a1b8becd41a608a05ec1c04ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12235,6 +12230,26 @@ PrefabInstance:
     - target: {fileID: 5803621733929869477, guid: c2b33f5a1b8becd41a608a05ec1c04ba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835043740136090912, guid: c2b33f5a1b8becd41a608a05ec1c04ba, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6534695231164416856, guid: c2b33f5a1b8becd41a608a05ec1c04ba, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1840529622}
+    - target: {fileID: 6534695231164416856, guid: c2b33f5a1b8becd41a608a05ec1c04ba, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NoButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6966575212190056224, guid: c2b33f5a1b8becd41a608a05ec1c04ba, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1840529615}
+    - target: {fileID: 6966575212190056224, guid: c2b33f5a1b8becd41a608a05ec1c04ba, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TimeConfirm
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
