@@ -101,7 +101,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 9
-        y: 171
+        y: 571
         width: 200
         height: 141
       alignment: 0
@@ -123,7 +123,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 213
-        y: 169
+        y: 569
         width: 202
         height: 145
       alignment: 0
@@ -145,7 +145,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 425
-        y: 171
+        y: 571
         width: 202
         height: 141
       alignment: 0
@@ -167,7 +167,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 53
-        y: 11
+        y: 411
         width: 163
         height: 147
       alignment: 0
@@ -189,7 +189,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 255
-        y: 9
+        y: 409
         width: 167
         height: 151
       alignment: 0
@@ -202,6 +202,72 @@ TextureImporter:
       bones: []
       spriteID: 830f83250e194cc4d9e26a09f6822999
       internalID: 360277614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D_Trapdoor_5
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 198
+        width: 301
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6db53c31da6ad94389da9f67988cf23
+      internalID: 1621314773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D_Trapdoor_6
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 198
+        width: 301
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d574bc9584cce409214659b1483755
+      internalID: 486696367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D_Trapdoor_7
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 10
+        width: 301
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e6b1199fc4a554b9618aeb25e1d465
+      internalID: -2084653267
       vertices: []
       indices: 
       edges: []
@@ -220,13 +286,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":2.0},"gridSpriteSize":{"x":800.0,"y":600.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       2D_Trapdoor_0: -1728464144
       2D_Trapdoor_1: 1586207677
       2D_Trapdoor_2: 2044429837
       2D_Trapdoor_3: 726312873
       2D_Trapdoor_4: 360277614
+      2D_Trapdoor_5: 1621314773
+      2D_Trapdoor_6: 486696367
+      2D_Trapdoor_7: -2084653267
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
