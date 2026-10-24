@@ -20,6 +20,13 @@ public class AddToInventory : MonoBehaviour
 
     [Tooltip("The inventory canvas")]
     [SerializeField] private GameObject canvas;
+
+    private Vector2 slotOne;
+
+    private void Start()
+    {
+        slotOne = currentIconPos;
+    }
     /// <summary>
     /// Puts item in inventory
     /// </summary>
@@ -49,12 +56,13 @@ public class AddToInventory : MonoBehaviour
     /// </summary>
     public void ShiftLeft()
     {
-        currentIconPos -= iconPivot;
+        currentIconPos = slotOne;
         GameObject[] inventory = GameObject.FindGameObjectsWithTag("InInventory");
         foreach(GameObject item in inventory)
-        {
-            item.GetComponent<RectTransform>().anchoredPosition = (currentIconPos - iconPivot);
-            item.GetComponent<InventoryItemScript>().SetOrgin(currentIconPos - iconPivot);   
+        {         
+            item.GetComponent<RectTransform>().anchoredPosition = currentIconPos;
+            item.GetComponent<InventoryItemScript>().SetOrgin(currentIconPos);   
+            currentIconPos += iconPivot;
         }
     }
 }

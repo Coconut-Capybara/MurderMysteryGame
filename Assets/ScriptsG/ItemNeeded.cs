@@ -56,6 +56,7 @@ public class ItemNeeded : MonoBehaviour
         if (changeSprite)
         {
             GetComponent<ObjectProperties>().usesAltSprites = true;
+            GetComponent<SpriteRenderer>().sprite = GetComponent<ObjectProperties>().altSprite1;
         }
         if (disableObject)
         {
@@ -83,6 +84,7 @@ public class ItemNeeded : MonoBehaviour
             currentItem.GetComponent<ObjectProperties>().consumable)
         {
             currentItem.SetActive(false);
+            currentItem.gameObject.tag = "Untagged";
             GameObject.FindAnyObjectByType<AddToInventory>().ShiftLeft();
             GameObject.FindFirstObjectByType<PlayerInteract>().UnlockItemUse();
         }
