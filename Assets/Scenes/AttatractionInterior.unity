@@ -3264,6 +3264,8 @@ MonoBehaviour:
   - {fileID: 3043295151955953431, guid: f16e4ddc93267654cbc4ed06ae04f872, type: 3}
   disableObject: 0
   changeSprite: 0
+  enableCam: 0
+  camToEnable: {fileID: 0}
 --- !u!114 &407114894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3519,6 +3521,8 @@ MonoBehaviour:
   itemGiven: []
   disableObject: 1
   changeSprite: 0
+  enableCam: 0
+  camToEnable: {fileID: 0}
 --- !u!114 &428883819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3727,6 +3731,8 @@ MonoBehaviour:
   itemGiven: []
   disableObject: 0
   changeSprite: 1
+  enableCam: 1
+  camToEnable: {fileID: 454600098}
 --- !u!114 &454600095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3842,7 +3848,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454600092}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87ca49e7f91d9114ab82ebf3b8b18e28, type: 3}
   m_Name: 
@@ -7278,6 +7284,8 @@ MonoBehaviour:
   - {fileID: 8200676748390764321, guid: bbdc60c485c1d98449a530215913c151, type: 3}
   disableObject: 0
   changeSprite: 1
+  enableCam: 0
+  camToEnable: {fileID: 0}
 --- !u!114 &848412375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11572,6 +11580,8 @@ MonoBehaviour:
   itemGiven: []
   disableObject: 0
   changeSprite: 0
+  enableCam: 0
+  camToEnable: {fileID: 0}
   book1: {fileID: 575957000}
   book2: {fileID: 1110248185}
   bookShelf: {fileID: 1380806732}
@@ -12033,6 +12043,8 @@ MonoBehaviour:
   - {fileID: 3043295151955953431, guid: 56649c4aca68833439473295a236299a, type: 3}
   disableObject: 0
   changeSprite: 1
+  enableCam: 0
+  camToEnable: {fileID: 0}
 --- !u!1 &1420381176
 GameObject:
   m_ObjectHideFlags: 0
@@ -12959,6 +12971,8 @@ MonoBehaviour:
   - {fileID: 3043295151955953431, guid: 9c0edbb9634a3fe4cb4064e1c72e52a2, type: 3}
   disableObject: 0
   changeSprite: 1
+  enableCam: 0
+  camToEnable: {fileID: 0}
 --- !u!1 &1551287139
 GameObject:
   m_ObjectHideFlags: 0
@@ -13273,6 +13287,8 @@ MonoBehaviour:
   - {fileID: 3043295151955953431, guid: 291216ae88a4e3c4e915c0b85f269d7e, type: 3}
   disableObject: 0
   changeSprite: 1
+  enableCam: 0
+  camToEnable: {fileID: 0}
 --- !u!1 &1572282139
 GameObject:
   m_ObjectHideFlags: 0
@@ -13457,6 +13473,8 @@ MonoBehaviour:
   itemGiven: []
   disableObject: 0
   changeSprite: 1
+  enableCam: 0
+  camToEnable: {fileID: 0}
 --- !u!114 &1614846988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14060,6 +14078,8 @@ MonoBehaviour:
   itemGiven: []
   disableObject: 0
   changeSprite: 0
+  enableCam: 0
+  camToEnable: {fileID: 0}
   key: {fileID: 0}
   objectProperties: {fileID: 0}
   itemUseTime: 0
@@ -15164,6 +15184,7 @@ MonoBehaviour:
   - {fileID: 9990059}
   - {fileID: 1752389595}
   puzzlePanel: {fileID: 1408905522}
+  bookShelfClose: {fileID: 0}
   bookShelf: {fileID: 1380806732}
   flashlight: {fileID: 3043295151955953431, guid: 316c17a57a312ce4fbde9bd1d827ba4a, type: 3}
   tempbook: {fileID: 3043295151955953431, guid: 3711bde2fcb956246b8ca3398a236c0b, type: 3}
