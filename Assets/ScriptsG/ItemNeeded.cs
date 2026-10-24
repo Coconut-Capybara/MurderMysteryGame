@@ -35,6 +35,8 @@ public class ItemNeeded : MonoBehaviour
     [SerializeField] private bool enableItem;
     [SerializeField] private GameObject itemEnabled;
 
+    [SerializeField] private bool givesHardEvidence;
+    [SerializeField] private GameObject hardEvidenceGO;
     /// <summary>
     /// Base function for item interaction
     /// </summary>
@@ -76,6 +78,11 @@ public class ItemNeeded : MonoBehaviour
         if (enableItem)
         {
             itemEnabled.SetActive(true);  
+        }
+        if (givesHardEvidence)
+        {
+            GameObject.FindFirstObjectByType<EndGameHandler>().CollectHardEvidence();
+            hardEvidenceGO.SetActive(false);
         }
     }
     IEnumerator BufferAdd()

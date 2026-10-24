@@ -49,6 +49,7 @@ public class PickUpBook : MonoBehaviour
             bookShelf.GetComponent<SpriteRenderer>().sprite = bookShelf.GetComponent<ObjectProperties>().altSprite1;
             bookShelfClose.GetComponent<SpriteRenderer>().sprite = 
                 bookShelfClose.GetComponent<ObjectProperties>().altSprite1;
+            bookShelfClose.GetComponent<ObjectProperties>().usesAltSprites = true;
         }
         else
         {
