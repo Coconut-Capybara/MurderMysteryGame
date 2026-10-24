@@ -4208,6 +4208,7 @@ GameObject:
   - component: {fileID: 454600095}
   - component: {fileID: 454600094}
   - component: {fileID: 454600098}
+  - component: {fileID: 454600099}
   m_Layer: 0
   m_Name: 2D_Locker3_0
   m_TagString: Untagged
@@ -4374,6 +4375,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 726848576}
+--- !u!114 &454600099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454600092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 931559e2c249a774a89f0d4e31ac5ee9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LockerController
 --- !u!1001 &455119383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16604,6 +16617,7 @@ GameObject:
   - component: {fileID: 1840529621}
   - component: {fileID: 1840529620}
   - component: {fileID: 1840529617}
+  - component: {fileID: 1840529623}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -16811,6 +16825,7 @@ MonoBehaviour:
   currentItem: {fileID: 0}
   hoverItem: {fileID: 0}
   inPrompt: 0
+  inGame: 0
   cursorState: 0
 --- !u!114 &1840529616
 MonoBehaviour:
@@ -16956,6 +16971,21 @@ MonoBehaviour:
   timeUsePanel: 0
   index: 0
   objectProperties: {fileID: 0}
+--- !u!114 &1840529623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840529608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20aabccd81c253b4fbe03ee813a6da3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
+  pausePanel: {fileID: 2082757924}
+  youSurePanel: {fileID: 2082757923}
+  playerInteract: {fileID: 1840529615}
 --- !u!1 &1845829424
 GameObject:
   m_ObjectHideFlags: 0
@@ -21333,3 +21363,4 @@ SceneRoots:
   - {fileID: 968813845}
   - {fileID: 1438780385}
   - {fileID: 1265145525}
+  - {fileID: 2082757922}
