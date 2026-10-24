@@ -42,12 +42,16 @@ public class PickUpBook : MonoBehaviour
         if (OrderValid())
         {
             GameObject.FindFirstObjectByType<AddToInventory>().AddNonWorldItem(flashlight);
-            GameObject.FindFirstObjectByType<StartBookPuzzle>().LockPuzzle();        
+            GameObject.FindFirstObjectByType<StartBookPuzzle>().LockPuzzle();
+            GameObject.FindFirstObjectByType<TextPrompts>().ShowPrompt("You move the books around, and a " +
+                "compartment opens. inside is a flashlight");
         }
         else
         {
             bookShelf.GetComponent<ObjectProperties>().timeUsage[0] = 10;
             bookShelf.GetComponent<ObjectProperties>().timeLock = false;
+            GameObject.FindFirstObjectByType<TextPrompts>().ShowPrompt("You move the books and nothing " +
+                "Nothing happens");
         }
         GameObject.FindFirstObjectByType<StartBookPuzzle>().ClosePuzzle();
         ResetPuzzle();  
