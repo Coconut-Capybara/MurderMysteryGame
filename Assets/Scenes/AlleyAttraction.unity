@@ -1307,7 +1307,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &847087797
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1363,7 +1363,7 @@ SpriteRenderer:
   m_Size: {x: 6, y: 6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &847087798
@@ -2373,6 +2373,9 @@ MonoBehaviour:
   - {fileID: 719092054}
   - {fileID: 356191669}
   - {fileID: 490229993}
+  blackScreen: {fileID: 0}
+  fadeSpeed: 0
+  fadePivot: 0
 --- !u!114 &1840529614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2429,7 +2432,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08ccf83410e17184e8c7e1899d3e6d94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneSwitchDebug
-  sceneIndex: 0
   anotherScene: ItemTesting
 --- !u!1 &1862210747
 GameObject:
