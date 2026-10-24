@@ -7,23 +7,25 @@ public class StartBookPuzzle : NoItemInteractions
     [SerializeField] private GameObject books;
     public override void NoItemFunciton()
     {
-        if (!bookPuzzleLocked)
+        if (!GameObject.FindFirstObjectByType<PlayerInteract>().GetInPrompt())
         {
-            GameObject.FindFirstObjectByType<FollowPlayerCursor>().ResetCube();
-            GameObject.FindFirstObjectByType<PlayerInteract>().SetInPrompt(true);
-            books.SetActive(false); 
-            bookPuzzlePanel.SetActive(true);
-        }
-        else
-        {
-            GameObject.FindFirstObjectByType<TextPrompts>().ShowPrompt("There appears to be a book missing");
-        }
+            if (!bookPuzzleLocked)
+            {
+                GameObject.FindFirstObjectByType<FollowPlayerCursor>().ResetCube();
+                GameObject.FindFirstObjectByType<PlayerInteract>().SetInPrompt(true);
+                books.SetActive(false);
+                bookPuzzlePanel.SetActive(true);
+            }
+            else
+            {
+                GameObject.FindFirstObjectByType<TextPrompts>().ShowPrompt("There appears to be a book missing");
+            }
+        }       
     }
     public void ClosePuzzle()
     {
         bookPuzzlePanel.SetActive(false);
         books.SetActive(true);
-        GameObject.FindFirstObjectByType<PlayerInteract>().SetInPrompt(false);
     }
     public void LockPuzzle()
     {

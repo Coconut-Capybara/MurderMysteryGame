@@ -24,7 +24,7 @@ public class PlayerInteract : MonoBehaviour
     private GameObject lockedItem;
     private TimeController timeController;
     [Tooltip("Whether the player is currently in a prompt state. DO NOT MANUALLY ASSIGN")]
-    private bool inPrompt;
+    [SerializeField] private bool inPrompt;
     [Tooltip("Whether the player is not in a prompt. Make sure this is true before pressing play. " +
         "DO NOT CHANGE IN GAME")]
     private bool inGame;
