@@ -14,7 +14,7 @@ public class DoorScript : ItemNeeded
 {
     [SerializeField] private bool isLocked;
 
-    [SerializeField] private VertSliceEndScreen vertSliceEndScreen;
+    [SerializeField] private SceneTransController sceneTransController;
     private GameObject vertSlicePanel;
     /// <summary>
     /// Checks whether the door is locked, enters if so
@@ -35,10 +35,7 @@ public class DoorScript : ItemNeeded
     /// </summary>
     public void EnterDoor()
     {
-        //camera movement here
-        vertSliceEndScreen = FindAnyObjectByType<VertSliceEndScreen>();
-        vertSlicePanel = vertSliceEndScreen.GetVerticalSlicePanel();
-        vertSlicePanel.SetActive(true);
+        sceneTransController.MoveScene();
         print("You enter the door");
     }
     public void SetLockState()
