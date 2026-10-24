@@ -17,7 +17,7 @@ public class TimeController : MonoBehaviour
 {
     [Header("Time Variables")]
     [Tooltip("The time remaining")]
-    public static int timeLeft;
+    [SerializeField] private int timeLeft;
     [Tooltip("The amount of hours left. Do not manually adjust.")]
     [SerializeField] private int hoursLeft;
     [Tooltip("The amount of leftover minutes after hoursLeft has been calculated. Do not manually adjust this")]
