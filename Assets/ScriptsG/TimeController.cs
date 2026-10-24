@@ -23,6 +23,10 @@ public class TimeController : MonoBehaviour
     [SerializeField] private int hoursLeft;
     [Tooltip("The amount of leftover minutes after hoursLeft has been calculated. Do not manually adjust this")]
     [SerializeField] private int minutesLeft;
+    [Tooltip("Whether this is a build or not. True means that you can manually set the time in the scene.")]
+    [SerializeField] private bool isTesting;
+    [Tooltip("The time left if isTesting is set to true.")]
+    [SerializeField] private int debugTimeLeft;
 
     [Header("Time UI Elements")]
     [Tooltip("The UI Panel that holds the Time Passing Check stuff")]
@@ -51,6 +55,10 @@ public class TimeController : MonoBehaviour
     void Start()
     {
         //TimeAway(timeTestAway);
+        if (isTesting)
+        {
+            timeLeft = debugTimeLeft;
+        }
         timeUsePanel = false;
         timePanel.SetActive(false);
         TimeFormat();
