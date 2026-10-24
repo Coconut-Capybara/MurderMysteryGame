@@ -20,20 +20,14 @@ public class RockScript : ItemNeeded
     /// <param name="currentItem"></param>
     public override void ItemUsage(GameObject currentItem)
     {
-        if(currentItem.GetComponent<InventoryItemScript>().GetItemId()
-            == GetItemNeeded().GetComponent<InventoryItemScript>().GetItemId())
+        if(currentItem.GetComponent<InventoryItemScript>().GetItemId() == 1)
         {
-            this.gameObject.GetComponent<ObjectProperties>().timeUsage = itemUseTime;
-            gameObject.GetComponent<ObjectProperties>().timeLock = false;
-            GetComponent<ObjectProperties>().givesPrompt = true;
             GetComponent<ObjectProperties>().prompt = "You use the screwdriver to break the key " +
                 "off the rock. You got the employee key, but the screwdriver broke.";
-            objectProperties.usesAltSprites = true;
-            objectProperties.isInteractable = false;
-            objectProperties.itemDesc = "Nothing else on the rock as far as I can tell.";
-            GameObject.FindFirstObjectByType<AddToInventory>().AddNonWorldItem(key);
-            Consume(currentItem);
-                                      
+            GetComponent<ObjectProperties>().itemDesc = "Nothing else on the rock as far as I can tell.";
+            ItemUseFunctionality(currentItem);
+            GameObject.FindFirstObjectByType<TextPrompts>().ShowPrompt(GetComponent<ObjectProperties>().prompt);
         }
+        
     }
 }

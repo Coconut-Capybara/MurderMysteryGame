@@ -91,4 +91,17 @@ public class ItemNeeded : MonoBehaviour
     {
         return itemNeeded[0];
     }
+    public bool ItemValid(GameObject item)
+    {
+        bool valid = false;
+        for(int i = 0;i < itemNeeded.Length;i++)
+        {
+            if(itemNeeded[i].GetComponent<InventoryItemScript>().GetItemId()
+                == item.GetComponent<InventoryItemScript>().GetItemId())
+            {
+                valid = true;   
+            }
+        }
+        return valid;
+    }
 }

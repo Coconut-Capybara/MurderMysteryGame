@@ -114,7 +114,7 @@ public class TaxidermyPuzzle : NoItemInteractions
     {
         for (int i = 0; i < heads.Length; i++)
         {
-            heads[i].GetComponent<ObjectProperties>().timeUsage = 0;
+            heads[i].GetComponent<ObjectProperties>().timeUsage[0] = 0;
         }
     }
     public void StartPuzzle()
@@ -135,7 +135,7 @@ public class TaxidermyPuzzle : NoItemInteractions
         puzzleActive = false;
         for (int i = 0; i < heads.Length; i++)
         {
-            heads[i].GetComponent<ObjectProperties>().timeUsage = 30;
+            heads[i].GetComponent<ObjectProperties>().timeUsage[0] = 30;
         }
         headPos.x = 57;
     }

@@ -15,7 +15,7 @@ public class UnlockBookPuzzle : ItemNeeded
                 book2.SetActive(true);
                 GameObject.FindFirstObjectByType<StartBookPuzzle>().UnlockPuzzle();
                 bookShelf.GetComponent<ObjectProperties>().timeLock = false;
-                bookShelf.GetComponent<ObjectProperties>().timeUsage = 10;
+                bookShelf.GetComponent<ObjectProperties>().timeUsage[0] = 10;
                 GetComponent<ObjectProperties>().canUseOn = false;
                 Consume(currentItem);   
                 ItemUseFunctionality(currentItem);  
