@@ -93,7 +93,7 @@ MonoBehaviour:
   isInteractable: 0
   isGrabbable: 0
   canUseOn: 0
-  consumable: 1
+  consumable: 0
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
