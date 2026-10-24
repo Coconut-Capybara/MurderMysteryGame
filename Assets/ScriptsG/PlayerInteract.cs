@@ -152,11 +152,20 @@ public class PlayerInteract : MonoBehaviour
             {
                 hoverItem = _hoverItem;
                 lockedItem = _currentItem;
-                if (_currentItem.GetComponent<InventoryItemScript>().GetItemId()
-                    == hoverItem.GetComponent<ItemNeeded>().GetItemNeeded().GetComponent<InventoryItemScript>().GetItemId())
+                if (hoverItem.GetComponent<ItemNeeded>().ItemValid(_currentItem))
                 {
                     itemUseLock = true;
-                    if (hoverItem.GetComponent<ObjectProperties>().timeUsage > 0)                        
+                    int itemIndex = 0;
+                    for(int i = 0; i < hoverItem.GetComponent<ItemNeeded>().itemNeeded.Length; i++)
+                    {
+                        if(_currentItem.GetComponent<InventoryItemScript>().GetItemId()
+                            == hoverItem.GetComponent<ItemNeeded>().itemNeeded[i].
+                            GetComponent<InventoryItemScript>().GetItemId())
+                        {
+                            itemIndex = i;
+                        }
+                    }
+                    if (hoverItem.GetComponent<ObjectProperties>().timeUsage[itemIndex] > 0)                        
                     {
                         TimeCheck();
                     }
@@ -188,7 +197,7 @@ public class PlayerInteract : MonoBehaviour
         }
         else if (item.GetComponent<ObjectProperties>().isGrabbable)
         {
-            if(item.GetComponent<ObjectProperties>().timeUsage > 0)
+            if(item.GetComponent<ObjectProperties>().timeUsage[0] > 0)
             {            
                 TimeCheck();
             }
@@ -205,7 +214,7 @@ public class PlayerInteract : MonoBehaviour
         }
         else if (item.GetComponent<ObjectProperties>().isInteractable)
         {
-            if(item.GetComponent<ObjectProperties>().timeUsage > 0 && !hoverItem.GetComponent<ObjectProperties>().timeLock)
+            if(item.GetComponent<ObjectProperties>().timeUsage[0] > 0 && !hoverItem.GetComponent<ObjectProperties>().timeLock)
             {
                 TimeCheck();    
             }
@@ -234,10 +243,10 @@ public class PlayerInteract : MonoBehaviour
     /// </summary>
     private void TimeCheck()
     {
-        GameObject fuckassRock = FindAnyObjectByType<RockScript>().gameObject;
-        fuckassRock.GetComponent<ObjectProperties>().timeUsage = 5;
+        //GameObject fuckassRock = FindAnyObjectByType<RockScript>().gameObject;
+        //fuckassRock.GetComponent<ObjectProperties>().timeUsage[0] = 5;
         GameObject.FindFirstObjectByType<ItemInspections>().HideItemDescPanel();
-        timeController.PassTimePanel(hoverItem.GetComponent<ObjectProperties>().timeUsage,hoverItem);
+        timeController.PassTimePanel(hoverItem,currentItem);
         cursorState = CursorState.None;
         GameObject.FindFirstObjectByType<FollowPlayerCursor>().ResetCube();
         inPrompt = true;
@@ -247,11 +256,9 @@ public class PlayerInteract : MonoBehaviour
     /// </summary>
     public void TimeConfirm()
     {
-        inPrompt = false;   
-        timeController.SetTimeUsePanel(false); 
-        timeController.TimeAway(hoverItem.GetComponent<ObjectProperties>().timeUsage);
-        timeController.GetTimePanel().SetActive(false);
-        hoverItem.GetComponent<ObjectProperties>().timeUsage = 0;
+        inPrompt = false;
+        timeController.YesButton();
+        hoverItem.GetComponent<ObjectProperties>().timeUsage[timeController.index] = 0;
     
         if (itemUseLock)
         {

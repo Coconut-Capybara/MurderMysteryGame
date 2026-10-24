@@ -2093,7 +2093,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 1
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: 
@@ -2293,7 +2293,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: "The door won\u2019t budge. Gotta find another way in."
@@ -3044,7 +3044,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: 
@@ -3243,7 +3243,7 @@ MonoBehaviour:
   givesPrompt: 1
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 00000000
   prompt: You unlock the door.              (Click door to enter)
   timeText: 
   itemDesc: "This door\u2019s just locked. Is there a key around?"
@@ -3675,7 +3675,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: 
@@ -4111,7 +4111,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: 
@@ -4692,7 +4692,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: 
@@ -4994,7 +4994,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: 
@@ -5172,7 +5172,7 @@ MonoBehaviour:
   givesPrompt: 1
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 15
+  timeUsage: 0a000000
   prompt: You dig through the trash, and find a screwdriver!               (Click
     and drag items to use them)
   timeText: You are about to dig through the trash.
@@ -5986,7 +5986,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: 
@@ -6509,7 +6509,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: A big dumpster. I should probably take a closer look.
@@ -6598,8 +6598,8 @@ GameObject:
   - component: {fileID: 1151989499}
   - component: {fileID: 1151989505}
   - component: {fileID: 1151989504}
+  - component: {fileID: 1151989506}
   - component: {fileID: 1151989503}
-  - component: {fileID: 1151989502}
   - component: {fileID: 1151989501}
   - component: {fileID: 1151989500}
   m_Layer: 0
@@ -6657,28 +6657,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.92, y: 0.56, z: 0.2}
   m_Center: {x: 0, y: 0.035659492, z: 0}
---- !u!114 &1151989502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1151989498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4de2556f0ac375f458db4116ca48b604, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RockScript
-  itemNeeded:
-  - {fileID: 3043295151955953431, guid: af4429b390e0f4242889d5d6c2ad0a3f, type: 3}
-  timeController: {fileID: 0}
-  giveItem: 0
-  itemGiven: []
-  disableObject: 0
-  changeSprite: 0
-  key: {fileID: 3043295151955953431, guid: f5ed07d89a75df543b4a350083606087, type: 3}
-  objectProperties: {fileID: 1151989503}
-  itemUseTime: 5
 --- !u!114 &1151989503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6699,7 +6677,7 @@ MonoBehaviour:
   givesPrompt: 1
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 1
+  timeUsage: 0a0000001e000000
   prompt: You fail to remove the key. Maybe you can find something to pry it off?
   timeText: 'There is a key attached to the rock, will you try to take it off? '
   itemDesc: "This rock\u2019s plastic. Looking closer, there\u2019s a key stuck to
@@ -6779,6 +6757,30 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1151989506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151989498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4de2556f0ac375f458db4116ca48b604, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockScript
+  itemNeeded:
+  - {fileID: 1532536772341162781, guid: 9cd51f594790e1e45bb2d8356962d439, type: 3}
+  - {fileID: 3043295151955953431, guid: af4429b390e0f4242889d5d6c2ad0a3f, type: 3}
+  timeController: {fileID: 0}
+  giveItem: 1
+  itemGiven:
+  - {fileID: 3043295151955953431, guid: f5ed07d89a75df543b4a350083606087, type: 3}
+  disableObject: 0
+  changeSprite: 1
+  key: {fileID: 0}
+  objectProperties: {fileID: 0}
+  itemUseTime: 0
 --- !u!1001 &1157931164
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7370,7 +7372,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 00000000
   prompt: You unlock the door.              (Click door to enter)
   timeText: 
   itemDesc: "This door\u2019s just locked. Is there a key around?"
@@ -7949,7 +7951,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: 
@@ -8282,7 +8284,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 1
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: 
@@ -8791,7 +8793,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: 
@@ -8967,6 +8969,7 @@ MonoBehaviour:
   timerPanel: {fileID: 737877281}
   timerText: {fileID: 1191993614}
   timeUsePanel: 0
+  index: 0
   objectProperties: {fileID: 0}
 --- !u!114 &1569590913
 MonoBehaviour:
@@ -9208,7 +9211,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 1
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: 
@@ -9704,7 +9707,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: 
@@ -10104,7 +10107,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 1
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: 
@@ -10751,7 +10754,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: "The door won\u2019t budge. Gotta find another way in."
@@ -11221,7 +11224,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 5
+  timeUsage: 00000000
   prompt: You fail to remove the key. Maybe you can find something to pry it off?
   timeText: 'There is a key attached to the rock, will you try to take it off? '
   itemDesc: "This rock\u2019s plastic. Looking closer, there\u2019s a key stuck to
