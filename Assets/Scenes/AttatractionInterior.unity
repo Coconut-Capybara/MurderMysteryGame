@@ -279,7 +279,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: "\u201CThis taxidermied deer head looks like a part of a bigger puzzle.\u201D"
@@ -655,7 +655,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: "\u201CLooks like this window is fake.\u201D"
@@ -992,7 +992,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: 
@@ -1263,7 +1263,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: 
@@ -2550,7 +2550,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: "\u201CThis taxidermied boar head looks like a part of a bigger puzzle.\u201D"
@@ -2635,7 +2635,7 @@ MonoBehaviour:
   givesPrompt: 1
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 5
+  timeUsage: 
   prompt: You spent some money to get a glass eye and some candy out of the vending
     machine.
   timeText: Spend money to get items from vending machine?
@@ -2806,7 +2806,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: Red glass eye
@@ -3117,7 +3117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
   itemNeeded:
   - {fileID: 8200676748390764321, guid: 3af3dce20f2135e47a2d5a284275d89b, type: 3}
-  timeController: {fileID: 0}
+  timeController: {fileID: 1840529622}
   giveItem: 0
   itemGiven: []
   disableObject: 0
@@ -3142,7 +3142,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: This locker's Jammed shut. what could they be hiding?
@@ -3373,7 +3373,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: Locker with a number 1 Plaque.
@@ -3542,7 +3542,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 30
+  timeUsage: 
   prompt: 
   timeText: Do you want to swap the heads around? This will take 30 minutes.
   itemDesc: 
@@ -3845,7 +3845,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 30
+  timeUsage: 
   prompt: 
   timeText: Do you want to swap the heads around? This will take 30 minutes.
   itemDesc: 
@@ -4418,7 +4418,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: Locker with a number 2 plaque.
@@ -4586,7 +4586,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: "\u201CThis bedside table has a drawer.\u201D"
@@ -4782,6 +4782,7 @@ GameObject:
   - component: {fileID: 647298173}
   - component: {fileID: 647298172}
   - component: {fileID: 647298171}
+  - component: {fileID: 647298175}
   m_Layer: 0
   m_Name: 2D_BCutters_0
   m_TagString: Untagged
@@ -4850,14 +4851,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
   thisObject: {fileID: 647298169}
-  isInteractable: 0
-  isGrabbable: 0
+  isInteractable: 1
+  isGrabbable: 1
   canUseOn: 0
   consumable: 0
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: '"Bolt cutters are on this shelf."'
@@ -4924,6 +4925,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &647298175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647298169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df91cc0dff4a6c5468d3578751823b28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableObject
+  itemIconGO: {fileID: 3043295151955953431, guid: 4d5ff387521a8f04cb7c6499b11c3631, type: 3}
+  canvas: {fileID: 2114649893}
 --- !u!1 &658225096
 GameObject:
   m_ObjectHideFlags: 0
@@ -5038,7 +5053,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: "\u201CA bed that scare actors probably hid under to scare people.\u201D"
@@ -5530,7 +5545,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: "\u201CCould this wardrobe help me in some way?\u201D"
@@ -5978,7 +5993,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: 
@@ -6164,7 +6179,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: A heavy duty safe. There's a number code to open it.
@@ -6739,7 +6754,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: Reset
@@ -6995,7 +7010,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: Locker with a number 4 plaque.
@@ -7820,7 +7835,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: 
@@ -8054,7 +8069,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 1178685855, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8447,7 +8462,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: Confirm
@@ -8817,7 +8832,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: 
@@ -9656,7 +9671,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 1
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: 
@@ -10052,7 +10067,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: "\u201CThis trapdoor houses something important, I\u2019m sure.\u201D"
@@ -10328,7 +10343,7 @@ Transform:
   m_GameObject: {fileID: 1431303702}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -5.04, y: 4.64, z: -6.03}
+  m_LocalPosition: {x: 0.84, y: -6.4, z: 153.415}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -10380,7 +10395,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: Code for the safe
@@ -10456,7 +10471,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -68712848, guid: 45c06b1a99b635a4cb5115869314ec74, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10888,7 +10903,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: '"A pirate ship in a glass bottle."'
@@ -11070,7 +11085,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: A pair of tongs
@@ -11370,7 +11385,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: "\u201CA taxidermied bear that towers over me.\u201D"
@@ -11647,7 +11662,6 @@ GameObject:
   - component: {fileID: 1704227969}
   - component: {fileID: 1704227968}
   - component: {fileID: 1704227967}
-  - component: {fileID: 1704227966}
   - component: {fileID: 1704227965}
   m_Layer: 0
   m_Name: Flashlight
@@ -11684,19 +11698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GrabbableObject
   itemIconGO: {fileID: 3043295151955953431, guid: 316c17a57a312ce4fbde9bd1d827ba4a, type: 3}
-  canvas: {fileID: 0}
---- !u!114 &1704227966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1704227963}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
+  canvas: {fileID: 2114649893}
 --- !u!114 &1704227967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11717,10 +11719,10 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 00000000
   prompt: 
   timeText: 
-  itemDesc: A crowbar! this will be useful.
+  itemDesc: Flashlight, dumbass look at the text
   itemSprite: {fileID: 21300000, guid: d4f21be7ddb33ef458febba2b60e65d8, type: 3}
   highlightSprite: {fileID: 21300000, guid: d4f21be7ddb33ef458febba2b60e65d8, type: 3}
   altSprite1: {fileID: 21300000, guid: d4f21be7ddb33ef458febba2b60e65d8, type: 3}
@@ -12009,7 +12011,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: 
@@ -12360,7 +12362,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: "\u201CThis bookshelf is decorated with many trinkets and books for the
@@ -13227,6 +13229,7 @@ MonoBehaviour:
   timerPanel: {fileID: 1948059741}
   timerText: {fileID: 1948059740}
   timeUsePanel: 0
+  index: 0
   objectProperties: {fileID: 0}
 --- !u!1 &1845829424
 GameObject:
@@ -13972,7 +13975,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: "\u201CThis taxidermied wolf head looks like a part of a bigger puzzle.\u201D"
@@ -14512,7 +14515,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: A lone book
@@ -14652,7 +14655,7 @@ MonoBehaviour:
   givesPrompt: 1
   timeLock: 1
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: "\u201CThis is where the blood leads to\u2026 I need to find a way inside.\u201D"
@@ -14977,7 +14980,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: "\u201CI wonder what is inside this wardrobe here\u2026\u201D"
@@ -15131,7 +15134,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: 
@@ -15382,7 +15385,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: A crowbar! this will be useful.
@@ -15526,7 +15529,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 30
+  timeUsage: 
   prompt: 
   timeText: Do you want to swap the heads around? This will take 30 minutes.
   itemDesc: 
