@@ -8,6 +8,7 @@
 // Summary : Put this on objects intended to have inventory items used on
 *****************************************************************************/
 using System.Collections;
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class ItemNeeded : MonoBehaviour
@@ -27,6 +28,9 @@ public class ItemNeeded : MonoBehaviour
     [SerializeField] private bool disableObject;
 
     [SerializeField] private bool changeSprite;
+
+    [SerializeField] private bool enableCam;
+    [SerializeField] private MovePointData camToEnable;
 
     /// <summary>
     /// Base function for item interaction
@@ -62,7 +66,10 @@ public class ItemNeeded : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
-
+        if (enableCam)
+        {
+            GetComponent<MovePointData>().enabled = true;        
+        }
     }
     IEnumerator BufferAdd()
     {

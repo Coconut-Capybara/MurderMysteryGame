@@ -16,7 +16,7 @@ public class PickUpBook : MonoBehaviour
     [SerializeField] private GameObject[] currentBookOrder;
     [SerializeField] private GameObject[] bookOrderNeeded;
     [SerializeField] private GameObject puzzlePanel;
-    [SerializeField] private GameObject bookShelf;
+    [SerializeField] private GameObject bookShelfClose, bookShelf;
     [SerializeField] private GameObject flashlight;
     [SerializeField] private GameObject tempbook;
     InputAction grab;
@@ -45,11 +45,15 @@ public class PickUpBook : MonoBehaviour
             GameObject.FindFirstObjectByType<StartBookPuzzle>().LockPuzzle();
             GameObject.FindFirstObjectByType<TextPrompts>().ShowPrompt("You move the books around, and a " +
                 "compartment opens. inside is a flashlight");
+            bookShelf.GetComponent<ObjectProperties>().usesAltSprites = true;
+            bookShelf.GetComponent<SpriteRenderer>().sprite = bookShelf.GetComponent<ObjectProperties>().altSprite1;
+            bookShelfClose.GetComponent<SpriteRenderer>().sprite = 
+                bookShelfClose.GetComponent<ObjectProperties>().altSprite1;
         }
         else
         {
-            bookShelf.GetComponent<ObjectProperties>().timeUsage[0] = 10;
-            bookShelf.GetComponent<ObjectProperties>().timeLock = false;
+            bookShelfClose.GetComponent<ObjectProperties>().timeUsage[0] = 10;
+            bookShelfClose.GetComponent<ObjectProperties>().timeLock = false;
             GameObject.FindFirstObjectByType<TextPrompts>().ShowPrompt("You move the books and nothing " +
                 "Nothing happens");
         }
