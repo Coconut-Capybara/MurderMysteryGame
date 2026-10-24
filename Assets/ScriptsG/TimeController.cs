@@ -18,11 +18,15 @@ public class TimeController : MonoBehaviour
 {
     [Header("Time Variables")]
     [Tooltip("The time remaining")]
-    [SerializeField] private int timeLeft;
+    public static int timeLeft;
     [Tooltip("The amount of hours left. Do not manually adjust.")]
     [SerializeField] private int hoursLeft;
     [Tooltip("The amount of leftover minutes after hoursLeft has been calculated. Do not manually adjust this")]
     [SerializeField] private int minutesLeft;
+    [Tooltip("Whether this is a build or not. True means that you can manually set the time in the scene.")]
+    [SerializeField] private bool isTesting;
+    [Tooltip("The time left if isTesting is set to true.")]
+    [SerializeField] private int debugTimeLeft;
 
     [Header("Time UI Elements")]
     [Tooltip("The UI Panel that holds the Time Passing Check stuff")]
@@ -51,10 +55,22 @@ public class TimeController : MonoBehaviour
     void Start()
     {
         //TimeAway(timeTestAway);
+        if (isTesting)
+        {
+            timeLeft = debugTimeLeft;
+        }
         timeUsePanel = false;
         timePanel.SetActive(false);
         TimeFormat();
-        timerText.text = hoursLeft.ToString() + ":" + minutesLeft.ToString() + " left";
+        if(minutesLeft == 0)
+        {
+            timerText.text = hoursLeft.ToString() + ":00 left";
+        }
+        else
+        {
+            timerText.text = hoursLeft.ToString() + ":" + minutesLeft.ToString() + " left";
+        }
+        
     }
     /// <summary>
     /// Opens the timePanel and adjusts the text to the corresponding item use description, the time to be taken away, 
