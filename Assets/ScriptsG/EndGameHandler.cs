@@ -18,6 +18,7 @@ public class EndGameHandler : MonoBehaviour
     [SerializeField] private GameObject endGamePanel;
     [SerializeField] private TMP_Text endText;
     [SerializeField] private string[] endings;
+    [SerializeField] private TMP_Text evidenceNum;
     InputAction instantEnd;
     InputAction restart;
 
@@ -25,6 +26,7 @@ public class EndGameHandler : MonoBehaviour
     {
         instantEnd = InputSystem.actions.FindAction("InstantEnd");
         restart = InputSystem.actions.FindAction("Restart");
+        evidenceNum.text = "Evidence Collected: " + totalHardEvidence;
     }
     /// <summary>
     /// Adds to your total hard evidence
@@ -32,7 +34,8 @@ public class EndGameHandler : MonoBehaviour
     public void CollectHardEvidence()
     {
         totalHardEvidence += 1;
-        if(totalHardEvidence == 4)
+        evidenceNum.text = "Evidence Collected: " + totalHardEvidence;
+        if (totalHardEvidence == 4)
         {
             EndGame();      
         }
