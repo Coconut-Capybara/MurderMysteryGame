@@ -26,7 +26,7 @@ public class RockScript : ItemNeeded
                 "off the rock. You got the employee key, but the screwdriver broke.";
             GetComponent<ObjectProperties>().itemDesc = "Nothing else on the rock as far as I can tell.";
             ItemUseFunctionality(currentItem);
-            GameObject.FindFirstObjectByType<TextPrompts>().ShowPrompt(GetComponent<ObjectProperties>().prompt);
+            //GameObject.FindFirstObjectByType<TextPrompts>().ShowPrompt(GetComponent<ObjectProperties>().prompt);
         }
         
     }

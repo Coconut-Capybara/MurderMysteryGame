@@ -54,7 +54,8 @@ public class TaxidermyPuzzle : NoItemInteractions
         for(int i = 0; i < heads.Length; i++)
         {
             heads[i].transform.position = heads[i].GetComponent<TaxidermyHeadScript>().GetOrgin();
-            heads[i].GetComponent<TaxidermyHeadScript>().SetLockState(false);   
+            heads[i].GetComponent<TaxidermyHeadScript>().SetLockState(false); 
+            heads[i].GetComponent<ObjectProperties>().timeLock = false;     
         }
     }
     public override void NoItemFunciton()
