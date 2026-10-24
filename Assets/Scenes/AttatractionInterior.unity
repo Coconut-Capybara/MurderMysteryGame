@@ -2906,7 +2906,8 @@ GameObject:
   - component: {fileID: 428883816}
   - component: {fileID: 428883815}
   - component: {fileID: 428883814}
-  - component: {fileID: 428883813}
+  - component: {fileID: 428883819}
+  - component: {fileID: 428883818}
   - component: {fileID: 428883812}
   m_Layer: 0
   m_Name: VisionBlocker
@@ -2922,25 +2923,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 428883811}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfc2414187f400a44817a3947fd70cb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DarkAreaScript
   hasFlashlight: 0
---- !u!114 &428883813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 428883811}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87ca49e7f91d9114ab82ebf3b8b18e28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MovePointData
-  cineCam: {fileID: 895131292}
 --- !u!65 &428883814
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3033,6 +3021,54 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &428883818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428883811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bea36a716ec23e45bb774fc59a9f2b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
+  itemNeeded:
+  - {fileID: 3043295151955953431, guid: 316c17a57a312ce4fbde9bd1d827ba4a, type: 3}
+  timeController: {fileID: 0}
+  giveItem: 0
+  itemGiven: []
+  disableObject: 1
+  changeSprite: 0
+--- !u!114 &428883819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428883811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
+  thisObject: {fileID: 0}
+  isInteractable: 1
+  isGrabbable: 0
+  canUseOn: 1
+  consumable: 0
+  givesPrompt: 0
+  timeLock: 0
+  isHardEvidence: 0
+  timeUsage: 
+  prompt: 
+  timeText: 
+  itemDesc: 
+  itemSprite: {fileID: 0}
+  highlightSprite: {fileID: 0}
+  altSprite1: {fileID: 0}
+  altSprite2: {fileID: 0}
+  usesAltSprites: 0
 --- !u!1 &445031302
 GameObject:
   m_ObjectHideFlags: 0
@@ -13219,9 +13255,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c23c7fd1e70357f44aef62d73b1af5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimeController
-  timeLeft: 100
   hoursLeft: 0
   minutesLeft: 0
+  isTesting: 0
+  debugTimeLeft: 0
   timePanel: {fileID: 1948059745}
   timeAwayText: {fileID: 1948059744}
   yesButton: {fileID: 1948059743}
