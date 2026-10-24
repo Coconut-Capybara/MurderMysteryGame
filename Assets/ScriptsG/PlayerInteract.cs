@@ -27,7 +27,7 @@ public class PlayerInteract : MonoBehaviour
     [SerializeField] private bool inPrompt;
     [Tooltip("Whether the player is not in a prompt. Make sure this is true before pressing play. " +
         "DO NOT CHANGE IN GAME")]
-    private bool inGame;
+    public bool inGame;
     /// <summary>
     /// The current state of the players cursor
     /// </summary>

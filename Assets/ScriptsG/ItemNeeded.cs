@@ -32,6 +32,9 @@ public class ItemNeeded : MonoBehaviour
     [SerializeField] private bool enableCam;
     [SerializeField] private MovePointData camToEnable;
 
+    [SerializeField] private bool enableItem;
+    [SerializeField] private GameObject itemEnabled;
+
     /// <summary>
     /// Base function for item interaction
     /// </summary>
@@ -69,6 +72,10 @@ public class ItemNeeded : MonoBehaviour
         if (enableCam)
         {
             GetComponent<MovePointData>().enabled = true;        
+        }
+        if (enableItem)
+        {
+            itemEnabled.SetActive(true);  
         }
     }
     IEnumerator BufferAdd()
