@@ -8,6 +8,7 @@
 // Summary : Acts as the middle man that adjusts existing time, adjusts its format, and puts it in in the UI
 *****************************************************************************/
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
@@ -41,6 +42,7 @@ public class TimeController : MonoBehaviour
     [SerializeField] private bool timeUsePanel;
 
     private int tempTime;
+    public int index;
 
     [Header("Object Properties Script")]
     [Tooltip("The objectProperties script of the object currently being interacted with. Do not manually Assign.")]
@@ -60,16 +62,39 @@ public class TimeController : MonoBehaviour
     /// </summary>
     /// <param name="timeUse"></param>
     /// <param name="item"></param>
-    public void PassTimePanel(int timeUse, GameObject item)
+    public void PassTimePanel(GameObject item, GameObject playerItem)
     {
-        timeUsePanel = true;
+        int timeUse;
+        if(playerItem == null)
+        {
+            timeUse = item.GetComponent<ObjectProperties>().timeUsage[0];
+        }
+        else
+        {
+            timeUse =
+                item.GetComponent<ObjectProperties>().timeUsage[GetTime(item
+                .GetComponent<ItemNeeded>().itemNeeded, playerItem.GetComponent<InventoryItemScript>().GetItemId())];
+        }
+            timeUsePanel = true;
         timePanel.gameObject.SetActive(true);
         timeAwayText.text = (item.GetComponent<ObjectProperties>().timeText + 
             "\nTime taken away is: " + timeUse + " minutes" + "\n"  + "You will have " + 
             ((timeLeft-timeUse) / 60) + " hours and " + ((timeLeft-timeUse) % 60) + " minutes left.");
         tempTime = timeUse;
-    }
 
+    }
+    private int GetTime(GameObject[] items,int itemId)
+    {
+        for (int i = 0; i < items.Length; i++)
+        {
+            if (items[i].GetComponent<InventoryItemScript>().GetItemId() == itemId)
+            {
+                index = i;  
+                return i;
+            }
+        }
+        return 0;
+    }
     public void YesButton()
     {
         TimeAway(tempTime);
