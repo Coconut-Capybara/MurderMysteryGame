@@ -67,7 +67,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: 
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3fb3de88cca4b5f4293f1613e549a209, type: 3}
+  m_Sprite: {fileID: 352450912, guid: 2d272e77bbed72d4394b479fe2e9d91f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
