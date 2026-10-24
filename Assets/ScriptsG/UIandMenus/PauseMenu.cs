@@ -9,22 +9,83 @@
 *****************************************************************************/
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    InputAction quit;
+    InputAction pause;
+    [SerializeField] private GameObject pausePanel;
+    [SerializeField] private GameObject youSurePanel;
+    [SerializeField] private PlayerInteract playerInteract;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        quit = InputSystem.actions.FindAction("Quit");
+        pause = InputSystem.actions.FindAction("Pause");
+        youSurePanel.SetActive(false);
+        pausePanel.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (quit.WasPressedThisFrame())
+        if (pause.WasPressedThisFrame() && 
+            (pausePanel.activeInHierarchy || youSurePanel.activeInHierarchy))
         {
-            Application.Quit();
+            ClosePauseMenu();
         }
+        else if (pause.WasPressedThisFrame())
+        {
+            PauseMenuFunction();
+        }
+    }
+
+    public void ClosePauseMenu()
+    {
+        pausePanel.SetActive(false);
+        youSurePanel.SetActive(false);
+        playerInteract.inGame = true;
+    }
+
+    private void PauseMenuFunction()
+    {
+
+        if(pausePanel.activeInHierarchy == false)
+        {
+            pausePanel.SetActive(true);
+            playerInteract.inGame = false;
+        }
+
+        //pausePanel.gameObject.SetActive(!pausePanel.activeInHierarchy);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void Resume()
+    {
+        ClosePauseMenu();
+    }
+
+    public void QuitToMenu()
+    {
+        pausePanel.SetActive(false);
+        DoubleCheck();
+    }
+
+    private void DoubleCheck()
+    {
+        youSurePanel.SetActive(true);
+    }
+
+    public void GoBack()
+    {
+        youSurePanel.SetActive(false);
+    }
+
+    public void GoForward()
+    {
+        SceneManager.LoadScene("TempMainMenu");
     }
 }

@@ -28,6 +28,9 @@ public class ItemNeeded : MonoBehaviour
 
     [SerializeField] private bool changeSprite;
 
+    [SerializeField] private LockerController lockerController;
+    [SerializeField] private MovePointData movePointData;
+
     /// <summary>
     /// Base function for item interaction
     /// </summary>
@@ -60,6 +63,10 @@ public class ItemNeeded : MonoBehaviour
         if (disableObject)
         {
             gameObject.SetActive(false);
+        }
+        if(currentItem.name.Contains("ID7") && lockerController != null && movePointData != null)
+        {
+            lockerController.ActivateMovePoint();
         }
 
     }

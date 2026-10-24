@@ -3212,6 +3212,8 @@ MonoBehaviour:
   - {fileID: 3043295151955953431, guid: f16e4ddc93267654cbc4ed06ae04f872, type: 3}
   disableObject: 0
   changeSprite: 0
+  lockerController: {fileID: 0}
+  movePointData: {fileID: 0}
 --- !u!114 &407114894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3467,6 +3469,8 @@ MonoBehaviour:
   itemGiven: []
   disableObject: 1
   changeSprite: 0
+  lockerController: {fileID: 0}
+  movePointData: {fileID: 0}
 --- !u!114 &428883819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3634,6 +3638,7 @@ GameObject:
   - component: {fileID: 454600095}
   - component: {fileID: 454600094}
   - component: {fileID: 454600098}
+  - component: {fileID: 454600099}
   m_Layer: 0
   m_Name: 2D_Locker3_0
   m_TagString: Untagged
@@ -3675,6 +3680,8 @@ MonoBehaviour:
   itemGiven: []
   disableObject: 0
   changeSprite: 1
+  lockerController: {fileID: 0}
+  movePointData: {fileID: 0}
 --- !u!114 &454600095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3790,12 +3797,24 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454600092}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87ca49e7f91d9114ab82ebf3b8b18e28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 726848576}
+--- !u!114 &454600099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454600092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 931559e2c249a774a89f0d4e31ac5ee9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LockerController
 --- !u!1001 &455119383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7380,6 +7399,8 @@ MonoBehaviour:
   - {fileID: 8200676748390764321, guid: bbdc60c485c1d98449a530215913c151, type: 3}
   disableObject: 0
   changeSprite: 1
+  lockerController: {fileID: 0}
+  movePointData: {fileID: 0}
 --- !u!114 &848412375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11532,6 +11553,8 @@ MonoBehaviour:
   itemGiven: []
   disableObject: 0
   changeSprite: 0
+  lockerController: {fileID: 0}
+  movePointData: {fileID: 0}
   book1: {fileID: 575957000}
   book2: {fileID: 1110248185}
   bookShelf: {fileID: 1380806732}
@@ -11993,6 +12016,8 @@ MonoBehaviour:
   - {fileID: 3043295151955953431, guid: 56649c4aca68833439473295a236299a, type: 3}
   disableObject: 0
   changeSprite: 1
+  lockerController: {fileID: 0}
+  movePointData: {fileID: 0}
 --- !u!1 &1420381176
 GameObject:
   m_ObjectHideFlags: 0
@@ -12919,6 +12944,8 @@ MonoBehaviour:
   - {fileID: 3043295151955953431, guid: 9c0edbb9634a3fe4cb4064e1c72e52a2, type: 3}
   disableObject: 0
   changeSprite: 1
+  lockerController: {fileID: 0}
+  movePointData: {fileID: 0}
 --- !u!1 &1551287139
 GameObject:
   m_ObjectHideFlags: 0
@@ -13231,6 +13258,8 @@ MonoBehaviour:
   itemGiven: []
   disableObject: 0
   changeSprite: 0
+  lockerController: {fileID: 0}
+  movePointData: {fileID: 0}
 --- !u!1 &1572282139
 GameObject:
   m_ObjectHideFlags: 0
@@ -13415,6 +13444,8 @@ MonoBehaviour:
   itemGiven: []
   disableObject: 0
   changeSprite: 1
+  lockerController: {fileID: 0}
+  movePointData: {fileID: 0}
 --- !u!114 &1614846988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14018,6 +14049,8 @@ MonoBehaviour:
   itemGiven: []
   disableObject: 0
   changeSprite: 0
+  lockerController: {fileID: 0}
+  movePointData: {fileID: 0}
   key: {fileID: 0}
   objectProperties: {fileID: 0}
   itemUseTime: 0
@@ -14871,6 +14904,7 @@ GameObject:
   - component: {fileID: 1840529621}
   - component: {fileID: 1840529620}
   - component: {fileID: 1840529617}
+  - component: {fileID: 1840529623}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -14919,7 +14953,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 66.7
+  field of view: 70.8
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -14945,8 +14979,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1840529608}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.9999576, z: -0.00920962, w: 0}
-  m_LocalPosition: {x: -16.408016, y: 11.031675, z: 52.44857}
+  m_LocalRotation: {x: 0.008340555, y: 0.022093298, z: -0.00018432179, w: 0.9997211}
+  m_LocalPosition: {x: 19.17, y: 3.06, z: 208.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15077,6 +15111,8 @@ MonoBehaviour:
   playerCam: {fileID: 1840529610}
   currentItem: {fileID: 0}
   hoverItem: {fileID: 0}
+  inPrompt: 0
+  inGame: 0
   cursorState: 0
 --- !u!114 &1840529616
 MonoBehaviour:
@@ -15215,6 +15251,21 @@ MonoBehaviour:
   timeUsePanel: 0
   index: 0
   objectProperties: {fileID: 0}
+--- !u!114 &1840529623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840529608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20aabccd81c253b4fbe03ee813a6da3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
+  pausePanel: {fileID: 0}
+  youSurePanel: {fileID: 0}
+  playerInteract: {fileID: 1840529615}
 --- !u!1 &1845829424
 GameObject:
   m_ObjectHideFlags: 0
