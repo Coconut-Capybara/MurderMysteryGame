@@ -279,7 +279,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: "\u201CThis taxidermied deer head looks like a part of a bigger puzzle.\u201D"
@@ -655,7 +655,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: "\u201CLooks like this window is fake.\u201D"
@@ -992,7 +992,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: 
@@ -1263,7 +1263,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: 
@@ -2550,7 +2550,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: "\u201CThis taxidermied boar head looks like a part of a bigger puzzle.\u201D"
@@ -2635,7 +2635,7 @@ MonoBehaviour:
   givesPrompt: 1
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: You spent some money to get a glass eye and some candy out of the vending
     machine.
   timeText: Spend money to get items from vending machine?
@@ -2806,7 +2806,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: Red glass eye
@@ -3142,7 +3142,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: This locker's Jammed shut. what could they be hiding?
@@ -3373,7 +3373,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: Locker with a number 1 Plaque.
@@ -3542,7 +3542,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: Do you want to swap the heads around? This will take 30 minutes.
   itemDesc: 
@@ -3845,7 +3845,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: Do you want to swap the heads around? This will take 30 minutes.
   itemDesc: 
@@ -4418,7 +4418,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: Locker with a number 2 plaque.
@@ -4586,7 +4586,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: "\u201CThis bedside table has a drawer.\u201D"
@@ -4858,7 +4858,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: '"Bolt cutters are on this shelf."'
@@ -5053,7 +5053,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: "\u201CA bed that scare actors probably hid under to scare people.\u201D"
@@ -5545,7 +5545,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: "\u201CCould this wardrobe help me in some way?\u201D"
@@ -5993,7 +5993,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: 
@@ -6179,7 +6179,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: A heavy duty safe. There's a number code to open it.
@@ -6754,7 +6754,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: Reset
@@ -7010,7 +7010,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: Locker with a number 4 plaque.
@@ -7835,7 +7835,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: 
@@ -8462,7 +8462,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: Confirm
@@ -8832,7 +8832,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: 
@@ -9671,7 +9671,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 1
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: 
@@ -10067,7 +10067,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: "\u201CThis trapdoor houses something important, I\u2019m sure.\u201D"
@@ -10395,7 +10395,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: Code for the safe
@@ -10903,7 +10903,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: '"A pirate ship in a glass bottle."'
@@ -11085,7 +11085,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: A pair of tongs
@@ -11385,7 +11385,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: "\u201CA taxidermied bear that towers over me.\u201D"
@@ -12011,7 +12011,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: 
@@ -12362,7 +12362,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: "\u201CThis bookshelf is decorated with many trinkets and books for the
@@ -13219,9 +13219,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c23c7fd1e70357f44aef62d73b1af5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimeController
-  timeLeft: 100
   hoursLeft: 0
   minutesLeft: 0
+  isTesting: 0
+  debugTimeLeft: 0
   timePanel: {fileID: 1948059745}
   timeAwayText: {fileID: 1948059744}
   yesButton: {fileID: 1948059743}
@@ -13975,7 +13976,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: "\u201CThis taxidermied wolf head looks like a part of a bigger puzzle.\u201D"
@@ -14515,12 +14516,12 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: A lone book
   itemSprite: {fileID: -2019829017, guid: d047df0d1a11e6a44b61ef92a8e9deb9, type: 3}
-  highlightSprite: {fileID: -1965538520, guid: 81e272dfa9da72f44abbe54b3d9b8753, type: 3}
+  highlightSprite: {fileID: 2069189252, guid: d047df0d1a11e6a44b61ef92a8e9deb9, type: 3}
   altSprite1: {fileID: -2019829017, guid: d047df0d1a11e6a44b61ef92a8e9deb9, type: 3}
   altSprite2: {fileID: -2019829017, guid: d047df0d1a11e6a44b61ef92a8e9deb9, type: 3}
   usesAltSprites: 0
@@ -14655,7 +14656,7 @@ MonoBehaviour:
   givesPrompt: 1
   timeLock: 1
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: "\u201CThis is where the blood leads to\u2026 I need to find a way inside.\u201D"
@@ -14980,7 +14981,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: "\u201CI wonder what is inside this wardrobe here\u2026\u201D"
@@ -15134,7 +15135,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: 
@@ -15385,7 +15386,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: 
   itemDesc: A crowbar! this will be useful.
@@ -15529,7 +15530,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
+  timeUsage: 00000000
   prompt: 
   timeText: Do you want to swap the heads around? This will take 30 minutes.
   itemDesc: 
