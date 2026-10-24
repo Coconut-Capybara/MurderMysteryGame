@@ -67,7 +67,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: 
