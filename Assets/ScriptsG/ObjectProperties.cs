@@ -23,7 +23,7 @@ public class ObjectProperties : MonoBehaviour
 
     [Header("Time Related Strings")]
     [Tooltip("How much time will interacting with this item use up? Setting to 0 means no time prompt will show.")]
-    public int timeUsage;
+    public int[] timeUsage;
     [Tooltip("The prompt for what happened after time was used")]
     public string prompt;
     [Tooltip("Describes what the player will do to pass time")]

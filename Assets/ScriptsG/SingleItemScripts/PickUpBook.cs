@@ -46,7 +46,7 @@ public class PickUpBook : MonoBehaviour
         }
         else
         {
-            bookShelf.GetComponent<ObjectProperties>().timeUsage = 10;
+            bookShelf.GetComponent<ObjectProperties>().timeUsage[0] = 10;
             bookShelf.GetComponent<ObjectProperties>().timeLock = false;
         }
         GameObject.FindFirstObjectByType<StartBookPuzzle>().ClosePuzzle();
