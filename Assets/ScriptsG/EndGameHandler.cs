@@ -17,6 +17,7 @@ public class EndGameHandler : MonoBehaviour
     [SerializeField] private int totalHardEvidence;
     [SerializeField] private GameObject endGamePanel;
     [SerializeField] private TMP_Text endText;
+    [SerializeField] private string[] endings;
     InputAction instantEnd;
     InputAction restart;
 
@@ -44,8 +45,15 @@ public class EndGameHandler : MonoBehaviour
         GameObject.FindFirstObjectByType<PlayerInteract>().SetInGame(false);    
         GameObject.FindFirstObjectByType<PlayerInteract>().HidePrompt();
         GameObject.FindFirstObjectByType<PlayerInteract>().cursorState = PlayerInteract.CursorState.None;
-        endGamePanel.SetActive(true); 
-        endText.text = "You collected " + totalHardEvidence + " pieces of evidence";
+        endGamePanel.SetActive(true);
+        switch (totalHardEvidence)
+        {
+            case 0: endText.text = endings[0]; break;
+            case 1: endText.text = endings[1]; break;
+            case 2: endText.text = endings[2]; break;
+            case 3: endText.text = endings[3]; break;
+            case 4: endText.text = endings[4]; break;
+        }
     }
     private void Update()
     {
