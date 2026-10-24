@@ -5319,7 +5319,7 @@ Transform:
   m_GameObject: {fileID: 539404576}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 45.8, y: 51.7, z: -88.6}
+  m_LocalPosition: {x: 45.8, y: 51.7, z: -89.5}
   m_LocalScale: {x: 0.0665, y: 23.5917, z: 62.85517}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12245,7 +12245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
   thisObject: {fileID: 0}
-  isInteractable: 1
+  isInteractable: 0
   isGrabbable: 0
   canUseOn: 1
   consumable: 0
