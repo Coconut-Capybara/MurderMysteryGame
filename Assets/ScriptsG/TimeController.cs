@@ -62,7 +62,15 @@ public class TimeController : MonoBehaviour
         timeUsePanel = false;
         timePanel.SetActive(false);
         TimeFormat();
-        timerText.text = hoursLeft.ToString() + ":" + minutesLeft.ToString() + " left";
+        if(minutesLeft == 0)
+        {
+            timerText.text = hoursLeft.ToString() + ":00 left";
+        }
+        else
+        {
+            timerText.text = hoursLeft.ToString() + ":" + minutesLeft.ToString() + " left";
+        }
+        
     }
     /// <summary>
     /// Opens the timePanel and adjusts the text to the corresponding item use description, the time to be taken away, 
