@@ -126,9 +126,12 @@ public class MovementController : MonoBehaviour
             {
                 if (hit.collider.gameObject.GetComponent<MovePointData>() != null)
                 {
-                    GetCamera(hit.collider.gameObject);
-                    ClearCams();
-                    SetCamera();
+                    if (hit.collider.gameObject.GetComponent<MovePointData>().isActiveAndEnabled)
+                    {
+                        GetCamera(hit.collider.gameObject);
+                        ClearCams();
+                        SetCamera();
+                    }
                 }
                 else
                 {

@@ -8,6 +8,7 @@
 // Summary : Put this on objects intended to have inventory items used on
 *****************************************************************************/
 using System.Collections;
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class ItemNeeded : MonoBehaviour
@@ -28,8 +29,8 @@ public class ItemNeeded : MonoBehaviour
 
     [SerializeField] private bool changeSprite;
 
-    [SerializeField] private LockerController lockerController;
-    [SerializeField] private MovePointData movePointData;
+    [SerializeField] private bool enableCam;
+    [SerializeField] private MovePointData camToEnable;
 
     /// <summary>
     /// Base function for item interaction
@@ -59,16 +60,16 @@ public class ItemNeeded : MonoBehaviour
         if (changeSprite)
         {
             GetComponent<ObjectProperties>().usesAltSprites = true;
+            GetComponent<SpriteRenderer>().sprite = GetComponent<ObjectProperties>().altSprite1;
         }
         if (disableObject)
         {
             gameObject.SetActive(false);
         }
-        if(currentItem.name.Contains("ID7") && lockerController != null && movePointData != null)
+        if (enableCam)
         {
-            lockerController.ActivateMovePoint();
+            GetComponent<MovePointData>().enabled = true;        
         }
-
     }
     IEnumerator BufferAdd()
     {
@@ -90,6 +91,7 @@ public class ItemNeeded : MonoBehaviour
             currentItem.GetComponent<ObjectProperties>().consumable)
         {
             currentItem.SetActive(false);
+            currentItem.gameObject.tag = "Untagged";
             GameObject.FindAnyObjectByType<AddToInventory>().ShiftLeft();
             GameObject.FindFirstObjectByType<PlayerInteract>().UnlockItemUse();
         }
