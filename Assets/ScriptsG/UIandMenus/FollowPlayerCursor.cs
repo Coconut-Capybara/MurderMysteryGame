@@ -12,7 +12,14 @@ public class FollowPlayerCursor : MonoBehaviour
         if(Physics.Raycast(ray, out hit) && !GameObject.FindFirstObjectByType<PlayerInteract>()
             .GetInPrompt())
         {
-            transform.position = hit.collider.transform.position;            
+            if(hit.collider.gameObject.layer != 7)
+            {
+                transform.position = hit.collider.transform.position;
+            }
+            else
+            {
+                ResetCube();
+            }
         }
         else
         {

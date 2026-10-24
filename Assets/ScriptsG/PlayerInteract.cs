@@ -80,6 +80,12 @@ public class PlayerInteract : MonoBehaviour
                     }
                 }
                 else if (hit.collider.GetComponent<ObjectProperties>() == null && cursorState is not (CursorState.InInventory
+                         or CursorState.HoldingItem) && hit.collider.gameObject.layer == 8)
+                {
+                    cursorState = CursorState.OverDoor;
+                    
+                }
+                else if (hit.collider.GetComponent<ObjectProperties>() == null && cursorState is not (CursorState.InInventory
                          or CursorState.HoldingItem))
                 {
                     cursorState = CursorState.None;
