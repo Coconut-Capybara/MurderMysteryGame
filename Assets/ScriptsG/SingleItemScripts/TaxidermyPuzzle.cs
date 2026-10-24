@@ -18,6 +18,7 @@ public class TaxidermyPuzzle : NoItemInteractions
     [SerializeField] private GameObject[] heads;
     [SerializeField] private Vector3 headPos;
     [SerializeField] private GameObject confirmButton, resetButton,backArrow;
+    [SerializeField] private GameObject headKey;
     private Vector3 headPosOrgin;
     private int headCount;
     private bool puzzleActive;
@@ -84,7 +85,7 @@ public class TaxidermyPuzzle : NoItemInteractions
             {
                 GameObject.FindFirstObjectByType<TextPrompts>().ShowPrompt("You move the heads around, " +
                     "and get a key from the wolf head");
-                //Give player key
+                GameObject.FindFirstObjectByType<AddToInventory>().AddNonWorldItem(headKey);
                 UpdateHeads();
             }
             else

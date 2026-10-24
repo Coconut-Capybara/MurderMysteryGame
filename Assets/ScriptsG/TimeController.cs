@@ -143,7 +143,7 @@ public class TimeController : MonoBehaviour
     {
         if(timeLeft <= 0)
         {
-            print("game is over.");
+            GameObject.FindFirstObjectByType<EndGameHandler>().EndGame();   
         }
     }
     public void SetTimeUsePanel(bool panel)
