@@ -22,4 +22,9 @@ public class MainMenuController : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void AlphaButton()
+    {
+        SceneManager.LoadScene("AttatractionInterior");
+    }
 }
