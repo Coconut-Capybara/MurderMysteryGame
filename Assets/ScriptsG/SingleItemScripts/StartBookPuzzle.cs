@@ -18,7 +18,7 @@ public class StartBookPuzzle : NoItemInteractions
             }
             else
             {
-                GameObject.FindFirstObjectByType<TextPrompts>().ShowPrompt("There appears to be a book missing");
+                GameObject.FindFirstObjectByType<TextPrompts>().ShowPrompt("There appears to be a book missing.");
             }
         }       
     }
