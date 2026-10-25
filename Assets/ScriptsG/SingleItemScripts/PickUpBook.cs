@@ -43,8 +43,8 @@ public class PickUpBook : MonoBehaviour
         {
             GameObject.FindFirstObjectByType<AddToInventory>().AddNonWorldItem(flashlight);
             GameObject.FindFirstObjectByType<StartBookPuzzle>().LockPuzzle();
-            GameObject.FindFirstObjectByType<TextPrompts>().ShowPrompt("You move the books around, and a " +
-                "compartment opens. inside is a flashlight");
+            GameObject.FindFirstObjectByType<TextPrompts>().ShowPrompt("The order was correct, and the front " +
+                "compartment opens. Inside is a flashlight.");
             bookShelf.GetComponent<ObjectProperties>().usesAltSprites = true;
             bookShelf.GetComponent<SpriteRenderer>().sprite = bookShelf.GetComponent<ObjectProperties>().altSprite1;
             bookShelfClose.GetComponent<SpriteRenderer>().sprite = 
@@ -56,7 +56,7 @@ public class PickUpBook : MonoBehaviour
             bookShelfClose.GetComponent<ObjectProperties>().timeUsage[0] = 10;
             bookShelfClose.GetComponent<ObjectProperties>().timeLock = false;
             GameObject.FindFirstObjectByType<TextPrompts>().ShowPrompt("You move the books and nothing " +
-                "Nothing happens");
+                "happens.");
         }
         GameObject.FindFirstObjectByType<StartBookPuzzle>().ClosePuzzle();
         ResetPuzzle();  
