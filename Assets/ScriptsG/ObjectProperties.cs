@@ -32,6 +32,13 @@ public class ObjectProperties : MonoBehaviour
     [Tooltip("The text that shows up in the bottom left when hovering over an object for long enough. " +
         "Panel will only appear if this is not null")]
     public string itemDesc;
+    [Tooltip("Whether using an item on this object changes it's description")]
+    public bool itemChangesDesc;
+    [Tooltip("The item is using the changed Description. DO NOT MANUALLY ADJUST. LEAVE AS FALSE")]
+    public bool usingItemChangeDesc;
+    [Tooltip("The item description that will show up after using an item on this object. " +
+        "Is only used if itemChangesDesc is true")]
+    public string itemUseChangeDesc;
 
     [Header("Item Sprites")]
     [Tooltip("The item sprite when the game starts and is not being hovered over")]

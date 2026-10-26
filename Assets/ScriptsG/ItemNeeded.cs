@@ -37,6 +37,8 @@ public class ItemNeeded : MonoBehaviour
 
     [SerializeField] private bool givesHardEvidence;
     [SerializeField] private GameObject hardEvidenceGO;
+
+    [SerializeField] private bool changesItemDesc;
     /// <summary>
     /// Base function for item interaction
     /// </summary>
@@ -83,6 +85,11 @@ public class ItemNeeded : MonoBehaviour
         {
             GameObject.FindFirstObjectByType<EndGameHandler>().CollectHardEvidence();
             hardEvidenceGO.SetActive(false);
+        }
+        changesItemDesc = GetComponent<ObjectProperties>().itemChangesDesc;
+        if (changesItemDesc)
+        {
+            GetComponent<ObjectProperties>().usingItemChangeDesc = true;
         }
     }
     IEnumerator BufferAdd()

@@ -48,6 +48,7 @@ public class ItemInspections : MonoBehaviour
         {
             if(hit.collider.GetComponent<ObjectProperties>() != null)
             {
+                
                 ShowItemDescPanel(hit.collider.gameObject);
             }
         }
@@ -62,7 +63,14 @@ public class ItemInspections : MonoBehaviour
         if (!descLocked)
         {
             itemDescPanel.SetActive(true);
-            itemDescCO = StartCoroutine(ShowText(item.GetComponent<ObjectProperties>().itemDesc));
+            if (item.GetComponent<ObjectProperties>().usingItemChangeDesc)
+            {
+                itemDescCO = StartCoroutine(ShowText(item.GetComponent<ObjectProperties>().itemUseChangeDesc));
+            }
+            else
+            {
+                itemDescCO = StartCoroutine(ShowText(item.GetComponent<ObjectProperties>().itemDesc));
+            }
             descLocked = true;
         }
     }
