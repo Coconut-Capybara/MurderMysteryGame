@@ -50,6 +50,8 @@ public class PickUpBook : MonoBehaviour
             bookShelfClose.GetComponent<SpriteRenderer>().sprite = 
                 bookShelfClose.GetComponent<ObjectProperties>().altSprite1;
             bookShelfClose.GetComponent<ObjectProperties>().usesAltSprites = true;
+            bookShelfClose.GetComponent<ObjectProperties>().isInteractable = false;
+            bookShelfClose.GetComponent<ObjectProperties>().itemDesc = "A book shelf with its books in order."
         }
         else
         {
