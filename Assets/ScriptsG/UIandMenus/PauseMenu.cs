@@ -51,6 +51,7 @@ public class PauseMenu : MonoBehaviour
 
         if(pausePanel.activeInHierarchy == false)
         {
+            GameObject.FindFirstObjectByType<PlayerInteract>().cursorState = PlayerInteract.CursorState.None;
             pausePanel.SetActive(true);
             playerInteract.inGame = false;
         }
