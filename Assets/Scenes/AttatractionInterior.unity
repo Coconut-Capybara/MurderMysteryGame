@@ -283,6 +283,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: A taxidermy deer head.
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -914139331, guid: deda486c42380924a8c580a993f18a77, type: 3}
   highlightSprite: {fileID: -42327806, guid: deda486c42380924a8c580a993f18a77, type: 3}
   altSprite1: {fileID: 0}
@@ -484,6 +487,7 @@ MonoBehaviour:
   itemEnabled: {fileID: 0}
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
+  changesItemDesc: 0
 --- !u!114 &7275884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -508,6 +512,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: A yellow lock.
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -385664693, guid: dcf564576884d254c954ec50d0208f0d, type: 3}
   highlightSprite: {fileID: 1344264920, guid: dcf564576884d254c954ec50d0208f0d, type: 3}
   altSprite1: {fileID: 0}
@@ -696,7 +703,7 @@ GameObject:
   - component: {fileID: 9990062}
   - component: {fileID: 9990061}
   m_Layer: 6
-  m_Name: Blue
+  m_Name: Pink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -829,7 +836,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 60252829, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
+  m_Sprite: {fileID: -762071, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -968,6 +975,9 @@ MonoBehaviour:
   timeText: 
   itemDesc: 'A scare actor. He says: "I''d help you figure some stuff out, but I''m
     feeling too hungry to think."'
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -1017153484, guid: 5169dd8dd35add148b0dc12e5c93375f, type: 3}
   highlightSprite: {fileID: 1731844645, guid: 5169dd8dd35add148b0dc12e5c93375f, type: 3}
   altSprite1: {fileID: 1731844645, guid: 5169dd8dd35add148b0dc12e5c93375f, type: 3}
@@ -1019,6 +1029,7 @@ MonoBehaviour:
   itemEnabled: {fileID: 0}
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
+  changesItemDesc: 0
 --- !u!1 &22617576
 GameObject:
   m_ObjectHideFlags: 0
@@ -1079,6 +1090,7 @@ MonoBehaviour:
   itemEnabled: {fileID: 0}
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
+  changesItemDesc: 0
 --- !u!114 &22617579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1103,6 +1115,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: An orange lock
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: 1005807320, guid: dcf564576884d254c954ec50d0208f0d, type: 3}
   highlightSprite: {fileID: 831736981, guid: dcf564576884d254c954ec50d0208f0d, type: 3}
   altSprite1: {fileID: 0}
@@ -1203,7 +1218,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &37265118
 Transform:
   m_ObjectHideFlags: 0
@@ -1266,7 +1281,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 60252829, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
+  m_Sprite: {fileID: -762071, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1349,6 +1364,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: 
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -1667,6 +1685,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: 
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: 137076939, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
   highlightSprite: {fileID: -39248358, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
   altSprite1: {fileID: -858309015, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
@@ -2028,6 +2049,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: 
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: 812125516, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
   highlightSprite: {fileID: -1006257401, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
   altSprite1: {fileID: 0}
@@ -2394,7 +2418,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 1310447629, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
+  m_Sprite: {fileID: 60252829, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2515,7 +2539,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -1351656195, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
+  m_Sprite: {fileID: -160084016, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2732,7 +2756,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -160084016, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
+  m_Sprite: {fileID: 1310447629, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2950,6 +2974,7 @@ MonoBehaviour:
   itemEnabled: {fileID: 0}
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
+  changesItemDesc: 0
 --- !u!114 &318202960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2974,6 +2999,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: A purple lock.
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -2125995572, guid: dcf564576884d254c954ec50d0208f0d, type: 3}
   highlightSprite: {fileID: 137279573, guid: dcf564576884d254c954ec50d0208f0d, type: 3}
   altSprite1: {fileID: 0}
@@ -3241,6 +3269,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: 
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -3318,6 +3349,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: 
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -3607,6 +3641,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: 
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -3820,6 +3857,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: 
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: 21300000, guid: ecc8812a06f83ea4bb3e4ed9bc6990d1, type: 3}
   highlightSprite: {fileID: 21300000, guid: ecc8812a06f83ea4bb3e4ed9bc6990d1, type: 3}
   altSprite1: {fileID: 21300000, guid: ecc8812a06f83ea4bb3e4ed9bc6990d1, type: 3}
@@ -4099,6 +4139,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: 'A taxidermy boar head. '
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: 1185396618, guid: 7ff058e716abaea47bd9f0b0eafc9a47, type: 3}
   highlightSprite: {fileID: -2076579371, guid: 7ff058e716abaea47bd9f0b0eafc9a47, type: 3}
   altSprite1: {fileID: 0}
@@ -4166,6 +4209,7 @@ MonoBehaviour:
   itemEnabled: {fileID: 0}
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
+  changesItemDesc: 0
 --- !u!114 &407114894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4190,6 +4234,9 @@ MonoBehaviour:
   prompt: You spent some money to get the eyeball, and some candy came out too. Lucky!
   timeText: Spend money to get items from vending machine?
   itemDesc: A vending machine. Looking closer, there seems to be eyeball in there!
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: 2068948189, guid: 58cebbb44e74bbf4d93384f7c627b05c, type: 3}
   highlightSprite: {fileID: -1634964913, guid: 58cebbb44e74bbf4d93384f7c627b05c, type: 3}
   altSprite1: {fileID: -642730735, guid: 229cbebc584372b47b4fe2d34bb51bcb, type: 3}
@@ -4426,6 +4473,7 @@ MonoBehaviour:
   itemEnabled: {fileID: 0}
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
+  changesItemDesc: 0
 --- !u!114 &428883819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4451,6 +4499,9 @@ MonoBehaviour:
   timeText: 
   itemDesc: It's too dark to see anything. I better find something to light this
     up with.
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: 0}
   highlightSprite: {fileID: 0}
   altSprite1: {fileID: 0}
@@ -4804,6 +4855,7 @@ MonoBehaviour:
   itemEnabled: {fileID: 0}
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
+  changesItemDesc: 0
 --- !u!114 &454600095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4828,6 +4880,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: This locker's Jammed shut. What could be in here?
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: 2058338222, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
   highlightSprite: {fileID: -132606945, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
   altSprite1: {fileID: 1178685855, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
@@ -5085,6 +5140,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: A pair of tongs, good for extending my grip.
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -1292928020, guid: bf862f39441f9804daeaba78d53d7ec7, type: 3}
   highlightSprite: {fileID: -867584579, guid: bf862f39441f9804daeaba78d53d7ec7, type: 3}
   altSprite1: {fileID: -1292928020, guid: bf862f39441f9804daeaba78d53d7ec7, type: 3}
@@ -5285,6 +5343,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: Locker with a number 1 Plaque. Doesn't seem notable.
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: 812125516, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
   highlightSprite: {fileID: -1006257401, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
   altSprite1: {fileID: 903590207, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
@@ -5454,6 +5515,9 @@ MonoBehaviour:
   prompt: 
   timeText: Do you want to swap the heads around? This will take 30 minutes.
   itemDesc: A taxidermy deer head. Looks heavy.
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -914139331, guid: deda486c42380924a8c580a993f18a77, type: 3}
   highlightSprite: {fileID: -42327806, guid: deda486c42380924a8c580a993f18a77, type: 3}
   altSprite1: {fileID: 0}
@@ -5625,6 +5689,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: 
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -6037,6 +6104,9 @@ MonoBehaviour:
   prompt: 
   timeText: Do you want to swap the heads around? This will take 30 minutes.
   itemDesc: A taxidermy boar head. Looks heavy.
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: 1185396618, guid: 7ff058e716abaea47bd9f0b0eafc9a47, type: 3}
   highlightSprite: {fileID: -2076579371, guid: 7ff058e716abaea47bd9f0b0eafc9a47, type: 3}
   altSprite1: {fileID: 0}
@@ -6194,7 +6264,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -1351656195, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
+  m_Sprite: {fileID: -160084016, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6310,7 +6380,7 @@ GameObject:
   - component: {fileID: 558196561}
   - component: {fileID: 558196560}
   m_Layer: 6
-  m_Name: Red
+  m_Name: Sky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6443,7 +6513,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1351656195, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
+  m_Sprite: {fileID: -160084016, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6508,7 +6578,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &575957001
 Transform:
   m_ObjectHideFlags: 0
@@ -6571,7 +6641,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -762071, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
+  m_Sprite: {fileID: 1462456764, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6641,6 +6711,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: Locker with a number 2 plaque.
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: 137076939, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
   highlightSprite: {fileID: -39248358, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
   altSprite1: {fileID: -858309015, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
@@ -6887,6 +6960,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: A bedside table. Maybe there's something in its drawer?
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -1356515274, guid: c1d0cbe5ad5b8844389aaea90e99e9da, type: 3}
   highlightSprite: {fileID: 347611310, guid: c1d0cbe5ad5b8844389aaea90e99e9da, type: 3}
   altSprite1: {fileID: -1356515274, guid: c1d0cbe5ad5b8844389aaea90e99e9da, type: 3}
@@ -7150,6 +7226,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: IT'S EVIDENCE! GRAB IT!
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: 305989326, guid: 464300b8eb0b8934a912419374c3c7be, type: 3}
   highlightSprite: {fileID: -2056479922, guid: 464300b8eb0b8934a912419374c3c7be, type: 3}
   altSprite1: {fileID: 305989326, guid: 464300b8eb0b8934a912419374c3c7be, type: 3}
@@ -7327,6 +7406,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: Bolt cutters. Should be quite useful.
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: 385842418, guid: 368ddacc825efe04aa383547fdf3d77c, type: 3}
   highlightSprite: {fileID: 1656289242, guid: 368ddacc825efe04aa383547fdf3d77c, type: 3}
   altSprite1: {fileID: 0}
@@ -7523,6 +7605,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: A bed that scare actors probably hid under to scare people.
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: 2136040392, guid: 7a2ac81156ad66f47ba5df556a9ed512, type: 3}
   highlightSprite: {fileID: 480893558, guid: 7a2ac81156ad66f47ba5df556a9ed512, type: 3}
   altSprite1: {fileID: 2136040392, guid: 7a2ac81156ad66f47ba5df556a9ed512, type: 3}
@@ -7900,7 +7985,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -160084016, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
+  m_Sprite: {fileID: 1310447629, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8487,6 +8572,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: 
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -320910802, guid: 0b6ea9ab209f02344987d0f1a9188b54, type: 3}
   highlightSprite: {fileID: 480881303, guid: 0b6ea9ab209f02344987d0f1a9188b54, type: 3}
   altSprite1: {fileID: 1865439687, guid: 0b6ea9ab209f02344987d0f1a9188b54, type: 3}
@@ -8677,6 +8765,9 @@ MonoBehaviour:
   timeText: 
   itemDesc: A note written by the convicted employee. This should prove they had
     motive to kill.
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -1406624849, guid: e49d5367ba1c7c544b6d996f92460247, type: 3}
   highlightSprite: {fileID: 1808973964, guid: e49d5367ba1c7c544b6d996f92460247, type: 3}
   altSprite1: {fileID: -1559828744, guid: e49d5367ba1c7c544b6d996f92460247, type: 3}
@@ -8822,6 +8913,7 @@ MonoBehaviour:
   itemEnabled: {fileID: 0}
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
+  changesItemDesc: 0
 --- !u!114 &848412375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8846,6 +8938,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: A heavy duty safe. I'll have to find a code to open it.
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: 1614871090, guid: 86ed18f9fcb81b24b951162528dedc2c, type: 3}
   highlightSprite: {fileID: 947192633, guid: 86ed18f9fcb81b24b951162528dedc2c, type: 3}
   altSprite1: {fileID: -58800814, guid: 86ed18f9fcb81b24b951162528dedc2c, type: 3}
@@ -9619,6 +9714,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: Reset
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: 0}
   highlightSprite: {fileID: 0}
   altSprite1: {fileID: 0}
@@ -9640,7 +9738,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &922923886
 Transform:
   m_ObjectHideFlags: 0
@@ -9703,7 +9801,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 60252829, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
+  m_Sprite: {fileID: -762071, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9919,6 +10017,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: An empty wardrobe. Nothing more than set dressing.
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: 1081615174, guid: 30a9768d9469d684585feb9da2cd8503, type: 3}
   highlightSprite: {fileID: -588457337, guid: 30a9768d9469d684585feb9da2cd8503, type: 3}
   altSprite1: {fileID: -588457337, guid: 30a9768d9469d684585feb9da2cd8503, type: 3}
@@ -10017,6 +10118,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: 
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -10186,6 +10290,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: Locker with a number 4 plaque.
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -320910802, guid: 0b6ea9ab209f02344987d0f1a9188b54, type: 3}
   highlightSprite: {fileID: 480881303, guid: 0b6ea9ab209f02344987d0f1a9188b54, type: 3}
   altSprite1: {fileID: 1865439687, guid: 0b6ea9ab209f02344987d0f1a9188b54, type: 3}
@@ -10489,7 +10596,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1310447629, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
+  m_Sprite: {fileID: 60252829, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10798,7 +10905,7 @@ GameObject:
   - component: {fileID: 1044329338}
   - component: {fileID: 1044329337}
   m_Layer: 6
-  m_Name: Pink
+  m_Name: Cyan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10931,7 +11038,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -762071, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
+  m_Sprite: {fileID: 1462456764, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11197,6 +11304,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: 
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: 137076939, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
   highlightSprite: {fileID: -39248358, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
   altSprite1: {fileID: -858309015, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
@@ -11566,7 +11676,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1110248186
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11614,7 +11724,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -762071, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
+  m_Sprite: {fileID: 1462456764, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11936,6 +12046,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: Confirm
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: 0}
   highlightSprite: {fileID: 0}
   altSprite1: {fileID: 0}
@@ -12419,6 +12532,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: 
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -12586,6 +12702,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: 
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: 2058338222, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
   highlightSprite: {fileID: -132606945, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
   altSprite1: {fileID: 1178685855, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
@@ -13062,6 +13181,9 @@ MonoBehaviour:
   timeText: 
   itemDesc: A broken fireplace cover. I think I see some hair behind it, but I can't
     reach with the sharp glass in the way.
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: 738562567, guid: afd3ef6625474b4429c6d0f6df8c0713, type: 3}
   highlightSprite: {fileID: 1837095482, guid: afd3ef6625474b4429c6d0f6df8c0713, type: 3}
   altSprite1: {fileID: 0}
@@ -13093,6 +13215,7 @@ MonoBehaviour:
   itemEnabled: {fileID: 0}
   givesHardEvidence: 1
   hardEvidenceGO: {fileID: 0}
+  changesItemDesc: 0
 --- !u!1 &1287568724
 GameObject:
   m_ObjectHideFlags: 0
@@ -13397,7 +13520,7 @@ GameObject:
   - component: {fileID: 1317346224}
   - component: {fileID: 1317346223}
   m_Layer: 6
-  m_Name: Cyan
+  m_Name: Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13530,7 +13653,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1462456764, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
+  m_Sprite: {fileID: -1351656195, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13832,6 +13955,9 @@ MonoBehaviour:
   timeText: Rearrange the heavy books?
   itemDesc: These books are unnaturally heavy. Maybe they can help me open the bookshelf's
     compartment?
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -898135415, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
   highlightSprite: {fileID: -1767711905, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
   altSprite1: {fileID: 1876734663, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
@@ -13877,8 +14003,9 @@ MonoBehaviour:
   itemEnabled: {fileID: 0}
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
-  book1: {fileID: 575957000}
-  book2: {fileID: 1110248185}
+  changesItemDesc: 0
+  book1: {fileID: 37265117}
+  book2: {fileID: 922923885}
   bookShelf: {fileID: 1380806732}
 --- !u!65 &1380806737
 BoxCollider:
@@ -14345,6 +14472,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: A trapdoor. Probably has some useful equipment in there.
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -1728464144, guid: 9e35a165f3726d04ea2e3f68e9831f7c, type: 3}
   highlightSprite: {fileID: 1586207677, guid: 9e35a165f3726d04ea2e3f68e9831f7c, type: 3}
   altSprite1: {fileID: 1621314773, guid: 9e35a165f3726d04ea2e3f68e9831f7c, type: 3}
@@ -14455,6 +14585,7 @@ MonoBehaviour:
   itemEnabled: {fileID: 0}
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
+  changesItemDesc: 0
 --- !u!1 &1420381176
 GameObject:
   m_ObjectHideFlags: 0
@@ -14758,6 +14889,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: A sticky note with a safe code written on it.
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -68712848, guid: 45c06b1a99b635a4cb5115869314ec74, type: 3}
   highlightSprite: {fileID: -940497689, guid: 45c06b1a99b635a4cb5115869314ec74, type: 3}
   altSprite1: {fileID: -68712848, guid: 45c06b1a99b635a4cb5115869314ec74, type: 3}
@@ -15037,6 +15171,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: A fireplace cover. I should check it closer for potential evidence.
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: 738562567, guid: afd3ef6625474b4429c6d0f6df8c0713, type: 3}
   highlightSprite: {fileID: 1837095482, guid: afd3ef6625474b4429c6d0f6df8c0713, type: 3}
   altSprite1: {fileID: 0}
@@ -15538,6 +15675,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: A ship in a bottle. Looking closer, there's a key inside as well!
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -1113923762, guid: 3d9a83293923cf446942710c41054009, type: 3}
   highlightSprite: {fileID: -274231322, guid: 3d9a83293923cf446942710c41054009, type: 3}
   altSprite1: {fileID: 1705473089, guid: 3d9a83293923cf446942710c41054009, type: 3}
@@ -15648,6 +15788,7 @@ MonoBehaviour:
   itemEnabled: {fileID: 0}
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
+  changesItemDesc: 0
 --- !u!1 &1551287139
 GameObject:
   m_ObjectHideFlags: 0
@@ -15865,6 +16006,9 @@ MonoBehaviour:
   timeText: 
   itemDesc: A taxidermied bear, or maybe an animatronic. Either way, it's missing
     an eye.
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -1508906487, guid: 876d39aa744209e42be265dbd568256a, type: 3}
   highlightSprite: {fileID: -1384430537, guid: 876d39aa744209e42be265dbd568256a, type: 3}
   altSprite1: {fileID: 722861064, guid: 876d39aa744209e42be265dbd568256a, type: 3}
@@ -15969,6 +16113,7 @@ MonoBehaviour:
   itemEnabled: {fileID: 0}
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
+  changesItemDesc: 0
 --- !u!1 &1572282139
 GameObject:
   m_ObjectHideFlags: 0
@@ -16157,6 +16302,7 @@ MonoBehaviour:
   itemEnabled: {fileID: 1634282931}
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
+  changesItemDesc: 0
 --- !u!114 &1614846988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16181,6 +16327,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: Too dark to see under here. I should find something to light it up first.
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: 1627832334, guid: bee21f5108864344ab054f4bca6d70d7, type: 3}
   highlightSprite: {fileID: -992871721, guid: bee21f5108864344ab054f4bca6d70d7, type: 3}
   altSprite1: {fileID: 400364628, guid: bee21f5108864344ab054f4bca6d70d7, type: 3}
@@ -16333,6 +16482,9 @@ MonoBehaviour:
   timeText: 
   itemDesc: A tape of that night's security footage. This should prove the employee
     was here.
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -1268794702, guid: 11eb2511b642ed2409520d122e9e3751, type: 3}
   highlightSprite: {fileID: -1283442153, guid: 11eb2511b642ed2409520d122e9e3751, type: 3}
   altSprite1: {fileID: 0}
@@ -16572,6 +16724,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: 
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: 1460204604, guid: b1fee48c1a01cb0469881b768982bb0c, type: 3}
   highlightSprite: {fileID: -704310105, guid: b1fee48c1a01cb0469881b768982bb0c, type: 3}
   altSprite1: {fileID: 1460204604, guid: b1fee48c1a01cb0469881b768982bb0c, type: 3}
@@ -16671,7 +16826,7 @@ GameObject:
   - component: {fileID: 1722176617}
   - component: {fileID: 1722176616}
   m_Layer: 6
-  m_Name: Sky
+  m_Name: Yellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16804,7 +16959,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -160084016, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
+  m_Sprite: {fileID: 1310447629, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16895,6 +17050,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: 
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: 0}
   highlightSprite: {fileID: 0}
   altSprite1: {fileID: 0}
@@ -16924,6 +17082,7 @@ MonoBehaviour:
   itemEnabled: {fileID: 0}
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
+  changesItemDesc: 0
   key: {fileID: 0}
   objectProperties: {fileID: 0}
   itemUseTime: 0
@@ -17023,7 +17182,7 @@ GameObject:
   - component: {fileID: 1752389598}
   - component: {fileID: 1752389597}
   m_Layer: 6
-  m_Name: Yellow
+  m_Name: Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17156,7 +17315,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1310447629, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
+  m_Sprite: {fileID: 60252829, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17253,6 +17412,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: A bookshelf with a locked compartment on the front.
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -898135415, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
   highlightSprite: {fileID: -1767711905, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
   altSprite1: {fileID: 1876734663, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
@@ -17546,6 +17708,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: 
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -17630,7 +17795,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 1462456764, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
+  m_Sprite: {fileID: -1351656195, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -17942,12 +18107,12 @@ MonoBehaviour:
   - {fileID: 1044329335}
   - {fileID: 1317346221}
   bookOrderNeeded:
+  - {fileID: 1317346221}
   - {fileID: 558196558}
+  - {fileID: 1752389595}
   - {fileID: 1722176614}
   - {fileID: 9990059}
-  - {fileID: 1752389595}
   - {fileID: 1044329335}
-  - {fileID: 1317346221}
   puzzlePanel: {fileID: 1408905522}
   bookShelfClose: {fileID: 1380806732}
   bookShelf: {fileID: 1776860374}
@@ -18039,7 +18204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TimeController
   hoursLeft: 0
   minutesLeft: 0
-  isTesting: 0
+  isTesting: 1
   debugTimeLeft: 100
   timePanel: {fileID: 1948059745}
   timeAwayText: {fileID: 1948059744}
@@ -18813,6 +18978,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: A taxidermy wolf head.
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -453902948, guid: 913db77244f8f2f4d9b94251572ca65e, type: 3}
   highlightSprite: {fileID: -179293386, guid: 913db77244f8f2f4d9b94251572ca65e, type: 3}
   altSprite1: {fileID: 0}
@@ -19091,6 +19259,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: 
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -19575,6 +19746,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: A pink book. The diamond on it is a shape with four points.
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -2019829017, guid: d047df0d1a11e6a44b61ef92a8e9deb9, type: 3}
   highlightSprite: {fileID: 2069189252, guid: d047df0d1a11e6a44b61ef92a8e9deb9, type: 3}
   altSprite1: {fileID: -2019829017, guid: d047df0d1a11e6a44b61ef92a8e9deb9, type: 3}
@@ -19731,6 +19905,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: 
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -20091,6 +20268,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: A chest. There's a bit of blood leaking out.
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -1577232116, guid: 5393563cd7c458b4089c462cba4a1bf3, type: 3}
   highlightSprite: {fileID: -1031243056, guid: 5393563cd7c458b4089c462cba4a1bf3, type: 3}
   altSprite1: {fileID: 594882530, guid: 5393563cd7c458b4089c462cba4a1bf3, type: 3}
@@ -20254,7 +20434,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1462456764, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
+  m_Sprite: {fileID: -1351656195, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -20337,6 +20517,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: A wardrobe. What could be inside?
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: 233914371, guid: 8a933977fd786a044af75e018cb259da, type: 3}
   highlightSprite: {fileID: 1569536268, guid: 8a933977fd786a044af75e018cb259da, type: 3}
   altSprite1: {fileID: 233914371, guid: 8a933977fd786a044af75e018cb259da, type: 3}
@@ -20504,6 +20687,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: 
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: 812125516, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
   highlightSprite: {fileID: -1006257401, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
   altSprite1: {fileID: 903590207, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
@@ -20755,6 +20941,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: A crowbar! This could be useful.
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: 1641619501, guid: 81e272dfa9da72f44abbe54b3d9b8753, type: 3}
   highlightSprite: {fileID: -1965538520, guid: 81e272dfa9da72f44abbe54b3d9b8753, type: 3}
   altSprite1: {fileID: -990722930, guid: 81e272dfa9da72f44abbe54b3d9b8753, type: 3}
@@ -20899,6 +21088,9 @@ MonoBehaviour:
   prompt: 
   timeText: Do you want to swap the heads around? This will take 30 minutes.
   itemDesc: A taxidermy wolf head. Looks heavy.
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -453902948, guid: 913db77244f8f2f4d9b94251572ca65e, type: 3}
   highlightSprite: {fileID: -179293386, guid: 913db77244f8f2f4d9b94251572ca65e, type: 3}
   altSprite1: {fileID: 0}
@@ -21481,6 +21673,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: 
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
