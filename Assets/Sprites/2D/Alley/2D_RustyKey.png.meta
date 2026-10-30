@@ -100,9 +100,9 @@ TextureImporter:
       name: 2D_RustyKey_0
       rect:
         serializedVersion: 2
-        x: 111
+        x: 14
         y: 11
-        width: 54
+        width: 55
         height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -122,9 +122,9 @@ TextureImporter:
       name: 2D_RustyKey_1
       rect:
         serializedVersion: 2
-        x: 178
+        x: 81
         y: 9
-        width: 58
+        width: 59
         height: 77
       alignment: 0
       pivot: {x: 0, y: 0}

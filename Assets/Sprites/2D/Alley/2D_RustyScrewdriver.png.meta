@@ -100,9 +100,9 @@ TextureImporter:
       name: 2D_RustyScrewdriver_0
       rect:
         serializedVersion: 2
-        x: 134
+        x: 12
         y: 11
-        width: 39
+        width: 40
         height: 86
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -122,9 +122,9 @@ TextureImporter:
       name: 2D_RustyScrewdriver_1
       rect:
         serializedVersion: 2
-        x: 186
+        x: 64
         y: 9
-        width: 43
+        width: 44
         height: 90
       alignment: 0
       pivot: {x: 0, y: 0}

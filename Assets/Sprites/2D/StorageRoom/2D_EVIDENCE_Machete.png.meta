@@ -100,10 +100,10 @@ TextureImporter:
       name: 2D_EVIDENCE_Machete_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 116
-        width: 112
-        height: 134
+        x: 86
+        y: 251
+        width: 44
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -122,10 +122,10 @@ TextureImporter:
       name: 2D_EVIDENCE_Machete_1
       rect:
         serializedVersion: 2
-        x: 139
-        y: 116
-        width: 115
-        height: 134
+        x: 155
+        y: 247
+        width: 52
+        height: 41
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,6 +136,50 @@ TextureImporter:
       bones: []
       spriteID: 7f3e23beb970e734eb84d47e85e5fed8
       internalID: -2056479922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D_EVIDENCE_Machete_2
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 91
+        width: 112
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4568b91a596aaa64da3c20f02641542a
+      internalID: -279017070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D_EVIDENCE_Machete_3
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 91
+        width: 115
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1910d27b884334b92d0b829bcc5492
+      internalID: -531528625
       vertices: []
       indices: 
       edges: []
@@ -154,10 +198,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":2.0},"gridSpriteSize":{"x":800.0,"y":600.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       2D_EVIDENCE_Machete_0: 305989326
       2D_EVIDENCE_Machete_1: -2056479922
+      2D_EVIDENCE_Machete_2: -279017070
+      2D_EVIDENCE_Machete_3: -531528625
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
