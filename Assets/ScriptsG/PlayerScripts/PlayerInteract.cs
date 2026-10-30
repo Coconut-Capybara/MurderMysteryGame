@@ -163,6 +163,7 @@ public class PlayerInteract : MonoBehaviour
                             GetComponent<InventoryItemScript>().GetItemId())
                         {
                             itemIndex = i;
+                            //Audio Stuff goes here
                         }
                     }
                     if (hoverItem.GetComponent<ObjectProperties>().timeUsage[itemIndex] > 0)                        
