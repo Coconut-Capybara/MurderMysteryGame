@@ -100,9 +100,9 @@ TextureImporter:
       name: 2D_Hammer_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 262
-        width: 29
+        x: 15
+        y: 143
+        width: 30
         height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -122,9 +122,9 @@ TextureImporter:
       name: 2D_Hammer_1
       rect:
         serializedVersion: 2
-        x: 106
-        y: 260
-        width: 33
+        x: 95
+        y: 141
+        width: 34
         height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -144,9 +144,9 @@ TextureImporter:
       name: 2D_Hammer_2
       rect:
         serializedVersion: 2
-        x: 15
-        y: 136
-        width: 67
+        x: 4
+        y: 17
+        width: 68
         height: 91
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -166,9 +166,9 @@ TextureImporter:
       name: 2D_Hammer_3
       rect:
         serializedVersion: 2
-        x: 95
-        y: 134
-        width: 71
+        x: 84
+        y: 15
+        width: 72
         height: 95
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
