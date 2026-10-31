@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6890962615188980795}
   - component: {fileID: 689225051704435761}
   - component: {fileID: 4195545733503958589}
+  - component: {fileID: 107053775497256613}
   m_Layer: 5
   m_Name: ID5SafeCode
   m_TagString: Untagged
@@ -122,3 +123,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InventoryItemScript
   itemId: 5
+--- !u!114 &107053775497256613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8200676748390764321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f04fe3e45a206cb4aa747c9e0fb75db8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIObjectHighlight
