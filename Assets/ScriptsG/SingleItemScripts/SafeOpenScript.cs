@@ -14,12 +14,16 @@ using UnityEngine;
 public class SafeOpenScript : MonoBehaviour
 {
     [SerializeField] private GameObject[] safeNumbers;
+    [SerializeField] private GameObject safe;
+    [SerializeField] private GameObject money;
     [SerializeField] private int[] codeNeeded;
+    private bool locked;
     private int[] userCode;
     private int currentNum;
     void Start()
     {
-        userCode = new int[safeNumbers.Length];    
+        userCode = new int[safeNumbers.Length]; 
+        locked = false; 
     }
     /// <summary>
     /// Updates the current safe code
@@ -37,13 +41,7 @@ public class SafeOpenScript : MonoBehaviour
         }
         else if (currentNum < safeNumbers.Length)
         {
-            switch (buttonKey)
-            {
-                case 0: safeNumbers[currentNum].GetComponentInChildren<TMP_Text>().text = buttonKey.ToString(); break;
-                case 1: safeNumbers[currentNum].GetComponentInChildren<TMP_Text>().text = buttonKey.ToString(); break;
-                case 2: safeNumbers[currentNum].GetComponentInChildren<TMP_Text>().text = buttonKey.ToString(); break;
-                case 3: safeNumbers[currentNum].GetComponentInChildren<TMP_Text>().text = buttonKey.ToString(); break;
-            }
+            safeNumbers[currentNum].GetComponent<TMP_Text>().text = buttonKey.ToString();
             userCode[currentNum] = buttonKey;
             currentNum++;
         }
@@ -53,14 +51,29 @@ public class SafeOpenScript : MonoBehaviour
     /// </summary>
     public void ValidateCode()
     {
-        if (CodeValid())
+        if (!locked)
         {
-            print("Correct");
+            if (CodeValid())
+            {
+                GameObject.FindFirstObjectByType<AddToInventory>().AddNonWorldItem(money);
+                GameObject.FindFirstObjectByType<TextPrompts>().ShowPrompt("" +
+                    "You input a code and the safe opens. You find a few dollars inside");
+                locked = true;
+                safe.GetComponent<ObjectProperties>().usesAltSprites = true;
+                safe.GetComponent<SpriteRenderer>().sprite = safe.GetComponent<ObjectProperties>().altSprite1;
+            }
+            else
+            {
+                GameObject.FindFirstObjectByType<TextPrompts>().ShowPrompt("" +
+                    "You input a code and nothing happens");
+            }
         }
         else
         {
-            print("Wrong");
+            GameObject.FindFirstObjectByType<TextPrompts>().ShowPrompt("" +
+                   "You look inside the safe, nothing more to see");
         }
+        
     }
     /// <summary>
     /// Returns true if player has the correct code, else returns false
@@ -85,7 +98,7 @@ public class SafeOpenScript : MonoBehaviour
     {
         foreach (GameObject g in safeNumbers)
         {
-            g.GetComponentInChildren<TMP_Text>().text = " ";
+            g.GetComponentInChildren<TMP_Text>().text = "0";
         }
         for(int i = 0; i < safeNumbers.Length; i++)
         {
