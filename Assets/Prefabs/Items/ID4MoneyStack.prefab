@@ -101,6 +101,9 @@ MonoBehaviour:
   prompt: 
   timeText: 
   itemDesc: 
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
   itemSprite: {fileID: -1978343932, guid: a631f12ded3863e47a5efcb2f907ba8b, type: 3}
   highlightSprite: {fileID: -1512389179, guid: a631f12ded3863e47a5efcb2f907ba8b, type: 3}
   altSprite1: {fileID: 0}
