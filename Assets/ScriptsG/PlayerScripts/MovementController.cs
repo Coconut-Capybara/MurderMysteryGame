@@ -41,6 +41,8 @@ public class MovementController : MonoBehaviour
     [SerializeField] private float fadePivot;
     [Tooltip("The Sound to play when moving between cameras")]
     [SerializeField] private AudioClip camAudioClip;
+    [Tooltip("The Main Camera Audio Source")]
+    [SerializeField] private AudioSource audioSourceCam;
     
 
     private bool locked;
