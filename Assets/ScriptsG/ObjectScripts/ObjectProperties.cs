@@ -53,12 +53,12 @@ public class ObjectProperties : MonoBehaviour
     public bool usesAltSprites;
 
     [Header("Sound Assets")]
-    [Tooltip("The source the audio will be played through")]
+    [Tooltip("The source the audio will be played through. Should only be on the Player")]
     public AudioSource audioSource;
     [Tooltip("The sound to play when you simply click on the object")]
     public AudioClip interactSound;
     [Tooltip("The sound the object will make when the corresponding sound with the item in ItemNeeded Script " +
         "that shares the same index value")]
     public AudioClip[] itemUseSounds;
-
+    
 }

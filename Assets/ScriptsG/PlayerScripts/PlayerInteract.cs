@@ -145,7 +145,6 @@ public class PlayerInteract : MonoBehaviour
     /// <param name="_currentItem"></param>
     private void ItemUsageCheck(GameObject _hoverItem, GameObject _currentItem)
     {
-        print("ItemUsageCheck Called");
         if(_hoverItem.GetComponent<ObjectProperties>() != null)
         {
             if (_hoverItem.GetComponent<ObjectProperties>().canUseOn)
@@ -164,6 +163,14 @@ public class PlayerInteract : MonoBehaviour
                         {
                             itemIndex = i;
                             //Audio Stuff goes here
+                            if(hoverItem.GetComponent<ObjectProperties>().audioSource != null
+                                && hoverItem.GetComponent<ObjectProperties>().itemUseSounds[i] != null)
+                            {
+                                print("Audio Playing");
+                                hoverItem.GetComponent<ObjectProperties>().audioSource.clip =
+                                    hoverItem.GetComponent<ObjectProperties>().itemUseSounds[i];
+                                hoverItem.GetComponent<ObjectProperties>().audioSource.Play();
+                            }
                         }
                     }
                     if (hoverItem.GetComponent<ObjectProperties>().timeUsage[itemIndex] > 0)                        
@@ -215,6 +222,15 @@ public class PlayerInteract : MonoBehaviour
         }
         else if (item.GetComponent<ObjectProperties>().isInteractable)
         {
+            if (item.GetComponent<ObjectProperties>().audioSource != null
+                                && item.GetComponent<ObjectProperties>().interactSound != null)
+            {
+                item.GetComponent<ObjectProperties>().audioSource.clip = 
+                    item.GetComponent<ObjectProperties>().interactSound;
+                item.GetComponent<ObjectProperties>().audioSource.Play();
+            }
+
+
             if(item.GetComponent<ObjectProperties>().timeUsage[0] > 0 && !hoverItem.GetComponent<ObjectProperties>().timeLock)
             {
                 TimeCheck();    

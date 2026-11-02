@@ -9,6 +9,7 @@
 *****************************************************************************/
 using NUnit.Framework;
 using System.Collections;
+using System.Runtime.CompilerServices;
 using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -38,6 +39,9 @@ public class MovementController : MonoBehaviour
     [Tooltip("The % value of the change in transparency of the blackScreen game object. " +
         "Please keep above zero, but below 1. /n  The larger the number, the less smooth the fade in/out")]
     [SerializeField] private float fadePivot;
+    [Tooltip("The Sound to play when moving between cameras")]
+    [SerializeField] private AudioClip camAudioClip;
+    
 
     private bool locked;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -69,6 +73,9 @@ public class MovementController : MonoBehaviour
             {
                 if (!locked)
                 {
+                    AudioSource audioSource = mainCam.gameObject.GetComponent<AudioSource>();
+                    audioSource.clip = camAudioClip;
+                    audioSource.Play();
                     StartCoroutine(FadeInOut(i));
                 }
             }
