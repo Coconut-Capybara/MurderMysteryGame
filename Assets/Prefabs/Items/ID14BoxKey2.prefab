@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1564318246534261144}
   - component: {fileID: -6905224942358599150}
   - component: {fileID: 2810383107063591677}
+  - component: {fileID: -6374132640990128452}
   m_Layer: 5
   m_Name: ID14BoxKey2
   m_TagString: Untagged
@@ -104,8 +105,8 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
-  itemSprite: {fileID: 0}
-  highlightSprite: {fileID: 0}
+  itemSprite: {fileID: 1808705619, guid: e225a5bd3773ff041bdc359bb52fd380, type: 3}
+  highlightSprite: {fileID: 1143303251, guid: e225a5bd3773ff041bdc359bb52fd380, type: 3}
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
@@ -122,3 +123,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InventoryItemScript
   itemId: 14
+--- !u!114 &-6374132640990128452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3043295151955953431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f04fe3e45a206cb4aa747c9e0fb75db8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIObjectHighlight

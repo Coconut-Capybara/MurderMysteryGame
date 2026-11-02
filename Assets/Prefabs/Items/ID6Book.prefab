@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -4369297554870559238}
   - component: {fileID: 1564318246534261144}
   - component: {fileID: 2810383107063591677}
+  - component: {fileID: 2237841341776407017}
   m_Layer: 5
   m_Name: ID6Book
   m_TagString: Untagged
@@ -67,12 +68,15 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0
+  timeUsage: 
   prompt: 
   timeText: 
   itemDesc: 
-  itemSprite: {fileID: 0}
-  highlightSprite: {fileID: 0}
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
+  itemSprite: {fileID: -1991251162, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
+  highlightSprite: {fileID: 2101734160, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
@@ -119,3 +123,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InventoryItemScript
   itemId: 6
+--- !u!114 &2237841341776407017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3043295151955953431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f04fe3e45a206cb4aa747c9e0fb75db8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIObjectHighlight
