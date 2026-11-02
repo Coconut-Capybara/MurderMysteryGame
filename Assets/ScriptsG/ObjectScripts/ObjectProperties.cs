@@ -25,9 +25,9 @@ public class ObjectProperties : MonoBehaviour
     [Tooltip("How much time will interacting with this item use up? Setting to 0 means no time prompt will show.")]
     public int[] timeUsage;
     [Tooltip("The prompt for what happened after time was used")]
-    public string prompt;
+    public string resultsText;
     [Tooltip("Describes what the player will do to pass time")]
-    public string timeText;
+    public string timePrompt;
     [Header("Item Description")]
     [Tooltip("The text that shows up in the bottom left when hovering over an object for long enough. " +
         "Panel will only appear if this is not null")]

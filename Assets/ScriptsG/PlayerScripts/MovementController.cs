@@ -75,9 +75,11 @@ public class MovementController : MonoBehaviour
             {
                 if (!locked)
                 {
-                    AudioSource audioSource = mainCam.gameObject.GetComponent<AudioSource>();
-                    audioSource.clip = camAudioClip;
-                    audioSource.Play();
+                    if(audioSourceCam != null)
+                    {
+                        audioSourceCam.clip = camAudioClip;
+                        audioSourceCam.Play();
+                    }
                     StartCoroutine(FadeInOut(i));
                 }
             }

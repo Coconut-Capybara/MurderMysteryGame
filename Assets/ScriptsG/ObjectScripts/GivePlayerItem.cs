@@ -32,7 +32,7 @@ public class GivePlayerItem : NoItemInteractions
             }
             if(gameObject.name == "2D_DumpsterInspect")
             {
-                GetComponent<ObjectProperties>().prompt = "I don't think theres anything left in here";
+                GetComponent<ObjectProperties>().resultsText = "I don't think theres anything left in here";
             }
         }
 
