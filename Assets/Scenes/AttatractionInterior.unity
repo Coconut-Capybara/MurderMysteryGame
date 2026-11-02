@@ -17345,6 +17345,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1436693557}
   - component: {fileID: 1436693556}
+  - component: {fileID: 1436693559}
+  - component: {fileID: 1436693560}
+  - component: {fileID: 1436693558}
   m_Layer: 0
   m_Name: 2D_ChestInspect_0
   m_TagString: Untagged
@@ -17425,6 +17428,66 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1436693558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436693555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a47def7f1e38654b8be7c83bdcb3c9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChestController
+  machete: {fileID: 636219073}
+  lockViolet: {fileID: 318202957}
+  lockOrange: {fileID: 22617576}
+  lockYellow: {fileID: 7275881}
+--- !u!114 &1436693559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436693555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
+  thisObject: {fileID: 0}
+  isInteractable: 0
+  isGrabbable: 0
+  canUseOn: 0
+  consumable: 0
+  givesPrompt: 0
+  timeLock: 0
+  isHardEvidence: 0
+  timeUsage: 
+  prompt: 
+  timeText: 
+  itemDesc: 
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
+  itemSprite: {fileID: -1565844214, guid: 90d358cf6d373154d842d8a342d4e0f1, type: 3}
+  highlightSprite: {fileID: -1565844214, guid: 90d358cf6d373154d842d8a342d4e0f1, type: 3}
+  altSprite1: {fileID: 1253732185, guid: 90d358cf6d373154d842d8a342d4e0f1, type: 3}
+  altSprite2: {fileID: 1253732185, guid: 90d358cf6d373154d842d8a342d4e0f1, type: 3}
+  usesAltSprites: 0
+--- !u!114 &1436693560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436693555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
 --- !u!1001 &1438318811
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24399,6 +24462,7 @@ GameObject:
   - component: {fileID: 2047372871}
   - component: {fileID: 2047372870}
   - component: {fileID: 2047372869}
+  - component: {fileID: 2047372874}
   m_Layer: 0
   m_Name: 2D_Chest_0
   m_TagString: Untagged
@@ -24560,6 +24624,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2047372874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047372867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ca49e7f91d9114ab82ebf3b8b18e28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MovePointData
+  cineCam: {fileID: 1062416107}
 --- !u!1 &2048808131
 GameObject:
   m_ObjectHideFlags: 0
