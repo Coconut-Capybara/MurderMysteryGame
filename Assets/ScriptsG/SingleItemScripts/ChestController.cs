@@ -26,6 +26,7 @@ public class ChestController : MonoBehaviour
         {
             objectProperties.usesAltSprites = true;
             MacheteCreate();
+            GetComponent<SpriteRenderer>().sprite = objectProperties.altSprite1;
         }
     }
 
