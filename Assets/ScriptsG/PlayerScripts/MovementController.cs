@@ -69,6 +69,11 @@ public class MovementController : MonoBehaviour
             {
                 if (!locked)
                 {
+                    if(audioSourceCam != null)
+                    {
+                        audioSourceCam.clip = camAudioClip;
+                        audioSourceCam.Play();
+                    }
                     StartCoroutine(FadeInOut(i));
                 }
             }

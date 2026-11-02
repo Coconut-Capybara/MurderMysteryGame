@@ -176,7 +176,7 @@ public class PlayerInteract : MonoBehaviour
                         if (_hoverItem.GetComponent<ObjectProperties>().givesPrompt)
                         {
                             GetComponent<TextPrompts>().ShowPrompt(_hoverItem.GetComponent<ObjectProperties>()
-                                .prompt);
+                                .resultsText);
                         }
                     }
                 }
@@ -208,7 +208,7 @@ public class PlayerInteract : MonoBehaviour
                 if (item.GetComponent<ObjectProperties>().givesPrompt)
                 {
                     GetComponent<TextPrompts>().ShowPrompt(item.GetComponent<ObjectProperties>()
-                        .prompt);
+                        .resultsText);
                 }
             }
         }
@@ -223,7 +223,7 @@ public class PlayerInteract : MonoBehaviour
                 if (item.GetComponent<ObjectProperties>().givesPrompt)
                 {
                     GetComponent<TextPrompts>().ShowPrompt(item.GetComponent<ObjectProperties>()
-                        .prompt);
+                        .resultsText);
                 }
                 item.GetComponent<NoItemInteractions>().NoItemFunciton();
             }
