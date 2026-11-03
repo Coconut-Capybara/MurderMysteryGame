@@ -88,18 +88,28 @@ public class TimeController : MonoBehaviour
         else
         {
             timeUse =
-                item.GetComponent<ObjectProperties>().timeUsage[GetTime(item
+                item.GetComponent<ObjectProperties>().timeUsage[GetIndex(item
                 .GetComponent<ItemNeeded>().itemNeeded, playerItem.GetComponent<InventoryItemScript>().GetItemId())];
         }
             timeUsePanel = true;
         timePanel.gameObject.SetActive(true);
-        timeAwayText.text = (item.GetComponent<ObjectProperties>().timePrompt + 
-            "\nTime taken away is: " + timeUse + " minutes" + "\n"  + "You will have " + 
-            ((timeLeft-timeUse) / 60) + " hours and " + ((timeLeft-timeUse) % 60) + " minutes left.");
-        tempTime = timeUse;
+        if(playerItem == null)
+        {
+            timeAwayText.text = (item.GetComponent<ObjectProperties>().timeText[0] +
+            "\nTime taken away is: " + timeUse + " minutes" + "\n" + "You will have " +
+            ((timeLeft - timeUse) / 60) + " hours and " + ((timeLeft - timeUse) % 60) + " minutes left.");
+        }
+        else
+        {
+            timeAwayText.text = (item.GetComponent<ObjectProperties>().timeText[GetIndex(item
+                .GetComponent<ItemNeeded>().itemNeeded, playerItem.GetComponent<InventoryItemScript>().GetItemId())] +
+            "\nTime taken away is: " + timeUse + " minutes" + "\n" + "You will have " +
+            ((timeLeft - timeUse) / 60) + " hours and " + ((timeLeft - timeUse) % 60) + " minutes left."); 
+        }
+            tempTime = timeUse;
 
     }
-    private int GetTime(GameObject[] items,int itemId)
+    private int GetIndex(GameObject[] items,int itemId)
     {
         for (int i = 0; i < items.Length; i++)
         {

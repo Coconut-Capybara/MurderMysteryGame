@@ -27,7 +27,7 @@ public class ObjectProperties : MonoBehaviour
     [Tooltip("The prompt for what happened after time was used")]
     public string resultsText;
     [Tooltip("Describes what the player will do to pass time")]
-    public string timePrompt;
+    public string[] timeText;
     [Header("Item Description")]
     [Tooltip("The text that shows up in the bottom left when hovering over an object for long enough. " +
         "Panel will only appear if this is not null")]
