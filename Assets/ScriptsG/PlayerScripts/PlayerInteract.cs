@@ -173,7 +173,8 @@ public class PlayerInteract : MonoBehaviour
                             }
                         }
                     }
-                    if (hoverItem.GetComponent<ObjectProperties>().timeUsage[itemIndex] > 0)                        
+                    if (hoverItem.GetComponent<ObjectProperties>().timeUsage[itemIndex] > 0 && 
+                        !hoverItem.GetComponent<ObjectProperties>().timeLock)                        
                     {
                         TimeCheck();
                     }
@@ -280,6 +281,7 @@ public class PlayerInteract : MonoBehaviour
         if (itemUseLock)
         {
             ItemUsageCheck(hoverItem, lockedItem);
+            hoverItem.GetComponent<ObjectProperties>().timeLock = true;
         }
         else
         {
