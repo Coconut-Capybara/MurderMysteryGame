@@ -2066,7 +2066,7 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 1
   timeUsage: 
-  prompt: 
+  resultsText: []
   timeText: []
   itemDesc: 
   itemChangesDesc: 0
@@ -2077,6 +2077,9 @@ MonoBehaviour:
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
 --- !u!65 &394837683
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2269,7 +2272,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: "The door won\u2019t budge. Gotta find another way in."
@@ -2281,6 +2285,9 @@ MonoBehaviour:
   altSprite1: {fileID: 1196141505, guid: f237e1be581d33c4abc87206450bcf10, type: 3}
   altSprite2: {fileID: 1196141505, guid: f237e1be581d33c4abc87206450bcf10, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
 --- !u!212 &399228811
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3099,7 +3106,7 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  prompt: 
+  resultsText: []
   timeText: []
   itemDesc: 
   itemChangesDesc: 0
@@ -3110,6 +3117,9 @@ MonoBehaviour:
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite2: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
 --- !u!65 &534380601
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3308,7 +3318,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: You unlock the door.              (Click door to enter)
+  resultsText:
+  - You unlock the door.              (Click door to enter)
   timeText:
   - 
   itemDesc: "This door\u2019s just locked. Is there a key around?"
@@ -3320,6 +3331,9 @@ MonoBehaviour:
   altSprite1: {fileID: 643532932, guid: e6ab65e6b6f7c1844950f6638a41bb4a, type: 3}
   altSprite2: {fileID: 643532932, guid: e6ab65e6b6f7c1844950f6638a41bb4a, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
 --- !u!114 &573199880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3705,7 +3719,7 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  prompt: 
+  resultsText: []
   timeText: []
   itemDesc: 
   itemChangesDesc: 0
@@ -3716,6 +3730,9 @@ MonoBehaviour:
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite2: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
 --- !u!65 &625201061
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4144,7 +4161,7 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  prompt: 
+  resultsText: []
   timeText: []
   itemDesc: 
   itemChangesDesc: 0
@@ -4155,6 +4172,9 @@ MonoBehaviour:
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite2: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
 --- !u!1001 &689288551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4827,7 +4847,7 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  prompt: 
+  resultsText: []
   timeText: []
   itemDesc: 
   itemChangesDesc: 0
@@ -4838,6 +4858,9 @@ MonoBehaviour:
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite2: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
 --- !u!65 &780127517
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5132,7 +5155,7 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  prompt: 
+  resultsText: []
   timeText: []
   itemDesc: 
   itemChangesDesc: 0
@@ -5143,6 +5166,9 @@ MonoBehaviour:
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite2: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
 --- !u!65 &835550217
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5313,8 +5339,9 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 0a000000
-  prompt: You dig through the trash, and find a screwdriver!               (Click
-    and drag items to use them)
+  resultsText:
+  - You dig through the trash, and find a screwdriver!               (Click and drag
+    items to use them)
   timeText:
   - You are about to dig through the trash.
   itemDesc: "I\u2019d rather not, but I could probably find something useful in here.
@@ -5327,6 +5354,9 @@ MonoBehaviour:
   altSprite1: {fileID: -2124162544, guid: c35e5cb75758a73449c6d7a38d729d5e, type: 3}
   altSprite2: {fileID: -2124162544, guid: c35e5cb75758a73449c6d7a38d729d5e, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
 --- !u!114 &847087801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6130,7 +6160,7 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  prompt: 
+  resultsText: []
   timeText: []
   itemDesc: 
   itemChangesDesc: 0
@@ -6141,6 +6171,9 @@ MonoBehaviour:
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite2: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
 --- !u!65 &970832815
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6671,7 +6704,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: A big dumpster. I should probably take a closer look.
@@ -6683,6 +6717,9 @@ MonoBehaviour:
   altSprite1: {fileID: 461018611, guid: 6152c6f07ea3ba54f886da12cb15abca, type: 3}
   altSprite2: {fileID: 461018611, guid: 6152c6f07ea3ba54f886da12cb15abca, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
 --- !u!114 &1085014737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6843,7 +6880,9 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 0a00000005000000
-  prompt: You fail to remove the key. Maybe you can find something to pry it off?
+  resultsText:
+  - You fail to remove the key. Maybe you can find something to pry it off?
+  - You use the screwdriver to break the key
   timeText:
   - 'There is a key attached to the rock, will you try to take it off? '
   - 'There is a key attached to the rock, will you try to take it off? '
@@ -6857,6 +6896,9 @@ MonoBehaviour:
   altSprite1: {fileID: 969851866, guid: 19cc7e1e32c10374da702bc983848460, type: 3}
   altSprite2: {fileID: -1322642489, guid: 19cc7e1e32c10374da702bc983848460, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
 --- !u!114 &1151989504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7557,7 +7599,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: You unlock the door.              (Click door to enter)
+  resultsText:
+  - You unlock the door.              (Click door to enter)
   timeText:
   - 
   itemDesc: "This door\u2019s just locked. Is there a key around?"
@@ -7569,6 +7612,9 @@ MonoBehaviour:
   altSprite1: {fileID: 643532932, guid: e6ab65e6b6f7c1844950f6638a41bb4a, type: 3}
   altSprite2: {fileID: 643532932, guid: e6ab65e6b6f7c1844950f6638a41bb4a, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
 --- !u!212 &1215213241
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8140,7 +8186,7 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  prompt: 
+  resultsText: []
   timeText: []
   itemDesc: 
   itemChangesDesc: 0
@@ -8151,6 +8197,9 @@ MonoBehaviour:
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite2: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
 --- !u!1 &1280597431
 GameObject:
   m_ObjectHideFlags: 0
@@ -8612,7 +8661,7 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 1
   timeUsage: 
-  prompt: 
+  resultsText: []
   timeText: []
   itemDesc: 
   itemChangesDesc: 0
@@ -8623,6 +8672,9 @@ MonoBehaviour:
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
 --- !u!65 &1329424970
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9124,7 +9176,7 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  prompt: 
+  resultsText: []
   timeText: []
   itemDesc: 
   itemChangesDesc: 0
@@ -9135,6 +9187,9 @@ MonoBehaviour:
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
 --- !u!1 &1506496002
 GameObject:
   m_ObjectHideFlags: 0
@@ -9444,7 +9499,7 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 1
   timeUsage: 
-  prompt: 
+  resultsText: []
   timeText: []
   itemDesc: 
   itemChangesDesc: 0
@@ -9455,6 +9510,9 @@ MonoBehaviour:
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
 --- !u!65 &1606907913
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9943,7 +10001,7 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  prompt: 
+  resultsText: []
   timeText: []
   itemDesc: 
   itemChangesDesc: 0
@@ -9954,6 +10012,9 @@ MonoBehaviour:
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite2: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
 --- !u!65 &1722093318
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10346,7 +10407,7 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 1
   timeUsage: 
-  prompt: 
+  resultsText: []
   timeText: []
   itemDesc: 
   itemChangesDesc: 0
@@ -10357,6 +10418,9 @@ MonoBehaviour:
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
 --- !u!65 &1799559130
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10647,6 +10711,8 @@ MonoBehaviour:
   blackScreen: {fileID: 627578244}
   fadeSpeed: 0.01
   fadePivot: 0.1
+  camAudioClip: {fileID: 0}
+  audioSourceCam: {fileID: 0}
 --- !u!114 &1840529614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11022,7 +11088,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: "The door won\u2019t budge. Gotta find another way in."
@@ -11034,6 +11101,9 @@ MonoBehaviour:
   altSprite1: {fileID: 1196141505, guid: f237e1be581d33c4abc87206450bcf10, type: 3}
   altSprite2: {fileID: 1196141505, guid: f237e1be581d33c4abc87206450bcf10, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
 --- !u!114 &1909787311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11496,7 +11566,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: You fail to remove the key. Maybe you can find something to pry it off?
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: "This rock\u2019s plastic. Looking closer, there\u2019s a key stuck to
@@ -11509,6 +11580,9 @@ MonoBehaviour:
   altSprite1: {fileID: 503531864, guid: 19cc7e1e32c10374da702bc983848460, type: 3}
   altSprite2: {fileID: 503531864, guid: 19cc7e1e32c10374da702bc983848460, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
 --- !u!114 &2114967984
 MonoBehaviour:
   m_ObjectHideFlags: 0

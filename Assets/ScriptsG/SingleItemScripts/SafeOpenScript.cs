@@ -57,7 +57,7 @@ public class SafeOpenScript : MonoBehaviour
             {
                 GameObject.FindFirstObjectByType<AddToInventory>().AddNonWorldItem(money);
                 GameObject.FindFirstObjectByType<TextPrompts>().ShowPrompt("" +
-                    "You input a code and the safe opens. You find a few dollars inside");
+                    "You swiftly input the code into the safe, and it pops right open, as you collect the small amount of money inside.");
                 locked = true;
                 safe.GetComponent<ObjectProperties>().usesAltSprites = true;
                 safe.GetComponent<SpriteRenderer>().sprite = safe.GetComponent<ObjectProperties>().altSprite1;

@@ -151,10 +151,11 @@ public class PlayerInteract : MonoBehaviour
             {
                 hoverItem = _hoverItem;
                 lockedItem = _currentItem;
+                int itemIndex = 0;
                 if (hoverItem.GetComponent<ItemNeeded>().ItemValid(_currentItem))
                 {
                     itemUseLock = true;
-                    int itemIndex = 0;
+                    
                     for(int i = 0; i < hoverItem.GetComponent<ItemNeeded>().itemNeeded.Length; i++)
                     {
                         if(_currentItem.GetComponent<InventoryItemScript>().GetItemId()
@@ -185,7 +186,7 @@ public class PlayerInteract : MonoBehaviour
                         if (_hoverItem.GetComponent<ObjectProperties>().givesPrompt)
                         {
                             GetComponent<TextPrompts>().ShowPrompt(_hoverItem.GetComponent<ObjectProperties>()
-                                .resultsText);
+                                .resultsText[itemIndex]);
                         }
                     }
                 }
@@ -217,7 +218,7 @@ public class PlayerInteract : MonoBehaviour
                 if (item.GetComponent<ObjectProperties>().givesPrompt)
                 {
                     GetComponent<TextPrompts>().ShowPrompt(item.GetComponent<ObjectProperties>()
-                        .resultsText);
+                        .resultsText[0]);
                 }
             }
         }
@@ -241,7 +242,7 @@ public class PlayerInteract : MonoBehaviour
                 if (item.GetComponent<ObjectProperties>().givesPrompt)
                 {
                     GetComponent<TextPrompts>().ShowPrompt(item.GetComponent<ObjectProperties>()
-                        .resultsText);
+                        .resultsText[0]);
                 }
                 item.GetComponent<NoItemInteractions>().NoItemFunciton();
             }
