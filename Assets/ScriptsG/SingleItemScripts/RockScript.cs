@@ -22,8 +22,9 @@ public class RockScript : ItemNeeded
     {
         if(currentItem.GetComponent<InventoryItemScript>().GetItemId() == 1)
         {
-            GetComponent<ObjectProperties>().resultsText = "You use the screwdriver to break the key ";
+            GetComponent<ObjectProperties>().resultsText[0] = "You use the screwdriver to break the key ";
             GetComponent<ObjectProperties>().timeLock = false;
+            GetComponent<ObjectProperties>().givesPrompt = true;
             GetComponent<ObjectProperties>().itemDesc = "Nothing else on the rock as far as I can tell.";
             ItemUseFunctionality(currentItem);
             //GameObject.FindFirstObjectByType<TextPrompts>().ShowPrompt(GetComponent<ObjectProperties>().prompt);

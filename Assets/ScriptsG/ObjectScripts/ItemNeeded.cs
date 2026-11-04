@@ -91,6 +91,7 @@ public class ItemNeeded : MonoBehaviour
         {
             GetComponent<ObjectProperties>().usingItemChangeDesc = true;
         }
+        GetComponent<ObjectProperties>().canUseOn = false;
     }
     IEnumerator BufferAdd()
     {

@@ -280,7 +280,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: A taxidermy deer head.
@@ -513,7 +514,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: A yellow lock.
@@ -897,7 +899,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  resultsText: 
+  resultsText:
+  - 
   timeText: []
   itemDesc: 
   itemChangesDesc: 0
@@ -1025,7 +1028,11 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 'He takes the candy and says: "If it helps, the boar head is our oldest prop
+    here, meanwhile the deer head''s the most recent addition.                                             
+    As for those books, I think it''s something about the number of points on em,
+    and that''ll open it up. Hope that helps."'
   timeText:
   - 
   itemDesc: 'A scare actor. He says: "I''d help you figure some stuff out, but I''m
@@ -1171,7 +1178,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: An orange lock
@@ -1803,7 +1811,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -2128,7 +2137,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -2632,7 +2642,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -3127,7 +3138,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -3704,7 +3716,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -3984,7 +3997,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: A purple lock.
@@ -4258,7 +4272,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -4342,7 +4357,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -4638,7 +4654,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -4858,7 +4875,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -5234,7 +5252,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 'A taxidermy boar head. '
@@ -5333,7 +5352,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - You spent some money to get the eyeball, and some candy came out too. Lucky!
   timeText:
   - 
   itemDesc: A vending machine. Looking closer, there seems to be eyeball in there!
@@ -5504,7 +5524,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -5765,7 +5786,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: It's too dark to see anything. I better find something to light this
@@ -6126,7 +6148,7 @@ MonoBehaviour:
   giveItem: 0
   itemGiven: []
   disableObject: 0
-  changeSprite: 1
+  changeSprite: 0
   enableCam: 1
   camToEnable: {fileID: 454600098}
   enableItem: 0
@@ -6155,9 +6177,10 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 05000000
-  resultsText: 
+  resultsText:
+  - You open it up with some slight difficulty.
   timeText:
-  - Pry open the locker with the crowbar?
+  - Pry the locker open with the crowbar?
   itemDesc: This locker's Jammed shut. What could be in here?
   itemChangesDesc: 1
   usingItemChangeDesc: 0
@@ -6419,7 +6442,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: A pair of tongs, good for extending my grip.
@@ -6626,7 +6650,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: Locker with a number 1 Plaque. Doesn't seem notable.
@@ -6802,7 +6827,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 1e000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - Do you want to swap the heads around? This will take 30 minutes.
   itemDesc: A taxidermy deer head. Looks heavy.
@@ -6980,7 +7006,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -7399,7 +7426,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 1e000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - Do you want to swap the heads around? This will take 30 minutes.
   itemDesc: A taxidermy boar head. Looks heavy.
@@ -7868,7 +7896,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  resultsText: 
+  resultsText:
+  - 
   timeText: []
   itemDesc: 
   itemChangesDesc: 0
@@ -8138,7 +8167,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: Locker with a number 2 plaque.
@@ -8391,7 +8421,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: A bedside table. Maybe there's something in its drawer?
@@ -9109,7 +9140,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 1
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: A bloody machete. Looks like the murder weapon.
@@ -9293,7 +9325,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: Bolt cutters. Should be quite useful.
@@ -9496,7 +9529,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: A bed that scare actors probably hid under to scare people.
@@ -10447,7 +10481,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -10890,7 +10925,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -11083,7 +11119,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -11253,7 +11290,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 1
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: A note written by the convicted employee. This should prove they had
@@ -12029,7 +12067,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: Reset
@@ -12336,7 +12375,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: An empty wardrobe. Nothing more than set dressing.
@@ -12441,7 +12481,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -12617,7 +12658,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: Locker with a number 4 plaque.
@@ -13561,7 +13603,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  resultsText: 
+  resultsText:
+  - 
   timeText: []
   itemDesc: 
   itemChangesDesc: 0
@@ -13895,7 +13938,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -14767,7 +14811,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: Confirm
@@ -15482,7 +15527,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -15656,7 +15702,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -16066,7 +16113,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -16302,7 +16350,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - You use the tongs to pull out the hair.
   timeText:
   - 
   itemDesc: A broken fireplace cover. I think I see some hair behind it, but I can't
@@ -16747,7 +16796,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -16997,7 +17047,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  resultsText: 
+  resultsText:
+  - 
   timeText: []
   itemDesc: 
   itemChangesDesc: 0
@@ -17095,7 +17146,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: A heavy duty safe. I'll have to find a code to open it.
@@ -17482,7 +17534,8 @@ MonoBehaviour:
   timeLock: 1
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - Rearrange the heavy books?
   itemDesc: These books are unnaturally heavy. Maybe they can help me open the bookshelf's
@@ -18004,7 +18057,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 0a000000
-  resultsText: 
+  resultsText:
+  - 'You open the trapdoor, and find a hammer inside!  '
   timeText:
   - Attempt to cut the chain locking the trapdoor?
   itemDesc: A trapdoor. Probably has some useful equipment in there.
@@ -18425,7 +18479,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: A sticky note with a safe code written on it.
@@ -18650,7 +18705,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -18890,7 +18946,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: A fireplace cover. I should check it closer for potential evidence.
@@ -19546,7 +19603,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -19825,7 +19883,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: A ship in a bottle. Looking closer, there's a key inside as well!
@@ -20150,7 +20209,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -20312,7 +20372,9 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - After inserting the eye, the mechanical bear starts moving! A key falls out of
+    its mouth and into your hand.
   timeText:
   - 
   itemDesc: A taxidermied bear, or maybe an animatronic. Either way, it's missing
@@ -20536,7 +20598,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -20892,7 +20955,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: Too dark to see under here. I should find something to light it up first.
@@ -21036,7 +21100,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -21214,7 +21279,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 1
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: A tape of that night's security footage. This should prove the employee
@@ -21572,7 +21638,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -21867,7 +21934,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  resultsText: 
+  resultsText:
+  - 
   timeText: []
   itemDesc: 
   itemChangesDesc: 0
@@ -22026,7 +22094,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -22351,7 +22420,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  resultsText: 
+  resultsText:
+  - 
   timeText: []
   itemDesc: 
   itemChangesDesc: 0
@@ -22441,7 +22511,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: A bookshelf with a locked compartment on the front.
@@ -22852,7 +22923,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -23009,6 +23081,8 @@ GameObject:
   - component: {fileID: 1840529619}
   - component: {fileID: 1840529618}
   - component: {fileID: 1840529621}
+  - component: {fileID: 1840529624}
+  - component: {fileID: 1840529625}
   - component: {fileID: 1840529620}
   - component: {fileID: 1840529617}
   - component: {fileID: 1840529623}
@@ -23387,6 +23461,32 @@ MonoBehaviour:
   pausePanel: {fileID: 4377316500606430799}
   youSurePanel: {fileID: 5958570867011992558}
   playerInteract: {fileID: 1840529615}
+--- !u!114 &1840529624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840529608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 099575d4d4ec4994da7b9c52e0a06708, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GiveItemDebug
+  itemsOnStart: []
+--- !u!114 &1840529625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840529608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 099575d4d4ec4994da7b9c52e0a06708, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GiveItemDebug
+  itemsOnStart: []
 --- !u!1 &1845829424
 GameObject:
   m_ObjectHideFlags: 0
@@ -24222,7 +24322,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: A taxidermy wolf head.
@@ -24622,7 +24723,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -24835,7 +24937,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -25092,7 +25195,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -25417,7 +25521,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: A pink book. The diamond on it is a shape with four points.
@@ -25580,7 +25685,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -25948,7 +26054,8 @@ MonoBehaviour:
   timeLock: 1
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: A chest. There's a bit of blood leaking out.
@@ -26214,7 +26321,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: A wardrobe. What could be inside?
@@ -26388,7 +26496,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -26646,7 +26755,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: A crowbar! This could be useful.
@@ -26908,7 +27018,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 1e000000
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - Do you want to swap the heads around? This will take 30 minutes.
   itemDesc: A taxidermy wolf head. Looks heavy.
@@ -27475,7 +27586,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
@@ -27649,7 +27761,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  resultsText: 
+  resultsText:
+  - 
   timeText:
   - 
   itemDesc: 
