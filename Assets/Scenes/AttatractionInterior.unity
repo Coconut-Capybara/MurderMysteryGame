@@ -2614,9 +2614,11 @@ MonoBehaviour:
   givesPrompt: 1
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
-  resultsText: 
-  timeText: []
+  timeUsage: 00000000
+  resultsText:
+  - I put the eye in it's socket, and a key fell out of it's mouth!
+  timeText:
+  - 
   itemDesc: A taxidermied bear, or maybe an animatronic. Either way, it's missing
     an eye.
   itemChangesDesc: 1
@@ -10327,7 +10329,7 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  resultsText: 
+  resultsText: []
   timeText:
   - 
   itemDesc: 
@@ -15500,7 +15502,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1180044058}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
   m_Name: 
@@ -16276,7 +16278,7 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  resultsText: 
+  resultsText: []
   timeText:
   - 
   itemDesc: 
@@ -20915,9 +20917,7 @@ GameObject:
   - component: {fileID: 1572137158}
   - component: {fileID: 1572137157}
   - component: {fileID: 1572137156}
-  - component: {fileID: 1572137155}
   - component: {fileID: 1572137154}
-  - component: {fileID: 1572137159}
   - component: {fileID: 1572137160}
   m_Layer: 0
   m_Name: 2D_Bear_0
@@ -20947,18 +20947,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.04, y: 3.0799997, z: 0.19999999}
   m_Center: {x: -0.00000023841858, y: 0, z: 0}
---- !u!114 &1572137155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1572137153}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b45cca4001993248b9555ee86ab74f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SpriteInterchange
 --- !u!114 &1572137156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21071,33 +21059,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1249145198}
   m_LocalEulerAnglesHint: {x: 1.389, y: 180, z: -0.368}
---- !u!114 &1572137159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1572137153}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bea36a716ec23e45bb774fc59a9f2b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
-  itemNeeded:
-  - {fileID: 3043295151955953431, guid: bb8df09d4ffd92849a0ddf1cb9001fae, type: 3}
-  timeController: {fileID: 1840529622}
-  giveItem: 1
-  itemGiven:
-  - {fileID: 3043295151955953431, guid: 291216ae88a4e3c4e915c0b85f269d7e, type: 3}
-  disableObject: 0
-  changeSprite: 1
-  enableCam: 0
-  camToEnable: {fileID: 0}
-  enableItem: 0
-  itemEnabled: {fileID: 0}
-  givesHardEvidence: 0
-  hardEvidenceGO: {fileID: 0}
-  changesItemDesc: 0
 --- !u!114 &1572137160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22017,7 +21978,7 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  resultsText: 
+  resultsText: []
   timeText: []
   itemDesc: 
   itemChangesDesc: 0
