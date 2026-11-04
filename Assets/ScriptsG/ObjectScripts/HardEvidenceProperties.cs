@@ -9,11 +9,14 @@
 *****************************************************************************/
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HardEvidenceProperties : MonoBehaviour
 {
     [Tooltip("The PlayerInteract Script. Should be on MainCamera")]
     [SerializeField] private PlayerInteract playerInteract;
+    [Tooltip("The UI Image Asset for the hard evidence Sequence")]
+    [SerializeField] private Image hardEvidenceImage;
     [Tooltip("A reference to the Hard Evidence Sprite")]
     [SerializeField] private Sprite hardEvidencePrefab;
     [Tooltip("The Panel the hard Evidence Sequence UI is on")]
