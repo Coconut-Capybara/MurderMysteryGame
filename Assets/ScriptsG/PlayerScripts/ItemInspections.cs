@@ -11,6 +11,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class ItemInspections : MonoBehaviour
 {
@@ -26,6 +27,9 @@ public class ItemInspections : MonoBehaviour
     [Tooltip("Whether the script is wating to write the next character of the item description string. " +
         "DO NOT MANUALLY ADJUST")]
     [SerializeField] private bool inDelay;
+
+    [SerializeField] private Sprite noteBookSprite;
+    [SerializeField] private Sprite dialogueSprite;
     private Coroutine itemDescCO;
     private Coroutine inspectCO;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -62,6 +66,14 @@ public class ItemInspections : MonoBehaviour
     {
         if (!descLocked)
         {
+            if(item.gameObject.layer == 9)
+            {
+                itemDescPanel.GetComponent<Image>().sprite = dialogueSprite;
+            }
+            else
+            {
+                itemDescPanel.GetComponent<Image>().sprite = noteBookSprite;
+            }
             itemDescPanel.SetActive(true);
             if (item.GetComponent<ObjectProperties>().usingItemChangeDesc)
             {
