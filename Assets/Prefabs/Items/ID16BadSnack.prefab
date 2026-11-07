@@ -105,8 +105,8 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
-  itemSprite: {fileID: -1950543905, guid: e225a5bd3773ff041bdc359bb52fd380, type: 3}
-  highlightSprite: {fileID: -671135375, guid: e225a5bd3773ff041bdc359bb52fd380, type: 3}
+  itemSprite: {fileID: 1846928265, guid: 471cc604b68dc50438127689d9b4b53e, type: 3}
+  highlightSprite: {fileID: -1748355503, guid: 471cc604b68dc50438127689d9b4b53e, type: 3}
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
