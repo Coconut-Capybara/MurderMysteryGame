@@ -69,8 +69,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: 
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -80,6 +80,12 @@ MonoBehaviour:
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!114 &1564318246534261144
 MonoBehaviour:
   m_ObjectHideFlags: 0

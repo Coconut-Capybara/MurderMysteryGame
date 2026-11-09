@@ -77,8 +77,6 @@ public class ObjectProperties : MonoBehaviour
     public Image hardEvidenceImage;
     [Tooltip("A reference to the Hard Evidence Sprite")]
     public Sprite hardEvidenceSprite;
-    [Tooltip("The text box for the hard evidence sequence")]
-    public TMP_Text hardEvidenceText;
     [Tooltip("The text that shows up describing how the evidence will help the case.")]
     public string hardEvidenceDesc;
 

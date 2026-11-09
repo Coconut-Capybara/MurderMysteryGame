@@ -18,15 +18,19 @@ public class HardEvidenceProperties : MonoBehaviour
     [Tooltip("The PlayerInteract Script. Should be on MainCamera")]
     [SerializeField] private PlayerInteract playerInteract;
     [Tooltip("The UI Image Asset for the hard evidence Sequence")]
-    [SerializeField] private Image hardEvidenceImage;
+    private Image hardEvidenceImage;
     [Tooltip("A reference to the Hard Evidence Sprite")]
-    [SerializeField] private Sprite hardEvidencePrefab;
+    private Sprite hardEvidencePrefab;
     [Tooltip("The Panel the hard Evidence Sequence UI is on")]
     [SerializeField] private GameObject hardEvidencePanel;
     [Tooltip("The text box for the hard evidence sequence")]
     [SerializeField] private TMP_Text hardEvidenceText;
     [Tooltip("The text that shows up describing how the evidence will help the case.")]
-    [SerializeField] private string hardEvidenceDesc;
+    private string hardEvidenceDesc;
+    [Tooltip("The source the audio will be played through. Should only be on the Player")]
+    public AudioSource audioSource;
+    [Tooltip("The sound to play when you get the Hard Evicence")]
+    public AudioClip interactSound;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -40,9 +44,15 @@ public class HardEvidenceProperties : MonoBehaviour
         hardEvidencePanel.SetActive(true);
         hardEvidenceDesc = item.GetComponent<ObjectProperties>().hardEvidenceDesc;
         hardEvidenceImage = item.GetComponent<ObjectProperties>().hardEvidenceImage;
-        hardEvidenceText = item.GetComponent<ObjectProperties>().hardEvidenceText;
         hardEvidencePrefab = item.GetComponent<ObjectProperties>().hardEvidenceSprite;
         hardEvidenceText.text = hardEvidenceDesc;
+        hardEvidenceImage.sprite = hardEvidencePrefab;
+        if(interactSound != null)
+        {
+            audioSource.clip = interactSound;
+            audioSource.Play();
+        }
+
     }
 
     public void CloseHardEvidenceSequence()
