@@ -481,6 +481,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
   itemNeeded:
   - {fileID: 3043295151955953431, guid: 9c0edbb9634a3fe4cb4064e1c72e52a2, type: 3}
+  - {fileID: 3043295151955953431, guid: 81180f53294f8544e9131da3642a253d, type: 3}
   timeController: {fileID: 0}
   giveItem: 0
   itemGiven: []
@@ -513,11 +514,13 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 00000000
+  timeUsage: 0000000005000000
   resultsText:
   - 
+  - you managed to unlock it, but it took a couple minutes.
   timeText:
   - 
+  - try to use the coathanger to pick the lock?
   itemDesc: A yellow lock.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -1001,7 +1004,7 @@ Transform:
   m_GameObject: {fileID: 13328867}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 26.34, y: 7.38, z: 19.86}
+  m_LocalPosition: {x: 26.34, y: 7.38, z: 20.71}
   m_LocalScale: {x: 4.55, y: 4.55, z: 4.55}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1027,13 +1030,15 @@ MonoBehaviour:
   givesPrompt: 1
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 00000000
+  timeUsage: 0000000000000000
   resultsText:
   - 'He takes the candy and says: "If it helps, the boar head is our oldest prop
     here, meanwhile the deer head''s the most recent addition.                                             
     As for those books, I think it''s something about the number of points on em,
     and that''ll open it up. Hope that helps."'
+  - He takes the candy, takes a bite, and spits it out. "ew. Black Licorice"
   timeText:
+  - 
   - 
   itemDesc: 'A scare actor. He says: "I''d help you figure some stuff out, but I''m
     feeling too hungry to think."'
@@ -1084,6 +1089,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
   itemNeeded:
   - {fileID: 3043295151955953431, guid: f16e4ddc93267654cbc4ed06ae04f872, type: 3}
+  - {fileID: 3043295151955953431, guid: a11dfabe1bf0b054c82d364dbad3db3f, type: 3}
   timeController: {fileID: 0}
   giveItem: 0
   itemGiven: []
@@ -1145,6 +1151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
   itemNeeded:
   - {fileID: 3043295151955953431, guid: b9a46eafaa7df8b45872a11ffd3eeee6, type: 3}
+  - {fileID: 3043295151955953431, guid: 81180f53294f8544e9131da3642a253d, type: 3}
   timeController: {fileID: 0}
   giveItem: 0
   itemGiven: []
@@ -1177,11 +1184,13 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 00000000
+  timeUsage: 0000000005000000
   resultsText:
   - 
+  - you managed to unlock it, but it took a couple minutes.
   timeText:
   - 
+  - try to use the coathanger to pick the lock?
   itemDesc: An orange lock
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -3980,6 +3989,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
   itemNeeded:
   - {fileID: 3043295151955953431, guid: 291216ae88a4e3c4e915c0b85f269d7e, type: 3}
+  - {fileID: 3043295151955953431, guid: 81180f53294f8544e9131da3642a253d, type: 3}
   timeController: {fileID: 0}
   giveItem: 0
   itemGiven: []
@@ -4012,11 +4022,13 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 00000000
+  timeUsage: 0000000005000000
   resultsText:
   - 
+  - you managed to unlock it, but it took a couple minutes.
   timeText:
   - 
+  - try to use the coathanger to pick the lock?
   itemDesc: A purple lock.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -4164,7 +4176,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 346265204}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
   m_Name: 
@@ -5408,6 +5420,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
   itemNeeded:
   - {fileID: 8200676748390764321, guid: bbdc60c485c1d98449a530215913c151, type: 3}
+  - {fileID: 3043295151955953431, guid: 782532d3e9711c7408e7b7961239f947, type: 3}
   timeController: {fileID: 1840529622}
   giveItem: 1
   itemGiven:
@@ -5442,11 +5455,15 @@ MonoBehaviour:
   givesPrompt: 1
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 00000000
+  timeUsage: 0000000005000000
   resultsText:
   - You spent some money to get the eyeball, and some candy came out too. Lucky!
+  - You straighten the 5 dollar bill on your sleeve, putting it in the money slot,
+    rejected. you rub it against the side of the machine, rejected. you try the table
+    next to it, rejected. though, it looks a lot smoother now...
   timeText:
   - 
+  - do you want to try fixing the bill to get some candy?
   itemDesc: A vending machine. Looking closer, there seems to be eyeball in there!
   itemChangesDesc: 1
   usingItemChangeDesc: 0
@@ -18931,10 +18948,12 @@ MonoBehaviour:
   givesPrompt: 1
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0a000000
+  timeUsage: 0a0000000f000000
   resultsText:
   - 'You open the trapdoor, and find a hammer inside!  '
+  - You hack at the chain until it finally gives way. Inside was a hammer!
   timeText:
+  - Attempt to cut the chain locking the trapdoor?
   - Attempt to cut the chain locking the trapdoor?
   itemDesc: A trapdoor. Probably has some useful equipment in there.
   itemChangesDesc: 1
@@ -19041,6 +19060,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
   itemNeeded:
   - {fileID: 3043295151955953431, guid: 4d5ff387521a8f04cb7c6499b11c3631, type: 3}
+  - {fileID: 3043295151955953431, guid: ac345af95cab395488b3fae00d0818a3, type: 3}
   timeController: {fileID: 1840529622}
   giveItem: 1
   itemGiven:
@@ -24777,6 +24797,8 @@ MonoBehaviour:
   textSpeed: 0.03
   delay: 0.4
   inDelay: 0
+  noteBookSprite: {fileID: 0}
+  dialogueSprite: {fileID: 0}
 --- !u!114 &1840529617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29722,6 +29744,9 @@ GameObject:
   - component: {fileID: 8658192861681771352}
   - component: {fileID: 5836449426071050770}
   - component: {fileID: 7051091058299272838}
+  - component: {fileID: 8658192861681771355}
+  - component: {fileID: 8658192861681771354}
+  - component: {fileID: 8658192861681771353}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
@@ -32059,7 +32084,7 @@ Transform:
   m_GameObject: {fileID: 2252460015117334240}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.47, y: 0.47, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32836,6 +32861,91 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8095256315243287040}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8658192861681771353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476884541391466595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bea36a716ec23e45bb774fc59a9f2b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
+  itemNeeded:
+  - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
+  timeController: {fileID: 0}
+  giveItem: 0
+  itemGiven: []
+  disableObject: 0
+  changeSprite: 0
+  enableCam: 0
+  camToEnable: {fileID: 0}
+  enableItem: 0
+  itemEnabled: {fileID: 0}
+  givesHardEvidence: 0
+  hardEvidenceGO: {fileID: 0}
+  changesItemDesc: 0
+--- !u!114 &8658192861681771354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476884541391466595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db8c5aed4b0f0d04cb5efd34db68cec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
+  thisObject: {fileID: 0}
+  isInteractable: 1
+  isGrabbable: 0
+  canUseOn: 1
+  consumable: 0
+  givesPrompt: 1
+  timeLock: 0
+  isHardEvidence: 0
+  timeUsage: 05000000
+  resultsText:
+  - You opened the box, unfortunately there's nothing in there, so you play with
+    the knife for a bit and accidentally waste 5 minutes.
+  timeText:
+  - Would you like to use the butterfly knife to open the box?
+  itemDesc: 
+  itemChangesDesc: 0
+  usingItemChangeDesc: 0
+  itemUseChangeDesc: 
+  itemSprite: {fileID: 0}
+  highlightSprite: {fileID: 0}
+  altSprite1: {fileID: 0}
+  altSprite2: {fileID: 0}
+  usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+--- !u!65 &8658192861681771355
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476884541391466595}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.471468, y: 3.471467, z: 3.471468}
+  m_Center: {x: 0, y: 1.7115436, z: 0}
 --- !u!222 &8682263965287473350
 CanvasRenderer:
   m_ObjectHideFlags: 0
