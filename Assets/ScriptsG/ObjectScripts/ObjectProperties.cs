@@ -1,4 +1,15 @@
+/*****************************************************************************
+// Script Name : ObjectProperties
+// Author : Bryson Welch
+// Additional Author(s) : Gabriel Andrews
+// Creation Date: 9/5/26
+// Last Modified Date: 11/7/26
+//
+// Summary : Put this on objects that have any kind of function
+*****************************************************************************/
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ObjectProperties : MonoBehaviour
 {
@@ -60,5 +71,15 @@ public class ObjectProperties : MonoBehaviour
     [Tooltip("The sound the object will make when the corresponding sound with the item in ItemNeeded Script " +
         "that shares the same index value")]
     public AudioClip[] itemUseSounds;
-    
+
+    [Header("Hard Evidence")]
+    [Tooltip("The UI Image Asset for the hard evidence Sequence")]
+    public Image hardEvidenceImage;
+    [Tooltip("A reference to the Hard Evidence Sprite")]
+    public Sprite hardEvidenceSprite;
+    [Tooltip("The text box for the hard evidence sequence")]
+    public TMP_Text hardEvidenceText;
+    [Tooltip("The text that shows up describing how the evidence will help the case.")]
+    public string hardEvidenceDesc;
+
 }

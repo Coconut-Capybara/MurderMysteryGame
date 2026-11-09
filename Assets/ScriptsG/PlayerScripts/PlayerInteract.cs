@@ -206,7 +206,7 @@ public class PlayerInteract : MonoBehaviour
             item.SetActive(false);   
             if(item.GetComponent<HardEvidenceProperties>() != null)
             {
-                item.GetComponent<HardEvidenceProperties>().HardEvidenceSequence();
+                item.GetComponent<HardEvidenceProperties>().HardEvidenceSequence(item);
             }
         }
         else if (item.GetComponent<ObjectProperties>().isGrabbable)

@@ -13,6 +13,8 @@ using UnityEngine.UI;
 
 public class HardEvidenceProperties : MonoBehaviour
 {
+    [Tooltip("The Main Camera object")]
+    [SerializeField] private GameObject player;
     [Tooltip("The PlayerInteract Script. Should be on MainCamera")]
     [SerializeField] private PlayerInteract playerInteract;
     [Tooltip("The UI Image Asset for the hard evidence Sequence")]
@@ -31,11 +33,15 @@ public class HardEvidenceProperties : MonoBehaviour
         hardEvidencePanel.SetActive(false);
     }
 
-    public void HardEvidenceSequence()
+    public void HardEvidenceSequence(GameObject item)
     {
         playerInteract.SetInGame(false);
         playerInteract.SetInPrompt(true);
         hardEvidencePanel.SetActive(true);
+        hardEvidenceDesc = item.GetComponent<ObjectProperties>().hardEvidenceDesc;
+        hardEvidenceImage = item.GetComponent<ObjectProperties>().hardEvidenceImage;
+        hardEvidenceText = item.GetComponent<ObjectProperties>().hardEvidenceText;
+        hardEvidencePrefab = item.GetComponent<ObjectProperties>().hardEvidenceSprite;
         hardEvidenceText.text = hardEvidenceDesc;
     }
 
