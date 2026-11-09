@@ -203,7 +203,11 @@ public class PlayerInteract : MonoBehaviour
         if (item.GetComponent<ObjectProperties>().isHardEvidence)
         {
             GameObject.FindFirstObjectByType<EndGameHandler>().CollectHardEvidence(); 
-            item.SetActive(false);      
+            item.SetActive(false);   
+            if(item.GetComponent<HardEvidenceProperties>() != null)
+            {
+                item.GetComponent<HardEvidenceProperties>().HardEvidenceSequence(item);
+            }
         }
         else if (item.GetComponent<ObjectProperties>().isGrabbable)
         {
@@ -319,4 +323,5 @@ public class PlayerInteract : MonoBehaviour
     {
         itemUseLock = false;    
     }
+
 }
