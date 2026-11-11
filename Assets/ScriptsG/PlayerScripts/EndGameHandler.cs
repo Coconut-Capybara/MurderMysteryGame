@@ -7,6 +7,7 @@
 //
 // Summary : Handles the hard evidence, and end game state
 *****************************************************************************/
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -23,6 +24,9 @@ public class EndGameHandler : MonoBehaviour
     [SerializeField] private Image[] journalImages;
     [SerializeField] private GameObject[] journalDescs;
     [SerializeField] private BGController bgController;
+    [SerializeField] private float textSpeed;
+    [SerializeField] private GameObject menuButton;
+    [SerializeField] private TMP_Text endTimeText;
     InputAction instantEnd;
     InputAction restart;
 
@@ -62,12 +66,30 @@ public class EndGameHandler : MonoBehaviour
         bgController.ResultsMusic();
         switch (totalHardEvidence)
         {
-            case 0: endText.text = endings[0]; break;
-            case 1: endText.text = endings[1]; break;
-            case 2: endText.text = endings[2]; break;
-            case 3: endText.text = endings[3]; break;
-            case 4: endText.text = endings[4]; break;
+            case 0: StartCoroutine(ShowText(endings[0])); break;
+            case 1: StartCoroutine(ShowText(endings[1])); break;
+            case 2: StartCoroutine(ShowText(endings[2])); break;
+            case 3: StartCoroutine(ShowText(endings[3])); break;
+            case 4: StartCoroutine(ShowText(endings[4])); break;
         }
+    }
+    private IEnumerator ShowText(string _prompt)
+    {
+        int i = 0;
+        endText.text = "";
+        while (i < _prompt.Length)
+        {
+            endText.text += _prompt[i];
+            i++;
+            yield return new WaitForSeconds(textSpeed);
+        }
+        endTimeText.text = "Your had " + TimeController.timeLeft.ToString() + " minutes left";
+        endTimeText.gameObject.SetActive(true); 
+        menuButton.SetActive(true);
+    }
+    public void ExitToMenu()
+    {
+        SceneManager.LoadScene(0);
     }
     private void Update()
     {
