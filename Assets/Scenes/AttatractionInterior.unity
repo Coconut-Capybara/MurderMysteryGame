@@ -509,7 +509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
   thisObject: {fileID: 0}
-  isInteractable: 1
+  isInteractable: 0
   isGrabbable: 0
   canUseOn: 1
   consumable: 0
@@ -1182,7 +1182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
   thisObject: {fileID: 0}
-  isInteractable: 1
+  isInteractable: 0
   isGrabbable: 0
   canUseOn: 1
   consumable: 0
@@ -4670,7 +4670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
   thisObject: {fileID: 0}
-  isInteractable: 1
+  isInteractable: 0
   isGrabbable: 0
   canUseOn: 1
   consumable: 0

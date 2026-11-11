@@ -3,7 +3,7 @@
 // Author : Bryson Welch
 // Additional Author(s) : Gabriel Andrews
 // Creation Date: 9/5/26
-// Last Modified Date: 11/7/26
+// Last Modified Date: 11/10/26
 //
 // Summary : Put this on objects that have any kind of function
 *****************************************************************************/
@@ -17,7 +17,8 @@ public class ObjectProperties : MonoBehaviour
     public GameObject thisObject;
 
     [Header("Object Booleans")]
-    [Tooltip("Whether The Player can perform any action related to this object")]
+    [Tooltip("Whether clicking on this object will perform an action. " +
+        "IS NOT NEEDED FOR ITEMS THAT REQUIRE OTHER ITEMS OR FOR MOVE POINTS")]
     public bool isInteractable;
     [Tooltip("Whether an item can be put into the inventory. If true, attach the Give Player Item Script")]
     public bool isGrabbable;

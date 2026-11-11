@@ -1,3 +1,12 @@
+/*****************************************************************************
+// Script Name : ChestController
+// Author : Bryson Welch
+// Additional Author(s) :
+// Creation Date: 10/23/26
+// Last Modified Date: 11/10/26
+//
+// Summary : The basement chest functionality
+*****************************************************************************/
 using UnityEngine;
 
 public class ChestController : MonoBehaviour
