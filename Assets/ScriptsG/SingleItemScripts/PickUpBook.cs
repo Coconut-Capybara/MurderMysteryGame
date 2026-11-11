@@ -15,6 +15,9 @@ public class PickUpBook : MonoBehaviour
 {
     [SerializeField] private GameObject[] currentBookOrder;
     [SerializeField] private GameObject[] bookOrderNeeded;
+    [SerializeField] private GameObject[] shelfOrdered;
+    [SerializeField] private GameObject[] shelfOrderedFar;
+    [SerializeField] private Sprite[] spriteList;
     [SerializeField] private GameObject puzzlePanel;
     [SerializeField] private GameObject bookShelfClose, bookShelf;
     [SerializeField] private GameObject flashlight;
@@ -52,6 +55,7 @@ public class PickUpBook : MonoBehaviour
             bookShelfClose.GetComponent<ObjectProperties>().usesAltSprites = true;
             bookShelfClose.GetComponent<ObjectProperties>().isInteractable = false;
             bookShelfClose.GetComponent<ObjectProperties>().itemDesc = "A book shelf with its books in order.";
+            UpdateLoungeShelf();    
         }
         else
         {
@@ -62,6 +66,47 @@ public class PickUpBook : MonoBehaviour
         }
         GameObject.FindFirstObjectByType<StartBookPuzzle>().ClosePuzzle();
         ResetPuzzle();  
+    }
+    private void UpdateLoungeShelf()
+    {
+        for(int i = 0; i < shelfOrdered.Length; i++)
+        {
+            switch (i)
+            {
+                case 0:
+                    shelfOrdered[0].GetComponent<SpriteRenderer>().sprite = spriteList[5]; break;
+                case 1:
+                    shelfOrdered[1].GetComponent<SpriteRenderer>().sprite = spriteList[0]; break;
+                case 2:
+                    shelfOrdered[2].GetComponent<SpriteRenderer>().sprite = spriteList[3]; break;
+                case 3:
+                    shelfOrdered[3].GetComponent<SpriteRenderer>().sprite = spriteList[1]; break;
+                case 4:
+                    shelfOrdered[4].GetComponent<SpriteRenderer>().sprite = spriteList[2]; break;
+                case 5:
+                    shelfOrdered[5].GetComponent<SpriteRenderer>().sprite = spriteList[4]; break;
+            }
+            
+        }
+        for (int i = 0; i < shelfOrdered.Length; i++)
+        {
+            switch (i)
+            {
+                case 0:
+                    shelfOrderedFar[0].GetComponent<SpriteRenderer>().sprite = spriteList[5]; break;
+                case 1:
+                    shelfOrderedFar[1].GetComponent<SpriteRenderer>().sprite = spriteList[0]; break;
+                case 2:
+                    shelfOrderedFar[2].GetComponent<SpriteRenderer>().sprite = spriteList[3]; break;
+                case 3:
+                    shelfOrderedFar[3].GetComponent<SpriteRenderer>().sprite = spriteList[1]; break;
+                case 4:
+                    shelfOrderedFar[4].GetComponent<SpriteRenderer>().sprite = spriteList[2]; break;
+                case 5:
+                    shelfOrderedFar[5].GetComponent<SpriteRenderer>().sprite = spriteList[4]; break;
+            }
+
+        }
     }
     private void ResetPuzzle()
     {

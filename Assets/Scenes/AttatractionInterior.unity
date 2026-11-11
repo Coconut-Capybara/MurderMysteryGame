@@ -31097,7 +31097,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 66.7
+  field of view: 60.000004
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -31123,8 +31123,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1840529608}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.9999576, z: -0.00920962, w: 0}
-  m_LocalPosition: {x: -16.408016, y: 11.031675, z: 52.44857}
+  m_LocalRotation: {x: -0.0008816207, y: 0.99954844, z: -0.029995976, w: -0.0015720046}
+  m_LocalPosition: {x: 15.36808, y: 16.112816, z: 118.93619}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -31309,6 +31309,27 @@ MonoBehaviour:
   - {fileID: 1722176614}
   - {fileID: 9990059}
   - {fileID: 1044329335}
+  shelfOrdered:
+  - {fileID: 250006946}
+  - {fileID: 259256428}
+  - {fileID: 922923885}
+  - {fileID: 186560004}
+  - {fileID: 575957000}
+  - {fileID: 1802138749}
+  shelfOrderedFar:
+  - {fileID: 551081763}
+  - {fileID: 677918369}
+  - {fileID: 37265117}
+  - {fileID: 994985704}
+  - {fileID: 1110248185}
+  - {fileID: 2048808131}
+  spriteList:
+  - {fileID: -160084016, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
+  - {fileID: 1310447629, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
+  - {fileID: -762071, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
+  - {fileID: 60252829, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
+  - {fileID: 1462456764, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
+  - {fileID: -1351656195, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   puzzlePanel: {fileID: 1408905522}
   bookShelfClose: {fileID: 1380806732}
   bookShelf: {fileID: 1776860374}
