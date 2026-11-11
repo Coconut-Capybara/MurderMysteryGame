@@ -52,6 +52,7 @@ public class HardEvidenceProperties : MonoBehaviour
             audioSource.clip = interactSound;
             audioSource.Play();
         }
+        GameObject.FindFirstObjectByType<EndGameHandler>().UpdateJournal(item);
 
     }
 
