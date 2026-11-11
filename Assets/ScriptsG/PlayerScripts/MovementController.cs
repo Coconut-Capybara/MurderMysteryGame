@@ -3,7 +3,7 @@
 // Author : Bryson Welch
 // Additional Author(s) : Gabriel Andrews
 // Creation Date: 9/9/26
-// Last Modified Date: 9/30/26
+// Last Modified Date: 11/11/26
 //
 // Summary : Handles Movement between cameras
 *****************************************************************************/
@@ -39,10 +39,12 @@ public class MovementController : MonoBehaviour
     [Tooltip("The % value of the change in transparency of the blackScreen game object. " +
         "Please keep above zero, but below 1. /n  The larger the number, the less smooth the fade in/out")]
     [SerializeField] private float fadePivot;
-    [Tooltip("The Sound to play when moving between cameras")]
-    [SerializeField] private AudioClip camAudioClip;
+    [Tooltip("The Sounds to play when moving between cameras")]
+    [SerializeField] private AudioClip[] camAudioClip;
     [Tooltip("The Main Camera Audio Source")]
     [SerializeField] private AudioSource audioSourceCam;
+
+    private int randNum;
     
 
     private bool locked;
@@ -77,7 +79,8 @@ public class MovementController : MonoBehaviour
                 {
                     if(audioSourceCam != null)
                     {
-                        audioSourceCam.clip = camAudioClip;
+                        randNum = Random.Range(0, camAudioClip.Length - 1);
+                        audioSourceCam.clip = camAudioClip[randNum];
                         audioSourceCam.Play();
                     }
                     StartCoroutine(FadeInOut(i));
