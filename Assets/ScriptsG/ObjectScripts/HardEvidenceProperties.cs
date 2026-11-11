@@ -60,6 +60,7 @@ public class HardEvidenceProperties : MonoBehaviour
         playerInteract.SetInGame(true);
         playerInteract.SetInPrompt(false);
         hardEvidencePanel.SetActive(false);
+        GameObject.FindFirstObjectByType<EndGameHandler>().CollectHardEvidence();
     }
 
     // Update is called once per frame

@@ -202,7 +202,7 @@ public class PlayerInteract : MonoBehaviour
         hoverItem = item;
         if (item.GetComponent<ObjectProperties>().isHardEvidence)
         {
-            GameObject.FindFirstObjectByType<EndGameHandler>().CollectHardEvidence(); 
+            //GameObject.FindFirstObjectByType<EndGameHandler>().CollectHardEvidence(); 
             item.SetActive(false);   
             if(item.GetComponent<HardEvidenceProperties>() != null)
             {
