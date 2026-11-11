@@ -83,7 +83,6 @@ public class ItemNeeded : MonoBehaviour
         }
         if (givesHardEvidence)
         {
-            GameObject.FindFirstObjectByType<EndGameHandler>().CollectHardEvidence();
             this.gameObject.GetComponent<HardEvidenceProperties>().HardEvidenceSequence(this.gameObject);
             hardEvidenceGO.SetActive(false);
         }

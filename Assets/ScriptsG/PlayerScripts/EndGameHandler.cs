@@ -37,7 +37,7 @@ public class EndGameHandler : MonoBehaviour
         evidenceNum.text = "Evidence Collected: " + totalHardEvidence;
         if (totalHardEvidence == 4)
         {
-            EndGame();      
+            EndGame();
         }
     }
     /// <summary>
