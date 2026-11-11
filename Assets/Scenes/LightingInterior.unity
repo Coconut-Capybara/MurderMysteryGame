@@ -280,8 +280,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: A taxidermy deer head.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -291,6 +291,12 @@ MonoBehaviour:
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!1 &4784057
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,8 +642,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: A yellow lock.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -647,6 +653,12 @@ MonoBehaviour:
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &7275885
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1095,11 +1107,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 'He takes the candy and says: "If it helps, the boar head is our oldest
-    prop here, meanwhile the deer head''s the most recent addition.                                             
-    As for those books, I think it''s something about the number of points on em,
-    and that''ll open it up. Hope that helps."'
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: 'A scare actor. He says: "I''d help you figure some stuff out, but I''m
     feeling too hungry to think."'
   itemChangesDesc: 1
@@ -1111,6 +1120,12 @@ MonoBehaviour:
   altSprite1: {fileID: 1731844645, guid: 5169dd8dd35add148b0dc12e5c93375f, type: 3}
   altSprite2: {fileID: 1731844645, guid: 5169dd8dd35add148b0dc12e5c93375f, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &13328871
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1240,8 +1255,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: An orange lock
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -1251,6 +1266,12 @@ MonoBehaviour:
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &22617580
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1727,8 +1748,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: 
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -1738,6 +1759,12 @@ MonoBehaviour:
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite2: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &60486069
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2302,8 +2329,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: 
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -2313,6 +2340,12 @@ MonoBehaviour:
   altSprite1: {fileID: -858309015, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
   altSprite2: {fileID: -858309015, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!212 &103998491
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3016,8 +3049,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: 
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -3027,6 +3060,12 @@ MonoBehaviour:
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &165199594
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4220,8 +4259,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: A purple lock.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -4231,6 +4270,12 @@ MonoBehaviour:
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &318202961
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4490,8 +4535,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: 
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -4501,6 +4546,12 @@ MonoBehaviour:
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite2: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!1 &352988530
 GameObject:
   m_ObjectHideFlags: 0
@@ -4570,8 +4621,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: 
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -4581,6 +4632,12 @@ MonoBehaviour:
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite2: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &352988534
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4862,8 +4919,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: 
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -4873,6 +4930,12 @@ MonoBehaviour:
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite2: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &372375161
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5078,8 +5141,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: 
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -5089,6 +5152,12 @@ MonoBehaviour:
   altSprite1: {fileID: 21300000, guid: ecc8812a06f83ea4bb3e4ed9bc6990d1, type: 3}
   altSprite2: {fileID: 21300000, guid: ecc8812a06f83ea4bb3e4ed9bc6990d1, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &386180751
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5450,8 +5519,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: 'A taxidermy boar head. '
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -5461,6 +5530,12 @@ MonoBehaviour:
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!1 &407114891
 GameObject:
   m_ObjectHideFlags: 0
@@ -5545,8 +5620,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: You spent some money to get the eyeball, and some candy came out too. Lucky!
-  timeText: Spend money to get items from vending machine?
+  resultsText: []
+  timeText: []
   itemDesc: A vending machine. Looking closer, there seems to be eyeball in there!
   itemChangesDesc: 1
   usingItemChangeDesc: 0
@@ -5556,6 +5631,12 @@ MonoBehaviour:
   altSprite1: {fileID: -642730735, guid: 229cbebc584372b47b4fe2d34bb51bcb, type: 3}
   altSprite2: {fileID: 1012826350, guid: 229cbebc584372b47b4fe2d34bb51bcb, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &407114895
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5809,8 +5890,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: It's too dark to see anything. I better find something to light this
     up with.
   itemChangesDesc: 0
@@ -5821,6 +5902,12 @@ MonoBehaviour:
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!1 &435571535
 GameObject:
   m_ObjectHideFlags: 0
@@ -6195,8 +6282,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 05000000
-  prompt: You open it up with some slight difficulty.
-  timeText: Pry open the locker with the crowbar?
+  resultsText: []
+  timeText: []
   itemDesc: This locker's Jammed shut. What could be in here?
   itemChangesDesc: 1
   usingItemChangeDesc: 0
@@ -6206,6 +6293,12 @@ MonoBehaviour:
   altSprite1: {fileID: 1178685855, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
   altSprite2: {fileID: 1178685855, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &454600096
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6455,8 +6548,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: A pair of tongs, good for extending my grip.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -6466,6 +6559,12 @@ MonoBehaviour:
   altSprite1: {fileID: -1292928020, guid: bf862f39441f9804daeaba78d53d7ec7, type: 3}
   altSprite2: {fileID: -1292928020, guid: bf862f39441f9804daeaba78d53d7ec7, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &459105872
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6658,8 +6757,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: Locker with a number 1 Plaque. Doesn't seem notable.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -6669,6 +6768,12 @@ MonoBehaviour:
   altSprite1: {fileID: 903590207, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
   altSprite2: {fileID: -767220886, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &471359401
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6830,8 +6935,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 1e000000
-  prompt: 
-  timeText: Do you want to swap the heads around? This will take 30 minutes.
+  resultsText: []
+  timeText: []
   itemDesc: A taxidermy deer head. Looks heavy.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -6841,6 +6946,12 @@ MonoBehaviour:
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &482700242
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7004,8 +7115,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: 
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -7015,6 +7126,12 @@ MonoBehaviour:
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite2: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &498051703
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7419,8 +7536,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 1e000000
-  prompt: 
-  timeText: Do you want to swap the heads around? This will take 30 minutes.
+  resultsText: []
+  timeText: []
   itemDesc: A taxidermy boar head. Looks heavy.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -7430,6 +7547,12 @@ MonoBehaviour:
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!212 &546262013
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8026,8 +8149,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: Locker with a number 2 plaque.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -8037,6 +8160,12 @@ MonoBehaviour:
   altSprite1: {fileID: -858309015, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
   altSprite2: {fileID: -858309015, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &591403579
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8275,8 +8404,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: A bedside table. Maybe there's something in its drawer?
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -8286,6 +8415,12 @@ MonoBehaviour:
   altSprite1: {fileID: -1356515274, guid: c1d0cbe5ad5b8844389aaea90e99e9da, type: 3}
   altSprite2: {fileID: -1356515274, guid: c1d0cbe5ad5b8844389aaea90e99e9da, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &609073077
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8975,8 +9110,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 1
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: A bloody machete. Looks like the murder weapon.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -8986,6 +9121,12 @@ MonoBehaviour:
   altSprite1: {fileID: 305989326, guid: 464300b8eb0b8934a912419374c3c7be, type: 3}
   altSprite2: {fileID: -2056479922, guid: 464300b8eb0b8934a912419374c3c7be, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &636219077
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9282,8 +9423,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: Bolt cutters. Should be quite useful.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -9293,6 +9434,12 @@ MonoBehaviour:
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!212 &647298174
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9481,8 +9628,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: A bed that scare actors probably hid under to scare people.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -9492,6 +9639,12 @@ MonoBehaviour:
   altSprite1: {fileID: 2136040392, guid: 7a2ac81156ad66f47ba5df556a9ed512, type: 3}
   altSprite2: {fileID: 2136040392, guid: 7a2ac81156ad66f47ba5df556a9ed512, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &663837942
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11210,8 +11363,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: 
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -11221,6 +11374,12 @@ MonoBehaviour:
   altSprite1: {fileID: 1865439687, guid: 0b6ea9ab209f02344987d0f1a9188b54, type: 3}
   altSprite2: {fileID: 1865439687, guid: 0b6ea9ab209f02344987d0f1a9188b54, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!212 &817099632
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11403,8 +11562,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 1
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: A note written by the convicted employee. This should prove they had
     motive to kill.
   itemChangesDesc: 0
@@ -11415,6 +11574,12 @@ MonoBehaviour:
   altSprite1: {fileID: -1559828744, guid: e49d5367ba1c7c544b6d996f92460247, type: 3}
   altSprite2: {fileID: -203610382, guid: e49d5367ba1c7c544b6d996f92460247, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &834823757
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11577,9 +11742,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: You swiftly input the code into the safe, and it pops right open, as you
-    collect the small amount of money inside.
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: A heavy duty safe. I'll have to find a code to open it.
   itemChangesDesc: 1
   usingItemChangeDesc: 0
@@ -11589,6 +11753,12 @@ MonoBehaviour:
   altSprite1: {fileID: -58800814, guid: 86ed18f9fcb81b24b951162528dedc2c, type: 3}
   altSprite2: {fileID: -357668438, guid: 86ed18f9fcb81b24b951162528dedc2c, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &848412376
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12608,8 +12778,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: Reset
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -12619,6 +12789,12 @@ MonoBehaviour:
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!1 &922923885
 GameObject:
   m_ObjectHideFlags: 0
@@ -13079,8 +13255,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: An empty wardrobe. Nothing more than set dressing.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -13090,6 +13266,12 @@ MonoBehaviour:
   altSprite1: {fileID: -588457337, guid: 30a9768d9469d684585feb9da2cd8503, type: 3}
   altSprite2: {fileID: -588457337, guid: 30a9768d9469d684585feb9da2cd8503, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &968813847
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13561,8 +13743,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: 
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -13572,6 +13754,12 @@ MonoBehaviour:
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite2: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &990725323
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13733,8 +13921,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: Locker with a number 4 plaque.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -13744,6 +13932,12 @@ MonoBehaviour:
   altSprite1: {fileID: 1865439687, guid: 0b6ea9ab209f02344987d0f1a9188b54, type: 3}
   altSprite2: {fileID: 1865439687, guid: 0b6ea9ab209f02344987d0f1a9188b54, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &992021881
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14915,8 +15109,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: 
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -14926,6 +15120,12 @@ MonoBehaviour:
   altSprite1: {fileID: -858309015, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
   altSprite2: {fileID: -858309015, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!212 &1096735431
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15657,8 +15857,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: Confirm
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -15668,6 +15868,12 @@ MonoBehaviour:
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!1 &1148155733
 GameObject:
   m_ObjectHideFlags: 0
@@ -16270,8 +16476,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: 
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -16281,6 +16487,12 @@ MonoBehaviour:
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite2: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &1209685340
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16440,8 +16652,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: 
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -16451,6 +16663,12 @@ MonoBehaviour:
   altSprite1: {fileID: 1178685855, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
   altSprite2: {fileID: 1178685855, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!212 &1225685350
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16952,8 +17170,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: You use the tongs to pull out the hair.
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: A broken fireplace cover. I think I see some hair behind it, but I can't
     reach with the sharp glass in the way.
   itemChangesDesc: 1
@@ -16964,6 +17182,12 @@ MonoBehaviour:
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!114 &1265145527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17979,8 +18203,8 @@ MonoBehaviour:
   timeLock: 1
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: The order was correct, and the front compartment opens. Inside is a flashlight.
-  timeText: Rearrange the heavy books?
+  resultsText: []
+  timeText: []
   itemDesc: These books are unnaturally heavy. Maybe they can help me open the bookshelf's
     compartment?
   itemChangesDesc: 0
@@ -17991,6 +18215,12 @@ MonoBehaviour:
   altSprite1: {fileID: 1876734663, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
   altSprite2: {fileID: -672972822, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!114 &1380806735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18497,8 +18727,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 0a000000
-  prompt: 'You open the trapdoor, and find a hammer inside! '
-  timeText: Attempt to cut the chain locking the trapdoor?
+  resultsText: []
+  timeText: []
   itemDesc: A trapdoor. Probably has some useful equipment in there.
   itemChangesDesc: 1
   usingItemChangeDesc: 0
@@ -18508,6 +18738,12 @@ MonoBehaviour:
   altSprite1: {fileID: 1621314773, guid: 9e35a165f3726d04ea2e3f68e9831f7c, type: 3}
   altSprite2: {fileID: 486696367, guid: 9e35a165f3726d04ea2e3f68e9831f7c, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &1415876733
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18914,8 +19150,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: A sticky note with a safe code written on it.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -18925,6 +19161,12 @@ MonoBehaviour:
   altSprite1: {fileID: -68712848, guid: 45c06b1a99b635a4cb5115869314ec74, type: 3}
   altSprite2: {fileID: -68712848, guid: 45c06b1a99b635a4cb5115869314ec74, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &1431303707
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19196,8 +19438,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: A fireplace cover. I should check it closer for potential evidence.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -19207,6 +19449,12 @@ MonoBehaviour:
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!114 &1438780388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19904,8 +20152,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: A ship in a bottle. Looking closer, there's a key inside as well!
   itemChangesDesc: 1
   usingItemChangeDesc: 0
@@ -19915,6 +20163,12 @@ MonoBehaviour:
   altSprite1: {fileID: 1705473089, guid: 3d9a83293923cf446942710c41054009, type: 3}
   altSprite2: {fileID: 1705473089, guid: 3d9a83293923cf446942710c41054009, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &1524038886
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20488,9 +20742,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: After inserting the eye, the mechanical bear starts moving! A key falls
-    out of its mouth and into your hand.
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: A taxidermied bear, or maybe an animatronic. Either way, it's missing
     an eye.
   itemChangesDesc: 1
@@ -20501,6 +20754,12 @@ MonoBehaviour:
   altSprite1: {fileID: 722861064, guid: 876d39aa744209e42be265dbd568256a, type: 3}
   altSprite2: {fileID: -1586789724, guid: 876d39aa744209e42be265dbd568256a, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!212 &1572137157
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20901,8 +21160,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: Too dark to see under here. I should find something to light it up first.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -20912,6 +21171,12 @@ MonoBehaviour:
   altSprite1: {fileID: 400364628, guid: bee21f5108864344ab054f4bca6d70d7, type: 3}
   altSprite2: {fileID: 400364628, guid: bee21f5108864344ab054f4bca6d70d7, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &1614846989
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21182,8 +21447,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 1
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: A tape of that night's security footage. This should prove the employee
     was here.
   itemChangesDesc: 0
@@ -21194,6 +21459,12 @@ MonoBehaviour:
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!212 &1634282936
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21536,8 +21807,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: 
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -21547,6 +21818,12 @@ MonoBehaviour:
   altSprite1: {fileID: 1460204604, guid: b1fee48c1a01cb0469881b768982bb0c, type: 3}
   altSprite2: {fileID: 1460204604, guid: b1fee48c1a01cb0469881b768982bb0c, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &1704227968
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21862,8 +22139,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: 
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -21873,6 +22150,12 @@ MonoBehaviour:
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!114 &1724058898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22224,8 +22507,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: A bookshelf with a locked compartment on the front.
   itemChangesDesc: 1
   usingItemChangeDesc: 0
@@ -22235,6 +22518,12 @@ MonoBehaviour:
   altSprite1: {fileID: 1876734663, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
   altSprite2: {fileID: -672972822, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!114 &1776860378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22758,8 +23047,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: 
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -22769,6 +23058,12 @@ MonoBehaviour:
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite2: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!1 &1802138749
 GameObject:
   m_ObjectHideFlags: 0
@@ -23061,6 +23356,8 @@ MonoBehaviour:
   blackScreen: {fileID: 144618726}
   fadeSpeed: 0.01
   fadePivot: 0.1
+  camAudioClip: {fileID: 0}
+  audioSourceCam: {fileID: 0}
 --- !u!114 &1840529614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23140,6 +23437,8 @@ MonoBehaviour:
   textSpeed: 0.03
   delay: 0.4
   inDelay: 0
+  noteBookSprite: {fileID: 0}
+  dialogueSprite: {fileID: 0}
 --- !u!114 &1840529617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24247,8 +24546,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: A taxidermy wolf head.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -24258,6 +24557,12 @@ MonoBehaviour:
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!1 &1911161787
 GameObject:
   m_ObjectHideFlags: 0
@@ -24528,8 +24833,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: 
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -24539,6 +24844,12 @@ MonoBehaviour:
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite2: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!1 &1935811985
 GameObject:
   m_ObjectHideFlags: 0
@@ -25015,8 +25326,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: A pink book. The diamond on it is a shape with four points.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -25026,6 +25337,12 @@ MonoBehaviour:
   altSprite1: {fileID: -2019829017, guid: d047df0d1a11e6a44b61ef92a8e9deb9, type: 3}
   altSprite2: {fileID: -2019829017, guid: d047df0d1a11e6a44b61ef92a8e9deb9, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &1994962212
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25174,8 +25491,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: 
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -25185,6 +25502,12 @@ MonoBehaviour:
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite2: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &2028140886
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25537,8 +25860,8 @@ MonoBehaviour:
   timeLock: 1
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: A chest. There's a bit of blood leaking out.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -25548,6 +25871,12 @@ MonoBehaviour:
   altSprite1: {fileID: 594882530, guid: 5393563cd7c458b4089c462cba4a1bf3, type: 3}
   altSprite2: {fileID: -2079675049, guid: 5393563cd7c458b4089c462cba4a1bf3, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &2047372872
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25786,8 +26115,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: A wardrobe. What could be inside?
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -25797,6 +26126,12 @@ MonoBehaviour:
   altSprite1: {fileID: 233914371, guid: 8a933977fd786a044af75e018cb259da, type: 3}
   altSprite2: {fileID: 233914371, guid: 8a933977fd786a044af75e018cb259da, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &2058075645
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26083,8 +26418,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: 
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -26094,6 +26429,12 @@ MonoBehaviour:
   altSprite1: {fileID: 903590207, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
   altSprite2: {fileID: -767220886, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!212 &2065791408
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26337,8 +26678,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: A crowbar! This could be useful.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -26348,6 +26689,12 @@ MonoBehaviour:
   altSprite1: {fileID: -990722930, guid: 81e272dfa9da72f44abbe54b3d9b8753, type: 3}
   altSprite2: {fileID: 747922705, guid: 81e272dfa9da72f44abbe54b3d9b8753, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &2069781741
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26595,8 +26942,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 1e000000
-  prompt: 
-  timeText: Do you want to swap the heads around? This will take 30 minutes.
+  resultsText: []
+  timeText: []
   itemDesc: A taxidermy wolf head. Looks heavy.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -26606,6 +26953,12 @@ MonoBehaviour:
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!114 &2080588328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27260,8 +27613,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: 
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -27271,6 +27624,12 @@ MonoBehaviour:
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite2: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!65 &2138330944
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27430,8 +27789,8 @@ MonoBehaviour:
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 
-  prompt: 
-  timeText: 
+  resultsText: []
+  timeText: []
   itemDesc: 
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -27441,6 +27800,12 @@ MonoBehaviour:
   altSprite1: {fileID: -642730735, guid: 229cbebc584372b47b4fe2d34bb51bcb, type: 3}
   altSprite2: {fileID: 1012826350, guid: 229cbebc584372b47b4fe2d34bb51bcb, type: 3}
   usesAltSprites: 0
+  audioSource: {fileID: 0}
+  interactSound: {fileID: 0}
+  itemUseSounds: []
+  hardEvidenceImage: {fileID: 0}
+  hardEvidenceSprite: {fileID: 0}
+  hardEvidenceDesc: 
 --- !u!212 &2139277391
 SpriteRenderer:
   m_ObjectHideFlags: 0
