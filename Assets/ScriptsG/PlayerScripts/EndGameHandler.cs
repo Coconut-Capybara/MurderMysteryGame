@@ -11,6 +11,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class EndGameHandler : MonoBehaviour
 {
@@ -19,6 +20,8 @@ public class EndGameHandler : MonoBehaviour
     [SerializeField] private TMP_Text endText;
     [SerializeField] private string[] endings;
     [SerializeField] private TMP_Text evidenceNum;
+    [SerializeField] private Image[] journalImages;
+    [SerializeField] private GameObject[] journalDescs;
     InputAction instantEnd;
     InputAction restart;
 
@@ -39,6 +42,12 @@ public class EndGameHandler : MonoBehaviour
         {
             EndGame();
         }
+    }
+    public void UpdateJournal(GameObject g)
+    {
+        journalImages[totalHardEvidence].sprite = g.GetComponent<ObjectProperties>().hardEvidenceSprite;
+        journalImages[totalHardEvidence].gameObject.SetActive(true);
+        journalDescs[totalHardEvidence].GetComponent<TMP_Text>().text = g.GetComponent<ObjectProperties>().hardEvidenceDesc;
     }
     /// <summary>
     /// Changes the ending based on number of evidence
