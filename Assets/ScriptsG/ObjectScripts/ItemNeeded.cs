@@ -1,9 +1,9 @@
 /*****************************************************************************
 // Script Name : ItemNeeded
 // Author : Gabriel Andrews
-// Additional Author(s) :
+// Additional Author(s) : Bryson Welch
 // Creation Date:9/10/26
-// Last Modified Date: 9/12/26
+// Last Modified Date: 11/10/26
 //
 // Summary : Put this on objects intended to have inventory items used on
 *****************************************************************************/
