@@ -22,6 +22,7 @@ public class EndGameHandler : MonoBehaviour
     [SerializeField] private TMP_Text evidenceNum;
     [SerializeField] private Image[] journalImages;
     [SerializeField] private GameObject[] journalDescs;
+    [SerializeField] private BGController bgController;
     InputAction instantEnd;
     InputAction restart;
 
@@ -58,6 +59,7 @@ public class EndGameHandler : MonoBehaviour
         GameObject.FindFirstObjectByType<PlayerInteract>().HidePrompt();
         GameObject.FindFirstObjectByType<PlayerInteract>().cursorState = PlayerInteract.CursorState.None;
         endGamePanel.SetActive(true);
+        bgController.ResultsMusic();
         switch (totalHardEvidence)
         {
             case 0: endText.text = endings[0]; break;
