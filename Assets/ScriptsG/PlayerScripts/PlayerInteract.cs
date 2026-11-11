@@ -105,8 +105,11 @@ public class PlayerInteract : MonoBehaviour
             }
             if (interact.WasPressedThisFrame() && cursorState == CursorState.InInventory)
             {
-                currentItem.GetComponent<InventoryItemScript>().SetIsGrabbed();
-                cursorState = CursorState.HoldingItem;
+                if(currentItem != null)
+                {
+                    currentItem.GetComponent<InventoryItemScript>().SetIsGrabbed();
+                    cursorState = CursorState.HoldingItem;
+                }
             }
             if (interact.WasReleasedThisFrame() && cursorState == CursorState.HoldingItem)
             {
@@ -202,7 +205,7 @@ public class PlayerInteract : MonoBehaviour
         hoverItem = item;
         if (item.GetComponent<ObjectProperties>().isHardEvidence)
         {
-            //GameObject.FindFirstObjectByType<EndGameHandler>().CollectHardEvidence(); 
+            item.SetActive(false);      
             item.SetActive(false);   
             if(item.GetComponent<HardEvidenceProperties>() != null)
             {

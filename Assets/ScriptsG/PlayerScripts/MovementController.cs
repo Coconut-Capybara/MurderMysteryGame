@@ -135,7 +135,8 @@ public class MovementController : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {
-                if (hit.collider.gameObject.GetComponent<MovePointData>() != null)
+                if (hit.collider.gameObject.GetComponent<MovePointData>() != null
+                   && GameObject.FindFirstObjectByType<PlayerInteract>().cursorState != PlayerInteract.CursorState.InInventory)
                 {
                     if (hit.collider.gameObject.GetComponent<MovePointData>().isActiveAndEnabled)
                     {
