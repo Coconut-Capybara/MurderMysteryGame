@@ -25939,6 +25939,7 @@ MonoBehaviour:
   resultsBeginningClip: {fileID: 8300000, guid: 965ce311f5e76564f80afc2dbbca14e0, type: 3}
   resultsEndingClip: {fileID: 8300000, guid: 65b1f944bc7dfa6418da20d1af59763b, type: 3}
   resultsEndTime: 43
+  resultsLoopEndTime: 38
 --- !u!1 &1502644009
 GameObject:
   m_ObjectHideFlags: 0
@@ -31522,6 +31523,7 @@ MonoBehaviour:
   - {fileID: 30399444}
   - {fileID: 875778810}
   - {fileID: 2012341782}
+  bgController: {fileID: 1496656109}
 --- !u!114 &1840529621
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -16,6 +16,7 @@ public class BGController : MonoBehaviour
     [SerializeField] private AudioClip resultsBeginningClip;
     [SerializeField] private AudioClip resultsEndingClip;
     [SerializeField] private double resultsEndTime;
+    [SerializeField] private double resultsLoopEndTime;
     public void ResultsMusic()
     {
         bGMusicController.Stop();
@@ -27,6 +28,7 @@ public class BGController : MonoBehaviour
         else if(bGMusicController.clip == resultsBeginningClip)
         {
             bGMusicController.clip = resultsEndingClip;
+            bGMusicController.SetScheduledEndTime(resultsLoopEndTime);
         }
         bGMusicController.Play();
     }
