@@ -33,7 +33,7 @@ public class ObjectProperties : MonoBehaviour
     [Tooltip("Is this object a piece of HARD evidence?")]
     public bool isHardEvidence;
 
-    [Header("Time Related Strings")]
+    [Header("Time Related Variables")]
     [Tooltip("How much time will interacting with this item use up? Setting to 0 means no time prompt will show.")]
     public int[] timeUsage;
     [Tooltip("The prompt for what happened after time was used")]
@@ -51,6 +51,8 @@ public class ObjectProperties : MonoBehaviour
     [Tooltip("The item description that will show up after using an item on this object. " +
         "Is only used if itemChangesDesc is true")]
     public string itemUseChangeDesc;
+    [Tooltip("Whether timeLock can ever occur for this object.")]
+    public bool disableTimeLock;
 
     [Header("Item Sprites")]
     [Tooltip("The item sprite when the game starts and is not being hovered over")]

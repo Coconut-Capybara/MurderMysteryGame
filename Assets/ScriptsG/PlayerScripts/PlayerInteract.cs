@@ -289,11 +289,18 @@ public class PlayerInteract : MonoBehaviour
         if (itemUseLock)
         {
             ItemUsageCheck(hoverItem, lockedItem);
-            hoverItem.GetComponent<ObjectProperties>().timeLock = true;
+            if (!hoverItem.GetComponent<ObjectProperties>().disableTimeLock)
+            {
+                hoverItem.GetComponent<ObjectProperties>().timeLock = true;
+            }
+
         }
         else
         {
-            hoverItem.GetComponent<ObjectProperties>().timeLock = true;
+            if (!hoverItem.GetComponent<ObjectProperties>().disableTimeLock)
+            {
+                hoverItem.GetComponent<ObjectProperties>().timeLock = true;
+            }
             Interact(hoverItem);
             if (hoverItem.GetComponent<RockScript>() != null)
             {
