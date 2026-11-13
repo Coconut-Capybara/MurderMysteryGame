@@ -306,6 +306,12 @@ public class PlayerInteract : MonoBehaviour
             {
                 hoverItem.GetComponent<ObjectProperties>().givesPrompt = false;
             }
+            else if(hoverItem.GetComponent<CopController>() != null)
+            {
+                hoverItem.GetComponent<ObjectProperties>().givesPrompt = true;
+                hoverItem.GetComponent<ObjectProperties>().timeUsage[0] = 10;
+                hoverItem.GetComponent<CopController>().UpdateTimePrompt(hoverItem.GetComponent<ObjectProperties>());
+            }
         }
     }
 
