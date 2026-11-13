@@ -1,9 +1,9 @@
 /*****************************************************************************
 // Script Name : ItemNeeded
 // Author : Gabriel Andrews
-// Additional Author(s) :
+// Additional Author(s) : Bryson Welch
 // Creation Date:9/10/26
-// Last Modified Date: 9/12/26
+// Last Modified Date: 11/12/26
 //
 // Summary : Put this on objects intended to have inventory items used on
 *****************************************************************************/
@@ -15,6 +15,10 @@ public class ItemNeeded : MonoBehaviour
 {
     [Tooltip("The list of items that will work when used on this object")]
     public GameObject[] itemNeeded;
+
+    [Tooltip("The list of items that pull up a time prompt but accomplish nothing")]
+    public GameObject[] timeWasteItems;
+
     [Tooltip("The Script TimeController. Should only be one in the scene")]
     [SerializeField] private TimeController timeController;
 
@@ -51,6 +55,14 @@ public class ItemNeeded : MonoBehaviour
                 itemNeeded[i].GetComponent<InventoryItemScript>().GetItemId())
             {
                 ItemUseFunctionality(currentItem);
+            }
+        }
+        for(int i = 0;i < timeWasteItems.Length; i++)
+        {
+            if(currentItem.GetComponent<InventoryItemScript>().GetItemId() ==
+                timeWasteItems[i].GetComponent<InventoryItemScript>().GetItemId())
+            {
+                WasteTime(currentItem);
             }
         }
     }
@@ -93,6 +105,12 @@ public class ItemNeeded : MonoBehaviour
         }
         GetComponent<ObjectProperties>().canUseOn = false;
     }
+
+    public void WasteTime(GameObject currentItem)
+    {
+
+    }
+
     IEnumerator BufferAdd()
     {
         yield return new WaitForSeconds(0.1f);
