@@ -1256,7 +1256,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: 2ba017a69e152994c9fd66b989c25400, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1297,13 +1297,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 12259090}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.571081, z: -0, w: 0.82089376}
+  m_LocalRotation: {x: -0, y: -0.86886555, z: -0, w: 0.4950482}
   m_LocalPosition: {x: -1.0560398, y: -2.7601805, z: 10.438829}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1947992840}
-  m_LocalEulerAnglesHint: {x: 0, y: 69.651, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -120.654, z: 0}
 --- !u!1 &13328867
 GameObject:
   m_ObjectHideFlags: 0
@@ -5227,13 +5227,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 312354718}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.84738994, z: -0, w: 0.5309711}
+  m_LocalRotation: {x: -0, y: -0.8151161, z: -0, w: 0.57929766}
   m_LocalPosition: {x: -50.863647, y: 1.5985403, z: -16.046741}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1800183104}
-  m_LocalEulerAnglesHint: {x: 0, y: -115.858, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -109.198, z: 0}
 --- !u!114 &312354720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5346,7 +5346,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: 2ba017a69e152994c9fd66b989c25400, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24362,11 +24362,13 @@ MonoBehaviour:
   givesPrompt: 1
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0a000000
+  timeUsage: 050000000a000000
   resultsText:
   - 'You open the trapdoor, and find a hammer inside!  '
+  - after a bit of trying, you smash one of the chain links, opening the trapdoor.
   timeText:
   - Attempt to cut the chain locking the trapdoor?
+  - Try to smash the chain with the hammer?
   itemDesc: A trapdoor. Probably has some useful equipment in there.
   itemChangesDesc: 1
   usingItemChangeDesc: 0
@@ -24475,6 +24477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
   itemNeeded:
   - {fileID: 3043295151955953431, guid: 4d5ff387521a8f04cb7c6499b11c3631, type: 3}
+  - {fileID: 3043295151955953431, guid: 56649c4aca68833439473295a236299a, type: 3}
   timeController: {fileID: 1840529622}
   giveItem: 1
   itemGiven:
@@ -25192,7 +25195,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: 2ba017a69e152994c9fd66b989c25400, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
