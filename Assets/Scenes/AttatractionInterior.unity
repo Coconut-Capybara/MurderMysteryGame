@@ -1256,7 +1256,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: 2ba017a69e152994c9fd66b989c25400, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1297,13 +1297,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 12259090}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.571081, z: -0, w: 0.82089376}
+  m_LocalRotation: {x: -0, y: -0.86886555, z: -0, w: 0.4950482}
   m_LocalPosition: {x: -1.0560398, y: -2.7601805, z: 10.438829}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1947992840}
-  m_LocalEulerAnglesHint: {x: 0, y: 69.651, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -120.654, z: 0}
 --- !u!1 &13328867
 GameObject:
   m_ObjectHideFlags: 0
@@ -3665,11 +3665,13 @@ MonoBehaviour:
   givesPrompt: 1
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 00000000
+  timeUsage: 0000000003000000
   resultsText:
   - I put the eye in it's socket, and a key fell out of it's mouth!
+  - I gave the bear's head a little whack, and a key falls out of the bear's mouth.
   timeText:
   - 
+  - would you like to try and hit the bear's head with the hammer?
   itemDesc: A taxidermied bear, or maybe an animatronic. Either way, it's missing
     an eye.
   itemChangesDesc: 1
@@ -3794,9 +3796,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
   itemNeeded:
   - {fileID: 3043295151955953431, guid: bb8df09d4ffd92849a0ddf1cb9001fae, type: 3}
+  - {fileID: 3043295151955953431, guid: 56649c4aca68833439473295a236299a, type: 3}
   timeController: {fileID: 0}
   giveItem: 1
   itemGiven:
+  - {fileID: 3043295151955953431, guid: 291216ae88a4e3c4e915c0b85f269d7e, type: 3}
   - {fileID: 3043295151955953431, guid: 291216ae88a4e3c4e915c0b85f269d7e, type: 3}
   disableObject: 0
   changeSprite: 1
@@ -5223,13 +5227,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 312354718}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.84738994, z: -0, w: 0.5309711}
+  m_LocalRotation: {x: -0, y: -0.8151161, z: -0, w: 0.57929766}
   m_LocalPosition: {x: -50.863647, y: 1.5985403, z: -16.046741}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1800183104}
-  m_LocalEulerAnglesHint: {x: 0, y: -115.858, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -109.198, z: 0}
 --- !u!114 &312354720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5342,7 +5346,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: 2ba017a69e152994c9fd66b989c25400, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5862,7 +5866,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &346265205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5870,7 +5874,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 346265204}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
   m_Name: 
@@ -17098,7 +17102,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: 2ba017a69e152994c9fd66b989c25400, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24358,11 +24362,13 @@ MonoBehaviour:
   givesPrompt: 1
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0a000000
+  timeUsage: 050000000a000000
   resultsText:
   - 'You open the trapdoor, and find a hammer inside!  '
+  - after a bit of trying, you smash one of the chain links, opening the trapdoor.
   timeText:
   - Attempt to cut the chain locking the trapdoor?
+  - Try to smash the chain with the hammer?
   itemDesc: A trapdoor. Probably has some useful equipment in there.
   itemChangesDesc: 1
   usingItemChangeDesc: 0
@@ -24471,6 +24477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
   itemNeeded:
   - {fileID: 3043295151955953431, guid: 4d5ff387521a8f04cb7c6499b11c3631, type: 3}
+  - {fileID: 3043295151955953431, guid: 56649c4aca68833439473295a236299a, type: 3}
   timeController: {fileID: 1840529622}
   giveItem: 1
   itemGiven:
@@ -25188,7 +25195,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: 2ba017a69e152994c9fd66b989c25400, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -26564,11 +26571,13 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 00000000
+  timeUsage: 0000000003000000
   resultsText:
   - 
+  - you broke open the bottle (sorry little ship) and got the key from inside.
   timeText:
   - 
+  - Would you like to use the crowbar to smash open the bottle?
   itemDesc: A ship in a bottle. Looking closer, there's a key inside as well!
   itemChangesDesc: 1
   usingItemChangeDesc: 0
@@ -26677,6 +26686,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
   itemNeeded:
   - {fileID: 3043295151955953431, guid: 56649c4aca68833439473295a236299a, type: 3}
+  - {fileID: 8200676748390764321, guid: 3af3dce20f2135e47a2d5a284275d89b, type: 3}
   timeController: {fileID: 0}
   giveItem: 1
   itemGiven:
