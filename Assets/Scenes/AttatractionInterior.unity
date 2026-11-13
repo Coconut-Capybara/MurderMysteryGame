@@ -31579,7 +31579,8 @@ MonoBehaviour:
   blackScreen: {fileID: 5506037960477166821}
   fadeSpeed: 0.01
   fadePivot: 0.1
-  camAudioClip: []
+  camAudioClip:
+  - {fileID: 0}
   audioSourceCam: {fileID: 1840529627}
 --- !u!114 &1840529614
 MonoBehaviour:

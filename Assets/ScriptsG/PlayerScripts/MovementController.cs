@@ -77,7 +77,7 @@ public class MovementController : MonoBehaviour
             {
                 if (!locked)
                 {
-                    if(audioSourceCam != null)
+                    if(audioSourceCam != null && camAudioClip[0] != null)
                     {
                         randNum = Random.Range(0, camAudioClip.Length - 1);
                         audioSourceCam.clip = camAudioClip[randNum];
