@@ -33,7 +33,7 @@ public class ObjectProperties : MonoBehaviour
     [Tooltip("Is this object a piece of HARD evidence?")]
     public bool isHardEvidence;
 
-    [Header("Time Related Strings")]
+    [Header("Time Related Variables")]
     [Tooltip("How much time will interacting with this item use up? Setting to 0 means no time prompt will show.")]
     public int[] timeUsage;
     [Tooltip("The prompt for what happened after time was used")]
@@ -51,6 +51,14 @@ public class ObjectProperties : MonoBehaviour
     [Tooltip("The item description that will show up after using an item on this object. " +
         "Is only used if itemChangesDesc is true")]
     public string itemUseChangeDesc;
+
+    [Header("Waste Time Variables")]
+    [Tooltip("How much time will be used for the failed item usage?")]
+    public int[] wasteTimeUsage;
+    [Tooltip("The text describing what happened after using the time wasting items")]
+    public string[] timeWasteResultsText;
+    [Tooltip("Describes what the player will do to pass time (TIME WASTING ONLY)")]
+    public string[] wasteTimeText;
 
     [Header("Item Sprites")]
     [Tooltip("The item sprite when the game starts and is not being hovered over")]
