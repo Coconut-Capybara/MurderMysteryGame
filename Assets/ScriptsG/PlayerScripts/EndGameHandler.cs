@@ -29,6 +29,7 @@ public class EndGameHandler : MonoBehaviour
     [SerializeField] private TMP_Text endTimeText;
     InputAction instantEnd;
     InputAction restart;
+    private int timeRemaining;
 
     private void Start()
     {
@@ -83,8 +84,17 @@ public class EndGameHandler : MonoBehaviour
             i++;
             yield return new WaitForSeconds(textSpeed);
         }
-        endTimeText.text = "Your had " + TimeController.timeLeft.ToString() + " minutes left";
-        endTimeText.gameObject.SetActive(true); 
+        if(TimeController.timeLeft >=0)
+        {
+            endTimeText.text = "You had " + TimeController.timeLeft.ToString() + " minutes left";
+        }
+        else
+        {
+            timeRemaining = (TimeController.timeLeft * -1);
+            endTimeText.text = "You went over by " + timeRemaining.ToString() + " minutes";
+        }
+
+            endTimeText.gameObject.SetActive(true); 
         menuButton.SetActive(true);
     }
     public void ExitToMenu()
