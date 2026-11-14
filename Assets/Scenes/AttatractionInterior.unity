@@ -201,6 +201,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 71809422}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!212 &4600493
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2554,6 +2556,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 0}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!212 &60486071
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3892,6 +3896,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 943296482}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!65 &167227850
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6039,6 +6045,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 943296482}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!212 &348458170
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6261,6 +6269,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 0}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!212 &352988536
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6759,6 +6769,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 895131292}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!212 &372375163
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7489,6 +7501,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 71809422}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!212 &405405116
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8993,6 +9007,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 726848576}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!114 &454600099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9474,6 +9490,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 1855328412}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!1 &482700238
 GameObject:
   m_ObjectHideFlags: 0
@@ -9992,6 +10010,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 895131292}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!212 &498051705
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11350,6 +11370,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 1878879555}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!1 &600393083
 GameObject:
   m_ObjectHideFlags: 0
@@ -11943,6 +11965,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 865564016}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!1 &616685691
 GameObject:
   m_ObjectHideFlags: 0
@@ -13267,6 +13291,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 1420443466}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!114 &663837940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14174,6 +14200,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 943296482}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!65 &707160573
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16038,6 +16066,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HardEvidenceCounter
       objectReference: {fileID: 0}
+    - target: {fileID: 4758135703198619309, guid: 535f80c2b67feef4b9b9710ea8b54aef, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8935720537720842395, guid: 535f80c2b67feef4b9b9710ea8b54aef, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -16469,6 +16501,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 2096508516}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!1 &895131289
 GameObject:
   m_ObjectHideFlags: 0
@@ -17161,6 +17195,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 1180044059}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!1 &976501622
 GameObject:
   m_ObjectHideFlags: 0
@@ -17501,6 +17537,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 694337305}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!212 &990725325
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17740,6 +17778,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 1400059216}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!1 &993270494
 GameObject:
   m_ObjectHideFlags: 0
@@ -17867,6 +17907,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 943296482}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!1 &994985704
 GameObject:
   m_ObjectHideFlags: 0
@@ -19173,6 +19215,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 895131292}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!212 &1102274349
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20772,6 +20816,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 1855328412}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!1 &1190487772
 GameObject:
   m_ObjectHideFlags: 0
@@ -21016,6 +21062,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 895131292}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!212 &1209685342
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21726,6 +21774,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 1855328412}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!212 &1247863248
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21882,6 +21932,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 1855328412}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!65 &1260707744
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22299,6 +22351,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 71809422}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!65 &1265145523
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22920,6 +22974,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 2096508516}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!65 &1312952879
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23385,6 +23441,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 1201749309}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!212 &1364660726
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24762,6 +24820,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 895131292}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!1 &1420443463
 GameObject:
   m_ObjectHideFlags: 0
@@ -25443,6 +25503,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 71809422}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!1001 &1457741021
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25812,6 +25874,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 694337305}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!65 &1471487552
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27067,6 +27131,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 1061884877}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!1 &1558552448
 GameObject:
   m_ObjectHideFlags: 0
@@ -27806,6 +27872,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 346265205}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!1 &1572282139
 GameObject:
   m_ObjectHideFlags: 0
@@ -29560,6 +29628,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 895131292}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!1 &1658863072
 GameObject:
   m_ObjectHideFlags: 0
@@ -31090,6 +31160,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 1287568727}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!65 &1776860380
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31369,6 +31441,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 943296482}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!65 &1800410212
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32898,6 +32972,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 694337305}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!1 &1890619530
 GameObject:
   m_ObjectHideFlags: 0
@@ -33107,6 +33183,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 71809422}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!212 &1897026781
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33618,6 +33696,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 895131292}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!65 &1916497729
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35283,6 +35363,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 694337305}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!212 &2028140888
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35792,6 +35874,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 1062416107}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!114 &2047372875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36075,6 +36159,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 604220535}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!1 &2065618662
 GameObject:
   m_ObjectHideFlags: 0
@@ -38076,6 +38162,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 694337305}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!212 &2138330946
 SpriteRenderer:
   m_ObjectHideFlags: 0
