@@ -288,6 +288,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -914139331, guid: deda486c42380924a8c580a993f18a77, type: 3}
   highlightSprite: {fileID: -42327806, guid: deda486c42380924a8c580a993f18a77, type: 3}
   altSprite1: {fileID: 0}
@@ -525,6 +526,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -385664693, guid: dcf564576884d254c954ec50d0208f0d, type: 3}
   highlightSprite: {fileID: 1344264920, guid: dcf564576884d254c954ec50d0208f0d, type: 3}
   altSprite1: {fileID: 0}
@@ -912,6 +914,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -762071, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   highlightSprite: {fileID: -439509161, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   altSprite1: {fileID: 0}
@@ -1050,6 +1053,7 @@ MonoBehaviour:
   usingItemChangeDesc: 0
   itemUseChangeDesc: 'He says: "Remember, Boar''s the oldest, Deer''s the youngest,
     and arrange those books by points."'
+  disableTimeLock: 0
   itemSprite: {fileID: -1017153484, guid: 5169dd8dd35add148b0dc12e5c93375f, type: 3}
   highlightSprite: {fileID: 1731844645, guid: 5169dd8dd35add148b0dc12e5c93375f, type: 3}
   altSprite1: {fileID: 1731844645, guid: 5169dd8dd35add148b0dc12e5c93375f, type: 3}
@@ -1198,6 +1202,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 1005807320, guid: dcf564576884d254c954ec50d0208f0d, type: 3}
   highlightSprite: {fileID: 831736981, guid: dcf564576884d254c954ec50d0208f0d, type: 3}
   altSprite1: {fileID: 0}
@@ -1924,6 +1929,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -2253,6 +2259,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 137076939, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
   highlightSprite: {fileID: -39248358, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
   altSprite1: {fileID: -858309015, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
@@ -2736,6 +2743,7 @@ MonoBehaviour:
   itemChangesDesc: 1
   usingItemChangeDesc: 0
   itemUseChangeDesc: Seems it was mechanical. At least it got its eye back.
+  disableTimeLock: 0
   itemSprite: {fileID: 1878708872, guid: a4da952ec58fb684aba83ae20d8af2a9, type: 3}
   highlightSprite: {fileID: -532631217, guid: a4da952ec58fb684aba83ae20d8af2a9, type: 3}
   altSprite1: {fileID: -2143115785, guid: a4da952ec58fb684aba83ae20d8af2a9, type: 3}
@@ -3277,6 +3285,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 846675029, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   highlightSprite: {fileID: -588131242, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   altSprite1: {fileID: 0}
@@ -3858,6 +3867,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -1271207336, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   highlightSprite: {fileID: -2062080122, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   altSprite1: {fileID: 0}
@@ -4101,6 +4111,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
   itemNeeded:
   - {fileID: 3043295151955953431, guid: 291216ae88a4e3c4e915c0b85f269d7e, type: 3}
+  - {fileID: 3043295151955953431, guid: 4d5ff387521a8f04cb7c6499b11c3631, type: 3}
+  - {fileID: 3043295151955953431, guid: 81180f53294f8544e9131da3642a253d, type: 3}
   timeController: {fileID: 0}
   giveItem: 0
   itemGiven: []
@@ -4133,15 +4145,21 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 00000000
+  timeUsage: 000000000a00000014000000
   resultsText:
   - 
+  - You used the blotcutters to cut the lock. It was not as easy as it seemed...
+  - 'You used the coathanger to lockpick the lock. The coathanger seems to be unusable
+    now... '
   timeText:
   - 
+  - 10
+  - 20
   itemDesc: A purple lock.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -2125995572, guid: dcf564576884d254c954ec50d0208f0d, type: 3}
   highlightSprite: {fileID: 137279573, guid: dcf564576884d254c954ec50d0208f0d, type: 3}
   altSprite1: {fileID: 0}
@@ -4494,6 +4512,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -4582,6 +4601,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -4780,6 +4800,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 1951788034, guid: bf36c3fa183e5a14fb2999b3f3df33a5, type: 3}
   highlightSprite: {fileID: 740306675, guid: bf36c3fa183e5a14fb2999b3f3df33a5, type: 3}
   altSprite1: {fileID: 0}
@@ -5046,6 +5067,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -5270,6 +5292,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 21300000, guid: ecc8812a06f83ea4bb3e4ed9bc6990d1, type: 3}
   highlightSprite: {fileID: 21300000, guid: ecc8812a06f83ea4bb3e4ed9bc6990d1, type: 3}
   altSprite1: {fileID: 21300000, guid: ecc8812a06f83ea4bb3e4ed9bc6990d1, type: 3}
@@ -5650,6 +5673,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 1185396618, guid: 7ff058e716abaea47bd9f0b0eafc9a47, type: 3}
   highlightSprite: {fileID: -2076579371, guid: 7ff058e716abaea47bd9f0b0eafc9a47, type: 3}
   altSprite1: {fileID: 0}
@@ -5753,6 +5777,7 @@ MonoBehaviour:
   itemChangesDesc: 1
   usingItemChangeDesc: 0
   itemUseChangeDesc: Got everything I needed out of here.
+  disableTimeLock: 0
   itemSprite: {fileID: 2068948189, guid: 58cebbb44e74bbf4d93384f7c627b05c, type: 3}
   highlightSprite: {fileID: -1634964913, guid: 58cebbb44e74bbf4d93384f7c627b05c, type: 3}
   altSprite1: {fileID: -642730735, guid: 229cbebc584372b47b4fe2d34bb51bcb, type: 3}
@@ -5975,6 +6000,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 21300000, guid: 401339f75295eb6489c2c4020785fef1, type: 3}
   highlightSprite: {fileID: 21300000, guid: 3a7c8ed027ec3eb47b44f3c6ebf9c2ac, type: 3}
   altSprite1: {fileID: 0}
@@ -6092,6 +6118,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -1311791234, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   highlightSprite: {fileID: -1409852953, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   altSprite1: {fileID: 0}
@@ -6358,6 +6385,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 0}
   highlightSprite: {fileID: 0}
   altSprite1: {fileID: 0}
@@ -6751,6 +6779,7 @@ MonoBehaviour:
   itemChangesDesc: 1
   usingItemChangeDesc: 0
   itemUseChangeDesc: Managed to pry it open.
+  disableTimeLock: 0
   itemSprite: {fileID: 2058338222, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
   highlightSprite: {fileID: -132606945, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
   altSprite1: {fileID: 1178685855, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
@@ -7019,6 +7048,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -1292928020, guid: bf862f39441f9804daeaba78d53d7ec7, type: 3}
   highlightSprite: {fileID: -867584579, guid: bf862f39441f9804daeaba78d53d7ec7, type: 3}
   altSprite1: {fileID: -1292928020, guid: bf862f39441f9804daeaba78d53d7ec7, type: 3}
@@ -7230,6 +7260,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 812125516, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
   highlightSprite: {fileID: -767220886, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
   altSprite1: {fileID: 903590207, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
@@ -7410,6 +7441,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -914139331, guid: deda486c42380924a8c580a993f18a77, type: 3}
   highlightSprite: {fileID: -42327806, guid: deda486c42380924a8c580a993f18a77, type: 3}
   altSprite1: {fileID: 0}
@@ -7592,6 +7624,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -8015,6 +8048,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 1185396618, guid: 7ff058e716abaea47bd9f0b0eafc9a47, type: 3}
   highlightSprite: {fileID: -2076579371, guid: 7ff058e716abaea47bd9f0b0eafc9a47, type: 3}
   altSprite1: {fileID: 0}
@@ -8487,6 +8521,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -160084016, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   highlightSprite: {fileID: 656901053, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   altSprite1: {fileID: 0}
@@ -8762,6 +8797,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 137076939, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
   highlightSprite: {fileID: -39248358, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
   altSprite1: {fileID: -858309015, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
@@ -9019,6 +9055,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -1356515274, guid: c1d0cbe5ad5b8844389aaea90e99e9da, type: 3}
   highlightSprite: {fileID: 347611310, guid: c1d0cbe5ad5b8844389aaea90e99e9da, type: 3}
   altSprite1: {fileID: -1356515274, guid: c1d0cbe5ad5b8844389aaea90e99e9da, type: 3}
@@ -9741,6 +9778,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 305989326, guid: 464300b8eb0b8934a912419374c3c7be, type: 3}
   highlightSprite: {fileID: -2056479922, guid: 464300b8eb0b8934a912419374c3c7be, type: 3}
   altSprite1: {fileID: 305989326, guid: 464300b8eb0b8934a912419374c3c7be, type: 3}
@@ -9929,6 +9967,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 385842418, guid: 368ddacc825efe04aa383547fdf3d77c, type: 3}
   highlightSprite: {fileID: 1656289242, guid: 368ddacc825efe04aa383547fdf3d77c, type: 3}
   altSprite1: {fileID: 0}
@@ -10136,6 +10175,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 2136040392, guid: 7a2ac81156ad66f47ba5df556a9ed512, type: 3}
   highlightSprite: {fileID: 480893558, guid: 7a2ac81156ad66f47ba5df556a9ed512, type: 3}
   altSprite1: {fileID: 2136040392, guid: 7a2ac81156ad66f47ba5df556a9ed512, type: 3}
@@ -10847,6 +10887,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -11257,6 +11298,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -244954682, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   highlightSprite: {fileID: 1216510475, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   altSprite1: {fileID: 0}
@@ -11704,6 +11746,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -320910802, guid: 0b6ea9ab209f02344987d0f1a9188b54, type: 3}
   highlightSprite: {fileID: 480881303, guid: 0b6ea9ab209f02344987d0f1a9188b54, type: 3}
   altSprite1: {fileID: 1865439687, guid: 0b6ea9ab209f02344987d0f1a9188b54, type: 3}
@@ -11901,6 +11944,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 486002506, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   highlightSprite: {fileID: -1093250227, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   altSprite1: {fileID: 0}
@@ -12076,6 +12120,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -1406624849, guid: e49d5367ba1c7c544b6d996f92460247, type: 3}
   highlightSprite: {fileID: 1808973964, guid: e49d5367ba1c7c544b6d996f92460247, type: 3}
   altSprite1: {fileID: -1559828744, guid: e49d5367ba1c7c544b6d996f92460247, type: 3}
@@ -12855,6 +12900,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 0}
   highlightSprite: {fileID: 0}
   altSprite1: {fileID: 0}
@@ -13167,6 +13213,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 1081615174, guid: 30a9768d9469d684585feb9da2cd8503, type: 3}
   highlightSprite: {fileID: -588457337, guid: 30a9768d9469d684585feb9da2cd8503, type: 3}
   altSprite1: {fileID: -588457337, guid: 30a9768d9469d684585feb9da2cd8503, type: 3}
@@ -13289,6 +13336,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -13469,6 +13517,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -320910802, guid: 0b6ea9ab209f02344987d0f1a9188b54, type: 3}
   highlightSprite: {fileID: 480881303, guid: 0b6ea9ab209f02344987d0f1a9188b54, type: 3}
   altSprite1: {fileID: 1865439687, guid: 0b6ea9ab209f02344987d0f1a9188b54, type: 3}
@@ -14416,6 +14465,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 1462456764, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   highlightSprite: {fileID: -1342935918, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   altSprite1: {fileID: 0}
@@ -14755,6 +14805,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 137076939, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
   highlightSprite: {fileID: -39248358, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
   altSprite1: {fileID: -858309015, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
@@ -15542,6 +15593,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 0}
   highlightSprite: {fileID: 0}
   altSprite1: {fileID: 0}
@@ -16336,6 +16388,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -16514,6 +16567,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 2058338222, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
   highlightSprite: {fileID: -132606945, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
   altSprite1: {fileID: 1178685855, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
@@ -16749,6 +16803,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -17107,6 +17162,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 1285296298, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   highlightSprite: {fileID: 2055946395, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   altSprite1: {fileID: 0}
@@ -17348,6 +17404,7 @@ MonoBehaviour:
   itemChangesDesc: 1
   usingItemChangeDesc: 0
   itemUseChangeDesc: Doesn't seem like there's anything else here.
+  disableTimeLock: 0
   itemSprite: {fileID: 738562567, guid: afd3ef6625474b4429c6d0f6df8c0713, type: 3}
   highlightSprite: {fileID: 1837095482, guid: afd3ef6625474b4429c6d0f6df8c0713, type: 3}
   altSprite1: {fileID: 0}
@@ -17796,6 +17853,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -18049,6 +18107,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -1351656195, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   highlightSprite: {fileID: 679927630, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   altSprite1: {fileID: 0}
@@ -18152,6 +18211,7 @@ MonoBehaviour:
   itemChangesDesc: 1
   usingItemChangeDesc: 0
   itemUseChangeDesc: Got the money, nothing left here.
+  disableTimeLock: 0
   itemSprite: {fileID: 1614871090, guid: 86ed18f9fcb81b24b951162528dedc2c, type: 3}
   highlightSprite: {fileID: 947192633, guid: 86ed18f9fcb81b24b951162528dedc2c, type: 3}
   altSprite1: {fileID: -58800814, guid: 86ed18f9fcb81b24b951162528dedc2c, type: 3}
@@ -18544,6 +18604,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -898135415, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
   highlightSprite: {fileID: -1767711905, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
   altSprite1: {fileID: 1876734663, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
@@ -19069,6 +19130,7 @@ MonoBehaviour:
   itemChangesDesc: 1
   usingItemChangeDesc: 0
   itemUseChangeDesc: Nothing left in here it seems.
+  disableTimeLock: 0
   itemSprite: {fileID: -1728464144, guid: 9e35a165f3726d04ea2e3f68e9831f7c, type: 3}
   highlightSprite: {fileID: 1586207677, guid: 9e35a165f3726d04ea2e3f68e9831f7c, type: 3}
   altSprite1: {fileID: 1621314773, guid: 9e35a165f3726d04ea2e3f68e9831f7c, type: 3}
@@ -19494,6 +19556,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -68712848, guid: 45c06b1a99b635a4cb5115869314ec74, type: 3}
   highlightSprite: {fileID: -940497689, guid: 45c06b1a99b635a4cb5115869314ec74, type: 3}
   altSprite1: {fileID: -68712848, guid: 45c06b1a99b635a4cb5115869314ec74, type: 3}
@@ -19723,6 +19786,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -1565844214, guid: 90d358cf6d373154d842d8a342d4e0f1, type: 3}
   highlightSprite: {fileID: -1565844214, guid: 90d358cf6d373154d842d8a342d4e0f1, type: 3}
   altSprite1: {fileID: 1253732185, guid: 90d358cf6d373154d842d8a342d4e0f1, type: 3}
@@ -19967,6 +20031,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 738562567, guid: afd3ef6625474b4429c6d0f6df8c0713, type: 3}
   highlightSprite: {fileID: 1837095482, guid: afd3ef6625474b4429c6d0f6df8c0713, type: 3}
   altSprite1: {fileID: 0}
@@ -20627,6 +20692,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -721505749, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   highlightSprite: {fileID: 1807858139, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   altSprite1: {fileID: 0}
@@ -20910,6 +20976,7 @@ MonoBehaviour:
   itemChangesDesc: 1
   usingItemChangeDesc: 0
   itemUseChangeDesc: Poor ship, but I needed that key.
+  disableTimeLock: 0
   itemSprite: {fileID: -1113923762, guid: 3d9a83293923cf446942710c41054009, type: 3}
   highlightSprite: {fileID: -274231322, guid: 3d9a83293923cf446942710c41054009, type: 3}
   altSprite1: {fileID: 1705473089, guid: 3d9a83293923cf446942710c41054009, type: 3}
@@ -21329,6 +21396,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -894592820, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   highlightSprite: {fileID: -3120072, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   altSprite1: {fileID: 0}
@@ -21484,6 +21552,7 @@ MonoBehaviour:
   itemChangesDesc: 1
   usingItemChangeDesc: 0
   itemUseChangeDesc: Seems it was mechanical. At least it got its eye back.
+  disableTimeLock: 0
   itemSprite: {fileID: -1508906487, guid: 876d39aa744209e42be265dbd568256a, type: 3}
   highlightSprite: {fileID: -1384430537, guid: 876d39aa744209e42be265dbd568256a, type: 3}
   altSprite1: {fileID: 722861064, guid: 876d39aa744209e42be265dbd568256a, type: 3}
@@ -21697,6 +21766,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -1610900424, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   highlightSprite: {fileID: 1843694185, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   altSprite1: {fileID: 0}
@@ -22058,6 +22128,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 1627832334, guid: bee21f5108864344ab054f4bca6d70d7, type: 3}
   highlightSprite: {fileID: -992871721, guid: bee21f5108864344ab054f4bca6d70d7, type: 3}
   altSprite1: {fileID: 400364628, guid: bee21f5108864344ab054f4bca6d70d7, type: 3}
@@ -22206,6 +22277,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 2003799895, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   highlightSprite: {fileID: -1331406931, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   altSprite1: {fileID: 0}
@@ -22389,6 +22461,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -1268794702, guid: 11eb2511b642ed2409520d122e9e3751, type: 3}
   highlightSprite: {fileID: -1283442153, guid: 11eb2511b642ed2409520d122e9e3751, type: 3}
   altSprite1: {fileID: 0}
@@ -22505,6 +22578,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 21300000, guid: 77bde5ff8f9e5d2488056400b8a0800e, type: 3}
   highlightSprite: {fileID: 21300000, guid: ccea0c3d4ae2ffb4aa6fce75c5ea151a, type: 3}
   altSprite1: {fileID: 0}
@@ -22669,6 +22743,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 1178774008, guid: 0906338abf85ac249b174cac5e59a860, type: 3}
   highlightSprite: {fileID: -1204791525, guid: 0906338abf85ac249b174cac5e59a860, type: 3}
   altSprite1: {fileID: 0}
@@ -23079,6 +23154,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 1460204604, guid: b1fee48c1a01cb0469881b768982bb0c, type: 3}
   highlightSprite: {fileID: -704310105, guid: b1fee48c1a01cb0469881b768982bb0c, type: 3}
   altSprite1: {fileID: 1460204604, guid: b1fee48c1a01cb0469881b768982bb0c, type: 3}
@@ -23377,6 +23453,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 1310447629, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   highlightSprite: {fileID: 1804057728, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   altSprite1: {fileID: 0}
@@ -23466,6 +23543,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 0}
   highlightSprite: {fileID: 0}
   altSprite1: {fileID: 0}
@@ -23794,6 +23872,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 60252829, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   highlightSprite: {fileID: 348166327, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   altSprite1: {fileID: 0}
@@ -23889,6 +23968,7 @@ MonoBehaviour:
   itemChangesDesc: 1
   usingItemChangeDesc: 0
   itemUseChangeDesc: Looks like I got everything I needed from here.
+  disableTimeLock: 0
   itemSprite: {fileID: -898135415, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
   highlightSprite: {fileID: -1767711905, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
   altSprite1: {fileID: 1876734663, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
@@ -24303,6 +24383,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -24612,7 +24693,8 @@ MonoBehaviour:
   blackScreen: {fileID: 5506037960477166821}
   fadeSpeed: 0.01
   fadePivot: 0.1
-  camAudioClip: {fileID: 0}
+  camAudioClip:
+  - {fileID: 0}
   audioSourceCam: {fileID: 0}
 --- !u!114 &1840529614
 MonoBehaviour:
@@ -24721,6 +24803,9 @@ MonoBehaviour:
   - {fileID: 1722176614}
   - {fileID: 9990059}
   - {fileID: 1044329335}
+  shelfOrdered: []
+  shelfOrderedFar: []
+  spriteList: []
   puzzlePanel: {fileID: 1408905522}
   bookShelfClose: {fileID: 1380806732}
   bookShelf: {fileID: 1776860374}
@@ -24781,6 +24866,12 @@ MonoBehaviour:
   - You found all the pieces you needed, and was able to get the murderous ex employee
     a life sentence.
   evidenceNum: {fileID: 866243891}
+  journalImages: []
+  journalDescs: []
+  bgController: {fileID: 0}
+  textSpeed: 0
+  menuButton: {fileID: 0}
+  endTimeText: {fileID: 0}
 --- !u!114 &1840529621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25051,6 +25142,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 21300000, guid: bba00730324561a46a68b6ee34851444, type: 3}
   highlightSprite: {fileID: 21300000, guid: 68c89fb1a03914c478c7609edbe57cce, type: 3}
   altSprite1: {fileID: 0}
@@ -25873,6 +25965,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -453902948, guid: 913db77244f8f2f4d9b94251572ca65e, type: 3}
   highlightSprite: {fileID: -179293386, guid: 913db77244f8f2f4d9b94251572ca65e, type: 3}
   altSprite1: {fileID: 0}
@@ -26352,6 +26445,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -26569,6 +26663,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -2027564843, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   highlightSprite: {fileID: 923661206, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   altSprite1: {fileID: 0}
@@ -26830,6 +26925,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -1421631221, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   highlightSprite: {fileID: -1113135716, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   altSprite1: {fileID: 0}
@@ -27159,6 +27255,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -2019829017, guid: d047df0d1a11e6a44b61ef92a8e9deb9, type: 3}
   highlightSprite: {fileID: 2069189252, guid: d047df0d1a11e6a44b61ef92a8e9deb9, type: 3}
   altSprite1: {fileID: -2019829017, guid: d047df0d1a11e6a44b61ef92a8e9deb9, type: 3}
@@ -27326,6 +27423,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -27698,6 +27796,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -1577232116, guid: 5393563cd7c458b4089c462cba4a1bf3, type: 3}
   highlightSprite: {fileID: -1031243056, guid: 5393563cd7c458b4089c462cba4a1bf3, type: 3}
   altSprite1: {fileID: 594882530, guid: 5393563cd7c458b4089c462cba4a1bf3, type: 3}
@@ -27968,6 +28067,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 233914371, guid: 8a933977fd786a044af75e018cb259da, type: 3}
   highlightSprite: {fileID: 1569536268, guid: 8a933977fd786a044af75e018cb259da, type: 3}
   altSprite1: {fileID: 233914371, guid: 8a933977fd786a044af75e018cb259da, type: 3}
@@ -28146,6 +28246,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 812125516, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
   highlightSprite: {fileID: -1006257401, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
   altSprite1: {fileID: 903590207, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
@@ -28408,6 +28509,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 1641619501, guid: 81e272dfa9da72f44abbe54b3d9b8753, type: 3}
   highlightSprite: {fileID: -1965538520, guid: 81e272dfa9da72f44abbe54b3d9b8753, type: 3}
   altSprite1: {fileID: -990722930, guid: 81e272dfa9da72f44abbe54b3d9b8753, type: 3}
@@ -28674,6 +28776,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -453902948, guid: 913db77244f8f2f4d9b94251572ca65e, type: 3}
   highlightSprite: {fileID: -179293386, guid: 913db77244f8f2f4d9b94251572ca65e, type: 3}
   altSprite1: {fileID: 0}
@@ -29245,6 +29348,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -29423,6 +29527,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 2068948189, guid: 58cebbb44e74bbf4d93384f7c627b05c, type: 3}
   highlightSprite: {fileID: -1634964913, guid: 58cebbb44e74bbf4d93384f7c627b05c, type: 3}
   altSprite1: {fileID: -642730735, guid: 229cbebc584372b47b4fe2d34bb51bcb, type: 3}
