@@ -34,7 +34,7 @@ public class EndGameHandler : MonoBehaviour
     {
         instantEnd = InputSystem.actions.FindAction("InstantEnd");
         restart = InputSystem.actions.FindAction("Restart");
-        evidenceNum.text = "Evidence Collected: " + totalHardEvidence;
+        //evidenceNum.text = "Evidence Collected: " + totalHardEvidence;
     }
     /// <summary>
     /// Adds to your total hard evidence
@@ -42,7 +42,7 @@ public class EndGameHandler : MonoBehaviour
     public void CollectHardEvidence()
     {
         totalHardEvidence += 1;
-        evidenceNum.text = "Evidence Collected: " + totalHardEvidence;
+        //evidenceNum.text = "Evidence Collected: " + totalHardEvidence;
         if (totalHardEvidence == 4)
         {
             EndGame();
