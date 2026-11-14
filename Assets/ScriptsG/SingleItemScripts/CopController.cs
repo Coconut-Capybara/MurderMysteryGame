@@ -17,7 +17,7 @@ public class CopController : MonoBehaviour
     public void UpdateTimePrompt(ObjectProperties objectProperties)
     {
         objectProperties.resultsText[0] = dialogue[dialogueIndex];
-        if(dialogueIndex < dialogue.Length)
+        if(dialogueIndex < dialogue.Length - 1)
         {
             dialogueIndex++;
         }
