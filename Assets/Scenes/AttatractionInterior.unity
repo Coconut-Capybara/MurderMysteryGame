@@ -288,6 +288,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -914139331, guid: deda486c42380924a8c580a993f18a77, type: 3}
   highlightSprite: {fileID: -42327806, guid: deda486c42380924a8c580a993f18a77, type: 3}
   altSprite1: {fileID: 0}
@@ -484,6 +485,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
   itemNeeded:
   - {fileID: 3043295151955953431, guid: 9c0edbb9634a3fe4cb4064e1c72e52a2, type: 3}
+  - {fileID: 3043295151955953431, guid: 4d5ff387521a8f04cb7c6499b11c3631, type: 3}
+  - {fileID: 3043295151955953431, guid: 81180f53294f8544e9131da3642a253d, type: 3}
+  nullItems:
+  - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
   timeController: {fileID: 0}
   giveItem: 0
   itemGiven: []
@@ -516,15 +521,20 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 00000000
+  timeUsage: 000000000a00000014000000
   resultsText:
   - 
+  - You were able to cut open the lock successfully. It was tougher than expected...
+  - You were able to lockpick this lock. The hanger seems unusable now...
   timeText:
   - 
+  - Do you want to use the coathanger to lockpick this lock?
+  - Do you want to use the coathanger to lockpick this lock?
   itemDesc: A yellow lock.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -385664693, guid: dcf564576884d254c954ec50d0208f0d, type: 3}
   highlightSprite: {fileID: 1344264920, guid: dcf564576884d254c954ec50d0208f0d, type: 3}
   altSprite1: {fileID: 0}
@@ -912,6 +922,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -762071, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   highlightSprite: {fileID: -439509161, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   altSprite1: {fileID: 0}
@@ -1055,6 +1066,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 21300000, guid: 79f92d9f451323f44a192c22e5b651e5, type: 3}
   highlightSprite: {fileID: 21300000, guid: 0a21a3be9d315d140bb29d731bb979aa, type: 3}
   altSprite1: {fileID: 0}
@@ -1199,6 +1211,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 1083886874, guid: 4b1151a7a2252bc40ac186fab6858c14, type: 3}
   highlightSprite: {fileID: -37387322, guid: 4b1151a7a2252bc40ac186fab6858c14, type: 3}
   altSprite1: {fileID: 1083886874, guid: 4b1151a7a2252bc40ac186fab6858c14, type: 3}
@@ -1435,6 +1448,7 @@ MonoBehaviour:
   usingItemChangeDesc: 0
   itemUseChangeDesc: 'He says: "Remember, Boar''s the oldest, Deer''s the youngest,
     and arrange those books by points."'
+  disableTimeLock: 0
   itemSprite: {fileID: -1017153484, guid: 5169dd8dd35add148b0dc12e5c93375f, type: 3}
   highlightSprite: {fileID: 1731844645, guid: 5169dd8dd35add148b0dc12e5c93375f, type: 3}
   altSprite1: {fileID: 1731844645, guid: 5169dd8dd35add148b0dc12e5c93375f, type: 3}
@@ -1481,6 +1495,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
   itemNeeded:
   - {fileID: 3043295151955953431, guid: f16e4ddc93267654cbc4ed06ae04f872, type: 3}
+  - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
+  nullItems:
   - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
   timeController: {fileID: 0}
   giveItem: 0
@@ -1543,6 +1559,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
   itemNeeded:
   - {fileID: 3043295151955953431, guid: b9a46eafaa7df8b45872a11ffd3eeee6, type: 3}
+  - {fileID: 3043295151955953431, guid: 4d5ff387521a8f04cb7c6499b11c3631, type: 3}
+  - {fileID: 3043295151955953431, guid: 81180f53294f8544e9131da3642a253d, type: 3}
+  nullItems:
+  - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
   timeController: {fileID: 0}
   giveItem: 0
   itemGiven: []
@@ -1575,15 +1595,20 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 00000000
+  timeUsage: 000000000a00000014000000
   resultsText:
   - 
+  - You were able to cut open the lock successfully. It was tougher than expected...
+  - You were able to lockpick this lock. The hanger seems unusable now...
   timeText:
   - 
+  - Do you want to use the coathanger to lockpick this lock?
+  - Do you want to use the coathanger to lockpick this lock?
   itemDesc: An orange lock
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 1005807320, guid: dcf564576884d254c954ec50d0208f0d, type: 3}
   highlightSprite: {fileID: 831736981, guid: dcf564576884d254c954ec50d0208f0d, type: 3}
   altSprite1: {fileID: 0}
@@ -2483,6 +2508,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -2812,6 +2838,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 137076939, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
   highlightSprite: {fileID: -39248358, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
   altSprite1: {fileID: -858309015, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
@@ -3665,18 +3692,21 @@ MonoBehaviour:
   givesPrompt: 1
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0000000003000000
+  timeUsage: 000000000300000005000000
   resultsText:
   - I put the eye in it's socket, and a key fell out of it's mouth!
   - I gave the bear's head a little whack, and a key falls out of the bear's mouth.
+  - You did some sick tricks with the butterfly knife. Great use of time champ...
   timeText:
   - 
-  - would you like to try and hit the bear's head with the hammer?
+  - Would you like to try and hit the bear's head with the hammer?
+  - Would you like to use the butterfly kinfe?
   itemDesc: A taxidermied bear, or maybe an animatronic. Either way, it's missing
     an eye.
   itemChangesDesc: 1
   usingItemChangeDesc: 0
   itemUseChangeDesc: Seems it was mechanical. At least it got its eye back.
+  disableTimeLock: 0
   itemSprite: {fileID: 1878708872, guid: a4da952ec58fb684aba83ae20d8af2a9, type: 3}
   highlightSprite: {fileID: -532631217, guid: a4da952ec58fb684aba83ae20d8af2a9, type: 3}
   altSprite1: {fileID: -2143115785, guid: a4da952ec58fb684aba83ae20d8af2a9, type: 3}
@@ -3797,6 +3827,9 @@ MonoBehaviour:
   itemNeeded:
   - {fileID: 3043295151955953431, guid: bb8df09d4ffd92849a0ddf1cb9001fae, type: 3}
   - {fileID: 3043295151955953431, guid: 56649c4aca68833439473295a236299a, type: 3}
+  - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
+  nullItems:
+  - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
   timeController: {fileID: 0}
   giveItem: 1
   itemGiven:
@@ -4347,6 +4380,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 846675029, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   highlightSprite: {fileID: -588131242, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   altSprite1: {fileID: 0}
@@ -5004,6 +5038,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -1271207336, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   highlightSprite: {fileID: -2062080122, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   altSprite1: {fileID: 0}
@@ -5289,6 +5324,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 1846928265, guid: 471cc604b68dc50438127689d9b4b53e, type: 3}
   highlightSprite: {fileID: -1748355503, guid: 471cc604b68dc50438127689d9b4b53e, type: 3}
   altSprite1: {fileID: 1846928265, guid: 471cc604b68dc50438127689d9b4b53e, type: 3}
@@ -5428,6 +5464,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
   itemNeeded:
   - {fileID: 3043295151955953431, guid: 291216ae88a4e3c4e915c0b85f269d7e, type: 3}
+  - {fileID: 3043295151955953431, guid: 4d5ff387521a8f04cb7c6499b11c3631, type: 3}
+  - {fileID: 3043295151955953431, guid: 81180f53294f8544e9131da3642a253d, type: 3}
+  nullItems:
+  - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
   timeController: {fileID: 0}
   giveItem: 0
   itemGiven: []
@@ -5460,15 +5500,20 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 00000000
+  timeUsage: 000000000a00000014000000
   resultsText:
   - 
+  - You were able to cut open the lock successfully. It was tougher than expected...
+  - You were able to lockpick this lock. The hanger seems unusable now...
   timeText:
   - 
+  - Do you want to use the boltcutters on this lock?
+  - Do you want to use the coathanger to lockpick this lock?
   itemDesc: A purple lock.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -2125995572, guid: dcf564576884d254c954ec50d0208f0d, type: 3}
   highlightSprite: {fileID: 137279573, guid: dcf564576884d254c954ec50d0208f0d, type: 3}
   altSprite1: {fileID: 0}
@@ -6081,6 +6126,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -6169,6 +6215,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -6285,6 +6332,7 @@ GameObject:
   - component: {fileID: 361883836}
   - component: {fileID: 361883835}
   - component: {fileID: 361883834}
+  - component: {fileID: 361883838}
   m_Layer: 0
   m_Name: Hydrated Husk_0
   m_TagString: Untagged
@@ -6360,13 +6408,17 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
-  resultsText: []
-  timeText: []
+  timeUsage: 05000000
+  resultsText:
+  - You did some mid tricks with the butterfly knife. The scare actor seems sort
+    of impressed
+  timeText:
+  - Do you want to use the butterfly knife?
   itemDesc: An employee sitting in the breakroom
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 1951788034, guid: bf36c3fa183e5a14fb2999b3f3df33a5, type: 3}
   highlightSprite: {fileID: 740306675, guid: bf36c3fa183e5a14fb2999b3f3df33a5, type: 3}
   altSprite1: {fileID: 0}
@@ -6436,6 +6488,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &361883838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361883832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bea36a716ec23e45bb774fc59a9f2b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
+  itemNeeded:
+  - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
+  nullItems:
+  - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
+  timeController: {fileID: 0}
+  giveItem: 0
+  itemGiven: []
+  disableObject: 0
+  changeSprite: 0
+  enableCam: 0
+  camToEnable: {fileID: 0}
+  enableItem: 0
+  itemEnabled: {fileID: 0}
+  givesHardEvidence: 0
+  hardEvidenceGO: {fileID: 0}
+  changesItemDesc: 0
 --- !u!1 &368876347
 GameObject:
   m_ObjectHideFlags: 0
@@ -6633,6 +6713,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -6827,6 +6908,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 2113913130, guid: cafcee04caeed2548aaf86afd1da5963, type: 3}
   highlightSprite: {fileID: 217662859, guid: cafcee04caeed2548aaf86afd1da5963, type: 3}
   altSprite1: {fileID: 2113913130, guid: cafcee04caeed2548aaf86afd1da5963, type: 3}
@@ -7038,6 +7120,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 21300000, guid: ecc8812a06f83ea4bb3e4ed9bc6990d1, type: 3}
   highlightSprite: {fileID: 21300000, guid: ecc8812a06f83ea4bb3e4ed9bc6990d1, type: 3}
   altSprite1: {fileID: 21300000, guid: ecc8812a06f83ea4bb3e4ed9bc6990d1, type: 3}
@@ -7493,6 +7576,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 1185396618, guid: 7ff058e716abaea47bd9f0b0eafc9a47, type: 3}
   highlightSprite: {fileID: -2076579371, guid: 7ff058e716abaea47bd9f0b0eafc9a47, type: 3}
   altSprite1: {fileID: 0}
@@ -7553,6 +7637,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
   itemNeeded:
   - {fileID: 8200676748390764321, guid: bbdc60c485c1d98449a530215913c151, type: 3}
+  - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
+  nullItems:
+  - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
   timeController: {fileID: 1840529622}
   giveItem: 1
   itemGiven:
@@ -7587,15 +7674,18 @@ MonoBehaviour:
   givesPrompt: 1
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 00000000
+  timeUsage: 0000000005000000
   resultsText:
   - You spent some money to get the eyeball, and some candy came out too. Lucky!
+  - You did some sick tricks with the butterfly knife. Great use of time champ...
   timeText:
   - 
+  - Do you want to use the butterfly knife?
   itemDesc: A vending machine. Looking closer, there seems to be eyeball in there!
   itemChangesDesc: 1
   usingItemChangeDesc: 0
   itemUseChangeDesc: Got everything I needed out of here.
+  disableTimeLock: 0
   itemSprite: {fileID: 2068948189, guid: 58cebbb44e74bbf4d93384f7c627b05c, type: 3}
   highlightSprite: {fileID: -1634964913, guid: 58cebbb44e74bbf4d93384f7c627b05c, type: 3}
   altSprite1: {fileID: -642730735, guid: 229cbebc584372b47b4fe2d34bb51bcb, type: 3}
@@ -7873,6 +7963,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -1311791234, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   highlightSprite: {fileID: -1409852953, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   altSprite1: {fileID: 0}
@@ -8097,6 +8188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
   itemNeeded:
   - {fileID: 3043295151955953431, guid: 316c17a57a312ce4fbde9bd1d827ba4a, type: 3}
+  nullItems: []
   timeController: {fileID: 0}
   giveItem: 0
   itemGiven: []
@@ -8139,6 +8231,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 0}
   highlightSprite: {fileID: 0}
   altSprite1: {fileID: 0}
@@ -8754,6 +8847,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
   itemNeeded:
   - {fileID: 8200676748390764321, guid: 3af3dce20f2135e47a2d5a284275d89b, type: 3}
+  nullItems: []
   timeController: {fileID: 1840529622}
   giveItem: 0
   itemGiven: []
@@ -8795,6 +8889,7 @@ MonoBehaviour:
   itemChangesDesc: 1
   usingItemChangeDesc: 0
   itemUseChangeDesc: Managed to pry it open.
+  disableTimeLock: 0
   itemSprite: {fileID: 2058338222, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
   highlightSprite: {fileID: -132606945, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
   altSprite1: {fileID: 1178685855, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
@@ -9063,6 +9158,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -1292928020, guid: bf862f39441f9804daeaba78d53d7ec7, type: 3}
   highlightSprite: {fileID: -867584579, guid: bf862f39441f9804daeaba78d53d7ec7, type: 3}
   altSprite1: {fileID: -1292928020, guid: bf862f39441f9804daeaba78d53d7ec7, type: 3}
@@ -9274,6 +9370,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 812125516, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
   highlightSprite: {fileID: -767220886, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
   altSprite1: {fileID: 903590207, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
@@ -9454,6 +9551,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -914139331, guid: deda486c42380924a8c580a993f18a77, type: 3}
   highlightSprite: {fileID: -42327806, guid: deda486c42380924a8c580a993f18a77, type: 3}
   altSprite1: {fileID: 0}
@@ -9848,6 +9946,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -10271,6 +10370,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 1185396618, guid: 7ff058e716abaea47bd9f0b0eafc9a47, type: 3}
   highlightSprite: {fileID: -2076579371, guid: 7ff058e716abaea47bd9f0b0eafc9a47, type: 3}
   altSprite1: {fileID: 0}
@@ -10870,6 +10970,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -160084016, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   highlightSprite: {fileID: 656901053, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   altSprite1: {fileID: 0}
@@ -11145,6 +11246,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 137076939, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
   highlightSprite: {fileID: -39248358, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
   altSprite1: {fileID: -858309015, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
@@ -11737,6 +11839,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -1356515274, guid: c1d0cbe5ad5b8844389aaea90e99e9da, type: 3}
   highlightSprite: {fileID: 347611310, guid: c1d0cbe5ad5b8844389aaea90e99e9da, type: 3}
   altSprite1: {fileID: -1356515274, guid: c1d0cbe5ad5b8844389aaea90e99e9da, type: 3}
@@ -12587,6 +12690,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 305989326, guid: 464300b8eb0b8934a912419374c3c7be, type: 3}
   highlightSprite: {fileID: -2056479922, guid: 464300b8eb0b8934a912419374c3c7be, type: 3}
   altSprite1: {fileID: 305989326, guid: 464300b8eb0b8934a912419374c3c7be, type: 3}
@@ -12827,6 +12931,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 385842418, guid: 368ddacc825efe04aa383547fdf3d77c, type: 3}
   highlightSprite: {fileID: 1656289242, guid: 368ddacc825efe04aa383547fdf3d77c, type: 3}
   altSprite1: {fileID: 0}
@@ -12988,6 +13093,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -404863784, guid: 09d3b981bb248504391485eef6db6f22, type: 3}
   highlightSprite: {fileID: -112722043, guid: 09d3b981bb248504391485eef6db6f22, type: 3}
   altSprite1: {fileID: 0}
@@ -13202,6 +13308,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 2136040392, guid: 7a2ac81156ad66f47ba5df556a9ed512, type: 3}
   highlightSprite: {fileID: 480893558, guid: 7a2ac81156ad66f47ba5df556a9ed512, type: 3}
   altSprite1: {fileID: 2136040392, guid: 7a2ac81156ad66f47ba5df556a9ed512, type: 3}
@@ -14042,6 +14149,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -14706,6 +14814,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -244954682, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   highlightSprite: {fileID: 1216510475, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   altSprite1: {fileID: 0}
@@ -14912,6 +15021,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
   itemNeeded:
   - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
+  nullItems: []
   timeController: {fileID: 0}
   giveItem: 0
   itemGiven: []
@@ -14954,6 +15064,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 21300000, guid: 401339f75295eb6489c2c4020785fef1, type: 3}
   highlightSprite: {fileID: 21300000, guid: 3a7c8ed027ec3eb47b44f3c6ebf9c2ac, type: 3}
   altSprite1: {fileID: 21300000, guid: 401339f75295eb6489c2c4020785fef1, type: 3}
@@ -15334,6 +15445,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -320910802, guid: 0b6ea9ab209f02344987d0f1a9188b54, type: 3}
   highlightSprite: {fileID: 480881303, guid: 0b6ea9ab209f02344987d0f1a9188b54, type: 3}
   altSprite1: {fileID: 1865439687, guid: 0b6ea9ab209f02344987d0f1a9188b54, type: 3}
@@ -15537,6 +15649,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 486002506, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   highlightSprite: {fileID: -1093250227, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   altSprite1: {fileID: 0}
@@ -15713,6 +15826,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -1406624849, guid: e49d5367ba1c7c544b6d996f92460247, type: 3}
   highlightSprite: {fileID: 1808973964, guid: e49d5367ba1c7c544b6d996f92460247, type: 3}
   altSprite1: {fileID: -1559828744, guid: e49d5367ba1c7c544b6d996f92460247, type: 3}
@@ -16688,6 +16802,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 0}
   highlightSprite: {fileID: 0}
   altSprite1: {fileID: 0}
@@ -17000,6 +17115,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 1081615174, guid: 30a9768d9469d684585feb9da2cd8503, type: 3}
   highlightSprite: {fileID: -588457337, guid: 30a9768d9469d684585feb9da2cd8503, type: 3}
   altSprite1: {fileID: -588457337, guid: 30a9768d9469d684585feb9da2cd8503, type: 3}
@@ -17339,6 +17455,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -17519,6 +17636,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -320910802, guid: 0b6ea9ab209f02344987d0f1a9188b54, type: 3}
   highlightSprite: {fileID: 480881303, guid: 0b6ea9ab209f02344987d0f1a9188b54, type: 3}
   altSprite1: {fileID: 1865439687, guid: 0b6ea9ab209f02344987d0f1a9188b54, type: 3}
@@ -18467,6 +18585,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 1462456764, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   highlightSprite: {fileID: -1342935918, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   altSprite1: {fileID: 0}
@@ -18847,6 +18966,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 137076939, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
   highlightSprite: {fileID: -39248358, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
   altSprite1: {fileID: -858309015, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
@@ -19761,6 +19881,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 0}
   highlightSprite: {fileID: 0}
   altSprite1: {fileID: 0}
@@ -20358,6 +20479,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -589509246, guid: 125f92cfac91fba468835198c1d59843, type: 3}
   highlightSprite: {fileID: -1572365761, guid: 125f92cfac91fba468835198c1d59843, type: 3}
   altSprite1: {fileID: 709392081, guid: 125f92cfac91fba468835198c1d59843, type: 3}
@@ -20848,6 +20970,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -21194,6 +21317,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 2058338222, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
   highlightSprite: {fileID: -132606945, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
   altSprite1: {fileID: 1178685855, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
@@ -21556,6 +21680,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -22055,6 +22180,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 1285296298, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   highlightSprite: {fileID: 2055946395, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   altSprite1: {fileID: 0}
@@ -22287,16 +22413,19 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 00000000
+  timeUsage: 0000000005000000
   resultsText:
   - You use the tongs to pull out the hair.
+  - You did some sick tricks with the butterfly knife. Great use of time champ...
   timeText:
   - 
+  - Do you want to use the butterfly knife?
   itemDesc: A broken fireplace cover. I think I see some hair behind it, but I can't
     reach with the sharp glass in the way.
   itemChangesDesc: 1
   usingItemChangeDesc: 0
   itemUseChangeDesc: Doesn't seem like there's anything else here.
+  disableTimeLock: 0
   itemSprite: {fileID: 738562567, guid: afd3ef6625474b4429c6d0f6df8c0713, type: 3}
   highlightSprite: {fileID: 1837095482, guid: afd3ef6625474b4429c6d0f6df8c0713, type: 3}
   altSprite1: {fileID: 0}
@@ -22322,6 +22451,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
   itemNeeded:
   - {fileID: 3043295151955953431, guid: c143d2a1da15d3b40a1c61620e3ea471, type: 3}
+  - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
+  nullItems:
+  - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
   timeController: {fileID: 0}
   giveItem: 1
   itemGiven: []
@@ -22763,6 +22895,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -23016,6 +23149,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -1351656195, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   highlightSprite: {fileID: 679927630, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   altSprite1: {fileID: 0}
@@ -23158,6 +23292,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
   itemNeeded:
   - {fileID: 8200676748390764321, guid: 4b02c1484783bb649bec4775177ac440, type: 3}
+  - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
+  nullItems:
+  - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
   timeController: {fileID: 0}
   giveItem: 1
   itemGiven:
@@ -23191,15 +23328,18 @@ MonoBehaviour:
   givesPrompt: 1
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 00000000
+  timeUsage: 0000000005000000
   resultsText:
   - 
+  - You did some sick tricks with the butterfly knife. Great use of time champ...
   timeText:
   - 
+  - Do you want to use the butterfly knife?
   itemDesc: A heavy duty safe. I'll have to find a code to open it.
   itemChangesDesc: 1
   usingItemChangeDesc: 0
   itemUseChangeDesc: Got the money, nothing left here.
+  disableTimeLock: 0
   itemSprite: {fileID: 1614871090, guid: 86ed18f9fcb81b24b951162528dedc2c, type: 3}
   highlightSprite: {fileID: 947192633, guid: 86ed18f9fcb81b24b951162528dedc2c, type: 3}
   altSprite1: {fileID: -58800814, guid: 86ed18f9fcb81b24b951162528dedc2c, type: 3}
@@ -23592,6 +23732,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -898135415, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
   highlightSprite: {fileID: -1767711905, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
   altSprite1: {fileID: 1876734663, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
@@ -23632,6 +23773,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UnlockBookPuzzle
   itemNeeded:
   - {fileID: 3043295151955953431, guid: 3711bde2fcb956246b8ca3398a236c0b, type: 3}
+  nullItems: []
   timeController: {fileID: 0}
   giveItem: 0
   itemGiven: []
@@ -24373,6 +24515,7 @@ MonoBehaviour:
   itemChangesDesc: 1
   usingItemChangeDesc: 0
   itemUseChangeDesc: Nothing left in here it seems.
+  disableTimeLock: 0
   itemSprite: {fileID: -1728464144, guid: 9e35a165f3726d04ea2e3f68e9831f7c, type: 3}
   highlightSprite: {fileID: 1586207677, guid: 9e35a165f3726d04ea2e3f68e9831f7c, type: 3}
   altSprite1: {fileID: 1621314773, guid: 9e35a165f3726d04ea2e3f68e9831f7c, type: 3}
@@ -24478,6 +24621,7 @@ MonoBehaviour:
   itemNeeded:
   - {fileID: 3043295151955953431, guid: 4d5ff387521a8f04cb7c6499b11c3631, type: 3}
   - {fileID: 3043295151955953431, guid: 56649c4aca68833439473295a236299a, type: 3}
+  nullItems: []
   timeController: {fileID: 1840529622}
   giveItem: 1
   itemGiven:
@@ -24799,6 +24943,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -68712848, guid: 45c06b1a99b635a4cb5115869314ec74, type: 3}
   highlightSprite: {fileID: -940497689, guid: 45c06b1a99b635a4cb5115869314ec74, type: 3}
   altSprite1: {fileID: -68712848, guid: 45c06b1a99b635a4cb5115869314ec74, type: 3}
@@ -25028,6 +25173,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -1565844214, guid: 90d358cf6d373154d842d8a342d4e0f1, type: 3}
   highlightSprite: {fileID: -1565844214, guid: 90d358cf6d373154d842d8a342d4e0f1, type: 3}
   altSprite1: {fileID: 1253732185, guid: 90d358cf6d373154d842d8a342d4e0f1, type: 3}
@@ -25272,6 +25418,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 738562567, guid: afd3ef6625474b4429c6d0f6df8c0713, type: 3}
   highlightSprite: {fileID: 1837095482, guid: afd3ef6625474b4429c6d0f6df8c0713, type: 3}
   altSprite1: {fileID: 0}
@@ -26297,6 +26444,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -721505749, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   highlightSprite: {fileID: 1807858139, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   altSprite1: {fileID: 0}
@@ -26582,6 +26730,7 @@ MonoBehaviour:
   itemChangesDesc: 1
   usingItemChangeDesc: 0
   itemUseChangeDesc: Poor ship, but I needed that key.
+  disableTimeLock: 0
   itemSprite: {fileID: -1113923762, guid: 3d9a83293923cf446942710c41054009, type: 3}
   highlightSprite: {fileID: -274231322, guid: 3d9a83293923cf446942710c41054009, type: 3}
   altSprite1: {fileID: 1705473089, guid: 3d9a83293923cf446942710c41054009, type: 3}
@@ -26687,6 +26836,7 @@ MonoBehaviour:
   itemNeeded:
   - {fileID: 3043295151955953431, guid: 56649c4aca68833439473295a236299a, type: 3}
   - {fileID: 8200676748390764321, guid: 3af3dce20f2135e47a2d5a284275d89b, type: 3}
+  nullItems: []
   timeController: {fileID: 0}
   giveItem: 1
   itemGiven:
@@ -27002,6 +27152,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -894592820, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   highlightSprite: {fileID: -3120072, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   altSprite1: {fileID: 0}
@@ -27192,6 +27343,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
   itemNeeded:
   - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
+  nullItems: []
   timeController: {fileID: 0}
   giveItem: 0
   itemGiven: []
@@ -27234,6 +27386,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 21300000, guid: bba00730324561a46a68b6ee34851444, type: 3}
   highlightSprite: {fileID: 21300000, guid: 68c89fb1a03914c478c7609edbe57cce, type: 3}
   altSprite1: {fileID: 21300000, guid: bba00730324561a46a68b6ee34851444, type: 3}
@@ -27555,6 +27708,7 @@ MonoBehaviour:
   itemChangesDesc: 1
   usingItemChangeDesc: 0
   itemUseChangeDesc: Seems it was mechanical. At least it got its eye back.
+  disableTimeLock: 0
   itemSprite: {fileID: -1508906487, guid: 876d39aa744209e42be265dbd568256a, type: 3}
   highlightSprite: {fileID: -1384430537, guid: 876d39aa744209e42be265dbd568256a, type: 3}
   altSprite1: {fileID: 722861064, guid: 876d39aa744209e42be265dbd568256a, type: 3}
@@ -28040,6 +28194,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -1610900424, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   highlightSprite: {fileID: 1843694185, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   altSprite1: {fileID: 0}
@@ -28577,6 +28732,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
   itemNeeded:
   - {fileID: 3043295151955953431, guid: 316c17a57a312ce4fbde9bd1d827ba4a, type: 3}
+  nullItems: []
   timeController: {fileID: 1840529622}
   giveItem: 0
   itemGiven: []
@@ -28618,6 +28774,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 1627832334, guid: bee21f5108864344ab054f4bca6d70d7, type: 3}
   highlightSprite: {fileID: -992871721, guid: bee21f5108864344ab054f4bca6d70d7, type: 3}
   altSprite1: {fileID: 400364628, guid: bee21f5108864344ab054f4bca6d70d7, type: 3}
@@ -28766,6 +28923,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 2003799895, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   highlightSprite: {fileID: -1331406931, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   altSprite1: {fileID: 0}
@@ -28950,6 +29108,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -1268794702, guid: 11eb2511b642ed2409520d122e9e3751, type: 3}
   highlightSprite: {fileID: -1283442153, guid: 11eb2511b642ed2409520d122e9e3751, type: 3}
   altSprite1: {fileID: 0}
@@ -29050,6 +29209,7 @@ GameObject:
   - component: {fileID: 1638361157}
   - component: {fileID: 1638361156}
   - component: {fileID: 1638361155}
+  - component: {fileID: 1638361160}
   m_Layer: 0
   m_Name: ShriveledHusk
   m_TagString: Untagged
@@ -29077,13 +29237,17 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 
-  resultsText: []
-  timeText: []
+  timeUsage: 05000000
+  resultsText:
+  - You did some unimpressice trickshots for the cop. The shriveled husk seems disapponted
+    once again...
+  timeText:
+  - Do you want to use the butterfky knife?
   itemDesc: This cop looks like a shriveled husk...
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 21300000, guid: 77bde5ff8f9e5d2488056400b8a0800e, type: 3}
   highlightSprite: {fileID: 21300000, guid: ccea0c3d4ae2ffb4aa6fce75c5ea151a, type: 3}
   altSprite1: {fileID: 0}
@@ -29202,6 +29366,34 @@ Transform:
   - {fileID: 976501623}
   m_Father: {fileID: 1249145198}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &1638361160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638361154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bea36a716ec23e45bb774fc59a9f2b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
+  itemNeeded:
+  - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
+  nullItems:
+  - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
+  timeController: {fileID: 0}
+  giveItem: 0
+  itemGiven: []
+  disableObject: 0
+  changeSprite: 0
+  enableCam: 0
+  camToEnable: {fileID: 0}
+  enableItem: 0
+  itemEnabled: {fileID: 0}
+  givesHardEvidence: 0
+  hardEvidenceGO: {fileID: 0}
+  changesItemDesc: 0
 --- !u!1 &1654966587
 GameObject:
   m_ObjectHideFlags: 0
@@ -29249,6 +29441,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 1178774008, guid: 0906338abf85ac249b174cac5e59a860, type: 3}
   highlightSprite: {fileID: -1204791525, guid: 0906338abf85ac249b174cac5e59a860, type: 3}
   altSprite1: {fileID: 0}
@@ -29786,6 +29979,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 1460204604, guid: b1fee48c1a01cb0469881b768982bb0c, type: 3}
   highlightSprite: {fileID: -704310105, guid: b1fee48c1a01cb0469881b768982bb0c, type: 3}
   altSprite1: {fileID: 1460204604, guid: b1fee48c1a01cb0469881b768982bb0c, type: 3}
@@ -30084,6 +30278,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 1310447629, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   highlightSprite: {fileID: 1804057728, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   altSprite1: {fileID: 0}
@@ -30173,6 +30368,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 0}
   highlightSprite: {fileID: 0}
   altSprite1: {fileID: 0}
@@ -30197,6 +30393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RockScript
   itemNeeded: []
+  nullItems: []
   timeController: {fileID: 0}
   giveItem: 0
   itemGiven: []
@@ -30633,6 +30830,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 60252829, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   highlightSprite: {fileID: 348166327, guid: ebc864984bda0544b8da9ebb1dbc6827, type: 3}
   altSprite1: {fileID: 0}
@@ -30855,6 +31053,7 @@ MonoBehaviour:
   itemChangesDesc: 1
   usingItemChangeDesc: 0
   itemUseChangeDesc: Looks like I got everything I needed from here.
+  disableTimeLock: 0
   itemSprite: {fileID: -898135415, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
   highlightSprite: {fileID: -1767711905, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
   altSprite1: {fileID: 1876734663, guid: 3bdcf32e529f1ad43a119708149043b0, type: 3}
@@ -31278,6 +31477,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -32994,6 +33194,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -453902948, guid: 913db77244f8f2f4d9b94251572ca65e, type: 3}
   highlightSprite: {fileID: -179293386, guid: 913db77244f8f2f4d9b94251572ca65e, type: 3}
   altSprite1: {fileID: 0}
@@ -33525,6 +33726,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -33875,6 +34077,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -2027564843, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   highlightSprite: {fileID: 923661206, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   altSprite1: {fileID: 0}
@@ -34272,6 +34475,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -1421631221, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   highlightSprite: {fileID: -1113135716, guid: ca2797160a63f864b9aa820cd2bf0cf6, type: 3}
   altSprite1: {fileID: 0}
@@ -34729,6 +34933,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -2019829017, guid: d047df0d1a11e6a44b61ef92a8e9deb9, type: 3}
   highlightSprite: {fileID: 2069189252, guid: d047df0d1a11e6a44b61ef92a8e9deb9, type: 3}
   altSprite1: {fileID: -2019829017, guid: d047df0d1a11e6a44b61ef92a8e9deb9, type: 3}
@@ -35032,6 +35237,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -35482,6 +35688,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -1577232116, guid: 5393563cd7c458b4089c462cba4a1bf3, type: 3}
   highlightSprite: {fileID: -1031243056, guid: 5393563cd7c458b4089c462cba4a1bf3, type: 3}
   altSprite1: {fileID: 594882530, guid: 5393563cd7c458b4089c462cba4a1bf3, type: 3}
@@ -35764,6 +35971,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 233914371, guid: 8a933977fd786a044af75e018cb259da, type: 3}
   highlightSprite: {fileID: 1569536268, guid: 8a933977fd786a044af75e018cb259da, type: 3}
   altSprite1: {fileID: 233914371, guid: 8a933977fd786a044af75e018cb259da, type: 3}
@@ -36069,6 +36277,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 812125516, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
   highlightSprite: {fileID: -1006257401, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
   altSprite1: {fileID: 903590207, guid: 519fb718b02075f419af387e603b3ad7, type: 3}
@@ -36331,6 +36540,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 1641619501, guid: 81e272dfa9da72f44abbe54b3d9b8753, type: 3}
   highlightSprite: {fileID: -1965538520, guid: 81e272dfa9da72f44abbe54b3d9b8753, type: 3}
   altSprite1: {fileID: -990722930, guid: 81e272dfa9da72f44abbe54b3d9b8753, type: 3}
@@ -36994,6 +37204,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -453902948, guid: 913db77244f8f2f4d9b94251572ca65e, type: 3}
   highlightSprite: {fileID: -179293386, guid: 913db77244f8f2f4d9b94251572ca65e, type: 3}
   altSprite1: {fileID: 0}
@@ -37819,6 +38030,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: -662590391, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   highlightSprite: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
   altSprite1: {fileID: 422315372, guid: c5fbab67acc317f42bbbc5349b432c51, type: 3}
@@ -37997,6 +38209,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 2068948189, guid: 58cebbb44e74bbf4d93384f7c627b05c, type: 3}
   highlightSprite: {fileID: -1634964913, guid: 58cebbb44e74bbf4d93384f7c627b05c, type: 3}
   altSprite1: {fileID: -642730735, guid: 229cbebc584372b47b4fe2d34bb51bcb, type: 3}

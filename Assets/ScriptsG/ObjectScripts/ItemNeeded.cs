@@ -15,6 +15,7 @@ public class ItemNeeded : MonoBehaviour
 {
     [Tooltip("The list of items that will work when used on this object")]
     public GameObject[] itemNeeded;
+    public GameObject[] nullItems;
     [Tooltip("The Script TimeController. Should only be one in the scene")]
     [SerializeField] private TimeController timeController;
 
@@ -50,8 +51,35 @@ public class ItemNeeded : MonoBehaviour
             if (currentItem.GetComponent<InventoryItemScript>().GetItemId() ==
                 itemNeeded[i].GetComponent<InventoryItemScript>().GetItemId())
             {
-                ItemUseFunctionality(currentItem);
+                if(nullItems.Length > 0)
+                {
+                    for (int j = 0; j < nullItems.Length; j++)
+                    {
+                        if (currentItem.GetComponent<InventoryItemScript>().GetItemId() ==
+                            nullItems[j].GetComponent<InventoryItemScript>().GetItemId())
+                        {
+                            NullItemUseFunctionality(currentItem);
+                        }
+                        else
+                        {
+                            ItemUseFunctionality(currentItem);
+                        }
+                    }
+                }
+                else
+                {
+                    ItemUseFunctionality(currentItem);
+                }
+                
             }
+        }
+        
+    }
+    public void NullItemUseFunctionality(GameObject currentItem)
+    {
+        if (currentItem.GetComponent<ObjectProperties>().consumable)
+        {
+            Consume(currentItem);
         }
     }
     public void ItemUseFunctionality(GameObject currentItem)
