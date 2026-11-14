@@ -13,6 +13,7 @@ using UnityEngine;
 public class MovePointData : MonoBehaviour
 {
     [SerializeField] private CinemachineCamera cineCam;
+    [SerializeField] private bool disableInventory;
     public bool usesAltSound;
     public AudioClip altAudioClip;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -29,5 +30,9 @@ public class MovePointData : MonoBehaviour
     public CinemachineCamera GetCamera()
     {
         return cineCam; 
+    }
+    public bool DisInventory()
+    {
+        return disableInventory;
     }
 }
