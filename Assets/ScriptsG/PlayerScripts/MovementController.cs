@@ -39,10 +39,15 @@ public class MovementController : MonoBehaviour
     [Tooltip("The % value of the change in transparency of the blackScreen game object. " +
         "Please keep above zero, but below 1. /n  The larger the number, the less smooth the fade in/out")]
     [SerializeField] private float fadePivot;
+    [Header("Move Point SFX")]
     [Tooltip("The Sounds to play when moving between cameras")]
     [SerializeField] private AudioClip[] camAudioClip;
     [Tooltip("The Main Camera Audio Source")]
     [SerializeField] private AudioSource audioSourceCam;
+    [Tooltip("Set to true if this move point uses a different sound then the generic move sound")]
+    private bool usesAltMoveSound;
+    [Tooltip("The alternate sound to play when moving")]
+    private AudioClip altAudioClip;
 
     private int randNum;
     
@@ -79,9 +84,18 @@ public class MovementController : MonoBehaviour
                 {
                     if(audioSourceCam != null && camAudioClip[0] != null)
                     {
-                        randNum = Random.Range(0, camAudioClip.Length - 1);
-                        audioSourceCam.clip = camAudioClip[randNum];
-                        audioSourceCam.Play();
+                        if(usesAltMoveSound && altAudioClip != null)
+                        {
+                            audioSourceCam.clip = altAudioClip;
+                            audioSourceCam.Play();
+                        }
+                        else
+                        {
+                            randNum = Random.Range(0, camAudioClip.Length - 1);
+                            audioSourceCam.clip = camAudioClip[randNum];
+                            audioSourceCam.Play();
+                        }
+
                     }
                     StartCoroutine(FadeInOut(i));
                 }
@@ -122,6 +136,12 @@ public class MovementController : MonoBehaviour
     private void GetCamera(GameObject camSpot)
     {
         movePointData = camSpot.gameObject.GetComponent<MovePointData>();
+        usesAltMoveSound = movePointData.usesAltSound;
+        if (usesAltMoveSound)
+        {
+            altAudioClip = movePointData.altAudioClip;
+        }
+
         currentCam = movePointData.GetCamera();
     }
 
