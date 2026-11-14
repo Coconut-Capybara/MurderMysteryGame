@@ -467,7 +467,7 @@ Transform:
   m_GameObject: {fileID: 7275881}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -86.74, y: -32.68, z: 229.18}
+  m_LocalPosition: {x: -86.73, y: -32.68, z: 229.21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -542,9 +542,12 @@ MonoBehaviour:
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 1840529627}
   interactSound: {fileID: 0}
-  itemUseSounds: []
+  itemUseSounds:
+  - {fileID: 8300000, guid: c70d84ab81270450ca59ba4554ce5a6d, type: 3}
+  - {fileID: 8300000, guid: c70d84ab81270450ca59ba4554ce5a6d, type: 3}
+  - {fileID: 8300000, guid: c70d84ab81270450ca59ba4554ce5a6d, type: 3}
   hardEvidenceImage: {fileID: 0}
   hardEvidenceSprite: {fileID: 0}
   hardEvidenceDesc: 
@@ -1209,7 +1212,7 @@ MonoBehaviour:
   - 
   timeText:
   - 
-  itemDesc: A crowbar! This could be useful.
+  itemDesc: A hatchet.. looks cool
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
@@ -1619,9 +1622,12 @@ MonoBehaviour:
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 1840529627}
   interactSound: {fileID: 0}
-  itemUseSounds: []
+  itemUseSounds:
+  - {fileID: 8300000, guid: c70d84ab81270450ca59ba4554ce5a6d, type: 3}
+  - {fileID: 8300000, guid: c70d84ab81270450ca59ba4554ce5a6d, type: 3}
+  - {fileID: 8300000, guid: c70d84ab81270450ca59ba4554ce5a6d, type: 3}
   hardEvidenceImage: {fileID: 0}
   hardEvidenceSprite: {fileID: 0}
   hardEvidenceDesc: 
@@ -5328,7 +5334,7 @@ MonoBehaviour:
   - 
   timeText:
   - 
-  itemDesc: A crowbar! This could be useful.
+  itemDesc: A green healthy looking snack
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
@@ -5527,9 +5533,12 @@ MonoBehaviour:
   altSprite1: {fileID: 0}
   altSprite2: {fileID: 0}
   usesAltSprites: 0
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 1840529627}
   interactSound: {fileID: 0}
-  itemUseSounds: []
+  itemUseSounds:
+  - {fileID: 8300000, guid: c70d84ab81270450ca59ba4554ce5a6d, type: 3}
+  - {fileID: 8300000, guid: c70d84ab81270450ca59ba4554ce5a6d, type: 3}
+  - {fileID: 8300000, guid: c70d84ab81270450ca59ba4554ce5a6d, type: 3}
   hardEvidenceImage: {fileID: 0}
   hardEvidenceSprite: {fileID: 0}
   hardEvidenceDesc: 
@@ -6168,7 +6177,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &352988531
 Transform:
   m_ObjectHideFlags: 0
@@ -8921,9 +8930,10 @@ MonoBehaviour:
   altSprite1: {fileID: 1178685855, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
   altSprite2: {fileID: 1178685855, guid: 3344a3af2f5c0c54ea446702f2c1ee8e, type: 3}
   usesAltSprites: 0
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 1840529627}
   interactSound: {fileID: 0}
-  itemUseSounds: []
+  itemUseSounds:
+  - {fileID: 8300000, guid: 2f600d94602564a99ad4dad55a4a317d, type: 3}
   hardEvidenceImage: {fileID: 0}
   hardEvidenceSprite: {fileID: 0}
   hardEvidenceDesc: 
@@ -11284,7 +11294,7 @@ MonoBehaviour:
   altSprite1: {fileID: -858309015, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
   altSprite2: {fileID: -858309015, guid: 2434c1511252aba4692942e452dc0dc1, type: 3}
   usesAltSprites: 0
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 1840529627}
   interactSound: {fileID: 0}
   itemUseSounds: []
   hardEvidenceImage: {fileID: 0}
@@ -11382,8 +11392,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 1878879555}
-  usesAltSound: 0
-  altAudioClip: {fileID: 0}
+  usesAltSound: 1
+  altAudioClip: {fileID: 8300000, guid: 2f600d94602564a99ad4dad55a4a317d, type: 3}
 --- !u!1 &600393083
 GameObject:
   m_ObjectHideFlags: 0
@@ -11878,8 +11888,8 @@ MonoBehaviour:
   highlightSprite: {fileID: 347611310, guid: c1d0cbe5ad5b8844389aaea90e99e9da, type: 3}
   altSprite1: {fileID: -1356515274, guid: c1d0cbe5ad5b8844389aaea90e99e9da, type: 3}
   altSprite2: {fileID: -1356515274, guid: c1d0cbe5ad5b8844389aaea90e99e9da, type: 3}
-  usesAltSprites: 0
-  audioSource: {fileID: 0}
+  usesAltSprites: 1
+  audioSource: {fileID: 1840529627}
   interactSound: {fileID: 0}
   itemUseSounds: []
   hardEvidenceImage: {fileID: 0}
@@ -11977,8 +11987,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 865564016}
-  usesAltSound: 0
-  altAudioClip: {fileID: 0}
+  usesAltSound: 1
+  altAudioClip: {fileID: 8300000, guid: 898f03a7c6c254aa2bffc1050c10ea08, type: 3}
 --- !u!1 &616685691
 GameObject:
   m_ObjectHideFlags: 0
@@ -15100,7 +15110,7 @@ MonoBehaviour:
     the knife for a bit and accidentally waste 5 minutes.
   timeText:
   - Would you like to use the butterfly knife to open the box?
-  itemDesc: 
+  itemDesc: A box.. I could use something to open it up
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
@@ -16077,6 +16087,10 @@ PrefabInstance:
     - target: {fileID: 4758135703198619309, guid: 535f80c2b67feef4b9b9710ea8b54aef, type: 3}
       propertyPath: m_Name
       value: HardEvidenceCounter
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758135703198619309, guid: 535f80c2b67feef4b9b9710ea8b54aef, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8935720537720842395, guid: 535f80c2b67feef4b9b9710ea8b54aef, type: 3}
       propertyPath: m_Pivot.x
@@ -17163,7 +17177,7 @@ MonoBehaviour:
   altSprite1: {fileID: -588457337, guid: 30a9768d9469d684585feb9da2cd8503, type: 3}
   altSprite2: {fileID: -588457337, guid: 30a9768d9469d684585feb9da2cd8503, type: 3}
   usesAltSprites: 0
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 1840529627}
   interactSound: {fileID: 0}
   itemUseSounds: []
   hardEvidenceImage: {fileID: 0}
@@ -17203,8 +17217,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 1180044059}
-  usesAltSound: 0
-  altAudioClip: {fileID: 0}
+  usesAltSound: 1
+  altAudioClip: {fileID: 8300000, guid: 898f03a7c6c254aa2bffc1050c10ea08, type: 3}
 --- !u!1 &976501622
 GameObject:
   m_ObjectHideFlags: 0
@@ -17786,8 +17800,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 1400059216}
-  usesAltSound: 0
-  altAudioClip: {fileID: 0}
+  usesAltSound: 1
+  altAudioClip: {fileID: 8300000, guid: 2f600d94602564a99ad4dad55a4a317d, type: 3}
 --- !u!1 &993270494
 GameObject:
   m_ObjectHideFlags: 0
@@ -23409,7 +23423,7 @@ MonoBehaviour:
   altSprite1: {fileID: -58800814, guid: 86ed18f9fcb81b24b951162528dedc2c, type: 3}
   altSprite2: {fileID: -357668438, guid: 86ed18f9fcb81b24b951162528dedc2c, type: 3}
   usesAltSprites: 0
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 1840529627}
   interactSound: {fileID: 0}
   itemUseSounds: []
   hardEvidenceImage: {fileID: 0}
@@ -23449,8 +23463,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 1201749309}
-  usesAltSound: 0
-  altAudioClip: {fileID: 0}
+  usesAltSound: 1
+  altAudioClip: {fileID: 8300000, guid: eeb40c82002604d4080b1810e3a3cd21, type: 3}
 --- !u!212 &1364660726
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24589,9 +24603,12 @@ MonoBehaviour:
   altSprite1: {fileID: 1621314773, guid: 9e35a165f3726d04ea2e3f68e9831f7c, type: 3}
   altSprite2: {fileID: 486696367, guid: 9e35a165f3726d04ea2e3f68e9831f7c, type: 3}
   usesAltSprites: 0
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 1840529627}
   interactSound: {fileID: 0}
-  itemUseSounds: []
+  itemUseSounds:
+  - {fileID: 8300000, guid: d0870c964a2354d8094ce31e769a7290, type: 3}
+  - {fileID: 8300000, guid: d0870c964a2354d8094ce31e769a7290, type: 3}
+  - {fileID: 8300000, guid: d0870c964a2354d8094ce31e769a7290, type: 3}
   hardEvidenceImage: {fileID: 0}
   hardEvidenceSprite: {fileID: 0}
   hardEvidenceDesc: 
@@ -27459,7 +27476,7 @@ MonoBehaviour:
     the knife for a bit and accidentally waste 5 minutes.
   timeText:
   - Would you like to use the butterfly knife to open the box?
-  itemDesc: 
+  itemDesc: A box.. I can use something to open it
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
@@ -31878,7 +31895,7 @@ MonoBehaviour:
   fadeSpeed: 0.01
   fadePivot: 0.1
   camAudioClip:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 0cb1c2745762cf64e8bebfa459775034, type: 3}
   audioSourceCam: {fileID: 1840529627}
 --- !u!114 &1840529614
 MonoBehaviour:
@@ -35888,8 +35905,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 1062416107}
-  usesAltSound: 0
-  altAudioClip: {fileID: 0}
+  usesAltSound: 1
+  altAudioClip: {fileID: 8300000, guid: a200ceb3276a64815ba89e6db4488604, type: 3}
 --- !u!114 &2047372875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36075,7 +36092,7 @@ MonoBehaviour:
   altSprite1: {fileID: 233914371, guid: 8a933977fd786a044af75e018cb259da, type: 3}
   altSprite2: {fileID: 233914371, guid: 8a933977fd786a044af75e018cb259da, type: 3}
   usesAltSprites: 0
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 1840529627}
   interactSound: {fileID: 0}
   itemUseSounds: []
   hardEvidenceImage: {fileID: 0}
@@ -36173,8 +36190,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 604220535}
-  usesAltSound: 0
-  altAudioClip: {fileID: 0}
+  usesAltSound: 1
+  altAudioClip: {fileID: 8300000, guid: 6cc4537865ae1479b9e7ac12ab172909, type: 3}
 --- !u!1 &2065618662
 GameObject:
   m_ObjectHideFlags: 0
