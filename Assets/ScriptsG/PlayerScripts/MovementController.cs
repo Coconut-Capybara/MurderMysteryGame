@@ -120,13 +120,21 @@ public class MovementController : MonoBehaviour
             yield return new WaitForSeconds(fadeSpeed);
         }
         allCams[i].enabled = true;
-        while (fadeValue >= 0)
+        if (movePointData.DisInventory())
         {
-            fadeValue -= fadePivot;
-            screenColor = new Color(0, 0, 0, fadeValue);
-            blackScreen.GetComponent<Image>().color = screenColor;
-            yield return new WaitForSeconds(fadeSpeed);
+            GameObject.FindFirstObjectByType<AddToInventory>().HideInventory(); 
         }
+        else
+        {
+            GameObject.FindFirstObjectByType<AddToInventory>().ShowInventory();
+        }
+            while (fadeValue >= 0)
+            {
+                fadeValue -= fadePivot;
+                screenColor = new Color(0, 0, 0, fadeValue);
+                blackScreen.GetComponent<Image>().color = screenColor;
+                yield return new WaitForSeconds(fadeSpeed);
+            }
         locked = false;
     }
     /// <summary>
