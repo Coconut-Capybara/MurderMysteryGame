@@ -37,7 +37,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -350, y: 250}
+  m_AnchoredPosition: {x: -250, y: 250}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1564318246534261144
@@ -105,6 +105,7 @@ MonoBehaviour:
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
+  disableTimeLock: 0
   itemSprite: {fileID: 119621904, guid: b1fee48c1a01cb0469881b768982bb0c, type: 3}
   highlightSprite: {fileID: -977290801, guid: b1fee48c1a01cb0469881b768982bb0c, type: 3}
   altSprite1: {fileID: 0}
