@@ -1432,24 +1432,25 @@ MonoBehaviour:
   givesPrompt: 1
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0000000005000000
+  timeUsage: 000000000500000005000000
   resultsText:
   - 'He takes the candy and says: "If it helps, the boar head is our oldest prop
-    here, meanwhile the deer head''s the most recent addition.                                             
-    As for those books, I think it''s something about the number of points on em,
-    and that''ll open it up. Hope that helps."'
+    here, meanwhile the deer head''s the most recent addition.'
   - 'You ominously approach the actor, knife in hand. He stares back at you before
     you start quickly spinning the blade, performing enough tricks to make Tony Hawk
     proud. As you finish, the clown continues to stare, clearly not amused. '
+  - It seems this clown hates this snack. He gives you an earful about your snack
+    choices.
   timeText:
   - 
-  - would you like to use the knife on the actor?
-  itemDesc: 'A scare actor. He says: "I''d help you figure some stuff out, but I''m
-    feeling too hungry to think."'
+  - Would you like to use the knife on the actor?
+  - Would you like to give this snack to the scare actor?
+  itemDesc: '"I''d help you figure some stuff out, but I''m feeling too hungry to
+    think."'
   itemChangesDesc: 1
   usingItemChangeDesc: 0
-  itemUseChangeDesc: 'He says: "Remember, Boar''s the oldest, Deer''s the youngest,
-    and arrange those books by points."'
+  itemUseChangeDesc: 'He says: "Remember, Boar''s the oldest, Deer''s the youngest.books
+    by points."'
   disableTimeLock: 0
   itemSprite: {fileID: -1017153484, guid: 5169dd8dd35add148b0dc12e5c93375f, type: 3}
   highlightSprite: {fileID: 1731844645, guid: 5169dd8dd35add148b0dc12e5c93375f, type: 3}
@@ -1498,8 +1499,10 @@ MonoBehaviour:
   itemNeeded:
   - {fileID: 3043295151955953431, guid: f16e4ddc93267654cbc4ed06ae04f872, type: 3}
   - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
+  - {fileID: 3043295151955953431, guid: a11dfabe1bf0b054c82d364dbad3db3f, type: 3}
   nullItems:
   - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
+  - {fileID: 3043295151955953431, guid: a11dfabe1bf0b054c82d364dbad3db3f, type: 3}
   timeController: {fileID: 0}
   giveItem: 0
   itemGiven: []
@@ -3838,7 +3841,6 @@ MonoBehaviour:
   giveItem: 1
   itemGiven:
   - {fileID: 3043295151955953431, guid: 291216ae88a4e3c4e915c0b85f269d7e, type: 3}
-  - {fileID: 3043295151955953431, guid: 291216ae88a4e3c4e915c0b85f269d7e, type: 3}
   disableObject: 0
   changeSprite: 1
   enableCam: 0
@@ -5412,7 +5414,7 @@ SpriteRenderer:
   m_SortingOrder: 2
   m_Sprite: {fileID: 1846928265, guid: 471cc604b68dc50438127689d9b4b53e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.51, y: 0.74}
@@ -6343,7 +6345,7 @@ GameObject:
   - component: {fileID: 361883835}
   - component: {fileID: 361883834}
   - component: {fileID: 361883838}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hydrated Husk_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6424,7 +6426,8 @@ MonoBehaviour:
     of impressed
   timeText:
   - Do you want to use the butterfly knife?
-  itemDesc: An employee sitting in the breakroom
+  itemDesc: "Employee:  \u201CDang\u2026 I lost the only flashlight we had. I think
+    the last place I had it was in the lounge\u2026\u201D"
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
@@ -7652,8 +7655,12 @@ MonoBehaviour:
   itemNeeded:
   - {fileID: 8200676748390764321, guid: bbdc60c485c1d98449a530215913c151, type: 3}
   - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
+  - {fileID: 3043295151955953431, guid: 782532d3e9711c7408e7b7961239f947, type: 3}
+  - {fileID: 8200676748390764321, guid: 3af3dce20f2135e47a2d5a284275d89b, type: 3}
   nullItems:
   - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
+  - {fileID: 3043295151955953431, guid: 782532d3e9711c7408e7b7961239f947, type: 3}
+  - {fileID: 8200676748390764321, guid: 3af3dce20f2135e47a2d5a284275d89b, type: 3}
   timeController: {fileID: 1840529622}
   giveItem: 1
   itemGiven:
@@ -7688,18 +7695,23 @@ MonoBehaviour:
   givesPrompt: 1
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0000000005000000
+  timeUsage: 0000000005000000050000000a000000
   resultsText:
   - You spent some money to get the eyeball, and some candy came out too. Lucky!
   - You did some sick tricks with the butterfly knife. Great use of time champ...
+  - This dollar is way too crinkled to work. Your stubborn nature made you waste
+    time trying to force it to work.
+  - You try really hard to break the vending machine open. You fail miserably...
   timeText:
   - 
   - Do you want to use the butterfly knife?
+  - Do you want to use this crinkled dollar bill?
+  - Do you want to use the crowbar to break open the vending machine?
   itemDesc: A vending machine. Looking closer, there seems to be eyeball in there!
   itemChangesDesc: 1
   usingItemChangeDesc: 0
   itemUseChangeDesc: Got everything I needed out of here.
-  disableTimeLock: 0
+  disableTimeLock: 1
   itemSprite: {fileID: 2068948189, guid: 58cebbb44e74bbf4d93384f7c627b05c, type: 3}
   highlightSprite: {fileID: -1634964913, guid: 58cebbb44e74bbf4d93384f7c627b05c, type: 3}
   altSprite1: {fileID: -642730735, guid: 229cbebc584372b47b4fe2d34bb51bcb, type: 3}
@@ -24562,13 +24574,15 @@ MonoBehaviour:
   givesPrompt: 1
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 050000000a000000
+  timeUsage: 050000000a00000014000000
   resultsText:
   - 'You open the trapdoor, and find a hammer inside!  '
   - after a bit of trying, you smash one of the chain links, opening the trapdoor.
+  - With imense effort, you were able to break open the trapdoor.
   timeText:
   - Attempt to cut the chain locking the trapdoor?
   - Try to smash the chain with the hammer?
+  - Do you want to use the hatchet to break open the trapdoor?
   itemDesc: A trapdoor. Probably has some useful equipment in there.
   itemChangesDesc: 1
   usingItemChangeDesc: 0
@@ -24679,6 +24693,7 @@ MonoBehaviour:
   itemNeeded:
   - {fileID: 3043295151955953431, guid: 4d5ff387521a8f04cb7c6499b11c3631, type: 3}
   - {fileID: 3043295151955953431, guid: 56649c4aca68833439473295a236299a, type: 3}
+  - {fileID: 3043295151955953431, guid: ac345af95cab395488b3fae00d0818a3, type: 3}
   nullItems: []
   timeController: {fileID: 1840529622}
   giveItem: 1
@@ -27758,15 +27773,14 @@ MonoBehaviour:
   thisObject: {fileID: 1572137153}
   isInteractable: 0
   isGrabbable: 0
-  canUseOn: 1
+  canUseOn: 0
   consumable: 0
-  givesPrompt: 1
+  givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 00000000
   resultsText:
-  - After inserting the eye, the mechanical bear starts moving! A key falls out of
-    its mouth and into your hand.
+  - 
   timeText:
   - 
   itemDesc: A taxidermied bear, or maybe an animatronic. Either way, it's missing
@@ -29277,7 +29291,8 @@ GameObject:
   - component: {fileID: 1638361157}
   - component: {fileID: 1638361156}
   - component: {fileID: 1638361155}
-  - component: {fileID: 1638361160}
+  - component: {fileID: 1638361161}
+  - component: {fileID: 1638361162}
   m_Layer: 0
   m_Name: ShriveledHusk
   m_TagString: Untagged
@@ -29298,24 +29313,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
   thisObject: {fileID: 1638361154}
-  isInteractable: 0
+  isInteractable: 1
   isGrabbable: 0
   canUseOn: 0
   consumable: 0
-  givesPrompt: 0
+  givesPrompt: 1
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 05000000
   resultsText:
-  - You did some unimpressice trickshots for the cop. The shriveled husk seems disapponted
-    once again...
+  - "\u201CHaa.. 5 hrs left on my shift\u2026\u201D"
   timeText:
-  - Do you want to use the butterfky knife?
+  - Do you want to talk to the cop?
   itemDesc: This cop looks like a shriveled husk...
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
-  disableTimeLock: 0
+  disableTimeLock: 1
   itemSprite: {fileID: 21300000, guid: 77bde5ff8f9e5d2488056400b8a0800e, type: 3}
   highlightSprite: {fileID: 21300000, guid: ccea0c3d4ae2ffb4aa6fce75c5ea151a, type: 3}
   altSprite1: {fileID: 0}
@@ -29434,7 +29448,7 @@ Transform:
   - {fileID: 976501623}
   m_Father: {fileID: 1249145198}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!114 &1638361160
+--- !u!114 &1638361161
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -29443,25 +29457,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 1638361154}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bea36a716ec23e45bb774fc59a9f2b8, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e468cead90616a4bbe268478842cdba, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
-  itemNeeded:
-  - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
-  nullItems:
-  - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
-  timeController: {fileID: 0}
-  giveItem: 0
-  itemGiven: []
-  disableObject: 0
-  changeSprite: 0
-  enableCam: 0
-  camToEnable: {fileID: 0}
-  enableItem: 0
-  itemEnabled: {fileID: 0}
-  givesHardEvidence: 0
-  hardEvidenceGO: {fileID: 0}
-  changesItemDesc: 0
+  m_EditorClassIdentifier: Assembly-CSharp::CopController
+  dialogue:
+  - "\u201CBob at work keeps using my mug\u2026 And stealing my lunch\u2026\u201D"
+  - "\u201CI got a flat tire on my way to work, then a kid on an electric bike cut
+    me off\u2026\u201D"
+  - "\u201CCircle.. Heart\u2026 I forget the rest\u2026\u201D"
+  - "\u201CI lost rock paper scissors.. That's why I\u2019m here\u201D"
+  - "\u201CI dropped my master key to this place\u2026 Boss is gonna kill me\u201D "
+  dialogueIndex: 0
+--- !u!114 &1638361162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638361154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ebc0e2d1f767f4690da2c04134ef46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NoItemInteractions
 --- !u!1 &1654966587
 GameObject:
   m_ObjectHideFlags: 0
@@ -34300,8 +34318,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Continue
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7dd6700043c3b2347afe72bbdbe1debd, type: 2}
+  m_sharedMaterial: {fileID: 2504902590524686669, guid: 7dd6700043c3b2347afe72bbdbe1debd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -901,6 +901,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 719092054}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!65 &131407422
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1254,6 +1256,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 356191669}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!114 &219160770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1686,6 +1690,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 445133784}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!64 &308568476
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2697,6 +2703,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 719092054}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!1 &394837680
 GameObject:
   m_ObjectHideFlags: 0
@@ -4223,7 +4231,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: 2ba017a69e152994c9fd66b989c25400, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4285,6 +4293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DoorScript
   itemNeeded:
   - {fileID: 3043295151955953431, guid: f5ed07d89a75df543b4a350083606087, type: 3}
+  nullItems: []
   timeController: {fileID: 0}
   giveItem: 0
   itemGiven: []
@@ -5011,6 +5020,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 356191669}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!212 &625201063
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5569,13 +5580,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 680327418}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.61573803, y: 0.61573803, z: 0.34765884, w: 0.34765884}
+  m_LocalRotation: {x: 0.61993945, y: 0.61993945, z: 0.34011045, w: 0.34011045}
   m_LocalPosition: {x: -4.9723167, y: -1.9161997, z: 0.3001213}
   m_LocalScale: {x: 3.67, y: 2.17, z: 2.17}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1987710925}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 122.5, z: 90}
 --- !u!212 &680327420
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5669,6 +5680,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 445133784}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!65 &680327423
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6862,6 +6875,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 356191669}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!1001 &830680983
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7011,13 +7026,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 835550212}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: -0.7071068, z: -0, w: 0}
+  m_LocalRotation: {x: 0.7064338, y: -0.7064338, z: 0.03084358, w: -0.03084358}
   m_LocalPosition: {x: -0.037556008, y: 0, z: 0}
   m_LocalScale: {x: 0.91925454, y: 1.2131146, z: 1.4799997}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 308568474}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: 0, y: -185, z: -90}
 --- !u!114 &835550215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7103,6 +7118,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 445133784}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!1001 &842150502
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7621,6 +7638,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 356191669}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!64 &889919601
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8224,6 +8243,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 719092054}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!1 &991295982
 GameObject:
   m_ObjectHideFlags: 0
@@ -8805,6 +8826,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 490229993}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!65 &1085014738
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9184,6 +9207,7 @@ MonoBehaviour:
   itemNeeded:
   - {fileID: 1532536772341162781, guid: 9cd51f594790e1e45bb2d8356962d439, type: 3}
   - {fileID: 3043295151955953431, guid: af4429b390e0f4242889d5d6c2ad0a3f, type: 3}
+  nullItems: []
   timeController: {fileID: 0}
   giveItem: 1
   itemGiven:
@@ -9616,6 +9640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DoorScript
   itemNeeded:
   - {fileID: 3043295151955953431, guid: f5ed07d89a75df543b4a350083606087, type: 3}
+  nullItems: []
   timeController: {fileID: 0}
   giveItem: 0
   itemGiven: []
@@ -9696,7 +9721,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: 2ba017a69e152994c9fd66b989c25400, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9859,6 +9884,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 356191669}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!1 &1222169605
 GameObject:
   m_ObjectHideFlags: 0
@@ -10271,6 +10298,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 1190174442}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!114 &1258940347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11291,6 +11320,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 445133784}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!1001 &1382117700
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11805,6 +11836,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 356191669}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!1001 &1517122839
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11995,6 +12028,135 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1603423557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1603423559}
+  - component: {fileID: 1603423558}
+  m_Layer: 0
+  m_Name: Outside Ambiance
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1603423558
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603423557}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 5cdc20b1d180c5f43943cfaff0de4c3a, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1603423559
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603423557}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.98636, y: 87.09439, z: 128.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1606907910
 GameObject:
   m_ObjectHideFlags: 0
@@ -12765,13 +12927,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1722093313}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.9893855, y: -0, z: -0, w: 0.14531513}
+  m_LocalRotation: {x: 0.98911095, y: 0.0034235888, z: 0.023309758, w: -0.14527431}
   m_LocalPosition: {x: 0, y: 0.15700263, z: -0.08137876}
   m_LocalScale: {x: 0.68, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 377171864}
-  m_LocalEulerAnglesHint: {x: -44.11, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: -16.711, y: 177.3, z: 180}
 --- !u!114 &1722093316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12857,6 +13019,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 719092054}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!1001 &1732373316
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13273,6 +13437,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 1190174442}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!136 &1783921944
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -13980,8 +14146,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1840529608}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 58.402252, y: 11.539778, z: 34.52331}
+  m_LocalRotation: {x: 0.0004556161, y: 0.99381125, z: -0.11100655, w: 0.004079007}
+  m_LocalPosition: {x: 525.3542, y: 2.8191595, z: 70.553314}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14046,8 +14212,8 @@ MonoBehaviour:
   fadeSpeed: 0.01
   fadePivot: 0.1
   camAudioClip:
-  - {fileID: 0}
-  audioSourceCam: {fileID: 0}
+  - {fileID: 8300000, guid: ad2596f46163f474cbc1085c8c2f9e5e, type: 3}
+  audioSourceCam: {fileID: 1840529619}
 --- !u!114 &1840529614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14148,25 +14314,103 @@ MonoBehaviour:
   textSpeed: 0
   menuButton: {fileID: 0}
   endTimeText: {fileID: 0}
---- !u!114 &1840529619
-MonoBehaviour:
+--- !u!82 &1840529619
+AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1840529608}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bce0f5dee094ed4b9540fe087bd5917, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::OpeningTextCrawl
-  openingPanel: {fileID: 534795560}
-  playerInteract: {fileID: 736103773}
-  textCrawlTextBox: {fileID: 76725679}
-  textSpeed: 0.04
-  textCrawlString: This is the opening text crawl. the designers will replace this
-    string with something that explains what we are doing here as the player. Isn't
-    this so cool? Man, this game is programmed so well. I should thank the programmers.
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1862210747
 GameObject:
   m_ObjectHideFlags: 0
@@ -14373,7 +14617,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: 2ba017a69e152994c9fd66b989c25400, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15397,7 +15641,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -2127731599, guid: 19cc7e1e32c10374da702bc983848460, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.51, y: 0.27}
@@ -15483,6 +15727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RockScript
   itemNeeded:
   - {fileID: 3043295151955953431, guid: af4429b390e0f4242889d5d6c2ad0a3f, type: 3}
+  nullItems: []
   timeController: {fileID: 0}
   giveItem: 0
   itemGiven: []
@@ -15535,6 +15780,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 219160767}
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!1001 &2138211625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15624,3 +15871,4 @@ SceneRoots:
   - {fileID: 689288551}
   - {fileID: 355673903}
   - {fileID: 88820284}
+  - {fileID: 1603423559}
