@@ -53,17 +53,22 @@ public class ItemNeeded : MonoBehaviour
             {
                 if(nullItems.Length > 0)
                 {
+                    bool itemIsNull = false;
                     for (int j = 0; j < nullItems.Length; j++)
                     {
                         if (currentItem.GetComponent<InventoryItemScript>().GetItemId() ==
                             nullItems[j].GetComponent<InventoryItemScript>().GetItemId())
                         {
-                            NullItemUseFunctionality(currentItem);
+                            itemIsNull = true;
                         }
-                        else
-                        {
-                            ItemUseFunctionality(currentItem);
-                        }
+                    }
+                    if (itemIsNull)
+                    {
+                        NullItemUseFunctionality(currentItem);  
+                    }
+                    else
+                    {
+                        ItemUseFunctionality(currentItem);      
                     }
                 }
                 else
