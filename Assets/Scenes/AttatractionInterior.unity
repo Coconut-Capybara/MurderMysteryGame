@@ -29230,11 +29230,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
   thisObject: {fileID: 1638361154}
-  isInteractable: 0
+  isInteractable: 1
   isGrabbable: 0
   canUseOn: 0
   consumable: 0
-  givesPrompt: 0
+  givesPrompt: 1
   timeLock: 0
   isHardEvidence: 0
   timeUsage: 05000000
