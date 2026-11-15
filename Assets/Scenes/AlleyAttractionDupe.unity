@@ -3988,6 +3988,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 356191669}
+  disableInventory: 0
+  usesAltSound: 0
+  altAudioClip: {fileID: 0}
 --- !u!1 &534795560
 GameObject:
   m_ObjectHideFlags: 0
@@ -14093,6 +14096,7 @@ GameObject:
   - component: {fileID: 1840529617}
   - component: {fileID: 1840529618}
   - component: {fileID: 1840529619}
+  - component: {fileID: 1840529620}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -14432,6 +14436,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1840529620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840529608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bce0f5dee094ed4b9540fe087bd5917, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OpeningTextCrawl
+  openingPanel: {fileID: 534795560}
+  playerInteract: {fileID: 736103773}
+  textCrawlTextBox: {fileID: 76725679}
+  textSpeed: 0.04
+  textCrawlString: This string needs to be inputted in the Opening Text Crawl component
+    on the Main Camera. Please adjust me.
 --- !u!1 &1862210747
 GameObject:
   m_ObjectHideFlags: 0
