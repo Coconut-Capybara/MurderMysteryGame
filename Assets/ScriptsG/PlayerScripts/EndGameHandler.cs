@@ -84,8 +84,18 @@ public class EndGameHandler : MonoBehaviour
             i++;
             yield return new WaitForSeconds(textSpeed);
         }
-        endTimeText.text = "Your had " + TimeController.timeLeft.ToString() + " minutes left";
-        endTimeText.gameObject.SetActive(true); 
+        timeRemaining = TimeController.timeLeft;
+        if(timeRemaining >= 0)
+        {
+            endTimeText.text = "You had " + TimeController.timeLeft.ToString() + " minutes left";
+        }
+        else
+        {
+            timeRemaining = timeRemaining * -1;
+            endTimeText.text = "You went over by " + timeRemaining.ToString() + " minutes";
+        }
+
+            endTimeText.gameObject.SetActive(true); 
         menuButton.SetActive(true);
     }
     public void ExitToMenu()
