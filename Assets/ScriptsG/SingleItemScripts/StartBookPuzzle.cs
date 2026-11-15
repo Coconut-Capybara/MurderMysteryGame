@@ -13,6 +13,7 @@ public class StartBookPuzzle : NoItemInteractions
             {
                 GameObject.FindFirstObjectByType<FollowPlayerCursor>().ResetCube();
                 GameObject.FindFirstObjectByType<PlayerInteract>().SetInPrompt(true);
+                GameObject.FindFirstObjectByType<AddToInventory>().HideInventory();
                 books.SetActive(false);
                 bookPuzzlePanel.SetActive(true);
             }
