@@ -765,6 +765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 719092054}
+  disableInventory: 0
   usesAltSound: 0
   altAudioClip: {fileID: 0}
 --- !u!65 &131407422
@@ -987,6 +988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 356191669}
+  disableInventory: 0
   usesAltSound: 0
   altAudioClip: {fileID: 0}
 --- !u!114 &219160770
@@ -1421,6 +1423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 445133784}
+  disableInventory: 0
   usesAltSound: 0
   altAudioClip: {fileID: 0}
 --- !u!64 &308568476
@@ -2266,7 +2269,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 302.5378, y: 136.82819}
+  m_SizeDelta: {x: 330.8, y: 136.82819}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &365873641
 MonoBehaviour:
@@ -2434,6 +2437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 719092054}
+  disableInventory: 0
   usesAltSound: 0
   altAudioClip: {fileID: 0}
 --- !u!1 &394837680
@@ -3715,6 +3719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 356191669}
+  disableInventory: 0
   usesAltSound: 0
   altAudioClip: {fileID: 0}
 --- !u!1001 &560148294
@@ -4676,6 +4681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 356191669}
+  disableInventory: 0
   usesAltSound: 0
   altAudioClip: {fileID: 0}
 --- !u!212 &625201063
@@ -5336,6 +5342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 445133784}
+  disableInventory: 0
   usesAltSound: 0
   altAudioClip: {fileID: 0}
 --- !u!65 &680327423
@@ -6232,7 +6239,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InventoryHandler
   currentIconPos: {x: -355, y: 260}
   iconPivot: {x: 100, y: 0}
+  pivotY: 0
+  wrapNum: 0
   canvas: {fileID: 705574794}
+  count: 0
 --- !u!114 &736103773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6523,6 +6533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 356191669}
+  disableInventory: 0
   usesAltSound: 0
   altAudioClip: {fileID: 0}
 --- !u!1001 &830680983
@@ -6766,6 +6777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 445133784}
+  disableInventory: 0
   usesAltSound: 0
   altAudioClip: {fileID: 0}
 --- !u!1001 &842150502
@@ -7286,6 +7298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 356191669}
+  disableInventory: 0
   usesAltSound: 0
   altAudioClip: {fileID: 0}
 --- !u!64 &889919601
@@ -7891,6 +7904,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 719092054}
+  disableInventory: 0
   usesAltSound: 0
   altAudioClip: {fileID: 0}
 --- !u!1 &991295982
@@ -8212,7 +8226,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 6.9001465, y: -4.300049}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 100, y: 117}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1051528607
 MonoBehaviour:
@@ -8474,6 +8488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 490229993}
+  disableInventory: 0
   usesAltSound: 0
   altAudioClip: {fileID: 0}
 --- !u!65 &1085014738
@@ -8749,7 +8764,8 @@ MonoBehaviour:
   timeUsage: 0a00000005000000
   resultsText:
   - You fail to remove the key. Maybe you can find something to pry it off?
-  - You use the screwdriver to break the key
+  - You use the screwdriver to break the key off the rock. Unfortunately, the screwdriver
+    breaks.
   timeText:
   - 'There is a key attached to the rock, will you try to take it off? '
   - 'There is a key attached to the rock, will you try to take it off? '
@@ -9532,6 +9548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 356191669}
+  disableInventory: 0
   usesAltSound: 0
   altAudioClip: {fileID: 0}
 --- !u!1 &1222169605
@@ -9946,6 +9963,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 1190174442}
+  disableInventory: 0
   usesAltSound: 0
   altAudioClip: {fileID: 0}
 --- !u!114 &1258940347
@@ -10968,6 +10986,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 445133784}
+  disableInventory: 0
   usesAltSound: 0
   altAudioClip: {fileID: 0}
 --- !u!1001 &1382117700
@@ -11484,6 +11503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 356191669}
+  disableInventory: 0
   usesAltSound: 0
   altAudioClip: {fileID: 0}
 --- !u!1001 &1517122839
@@ -12667,6 +12687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 719092054}
+  disableInventory: 0
   usesAltSound: 0
   altAudioClip: {fileID: 0}
 --- !u!1001 &1732373316
@@ -13085,6 +13106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 1190174442}
+  disableInventory: 0
   usesAltSound: 0
   altAudioClip: {fileID: 0}
 --- !u!136 &1783921944
@@ -15292,6 +15314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePointData
   cineCam: {fileID: 219160767}
+  disableInventory: 0
   usesAltSound: 0
   altAudioClip: {fileID: 0}
 --- !u!1001 &2138211625
