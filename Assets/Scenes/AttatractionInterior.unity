@@ -11538,7 +11538,6 @@ GameObject:
   - component: {fileID: 558196559}
   - component: {fileID: 558196564}
   - component: {fileID: 558196563}
-  - component: {fileID: 558196562}
   - component: {fileID: 558196561}
   - component: {fileID: 558196560}
   - component: {fileID: 558196566}
@@ -11641,21 +11640,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 50, y: 100}
   m_EdgeRadius: 0
---- !u!114 &558196562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 558196558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc472894baafbe44f817d3817820412f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BookScript
-  value: 0
-  curPos: {x: -152.5, y: 89.5}
-  targetBook: {fileID: 0}
 --- !u!114 &558196563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24165,7 +24149,6 @@ GameObject:
   - component: {fileID: 1317346222}
   - component: {fileID: 1317346227}
   - component: {fileID: 1317346226}
-  - component: {fileID: 1317346225}
   - component: {fileID: 1317346224}
   - component: {fileID: 1317346223}
   - component: {fileID: 1317346229}
@@ -24268,21 +24251,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 50, y: 100}
   m_EdgeRadius: 0
---- !u!114 &1317346225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1317346221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc472894baafbe44f817d3817820412f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BookScript
-  value: 0
-  curPos: {x: 143.5, y: 89.5}
-  targetBook: {fileID: 0}
 --- !u!114 &1317346226
 MonoBehaviour:
   m_ObjectHideFlags: 0
