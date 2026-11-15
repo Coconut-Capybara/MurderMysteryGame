@@ -9,6 +9,10 @@ public class OpeningTextCrawl : MonoBehaviour
     [SerializeField] private TMP_Text textCrawlTextBox;
     [SerializeField] private float textSpeed;
     [SerializeField] private string textCrawlString;
+    [SerializeField] private float endSentenceWaitTime;
+    [SerializeField] private float commaWaitTime;
+    private float codeTextSpeed;
+    [SerializeField] private int[] enterCharacter;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -31,9 +35,33 @@ public class OpeningTextCrawl : MonoBehaviour
         int i = 0;
         while (i < text.Length)
         {
+            if (text[i].ToString() == ".")
+            {
+                codeTextSpeed = endSentenceWaitTime;
+            }
+            else if (text[i].ToString() == ",")
+            {
+                codeTextSpeed = commaWaitTime;
+            }
+            else
+            {
+                codeTextSpeed = textSpeed;
+            }
+            if (text[i].ToString() == "-")
+            {
+                textCrawlTextBox.text += "\n";
+            }
+            for(int o = 0;  o < enterCharacter.Length; o++)
+            {
+                if (i == enterCharacter[o])
+                {
+                    textCrawlTextBox.text += "\n";
+                }
+            }
+
             textCrawlTextBox.text += text[i];
             i++;
-            yield return new WaitForSeconds(textSpeed);
+            yield return new WaitForSeconds(codeTextSpeed);
         }
     }
 }

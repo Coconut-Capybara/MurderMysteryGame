@@ -455,14 +455,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "There\u2019s a knock on your door. The cops are useless, and someone is
-    in need of a detective.\nIt\u2019s a last minute call, someone\u2019s been murdered
-    in one of those haunted attractions. They\u2019ve already caught the perpetrator,
-    and now they just need someone to get them the right evidence for the trial.\n\nThey
-    need you to find:\n- The murder weapon\n- Proof of motive to kill\n- Video evidence
-    of the killer\u2019s presence\n- Forensic evidence\n\nIt\u2019s a rush job, so
-    you won\u2019t have much time before you need to deliver your findings. Maybe
-    that\u2019s why the pay is so good.\n"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7dd6700043c3b2347afe72bbdbe1debd, type: 2}
   m_sharedMaterial: {fileID: 2504902590524686669, guid: 7dd6700043c3b2347afe72bbdbe1debd, type: 2}
@@ -1092,7 +1085,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1840529619}
+      - m_Target: {fileID: 1840529620}
         m_TargetAssemblyTypeName: OpeningTextCrawl, Assembly-CSharp
         m_MethodName: CloseOpening
         m_Mode: 1
@@ -14459,8 +14452,17 @@ MonoBehaviour:
   playerInteract: {fileID: 736103773}
   textCrawlTextBox: {fileID: 76725679}
   textSpeed: 0.04
-  textCrawlString: This string needs to be inputted in the Opening Text Crawl component
-    on the Main Camera. Please adjust me.
+  textCrawlString: "There\u2019s a knock on your door. The cops are useless, and
+    someone is in need of a detective. It\u2019s a last minute call, someone\u2019s
+    been murdered in one of those haunted attractions. They\u2019ve already caught
+    the perpetrator, and now they just need someone to get them the right evidence
+    for the trial.  They need you to find: - The murder weapon - Proof of motive
+    to kill - Video evidence of the killer\u2019s presence - Forensic evidence  It\u2019s
+    a rush job, so you won\u2019t have much time before you need to deliver your
+    findings. Maybe that\u2019s why the pay is so good. "
+  endSentenceWaitTime: 0.5
+  commaWaitTime: 0.25
+  enterCharacter: 2701000027010000ab010000ab010000
 --- !u!1 &1862210747
 GameObject:
   m_ObjectHideFlags: 0
