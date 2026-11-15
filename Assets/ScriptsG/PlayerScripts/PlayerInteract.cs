@@ -242,6 +242,7 @@ public class PlayerInteract : MonoBehaviour
 
             if(item.GetComponent<ObjectProperties>().timeUsage[0] > 0 && !hoverItem.GetComponent<ObjectProperties>().timeLock)
             {
+                
                 TimeCheck();    
             }
             else
@@ -251,6 +252,7 @@ public class PlayerInteract : MonoBehaviour
                     GetComponent<TextPrompts>().ShowPrompt(item.GetComponent<ObjectProperties>()
                         .resultsText[0]);
                 }
+                
                 item.GetComponent<NoItemInteractions>().NoItemFunciton();
             }
         }
@@ -285,10 +287,11 @@ public class PlayerInteract : MonoBehaviour
         inPrompt = false;
         timeController.YesButton();
         hoverItem.GetComponent<ObjectProperties>().timeUsage[timeController.index] = 0;
-    
+        print("Starting");
         if (itemUseLock)
         {
             ItemUsageCheck(hoverItem, lockedItem);
+            itemUseLock = false;    
             if (!hoverItem.GetComponent<ObjectProperties>().disableTimeLock)
             {
                 hoverItem.GetComponent<ObjectProperties>().timeLock = true;
@@ -301,6 +304,7 @@ public class PlayerInteract : MonoBehaviour
             {
                 hoverItem.GetComponent<ObjectProperties>().timeLock = true;
             }
+            
             Interact(hoverItem);
             if (hoverItem.GetComponent<RockScript>() != null)
             {

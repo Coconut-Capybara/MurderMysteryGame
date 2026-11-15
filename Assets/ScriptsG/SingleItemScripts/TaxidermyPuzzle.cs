@@ -128,6 +128,7 @@ public class TaxidermyPuzzle : NoItemInteractions
         confirmButton.SetActive(true);
         resetButton.SetActive(true);   
         backArrow.SetActive(false);
+        GameObject.FindFirstObjectByType<AddToInventory>().HideInventory();
     }
     private void EndPuzzle()
     {

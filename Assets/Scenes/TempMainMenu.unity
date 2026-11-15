@@ -1662,16 +1662,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Last night, Oct. 30th, A murder took place at \u201CHenry\u2019s Haunted
-    Shack.\u201D \nThe details are unimportant to you, but all you need to know is
-    that the murderer did all but admit to their crimes. \nDue to Judge Jeremy\u2019s
-    strictness, we need at least 5-6 pieces of evidence from the crime scene to prosecute
-    him. \nI don\u2019t think I need to remind you how important a job like this
-    is, especially given how dubious the department is about the necessity of your
-    position. \nI\u2019m sure excelling at a job like this could cement you in the
-    department a bit more. \n\r\nOh, and the court hearing is tomorrow.\r\n"
+  m_text: "There\u2019s a knock on your door. The cops are useless, and someone is
+    in need of a detective.\r\nIt\u2019s a last minute call, someone\u2019s been
+    murdered in one of those haunted attractions. They\u2019ve already caught the
+    perpetrator, and now they just need someone to get them the right evidence for
+    the trial.\r\n\r\nThey need you to find:\r\n- The murder weapon\r\n- Proof of
+    motive to kill\r\n- Video evidence of the killer\u2019s presence\r\n- Forensic
+    evidence\r\n\r\nIt\u2019s a rush job, so you won\u2019t have much time before
+    you need to deliver your findings. Maybe that\u2019s why the pay is so good.\r\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7dd6700043c3b2347afe72bbdbe1debd, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1696,8 +1696,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 41.7
+  m_fontSizeBase: 41.7
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1737,7 +1737,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &921690409

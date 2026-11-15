@@ -19,7 +19,7 @@ public class TaxidermyHeadScript : NoItemInteractions
     /// returns the animal head to its set position
     /// </summary>
     public override void NoItemFunciton()
-    {
+    {        
         if (puzzle.GetPuzzleActive())
         {
             if (puzzle.GetHeadCount() < 3 && !locked)
@@ -31,6 +31,7 @@ public class TaxidermyHeadScript : NoItemInteractions
         }
         else
         {
+            
             puzzle.StartPuzzle();   
         }
     }
