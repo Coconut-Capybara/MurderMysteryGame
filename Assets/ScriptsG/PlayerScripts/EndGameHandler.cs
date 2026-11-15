@@ -30,11 +30,12 @@ public class EndGameHandler : MonoBehaviour
     InputAction instantEnd;
     InputAction restart;
     private int timeRemaining;
+
     private void Start()
     {
         instantEnd = InputSystem.actions.FindAction("InstantEnd");
         restart = InputSystem.actions.FindAction("Restart");
-        evidenceNum.text = "Evidence Collected: " + totalHardEvidence;
+        //evidenceNum.text = "Evidence Collected: " + totalHardEvidence;
     }
     /// <summary>
     /// Adds to your total hard evidence
@@ -42,7 +43,7 @@ public class EndGameHandler : MonoBehaviour
     public void CollectHardEvidence()
     {
         totalHardEvidence += 1;
-        evidenceNum.text = "Evidence Collected: " + totalHardEvidence;
+        //evidenceNum.text = "Evidence Collected: " + totalHardEvidence;
         if (totalHardEvidence == 4)
         {
             EndGame();
@@ -83,16 +84,18 @@ public class EndGameHandler : MonoBehaviour
             i++;
             yield return new WaitForSeconds(textSpeed);
         }
-        if (TimeController.timeLeft >= 0)
+        timeRemaining = TimeController.timeLeft;
+        if(timeRemaining >= 0)
         {
             endTimeText.text = "You had " + TimeController.timeLeft.ToString() + " minutes left";
         }
         else
         {
-            timeRemaining = (TimeController.timeLeft * -1);
+            timeRemaining = timeRemaining * -1;
             endTimeText.text = "You went over by " + timeRemaining.ToString() + " minutes";
         }
-        endTimeText.gameObject.SetActive(true); 
+
+            endTimeText.gameObject.SetActive(true); 
         menuButton.SetActive(true);
     }
     public void ExitToMenu()
