@@ -432,7 +432,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 106}
+  m_AnchoredPosition: {x: 0, y: 95}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &76725679
@@ -482,14 +482,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 26
+  m_fontSizeBase: 26
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -520,7 +520,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -138.00029, y: 0, z: -184.65555, w: -268.3587}
+  m_margin: {x: -246.27162, y: -143.52203, z: -92.3584, w: -268.3587}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1085,7 +1085,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1840529619}
+      - m_Target: {fileID: 1840529620}
         m_TargetAssemblyTypeName: OpeningTextCrawl, Assembly-CSharp
         m_MethodName: CloseOpening
         m_Mode: 1
@@ -14452,8 +14452,17 @@ MonoBehaviour:
   playerInteract: {fileID: 736103773}
   textCrawlTextBox: {fileID: 76725679}
   textSpeed: 0.04
-  textCrawlString: This string needs to be inputted in the Opening Text Crawl component
-    on the Main Camera. Please adjust me.
+  textCrawlString: "There\u2019s a knock on your door. The cops are useless, and
+    someone is in need of a detective. It\u2019s a last minute call, someone\u2019s
+    been murdered in one of those haunted attractions. They\u2019ve already caught
+    the perpetrator, and now they just need someone to get them the right evidence
+    for the trial.  They need you to find: - The murder weapon - Proof of motive
+    to kill - Video evidence of the killer\u2019s presence - Forensic evidence  It\u2019s
+    a rush job, so you won\u2019t have much time before you need to deliver your
+    findings. Maybe that\u2019s why the pay is so good. "
+  endSentenceWaitTime: 0.5
+  commaWaitTime: 0.25
+  enterCharacter: 2701000027010000ab010000ab010000
 --- !u!1 &1862210747
 GameObject:
   m_ObjectHideFlags: 0
