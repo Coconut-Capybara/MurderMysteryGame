@@ -66,6 +66,11 @@ public class TimeController : MonoBehaviour
         {
             timerText.text = hoursLeft.ToString() + ":00 left";
         }
+        else if (minutesLeft > 0 && minutesLeft < 10)
+        {
+            print("less than 10 mins");
+            timerText.text = hoursLeft.ToString() + ":0" + minutesLeft.ToString();
+        }
         else
         {
             timerText.text = hoursLeft.ToString() + ":" + minutesLeft.ToString() + " left";
@@ -144,8 +149,20 @@ public class TimeController : MonoBehaviour
     private void TimeFormat()
     {
         hoursLeft = timeLeft / 60;
-        minutesLeft = timeLeft % 60;
-        timerText.text = hoursLeft.ToString() + ":" + minutesLeft.ToString() + " left";
+        minutesLeft = timeLeft % 60; 
+        if (minutesLeft == 0)
+        {
+            timerText.text = hoursLeft.ToString() + ":00 left";
+        }
+        else if (minutesLeft > 0 && minutesLeft < 10)
+        {
+            //print("less than 10 mins");
+            timerText.text = hoursLeft.ToString() + ":0" + minutesLeft.ToString() + " left";
+        }
+        else
+        {
+            timerText.text = hoursLeft.ToString() + ":" + minutesLeft.ToString() + " left";
+        }
         TimeOutCheck();
     }
 
