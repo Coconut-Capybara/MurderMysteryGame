@@ -316,7 +316,9 @@ public class PlayerInteract : MonoBehaviour
                 hoverItem.GetComponent<ObjectProperties>().timeUsage[0] = 10;
                 hoverItem.GetComponent<CopController>().UpdateTimePrompt(hoverItem.GetComponent<ObjectProperties>());
             }
+              
         }
+        timeController.index = 0;
     }
 
     public void HidePrompt()
