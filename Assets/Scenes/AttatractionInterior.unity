@@ -1213,7 +1213,7 @@ MonoBehaviour:
   - 
   timeText:
   - 
-  itemDesc: A hatchet.. looks sharp.
+  itemDesc: A hatchet.. looks sharp and powerful, yet a bit fragile.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
@@ -6478,7 +6478,7 @@ Transform:
   m_GameObject: {fileID: 348458166}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 51, y: 40, z: -39}
+  m_LocalPosition: {x: 51, y: 40, z: -40.22}
   m_LocalScale: {x: 2.4071798, y: 2.4071798, z: 2.4071798}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -7393,7 +7393,7 @@ MonoBehaviour:
   - 
   timeText:
   - 
-  itemDesc: A pink book. The diamond on it is a shape with four points.
+  itemDesc: A butterfly knife. Could be good if I need to cut something.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
@@ -9338,6 +9338,7 @@ Transform:
   - {fileID: 1690593542}
   - {fileID: 531105606}
   - {fileID: 2075281889}
+  - {fileID: 1295632421}
   - {fileID: 1105321583}
   - {fileID: 53737884}
   - {fileID: 306102259}
@@ -9518,6 +9519,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
   itemNeeded:
   - {fileID: 8200676748390764321, guid: 3af3dce20f2135e47a2d5a284275d89b, type: 3}
+  - {fileID: 3043295151955953431, guid: 56649c4aca68833439473295a236299a, type: 3}
+  - {fileID: 3043295151955953431, guid: ac345af95cab395488b3fae00d0818a3, type: 3}
   nullItems: []
   timeController: {fileID: 1840529622}
   giveItem: 0
@@ -9551,11 +9554,15 @@ MonoBehaviour:
   givesPrompt: 1
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 05000000
+  timeUsage: 05000000190000000f000000
   resultsText:
   - You open it up with some slight difficulty.
+  - You bash the locker enough to break it open.
+  - You slash the locker enough for it to open up.
   timeText:
   - Pry the locker open with the crowbar?
+  - Bash the locker open with the hammer?
+  - Slash the locker open with the hatchet?
   itemDesc: This locker's Jammed shut. What could be in here?
   itemChangesDesc: 1
   usingItemChangeDesc: 0
@@ -9569,6 +9576,8 @@ MonoBehaviour:
   audioSource: {fileID: 1840529627}
   interactSound: {fileID: 0}
   itemUseSounds:
+  - {fileID: 8300000, guid: 2f600d94602564a99ad4dad55a4a317d, type: 3}
+  - {fileID: 8300000, guid: 2f600d94602564a99ad4dad55a4a317d, type: 3}
   - {fileID: 8300000, guid: 2f600d94602564a99ad4dad55a4a317d, type: 3}
   hardEvidenceImage: {fileID: 0}
   hardEvidenceSprite: {fileID: 0}
@@ -13831,7 +13840,7 @@ MonoBehaviour:
   - 
   timeText:
   - 
-  itemDesc: 
+  itemDesc: A wire coat hanger.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
@@ -23603,14 +23612,12 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 05000000050000000a000000
+  timeUsage: 050000000a000000
   resultsText:
   - You use the tongs to pull out the hair.
-  - You did some sick tricks with the butterfly knife. Great use of time champ...
   - You somehow fished the hair out of the fireplace. The hanger is useless now.
   timeText:
   - Do you want to use the tongs to reach into the fireplace?
-  - Do you want to use the butterfly knife?
   - Do you want to use the hanger to reach into the fireplace?
   itemDesc: A broken fireplace cover. I think I see some hair behind it, but I can't
     reach with the sharp glass in the way.
@@ -23628,8 +23635,8 @@ MonoBehaviour:
   itemUseSounds: []
   hardEvidenceImage: {fileID: 391525554}
   hardEvidenceSprite: {fileID: -400149122, guid: 26d345655a507de40b3dc9df6bbc4726, type: 3}
-  hardEvidenceDesc: '"Some hair from a struggle that occured here. This should help
-    identify the murderer."'
+  hardEvidenceDesc: Some hair from a struggle that occured here. This should help
+    identify the murderer.
 --- !u!114 &1265145527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23644,7 +23651,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemNeeded
   itemNeeded:
   - {fileID: 3043295151955953431, guid: c143d2a1da15d3b40a1c61620e3ea471, type: 3}
-  - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
   - {fileID: 3043295151955953431, guid: 81180f53294f8544e9131da3642a253d, type: 3}
   nullItems:
   - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
@@ -23877,6 +23883,117 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1291395124}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1295632420
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1295632421}
+  - component: {fileID: 1295632424}
+  - component: {fileID: 1295632423}
+  - component: {fileID: 1295632422}
+  m_Layer: 7
+  m_Name: Cube (20)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1295632421
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295632420}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -42.8332, y: -62.6, z: 86.7508}
+  m_LocalScale: {x: 0.0665, y: 214.28639, z: 370.2314}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 449602470}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!65 &1295632422
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295632420}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1295632423
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295632420}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1295632424
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295632420}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1307227041
 GameObject:
@@ -33908,7 +34025,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TimeController
   hoursLeft: 0
   minutesLeft: 0
-  isTesting: 1
+  isTesting: 0
   debugTimeLeft: 100
   timePanel: {fileID: 579747944}
   timeAwayText: {fileID: 1022981996}
@@ -37084,13 +37201,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1994962207}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -8.486, y: -3.675, z: 157.56}
+  m_LocalRotation: {x: 0.4096136, y: -0.5763824, z: 0.4096136, w: 0.5763824}
+  m_LocalPosition: {x: -8.45, y: -3.675, z: 157.56}
   m_LocalScale: {x: 0.67865, y: 0.67865, z: 0.67865}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2035073337}
-  m_LocalEulerAnglesHint: {x: 90, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 70.8, y: -90, z: 0}
 --- !u!114 &1994962209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38971,8 +39088,8 @@ Transform:
   m_GameObject: {fileID: 2075281888}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -1.7, y: 28.7, z: -5.966}
-  m_LocalScale: {x: 0.0665, y: 115.3, z: 140.53}
+  m_LocalPosition: {x: -1.7, y: 28.7, z: 85.5857}
+  m_LocalScale: {x: 0.0665, y: 115.3, z: 323.62656}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 449602470}
@@ -43248,7 +43365,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7dd6700043c3b2347afe72bbdbe1debd, type: 2}
   m_sharedMaterial: {fileID: 2504902590524686669, guid: 7dd6700043c3b2347afe72bbdbe1debd, type: 2}
