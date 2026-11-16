@@ -195,7 +195,8 @@ public class PlayerInteract : MonoBehaviour
                 }
             }
         }
-        
+        itemUseLock = false;
+
     }
     /// <summary>
     /// Performs objects interaction, when interacted with
