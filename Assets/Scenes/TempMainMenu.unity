@@ -1766,7 +1766,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &973096095
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3760,7 +3760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenuController
   firstScene: AlleyAttractionDupe
-  timeStart: 110
+  timeStart: 80
   creditsPanel: {fileID: 778309582}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
