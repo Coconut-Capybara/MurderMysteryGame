@@ -20,7 +20,7 @@ public class PlayerInteract : MonoBehaviour
     [SerializeField] private GameObject currentItem;
     [Tooltip("The object that the player cursor is currently over")]
     [SerializeField] private GameObject hoverItem;
-    private bool itemUseLock;
+    [SerializeField] private bool itemUseLock;
     private GameObject lockedItem;
     private TimeController timeController;
     [Tooltip("Whether the player is currently in a prompt state. DO NOT MANUALLY ASSIGN")]
@@ -190,12 +190,13 @@ public class PlayerInteract : MonoBehaviour
                         {
                             GetComponent<TextPrompts>().ShowPrompt(_hoverItem.GetComponent<ObjectProperties>()
                                 .resultsText[itemIndex]);
+                            itemUseLock = false;
                         }
                     }
                 }
             }
         }
-        itemUseLock = false;
+        
 
     }
     /// <summary>
@@ -288,7 +289,7 @@ public class PlayerInteract : MonoBehaviour
         inPrompt = false;
         timeController.YesButton();
         hoverItem.GetComponent<ObjectProperties>().timeUsage[timeController.index] = 0;
-        print("Starting");
+        
         if (itemUseLock)
         {
             ItemUsageCheck(hoverItem, lockedItem);
