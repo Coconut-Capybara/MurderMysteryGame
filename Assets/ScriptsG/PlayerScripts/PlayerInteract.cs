@@ -108,6 +108,7 @@ public class PlayerInteract : MonoBehaviour
                 if(currentItem != null)
                 {
                     currentItem.GetComponent<InventoryItemScript>().SetIsGrabbed();
+                    GameObject.FindFirstObjectByType<ItemInspections>().HideItemDescPanel();
                     cursorState = CursorState.HoldingItem;
                 }
             }
