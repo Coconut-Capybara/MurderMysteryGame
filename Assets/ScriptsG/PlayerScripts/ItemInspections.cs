@@ -57,6 +57,13 @@ public class ItemInspections : MonoBehaviour
             }
         }
     }
+    public IEnumerator InventoryInspect(GameObject item)
+    {
+        inDelay = true;
+        yield return new WaitForSeconds(delay);
+        print("ping");
+        ShowItemDescPanel(item);
+    }
     /// <summary>
     /// shows description panel, starts text coroutine
     /// Can be used for player dialouge 
