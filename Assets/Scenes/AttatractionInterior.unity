@@ -524,7 +524,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 000000000a00000014000000
+  timeUsage: 00000000050000000a000000
   resultsText:
   - 
   - You were able to cut open the lock successfully. It was tougher than expected...
@@ -1731,7 +1731,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 000000000a00000014000000
+  timeUsage: 00000000050000000a000000
   resultsText:
   - 
   - You were able to cut open the lock successfully. It was tougher than expected...
@@ -3970,7 +3970,7 @@ MonoBehaviour:
   givesPrompt: 1
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 000000000300000005000000
+  timeUsage: 000000000500000005000000
   resultsText:
   - I put the eye in it's socket, and a key fell out of it's mouth!
   - I gave the bear's head a little whack, and a key falls out of the bear's mouth.
@@ -5977,7 +5977,7 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 000000000a00000014000000
+  timeUsage: 00000000050000000a000000
   resultsText:
   - 
   - You were able to cut open the lock successfully. It was tougher than expected...
@@ -9521,7 +9521,9 @@ MonoBehaviour:
   - {fileID: 8200676748390764321, guid: 3af3dce20f2135e47a2d5a284275d89b, type: 3}
   - {fileID: 3043295151955953431, guid: 56649c4aca68833439473295a236299a, type: 3}
   - {fileID: 3043295151955953431, guid: ac345af95cab395488b3fae00d0818a3, type: 3}
-  nullItems: []
+  - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
+  nullItems:
+  - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
   timeController: {fileID: 1840529622}
   giveItem: 0
   itemGiven: []
@@ -9554,15 +9556,17 @@ MonoBehaviour:
   givesPrompt: 1
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 05000000190000000f000000
+  timeUsage: 050000000a0000000f00000005000000
   resultsText:
   - You open it up with some slight difficulty.
   - You bash the locker enough to break it open.
   - You slash the locker enough for it to open up.
+  - You did some sick tricks with the butterfly knife. Great use of time champ....
   timeText:
   - Pry the locker open with the crowbar?
   - Bash the locker open with the hammer?
   - Slash the locker open with the hatchet?
+  - Do you want to use the butterfky knife?
   itemDesc: This locker's Jammed shut. What could be in here?
   itemChangesDesc: 1
   usingItemChangeDesc: 0
@@ -10230,11 +10234,11 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 1e000000
+  timeUsage: 14000000
   resultsText:
   - 
   timeText:
-  - Do you want to swap the heads around? This will take 30 minutes.
+  - Do you want to swap the heads around?
   itemDesc: A taxidermy deer head. Looks heavy.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -11135,11 +11139,11 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 1e000000
+  timeUsage: 14000000
   resultsText:
   - 
   timeText:
-  - Do you want to swap the heads around? This will take 30 minutes.
+  - Do you want to swap the heads around?
   itemDesc: A taxidermy boar head. Looks heavy.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -23612,13 +23616,15 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 050000000a000000
+  timeUsage: 050000000a00000005000000
   resultsText:
   - You use the tongs to pull out the hair.
   - You somehow fished the hair out of the fireplace. The hanger is useless now.
+  - You did some sick tricks with the butterfly knife. Great use of time champ...
   timeText:
   - Do you want to use the tongs to reach into the fireplace?
   - Do you want to use the hanger to reach into the fireplace?
+  - Do you want to use the butterfly knife?
   itemDesc: A broken fireplace cover. I think I see some hair behind it, but I can't
     reach with the sharp glass in the way.
   itemChangesDesc: 1
@@ -23652,6 +23658,7 @@ MonoBehaviour:
   itemNeeded:
   - {fileID: 3043295151955953431, guid: c143d2a1da15d3b40a1c61620e3ea471, type: 3}
   - {fileID: 3043295151955953431, guid: 81180f53294f8544e9131da3642a253d, type: 3}
+  - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
   nullItems:
   - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
   timeController: {fileID: 0}
@@ -25919,15 +25926,17 @@ MonoBehaviour:
   givesPrompt: 1
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 050000000a00000014000000
+  timeUsage: 050000000a0000000f00000005000000
   resultsText:
   - 'You open the trapdoor, and find a crowbar inside!  '
   - After a bit of trying, you smash one of the chain links, opening the trapdoor.
   - With imense effort, you were able to break open the trapdoor.
+  - You did some sick tricks with the butterfly knife. Great use of time champ...
   timeText:
   - Attempt to cut the chain locking the trapdoor?
   - Try to smash the chain with the hammer?
   - Do you want to use the hatchet to break open the trapdoor?
+  - 'Do you want to use the butterfly knife? '
   itemDesc: A trapdoor. Probably has some useful equipment in there.
   itemChangesDesc: 1
   usingItemChangeDesc: 0
@@ -26042,7 +26051,8 @@ MonoBehaviour:
   - {fileID: 3043295151955953431, guid: 4d5ff387521a8f04cb7c6499b11c3631, type: 3}
   - {fileID: 3043295151955953431, guid: 56649c4aca68833439473295a236299a, type: 3}
   - {fileID: 3043295151955953431, guid: ac345af95cab395488b3fae00d0818a3, type: 3}
-  nullItems: []
+  nullItems:
+  - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
   timeController: {fileID: 1840529622}
   giveItem: 1
   itemGiven:
@@ -28403,13 +28413,15 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 0000000003000000
+  timeUsage: 050000000a00000005000000
   resultsText:
-  - 
-  - You broke open the bottle (sorry little ship) and got the key from inside.
+  - You used the hammer to carefully break open the bottle. You found a key inside.
+  - You broke open the bottle and got the key from inside.
+  - You did some sick tricks with the butterfly knife. Great use of time champ...
   timeText:
-  - 
+  - Would you like to use the hammer to break open the bottle?
   - Would you like to use the crowbar to smash open the bottle?
+  - Do you want to use the butterfly knife?
   itemDesc: A ship in a bottle. Looking closer, there's a key inside as well!
   itemChangesDesc: 1
   usingItemChangeDesc: 0
@@ -28520,7 +28532,9 @@ MonoBehaviour:
   itemNeeded:
   - {fileID: 3043295151955953431, guid: 56649c4aca68833439473295a236299a, type: 3}
   - {fileID: 8200676748390764321, guid: 3af3dce20f2135e47a2d5a284275d89b, type: 3}
-  nullItems: []
+  - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
+  nullItems:
+  - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
   timeController: {fileID: 0}
   giveItem: 1
   itemGiven:
@@ -33850,6 +33864,7 @@ MonoBehaviour:
   playerCam: {fileID: 1840529610}
   currentItem: {fileID: 0}
   hoverItem: {fileID: 0}
+  itemUseLock: 0
   inPrompt: 0
   inGame: 0
   cursorState: 0
@@ -39534,11 +39549,11 @@ MonoBehaviour:
   givesPrompt: 0
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 1e000000
+  timeUsage: 14000000
   resultsText:
   - 
   timeText:
-  - Do you want to swap the heads around? This will take 30 minutes.
+  - Do you want to swap the heads around?
   itemDesc: A taxidermy wolf head. Looks heavy.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
