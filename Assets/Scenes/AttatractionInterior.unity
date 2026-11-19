@@ -13799,11 +13799,11 @@ Transform:
   m_GameObject: {fileID: 651442029}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.11, y: 12.673, z: 19.210007}
+  m_LocalPosition: {x: -4.1099997, y: 6.6330004, z: 134.04001}
   m_LocalScale: {x: 2.43, y: 2.43, z: 2.43}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 825273750}
+  m_Father: {fileID: 2035073337}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &651442031
 MonoBehaviour:
@@ -13844,7 +13844,7 @@ MonoBehaviour:
   - 
   timeText:
   - 
-  itemDesc: A wire coat hanger.
+  itemDesc: A wire coat hanger. Useful but feeble.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
@@ -15940,7 +15940,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
   thisObject: {fileID: 0}
-  isInteractable: 1
+  isInteractable: 0
   isGrabbable: 0
   canUseOn: 1
   consumable: 0
@@ -16454,7 +16454,6 @@ Transform:
   - {fileID: 1654966591}
   - {fileID: 122836873}
   - {fileID: 968813845}
-  - {fileID: 651442030}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &825480305
@@ -29197,7 +29196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
   thisObject: {fileID: 0}
-  isInteractable: 1
+  isInteractable: 0
   isGrabbable: 0
   canUseOn: 1
   consumable: 0
@@ -31964,7 +31963,7 @@ MonoBehaviour:
   - 
   timeText:
   - 
-  itemDesc: 
+  itemDesc: A flashlight. I can use this to light up dark areas.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
@@ -37752,6 +37751,7 @@ Transform:
   m_Children:
   - {fileID: 1994962208}
   - {fileID: 382853810}
+  - {fileID: 651442030}
   m_Father: {fileID: 1022070596}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2038952210
@@ -38890,7 +38890,7 @@ MonoBehaviour:
   - 
   timeText:
   - 
-  itemDesc: A hammer! This could be useful.
+  itemDesc: A crowbar. This could be useful for prying open things.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 

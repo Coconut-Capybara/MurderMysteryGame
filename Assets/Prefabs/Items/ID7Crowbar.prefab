@@ -101,7 +101,7 @@ MonoBehaviour:
   timeUsage: 
   resultsText: []
   timeText: []
-  itemDesc: 
+  itemDesc: A crowbar. This could be useful for prying open things.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
