@@ -1,0 +1,694 @@
+fileFormatVersion: 2
+guid: 5dd4a8da5d61a3448a692b77d8395541
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KnifeRaytrace2_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1168
+        width: 451
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9692b682207c3514fa023fd2256226f2
+      internalID: -1401336154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeRaytrace2_1
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1168
+        width: 451
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83db73d55a7561c48b41b4092bd851b3
+      internalID: 1782887135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeRaytrace2_2
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 1168
+        width: 451
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1cb72d944a43984083c2ea15e2b209c
+      internalID: 1732357239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeRaytrace2_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 1168
+        width: 451
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7591b6ec11eab10499d8c9f007542e68
+      internalID: 377393887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeRaytrace2_4
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 1168
+        width: 451
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8634174e65c64f1439f22f0b41761f46
+      internalID: 2029702789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeRaytrace2_5
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 877
+        width: 451
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f07be2d3a42adf478ae02314e1bb163
+      internalID: 1099777614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeRaytrace2_6
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 877
+        width: 451
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f7853e23fa1ab4dabee5e01197565d
+      internalID: -1676213814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeRaytrace2_7
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 877
+        width: 451
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13a43e0ea4bf87d4abda12a2f2f5ff6c
+      internalID: -1127674862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeRaytrace2_8
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 877
+        width: 451
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96fa01bd5641099468ce4b4308229fc2
+      internalID: -1488789122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeRaytrace2_9
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 877
+        width: 451
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 417b9f4b567c80940a214d7afa4d5b7a
+      internalID: -1277201850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeRaytrace2_10
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 586
+        width: 451
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe79cbba70850e2478a50a15ead72153
+      internalID: 2021774745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeRaytrace2_11
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 586
+        width: 451
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30a514ea9e86dd6449662904397deac6
+      internalID: 1056094313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeRaytrace2_12
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 586
+        width: 451
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20248e4108caed64dba7b3143c830594
+      internalID: -1678904864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeRaytrace2_13
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 586
+        width: 451
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a4127539b009864f9ca02e1d25258a4
+      internalID: 1933222517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeRaytrace2_14
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 586
+        width: 451
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be9a17744f3b1f409393f14cda47915
+      internalID: 1374941200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeRaytrace2_15
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 295
+        width: 451
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c8fd9cd4ce1754db2705f7f8572937
+      internalID: 971047343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeRaytrace2_16
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 295
+        width: 451
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe256a9abd9f9fe499e35f28b52ea032
+      internalID: -2000909482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeRaytrace2_17
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 295
+        width: 451
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c4401dc9dd1f054db69c1b524203592
+      internalID: -1742283710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeRaytrace2_18
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 295
+        width: 451
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67144c8eae138a04bab5d6161d7411aa
+      internalID: 757898930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeRaytrace2_19
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 295
+        width: 451
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f08836003cee4f4bb61c6aacf6812d1
+      internalID: 1207768598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeRaytrace2_20
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 4
+        width: 451
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 096eb8da855ff294eb3a580b9d0c6eb7
+      internalID: -367499769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeRaytrace2_21
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 4
+        width: 451
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf0953b6efbcb5439957bf5c676fe6d
+      internalID: -989603572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeRaytrace2_22
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 4
+        width: 451
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddef2590e54cf974788a49625e96d1ea
+      internalID: -1714624407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeRaytrace2_23
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 4
+        width: 451
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a9becf7869efa4b96c33d6400a5ec3
+      internalID: -1186661983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeRaytrace2_24
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 4
+        width: 451
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001550b31174eea4ba18fbc7061ea1ad
+      internalID: 2069636894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d969955495bc8254ab2d35947ebf110b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":5.0},"gridSpriteSize":{"x":451.0,"y":286.0},"gridSpriteOffset":{"x":3.0,"y":3.0},"gridSpritePadding":{"x":8.0,"y":5.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      KnifeRaytrace2_0: -1401336154
+      KnifeRaytrace2_1: 1782887135
+      KnifeRaytrace2_10: 2021774745
+      KnifeRaytrace2_11: 1056094313
+      KnifeRaytrace2_12: -1678904864
+      KnifeRaytrace2_13: 1933222517
+      KnifeRaytrace2_14: 1374941200
+      KnifeRaytrace2_15: 971047343
+      KnifeRaytrace2_16: -2000909482
+      KnifeRaytrace2_17: -1742283710
+      KnifeRaytrace2_18: 757898930
+      KnifeRaytrace2_19: 1207768598
+      KnifeRaytrace2_2: 1732357239
+      KnifeRaytrace2_20: -367499769
+      KnifeRaytrace2_21: -989603572
+      KnifeRaytrace2_22: -1714624407
+      KnifeRaytrace2_23: -1186661983
+      KnifeRaytrace2_24: 2069636894
+      KnifeRaytrace2_3: 377393887
+      KnifeRaytrace2_4: 2029702789
+      KnifeRaytrace2_5: 1099777614
+      KnifeRaytrace2_6: -1676213814
+      KnifeRaytrace2_7: -1127674862
+      KnifeRaytrace2_8: -1488789122
+      KnifeRaytrace2_9: -1277201850
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
