@@ -28,7 +28,8 @@ public class InventoryItemScript : MonoBehaviour, IPointerEnterHandler, IPointer
         if (isValid && player.cursorState != PlayerInteract.CursorState.HoldingItem && !player.GetInPrompt())
         {
             player.cursorState = PlayerInteract.CursorState.InInventory;
-            player.SetCurrentItem(this.gameObject); 
+            player.SetCurrentItem(this.gameObject);
+            StartCoroutine(GameObject.FindFirstObjectByType<ItemInspections>().InventoryInspect(this.gameObject));
         }
     }
     /// <summary>
@@ -41,6 +42,7 @@ public class InventoryItemScript : MonoBehaviour, IPointerEnterHandler, IPointer
         {
             player.cursorState = PlayerInteract.CursorState.None;
             player.SetCurrentItem(null);
+            GameObject.FindFirstObjectByType<ItemInspections>().HideItemDescPanel();    
         }      
     }
     void Start()
