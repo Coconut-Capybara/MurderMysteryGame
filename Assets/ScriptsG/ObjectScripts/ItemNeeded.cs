@@ -40,6 +40,8 @@ public class ItemNeeded : MonoBehaviour
     [SerializeField] private GameObject hardEvidenceGO;
 
     [SerializeField] private bool changesItemDesc;
+
+    [SerializeField] private Animator animator;
     /// <summary>
     /// Base function for item interaction
     /// </summary>
@@ -48,6 +50,10 @@ public class ItemNeeded : MonoBehaviour
     {
         for (int i = 0; i < itemNeeded.Length; i++)
         {
+            if (currentItem.gameObject.name.Contains("Butterfly"))
+            {
+                //StartCoroutine(ButterflyKnifeMLG());
+            }
             if (currentItem.GetComponent<InventoryItemScript>().GetItemId() ==
                 itemNeeded[i].GetComponent<InventoryItemScript>().GetItemId())
             {
@@ -167,5 +173,13 @@ public class ItemNeeded : MonoBehaviour
             }
         }
         return valid;
+    }
+
+    public IEnumerator ButterflyKnifeMLG()
+    {
+        while (animator.isInitialized)
+        {
+            yield return new WaitForSeconds(0.1f);
+        }
     }
 }
