@@ -53,6 +53,8 @@ public class ObjectProperties : MonoBehaviour
     public string itemUseChangeDesc;
     [Tooltip("Whether timeLock can ever occur for this object.")]
     public bool disableTimeLock;
+    [Tooltip("The disableTimeLock time use to use")]
+    public int disableTimeLockTime;
 
     [Header("Item Sprites")]
     [Tooltip("The item sprite when the game starts and is not being hovered over")]

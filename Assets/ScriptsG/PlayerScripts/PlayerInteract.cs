@@ -28,6 +28,8 @@ public class PlayerInteract : MonoBehaviour
     [Tooltip("Whether the player is not in a prompt. Make sure this is true before pressing play. " +
         "DO NOT CHANGE IN GAME")]
     public bool inGame;
+
+    [SerializeField] private ItemUseSoundController itemUseSoundController;
     /// <summary>
     /// The current state of the players cursor
     /// </summary>
@@ -166,19 +168,10 @@ public class PlayerInteract : MonoBehaviour
                             GetComponent<InventoryItemScript>().GetItemId())
                         {
                             itemIndex = i;
-                            //Audio Stuff goes here
-                            if(hoverItem.GetComponent<ObjectProperties>().audioSource != null
-                                && hoverItem.GetComponent<ObjectProperties>().itemUseSounds[i] != null)
-                            {
-                                print("Audio Playing");
-                                hoverItem.GetComponent<ObjectProperties>().audioSource.clip =
-                                    hoverItem.GetComponent<ObjectProperties>().itemUseSounds[i];
-                                hoverItem.GetComponent<ObjectProperties>().audioSource.Play();
-                            }
                         }
                     }
                     if (hoverItem.GetComponent<ObjectProperties>().timeUsage[itemIndex] > 0 && 
-                        !hoverItem.GetComponent<ObjectProperties>().timeLock)                        
+                        !hoverItem.GetComponent<ObjectProperties>().timeLock)
                     {
                         TimeCheck();
                     }
@@ -190,6 +183,11 @@ public class PlayerInteract : MonoBehaviour
                         {
                             GetComponent<TextPrompts>().ShowPrompt(_hoverItem.GetComponent<ObjectProperties>()
                                 .resultsText[itemIndex]);
+                            if(hoverItem.GetComponent<ObjectProperties>().audioSource != null &&
+                                hoverItem.GetComponent<ObjectProperties>().itemUseSounds[itemIndex] != null)
+                            {
+                                itemUseSoundController.PlayItemSound(hoverItem.GetComponent<ObjectProperties>().itemUseSounds[itemIndex]);
+                            }
                             itemUseLock = false;
                         }
                     }
@@ -253,6 +251,11 @@ public class PlayerInteract : MonoBehaviour
                 {
                     GetComponent<TextPrompts>().ShowPrompt(item.GetComponent<ObjectProperties>()
                         .resultsText[0]);
+                    if(item.GetComponent<ObjectProperties>().interactSound != null &&
+                        item.GetComponent<ObjectProperties>().audioSource != null)
+                    {
+                        itemUseSoundController.PlayInteractSound(item.GetComponent<ObjectProperties>().interactSound);
+                    }
                 }
                 
                 item.GetComponent<NoItemInteractions>().NoItemFunciton();
@@ -315,7 +318,8 @@ public class PlayerInteract : MonoBehaviour
             else if(hoverItem.GetComponent<CopController>() != null)
             {
                 hoverItem.GetComponent<ObjectProperties>().givesPrompt = true;
-                hoverItem.GetComponent<ObjectProperties>().timeUsage[0] = 10;
+                hoverItem.GetComponent<ObjectProperties>().timeUsage[0] = 
+                    hoverItem.GetComponent<ObjectProperties>().disableTimeLockTime;
                 hoverItem.GetComponent<CopController>().UpdateTimePrompt(hoverItem.GetComponent<ObjectProperties>());
             }
               
