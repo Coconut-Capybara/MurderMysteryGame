@@ -71,11 +71,12 @@ MonoBehaviour:
   timeUsage: 
   resultsText: []
   timeText: []
-  itemDesc: 
+  itemDesc: A hammer. May be able to bash open something.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
   itemUseChangeDesc: 
   disableTimeLock: 0
+  disableTimeLockTime: 0
   itemSprite: {fileID: 352450912, guid: 2d272e77bbed72d4394b479fe2e9d91f, type: 3}
   highlightSprite: {fileID: 2127960050, guid: 2d272e77bbed72d4394b479fe2e9d91f, type: 3}
   altSprite1: {fileID: 0}
