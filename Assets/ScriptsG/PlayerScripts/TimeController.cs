@@ -135,8 +135,10 @@ public class TimeController : MonoBehaviour
 
     public void NoButton()
     {
+        index = 0;
         timeUsePanel = false;
         timePanel.gameObject.SetActive(false);
+        GameObject.FindFirstObjectByType<PlayerInteract>().UnlockItemUse();
         GameObject.FindFirstObjectByType<PlayerInteract>().SetInPrompt(false);    
     }
     public void TimeAway(int time)
