@@ -31409,7 +31409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectProperties
   thisObject: {fileID: 0}
-  isInteractable: 1
+  isInteractable: 0
   isGrabbable: 0
   canUseOn: 0
   consumable: 0
