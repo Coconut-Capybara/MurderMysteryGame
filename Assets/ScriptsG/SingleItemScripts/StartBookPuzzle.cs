@@ -5,6 +5,7 @@ public class StartBookPuzzle : NoItemInteractions
     [SerializeField] private GameObject bookPuzzlePanel;
     [SerializeField] private bool bookPuzzleLocked;
     [SerializeField] private GameObject books;
+    [SerializeField] private GameObject backArrow;
     public override void NoItemFunciton()
     {
         if (!GameObject.FindFirstObjectByType<PlayerInteract>().GetInPrompt())
@@ -14,6 +15,7 @@ public class StartBookPuzzle : NoItemInteractions
                 GameObject.FindFirstObjectByType<FollowPlayerCursor>().ResetCube();
                 GameObject.FindFirstObjectByType<PlayerInteract>().SetInPrompt(true);
                 GameObject.FindFirstObjectByType<AddToInventory>().HideInventory();
+                backArrow.SetActive(false);
                 books.SetActive(false);
                 bookPuzzlePanel.SetActive(true);
             }
@@ -26,6 +28,7 @@ public class StartBookPuzzle : NoItemInteractions
     public void ClosePuzzle()
     {
         bookPuzzlePanel.SetActive(false);
+        backArrow.SetActive(true);
         books.SetActive(true);
     }
     public void LockPuzzle()
