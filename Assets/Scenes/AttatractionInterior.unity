@@ -25257,7 +25257,7 @@ MonoBehaviour:
   bookPuzzlePanel: {fileID: 1408905522}
   bookPuzzleLocked: 1
   books: {fileID: 1886797044}
-  backArrow: {fileID: 0}
+  backArrow: {fileID: 348458166}
 --- !u!114 &1380806736
 MonoBehaviour:
   m_ObjectHideFlags: 0
