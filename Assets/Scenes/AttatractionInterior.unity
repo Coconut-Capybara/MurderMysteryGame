@@ -491,6 +491,7 @@ MonoBehaviour:
   - {fileID: 3043295151955953431, guid: 9c0edbb9634a3fe4cb4064e1c72e52a2, type: 3}
   - {fileID: 3043295151955953431, guid: 4d5ff387521a8f04cb7c6499b11c3631, type: 3}
   - {fileID: 3043295151955953431, guid: 81180f53294f8544e9131da3642a253d, type: 3}
+  - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
   nullItems:
   - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
   timeController: {fileID: 0}
@@ -522,18 +523,20 @@ MonoBehaviour:
   isGrabbable: 0
   canUseOn: 1
   consumable: 0
-  givesPrompt: 0
+  givesPrompt: 1
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 00000000050000000a000000
+  timeUsage: 00000000050000000a00000005000000
   resultsText:
   - 
   - You were able to cut open the lock successfully. It was tougher than expected...
   - You were able to lockpick this lock. The hanger seems unusable now...
+  - You did some sick tricks with the butterfly knife. Great use of time champ...
   timeText:
   - 
   - Do you want to use the coathanger to lockpick this lock?
   - Do you want to use the coathanger to lockpick this lock?
+  - Would you like to use the butterfly knife?
   itemDesc: A yellow lock.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -1703,6 +1706,7 @@ MonoBehaviour:
   - {fileID: 3043295151955953431, guid: b9a46eafaa7df8b45872a11ffd3eeee6, type: 3}
   - {fileID: 3043295151955953431, guid: 4d5ff387521a8f04cb7c6499b11c3631, type: 3}
   - {fileID: 3043295151955953431, guid: 81180f53294f8544e9131da3642a253d, type: 3}
+  - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
   nullItems:
   - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
   timeController: {fileID: 0}
@@ -1734,18 +1738,20 @@ MonoBehaviour:
   isGrabbable: 0
   canUseOn: 1
   consumable: 0
-  givesPrompt: 0
+  givesPrompt: 1
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 00000000050000000a000000
+  timeUsage: 00000000050000000a00000005000000
   resultsText:
   - 
   - You were able to cut open the lock successfully. It was tougher than expected...
   - You were able to lockpick this lock. The hanger seems unusable now...
+  - You did some sick tricks with the butterfly knife. Great use of time champ...
   timeText:
   - 
   - Do you want to use the coathanger to lockpick this lock?
   - Do you want to use the coathanger to lockpick this lock?
+  - Would you like to use the butterfly knife?
   itemDesc: An orange lock
   itemChangesDesc: 0
   usingItemChangeDesc: 0
@@ -3987,7 +3993,7 @@ MonoBehaviour:
   timeText:
   - 
   - Would you like to try and hit the bear's head with the hammer?
-  - Would you like to use the butterfly kinfe?
+  - Would you like to use the butterfly knife?
   itemDesc: A taxidermied bear, or maybe an animatronic. Either way, it's missing
     an eye.
   itemChangesDesc: 1
@@ -5956,6 +5962,7 @@ MonoBehaviour:
   - {fileID: 3043295151955953431, guid: 291216ae88a4e3c4e915c0b85f269d7e, type: 3}
   - {fileID: 3043295151955953431, guid: 4d5ff387521a8f04cb7c6499b11c3631, type: 3}
   - {fileID: 3043295151955953431, guid: 81180f53294f8544e9131da3642a253d, type: 3}
+  - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
   nullItems:
   - {fileID: 3043295151955953431, guid: 401a0c2bce766314d9d792f6e4ce4d0a, type: 3}
   timeController: {fileID: 0}
@@ -5987,18 +5994,20 @@ MonoBehaviour:
   isGrabbable: 0
   canUseOn: 1
   consumable: 0
-  givesPrompt: 0
+  givesPrompt: 1
   timeLock: 0
   isHardEvidence: 0
-  timeUsage: 00000000050000000a000000
+  timeUsage: 00000000050000000a00000005000000
   resultsText:
   - 
   - You were able to cut open the lock successfully. It was tougher than expected...
   - You were able to lockpick this lock. The hanger seems unusable now...
+  - You did some sick tricks with the butterfly knife. Great use of time champ...
   timeText:
   - 
   - Do you want to use the boltcutters on this lock?
   - Do you want to use the coathanger to lockpick this lock?
+  - Would you like to use the butterfly knife?
   itemDesc: A purple lock.
   itemChangesDesc: 0
   usingItemChangeDesc: 0
