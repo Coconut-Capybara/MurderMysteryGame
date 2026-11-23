@@ -8,8 +8,10 @@
 // Summary : Put this on objects intended to have inventory items used on
 *****************************************************************************/
 using System.Collections;
+using System.Runtime.CompilerServices;
 using Unity.Cinemachine;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class ItemNeeded : MonoBehaviour
 {
@@ -41,7 +43,8 @@ public class ItemNeeded : MonoBehaviour
 
     [SerializeField] private bool changesItemDesc;
 
-    [SerializeField] private Animator animator;
+    [SerializeField] private GameObject knifePanel;
+    [SerializeField] private float knifeAnimLength;
     /// <summary>
     /// Base function for item interaction
     /// </summary>
@@ -52,7 +55,7 @@ public class ItemNeeded : MonoBehaviour
         {
             if (currentItem.gameObject.name.Contains("Butterfly"))
             {
-                //StartCoroutine(ButterflyKnifeMLG());
+                StartCoroutine(ButterflyKnifeMLG());
             }
             if (currentItem.GetComponent<InventoryItemScript>().GetItemId() ==
                 itemNeeded[i].GetComponent<InventoryItemScript>().GetItemId())
@@ -177,9 +180,18 @@ public class ItemNeeded : MonoBehaviour
 
     public IEnumerator ButterflyKnifeMLG()
     {
-        while (animator.isInitialized)
+        bool animationPlaying = true;
+        //knifeAnimLength = 1.35f;
+        knifePanel.gameObject.SetActive(true);
+        while (animationPlaying)
         {
-            yield return new WaitForSeconds(0.1f);
+            for(int i = 0; i < 1 ;i++)
+            {
+                yield return new WaitForSeconds(knifeAnimLength);
+            }
+            knifePanel.gameObject.SetActive(false);
+            animationPlaying = false;
+
         }
     }
 }

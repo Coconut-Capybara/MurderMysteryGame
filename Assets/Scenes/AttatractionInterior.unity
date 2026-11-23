@@ -505,7 +505,8 @@ MonoBehaviour:
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
   changesItemDesc: 0
-  animator: {fileID: 0}
+  knifePanel: {fileID: 0}
+  knifeAnimLength: 0
 --- !u!114 &7275884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1526,7 +1527,8 @@ MonoBehaviour:
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
   changesItemDesc: 0
-  animator: {fileID: 0}
+  knifePanel: {fileID: 1926563100}
+  knifeAnimLength: 1.35
 --- !u!1 &18061575
 GameObject:
   m_ObjectHideFlags: 0
@@ -1719,7 +1721,8 @@ MonoBehaviour:
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
   changesItemDesc: 0
-  animator: {fileID: 0}
+  knifePanel: {fileID: 0}
+  knifeAnimLength: 0
 --- !u!114 &22617579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4134,7 +4137,8 @@ MonoBehaviour:
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
   changesItemDesc: 0
-  animator: {fileID: 0}
+  knifePanel: {fileID: 0}
+  knifeAnimLength: 0
 --- !u!1 &167227847
 GameObject:
   m_ObjectHideFlags: 0
@@ -5974,7 +5978,8 @@ MonoBehaviour:
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
   changesItemDesc: 0
-  animator: {fileID: 0}
+  knifePanel: {fileID: 0}
+  knifeAnimLength: 0
 --- !u!114 &318202960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7024,7 +7029,8 @@ MonoBehaviour:
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
   changesItemDesc: 0
-  animator: {fileID: 0}
+  knifePanel: {fileID: 0}
+  knifeAnimLength: 0
 --- !u!1 &368876347
 GameObject:
   m_ObjectHideFlags: 0
@@ -8177,7 +8183,8 @@ MonoBehaviour:
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
   changesItemDesc: 0
-  animator: {fileID: 0}
+  knifePanel: {fileID: 0}
+  knifeAnimLength: 0
 --- !u!114 &407114894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8806,7 +8813,8 @@ MonoBehaviour:
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
   changesItemDesc: 0
-  animator: {fileID: 0}
+  knifePanel: {fileID: 0}
+  knifeAnimLength: 0
 --- !u!114 &428883819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9568,7 +9576,8 @@ MonoBehaviour:
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
   changesItemDesc: 0
-  animator: {fileID: 0}
+  knifePanel: {fileID: 0}
+  knifeAnimLength: 0
 --- !u!114 &454600095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15975,7 +15984,8 @@ MonoBehaviour:
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
   changesItemDesc: 0
-  animator: {fileID: 0}
+  knifePanel: {fileID: 0}
+  knifeAnimLength: 0
 --- !u!114 &787807736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22134,6 +22144,81 @@ MonoBehaviour:
       BarrelClipping: 0.25
       Anamorphism: 0
   BlendHint: 0
+--- !u!1 &1203201460
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1203201461}
+  - component: {fileID: 1203201463}
+  - component: {fileID: 1203201462}
+  m_Layer: 5
+  m_Name: KnifeInspectReal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1203201461
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203201460}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1926563101}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 184.63412, y: 296.63416}
+  m_SizeDelta: {x: 1089.574, y: 1089.574}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1203201462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203201460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -236525719, guid: adc2017d95d61ab47857a6786f9d0de9, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1203201463
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203201460}
+  m_CullTransparentMesh: 1
 --- !u!1 &1209685336
 GameObject:
   m_ObjectHideFlags: 0
@@ -23740,7 +23825,8 @@ MonoBehaviour:
   givesHardEvidence: 1
   hardEvidenceGO: {fileID: 122836871}
   changesItemDesc: 0
-  animator: {fileID: 0}
+  knifePanel: {fileID: 0}
+  knifeAnimLength: 0
 --- !u!114 &1265145528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24783,7 +24869,8 @@ MonoBehaviour:
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
   changesItemDesc: 0
-  animator: {fileID: 0}
+  knifePanel: {fileID: 0}
+  knifeAnimLength: 0
 --- !u!114 &1364660723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25394,7 +25481,8 @@ MonoBehaviour:
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
   changesItemDesc: 0
-  animator: {fileID: 0}
+  knifePanel: {fileID: 0}
+  knifeAnimLength: 0
   book1: {fileID: 37265117}
   book2: {fileID: 922923885}
   bookShelf: {fileID: 1380806732}
@@ -26254,7 +26342,8 @@ MonoBehaviour:
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
   changesItemDesc: 0
-  animator: {fileID: 0}
+  knifePanel: {fileID: 0}
+  knifeAnimLength: 0
 --- !u!1 &1420381176
 GameObject:
   m_ObjectHideFlags: 0
@@ -28742,7 +28831,8 @@ MonoBehaviour:
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
   changesItemDesc: 0
-  animator: {fileID: 0}
+  knifePanel: {fileID: 0}
+  knifeAnimLength: 0
 --- !u!1 &1527123680
 GameObject:
   m_ObjectHideFlags: 0
@@ -29380,7 +29470,8 @@ MonoBehaviour:
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
   changesItemDesc: 0
-  animator: {fileID: 0}
+  knifePanel: {fileID: 0}
+  knifeAnimLength: 0
 --- !u!114 &1563457457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30853,7 +30944,8 @@ MonoBehaviour:
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
   changesItemDesc: 0
-  animator: {fileID: 0}
+  knifePanel: {fileID: 0}
+  knifeAnimLength: 0
 --- !u!114 &1614846988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32609,7 +32701,8 @@ MonoBehaviour:
   givesHardEvidence: 0
   hardEvidenceGO: {fileID: 0}
   changesItemDesc: 0
-  animator: {fileID: 0}
+  knifePanel: {fileID: 0}
+  knifeAnimLength: 0
   key: {fileID: 0}
   objectProperties: {fileID: 0}
   itemUseTime: 0
@@ -36414,14 +36507,13 @@ GameObject:
   - component: {fileID: 1926563101}
   - component: {fileID: 1926563103}
   - component: {fileID: 1926563102}
-  - component: {fileID: 1926563104}
   m_Layer: 5
   m_Name: KnifePanel
-  m_TagString: Untagged
+  m_TagString: KNIFE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1926563101
 RectTransform:
   m_ObjectHideFlags: 0
@@ -36433,7 +36525,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5555556, y: 0.5555556, z: 0.5555556}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1203201461}
   m_Father: {fileID: 1607415494499915935}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -36479,28 +36572,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1926563100}
   m_CullTransparentMesh: 1
---- !u!95 &1926563104
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1926563100}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7cfd86b73d6ed244ca57dffa74abfe3b, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1935811985
 GameObject:
   m_ObjectHideFlags: 0
